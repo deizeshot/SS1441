@@ -1,0 +1,16 @@
+/Users/denisvinogradov/Documents/GitHub/space-station-14/bin/Content.Server.Database/Content.Server.Database.deps.json
+/Users/denisvinogradov/Documents/GitHub/space-station-14/bin/Content.Server.Database/Content.Server.Database.runtimeconfig.json
+/Users/denisvinogradov/Documents/GitHub/space-station-14/bin/Content.Server.Database/Content.Server.Database.dll
+/Users/denisvinogradov/Documents/GitHub/space-station-14/bin/Content.Server.Database/Content.Server.Database.pdb
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.csproj.AssemblyReference.cache
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.GeneratedMSBuildEditorConfig.editorconfig
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.AssemblyInfoInputs.cache
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.AssemblyInfo.cs
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.csproj.CoreCompileInputs.cache
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.sourcelink.json
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.csproj.CopyComplete
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.dll
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/refint/Content.Server.Database.dll
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.pdb
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/Content.Server.Database.genruntimeconfig.cache
+/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/Debug/ref/Content.Server.Database.dll

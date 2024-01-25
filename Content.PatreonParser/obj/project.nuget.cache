@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "tGzwy3cWX8DXifjZE2EX/9N8dVjnHYUOow5NN7QkTPybEsv85QJ4pC1tjw8G9slC3UxNbmzYzKHTH6j1Abqlbg==",
+  "success": true,
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.PatreonParser/Content.PatreonParser.csproj",
+  "expectedPackageFiles": [
+    "/Users/denisvinogradov/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.14/microsoft.netcore.app.host.osx-arm64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
