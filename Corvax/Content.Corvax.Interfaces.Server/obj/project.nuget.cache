@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kNXtY4W2vvIf+zB8EBr+FpRqDHcMjt5i5wUjVOURhvmC+b0W2p6aG6INHo/OF1Iksq+NnN69Ngo1Y3+xFlWv1A==",
+  "dgSpecHash": "S1B5hNulmNPc98d08xrhxnVlfjzMsO5ARTlQIggxXGBk8NPkq1FyO5GuQxzoXAF5YY31oZBEcR5xN9cWbw+IzA==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Server/Content.Corvax.Interfaces.Server.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Server/Content.Corvax.Interfaces.Server.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/fastaccessors/1.0.0.1/fastaccessors.1.0.0.1.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

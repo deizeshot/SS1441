@@ -2374,10 +2374,38 @@
           "bin/placeholder/Avalonia.Base.dll": {}
         }
       },
+      "Content.Corvax.Interfaces.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Content.Corvax.Interfaces.Shared": "1.0.0",
+          "Robust.Client": "208.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Content.Corvax.Interfaces.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Content.Corvax.Interfaces.Client.dll": {}
+        }
+      },
+      "Content.Corvax.Interfaces.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Robust.Shared": "208.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
+        }
+      },
       "Content.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared.Database": "1.0.0",
           "Robust.Shared": "208.0.0",
           "Robust.Shared.Maths": "208.0.0",
@@ -4892,10 +4920,38 @@
           "bin/placeholder/Avalonia.Base.dll": {}
         }
       },
+      "Content.Corvax.Interfaces.Client/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Content.Corvax.Interfaces.Shared": "1.0.0",
+          "Robust.Client": "208.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Content.Corvax.Interfaces.Client.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Content.Corvax.Interfaces.Client.dll": {}
+        }
+      },
+      "Content.Corvax.Interfaces.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Robust.Shared": "208.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
+        }
+      },
       "Content.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared.Database": "1.0.0",
           "Robust.Shared": "208.0.0",
           "Robust.Shared.Maths": "208.0.0",
@@ -10268,6 +10324,16 @@
       "path": "../RobustToolbox/Avalonia.Base/Avalonia.Base.csproj",
       "msbuildProject": "../RobustToolbox/Avalonia.Base/Avalonia.Base.csproj"
     },
+    "Content.Corvax.Interfaces.Client/1.0.0": {
+      "type": "project",
+      "path": "../Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
+      "msbuildProject": "../Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj"
+    },
+    "Content.Corvax.Interfaces.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
+      "msbuildProject": "../Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
+    },
     "Content.Shared/1.0.0": {
       "type": "project",
       "path": "../Content.Shared/Content.Shared.csproj",
@@ -10316,6 +10382,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Content.Corvax.Interfaces.Client >= 1.0.0",
+      "Content.Corvax.Interfaces.Shared >= 1.0.0",
       "Content.Shared >= 1.0.0",
       "JetBrains.Annotations >= 2023.3.0",
       "Nett >= 0.15.0",
@@ -10356,6 +10424,12 @@
           "projectReferences": {
             "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj": {
               "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj"
+            },
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj"
+            },
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
             },
             "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj": {
               "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj"

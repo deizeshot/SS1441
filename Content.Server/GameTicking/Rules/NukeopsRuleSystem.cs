@@ -28,6 +28,7 @@ using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Server.Store.Components;
 using Content.Server.Store.Systems;
+using Content.Shared.CombatMode.Pacification;
 using Content.Shared.CCVar;
 using Content.Shared.Dataset;
 using Content.Shared.Humanoid;
@@ -251,6 +252,7 @@ public sealed class NukeopsRuleSystem : GameRuleSystem<NukeopsRuleComponent>
 
             var name = MetaData(uid).EntityName;
             nukeops.OperativePlayers.Add(name, mind);
+            RemComp<PacifiedComponent>(uid); // Corvax-DionaPacifist: Allow dionas nukes to harm
         }
     }
 

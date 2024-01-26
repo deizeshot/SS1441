@@ -10247,14 +10247,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
       "projectName": "Content.Corvax.Interfaces.Client",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Client/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Client/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -10269,11 +10269,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Client/Robust.Client.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Client/Robust.Client.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj"
             }
           }
         }

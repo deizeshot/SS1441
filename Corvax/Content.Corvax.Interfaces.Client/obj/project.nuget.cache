@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tCdGUM28DImLZzJsJmaRymuo0L+pzkHy+BFP8EScJaEVqTNHCYL382/UKMvt7NllLHwBxxuw5y5QJb9ZJZv2QA==",
+  "dgSpecHash": "m5oRn0Je85cSaUgHCfyv7dP9ESsbbG9OowpOgmXj23+t9RV9jzQtzDH4ah3zNuuQAfIgmXx7mgJQKLSylhMMfA==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/discordrichpresence/1.2.1.24/discordrichpresence.1.2.1.24.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/jetbrains.formatripper/2.0.1/jetbrains.formatripper.2.0.1.nupkg.sha512",

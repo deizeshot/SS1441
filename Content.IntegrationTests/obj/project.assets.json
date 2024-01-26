@@ -17183,15 +17183,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.IntegrationTests/Content.IntegrationTests.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.IntegrationTests/Content.IntegrationTests.csproj",
       "projectName": "Content.IntegrationTests",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.IntegrationTests/Content.IntegrationTests.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.IntegrationTests/Content.IntegrationTests.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.IntegrationTests/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.IntegrationTests/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -17206,32 +17206,32 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Client/Content.Client.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Client/Content.Client.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Client/Content.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Client/Content.Client.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Server/Content.Server.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Server/Content.Server.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared/Content.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared/Content.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Tests/Content.Tests.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Tests/Content.Tests.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/Content.Tests.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/Content.Tests.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Client/Robust.Client.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Client/Robust.Client.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Server/Robust.Server.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Server/Robust.Server.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj"
             }
           }
         }

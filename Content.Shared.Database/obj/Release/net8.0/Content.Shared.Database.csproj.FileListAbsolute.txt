@@ -1,15 +1,3 @@
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/bin/Release/net8.0/Content.Shared.Database.deps.json
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/bin/Release/net8.0/Content.Shared.Database.dll
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/bin/Release/net8.0/Content.Shared.Database.pdb
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/Content.Shared.Database.GeneratedMSBuildEditorConfig.editorconfig
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/Content.Shared.Database.AssemblyInfoInputs.cache
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/Content.Shared.Database.AssemblyInfo.cs
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/Content.Shared.Database.csproj.CoreCompileInputs.cache
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/Content.Shared.Database.sourcelink.json
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/Content.Shared.Database.dll
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/refint/Content.Shared.Database.dll
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/Content.Shared.Database.pdb
-/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Content.Shared.Database/obj/Release/net8.0/ref/Content.Shared.Database.dll
 /Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/bin/Release/net8.0/Content.Shared.Database.deps.json
 /Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/bin/Release/net8.0/Content.Shared.Database.dll
 /Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/bin/Release/net8.0/Content.Shared.Database.pdb
