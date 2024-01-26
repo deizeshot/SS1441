@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ja1ULdwCysVH/3jF8keGrjLFk8i5jqTCC0ojLBkHDmZY+aClNSIuVCbMCIH4SSAqnr/CdahsCynqGRe+Fx2pYA==",
+  "success": true,
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.PatreonParser/Content.PatreonParser.csproj",
+  "expectedPackageFiles": [
+    "/Users/denisvinogradov/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/7.0.14/microsoft.netcore.app.runtime.linux-x64.7.0.14.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/7.0.14/microsoft.aspnetcore.app.runtime.linux-x64.7.0.14.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.14/microsoft.netcore.app.host.linux-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
