@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aWAL/X+uM79mcvVBaHg/zhSJzX4YJB7ZMIsZu6bWNPVP+WCpMwS1GfNOzw09rLQfQwbl7fcsetmIcsyadJuHFA==",
+  "dgSpecHash": "qmCTdu/Wh0KshpgZxAXOUIwpyvz5Bv9RCWjhrsJc7vNgYqo/635SEJKAyJLROWSdTjdeGd0x+G6k/S50bMgk3A==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server/Content.Server.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/fastaccessors/1.0.0.1/fastaccessors.1.0.0.1.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

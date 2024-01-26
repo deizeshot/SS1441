@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Content.Server
-build_property.ProjectDir = /Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server/
+build_property.ProjectDir = /Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

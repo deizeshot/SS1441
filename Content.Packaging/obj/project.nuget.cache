@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h+kzvsCMVkIIblw86PCCsAcKbdIJBx9i66/wIYwB8P2gIVY3o4x+ApIQjeWTWAlqMeodGkwbAvgK3O5HkCnkKw==",
+  "dgSpecHash": "ZKPxDTgaHtd2oHkuAyqAbB3QxDPM43oAqNMIyayHqG50MBvmf27b8xBQGHFBH50aUSGbUwTIJjziyAWt+yMLfA==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Packaging/Content.Packaging.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Packaging/Content.Packaging.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/libsodium/1.0.18.2/libsodium.1.0.18.2.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/linguini.bundle/0.1.3/linguini.bundle.0.1.3.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UEQegr5W9HcIqlJFfZPNoZ7VbP3V+XKq61/FIY2e7UHDBYTn0o1RIUp06hEwxj7Qd4Jyo9v3QGPUYpP7gSERWg==",
+  "dgSpecHash": "UU6SOcfD6BFLREo6OX0Lhx9H7VjIssZ0uDfOOUbexf8OYLFwu04d8kAwzB0oTTxQv/ckeeO/BJPBt3f+4k2aEA==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/Content.Shared.Database.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

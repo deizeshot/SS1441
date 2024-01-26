@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V1Nbq2WX18OgM4PLAJeXbNrtfi2tSRxEvmoEjqt5jz2e/HbIJedzpWpoFadfV8+cHwMktJ+30iIrMTEDZgTq5Q==",
+  "dgSpecHash": "zOyAJ547vH5G9mV2tiZsuVVfHpI9YHw4KLKDRz3ZQjge3meA39SSbkMzQ6aVvN21r6oFADKMfqM35nLquJPv+Q==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server.Database/Content.Server.Database.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

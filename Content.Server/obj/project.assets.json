@@ -14023,15 +14023,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server/Content.Server.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj",
       "projectName": "Content.Server",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server/Content.Server.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/space-station-1441/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -14046,26 +14046,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Packaging/Content.Packaging.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Packaging/Content.Packaging.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Packaging/Content.Packaging.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Packaging/Content.Packaging.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server.Database/Content.Server.Database.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server.Database/Content.Server.Database.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared/Content.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared/Content.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Robust.Server/Robust.Server.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Robust.Server/Robust.Server.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
             }
           }
         }
