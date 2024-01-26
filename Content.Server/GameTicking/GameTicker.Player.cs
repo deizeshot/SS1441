@@ -1,4 +1,3 @@
-using Content.Corvax.Interfaces.Server;
 using Content.Server.Database;
 using Content.Shared.GameTicking;
 using Content.Shared.GameWindow;
@@ -57,10 +56,7 @@ namespace Content.Server.GameTicking
 
                     // Make the player actually join the game.
                     // timer time must be > tick length
-                    // Corvax-Queue-Start
-                    if (!IoCManager.Instance!.TryResolveType<IServerJoinQueueManager>(out _))
-                        Timer.Spawn(0, () => _playerManager.JoinGame(args.Session));
-                    // Corvax-Queue-End
+                    Timer.Spawn(0, () => _playerManager.JoinGame(args.Session));
 
                     var record = await _dbManager.GetPlayerRecordByUserId(args.Session.UserId);
                     var firstConnection = record != null &&
@@ -130,8 +126,7 @@ namespace Content.Server.GameTicking
                         mind.Session = null;
                     }
 
-                    if (_playerGameStatuses.ContainsKey(args.Session.UserId)) // Corvax-Queue: Delete data only if player was in game
-                        _userDb.ClientDisconnected(session);
+                    _userDb.ClientDisconnected(session);
                     break;
                 }
             }
@@ -173,7 +168,7 @@ namespace Content.Server.GameTicking
             _playerGameStatuses[session.UserId] = PlayerGameStatus.JoinedGame;
             _db.AddRoundPlayers(RoundId, session.UserId);
 
-            RaiseNetworkEvent(new TickerJoinGameEvent(), session.ConnectedClient);
+            RaiseNetworkEvent(new TickerJoinGameEvent(), session.Channel);
         }
 
         private void PlayerJoinLobby(ICommonSession session)
@@ -181,7 +176,7 @@ namespace Content.Server.GameTicking
             _playerGameStatuses[session.UserId] = LobbyEnabled ? PlayerGameStatus.NotReadyToPlay : PlayerGameStatus.ReadyToPlay;
             _db.AddRoundPlayers(RoundId, session.UserId);
 
-            var client = session.ConnectedClient;
+            var client = session.Channel;
             RaiseNetworkEvent(new TickerJoinLobbyEvent(), client);
             RaiseNetworkEvent(GetStatusMsg(session), client);
             RaiseNetworkEvent(GetInfoMsg(), client);

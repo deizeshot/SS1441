@@ -32,14 +32,9 @@ namespace Content.IntegrationTests.Tests.Preferences
   - Aaliyah
 
 - type: dataset
-  id: sqlite_test_names_last_male
+  id: sqlite_test_names_last
   values:
-  - Ackerley
-
-- type: dataset
-  id: sqlite_test_names_last_female
-  values:
-  - Ackerla";  // Corvax-LastnameGender
+  - Ackerley";
 
         private static HumanoidCharacterProfile CharlieCharlieson()
         {
@@ -47,7 +42,6 @@ namespace Content.IntegrationTests.Tests.Preferences
                 "Charlie Charlieson",
                 "The biggest boy around.",
                 "Human",
-                "Eugene", // Corvax-TTS
                 21,
                 Sex.Male,
                 Gender.Epicene,

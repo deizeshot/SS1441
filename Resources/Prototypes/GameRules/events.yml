@@ -7,10 +7,6 @@
     weight: 10
     startDelay: 30
     duration: 35
-    startAudio: # Corvax-Announcements
-      path: /Audio/Corvax/Announcements/flux.ogg
-      params:
-        volume: -4
   - type: AnomalySpawnRule
 
 - type: entity
@@ -22,10 +18,6 @@
     weight: 5
     startDelay: 30
     duration: 35
-    startAudio: # Corvax-Announcements
-      path: /Audio/Corvax/Announcements/blusp_anomalies.ogg
-      params:
-        volume: -4
   - type: BluespaceArtifactRule
 
 - type: entity
@@ -144,14 +136,8 @@
   - type: StationEvent
     startAnnouncement: station-event-gas-leak-start-announcement
     startAudio:
-      path: /Audio/Announcements/gasleak_start.ogg # Corvax-Announcements
-      params:
-        volume: -4
+      path: /Audio/Announcements/attention.ogg
     endAnnouncement: station-event-gas-leak-end-announcement
-    endAudio:
-      path: /Audio/Announcements/gasleak_end.ogg # Corvax-Announcements
-      params:
-        volume: -4
     earliestStart: 10
     minimumPlayers: 5
     weight: 10
@@ -183,11 +169,7 @@
     startAnnouncement: station-event-meteor-swarm-start-announcement
     endAnnouncement: station-event-meteor-swarm-end-announcement
     startAudio:
-      path: /Audio/Announcements/meteors_start.ogg
-      params:
-        volume: -4
-    endAudio:
-      path: /Audio/Announcements/meteors_end.ogg # Corvax-Announcements
+      path: /Audio/Announcements/meteors.ogg
       params:
         volume: -4
     duration: null #ending is handled by MeteorSwarmRule
@@ -200,6 +182,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 30
     minimumPlayers: 35
     weight: 5
@@ -222,6 +208,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     weight: 5
     duration: 50
   - type: VentCrittersRule
@@ -258,9 +248,7 @@
     weight: 10
     duration: 1
     startAudio:
-      path: /Audio/Announcements/sentience.ogg # Corvax-Announcements
-      params:
-        volume: -4
+      path: /Audio/Announcements/attention.ogg
   - type: RandomSentienceRule
 
 - type: entity
@@ -272,10 +260,8 @@
     weight: 10
     startAnnouncement: station-event-solar-flare-start-announcement
     endAnnouncement: station-event-solar-flare-end-announcement
-    startAudio: # Corvax-Announcements
-      path: /Audio/Corvax/Announcements/comms_blackout.ogg
-      params:
-        volume: -4
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
     duration: 120
     maxDuration: 240
   - type: SolarFlareRule
@@ -315,9 +301,7 @@
   - type: StationEvent
     startAnnouncement: station-event-vent-clog-start-announcement
     startAudio:
-      path: /Audio/Announcements/ventclog.ogg # Corvax-Announcements
-      params:
-        volume: -4
+      path: /Audio/Announcements/attention.ogg
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -331,7 +315,10 @@
   noSpawn: true
   components:
   - type: StationEvent
-    id: VentCritters
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -351,6 +338,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -370,6 +361,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -385,6 +380,10 @@
   noSpawn: true
   components:
   - type: StationEvent
+    startAnnouncement: station-event-vent-creatures-start-announcement
+    startAudio:
+      path: /Audio/Announcements/attention.ogg
+    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 1

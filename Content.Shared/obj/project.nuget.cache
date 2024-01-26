@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vx+JrdE+3pEIsee8h9eDyRkftB+tWgx/U6wpqRdgUfUjNbNzZiIHOLRyMIG1NiU+5Na34oj+mOhnryQr2vc7Yw==",
+  "dgSpecHash": "eBXWPjLu6OIkfV/C0loeUJNXcYatpTH8hT/FECrZYFh2Ra49abcxG0vlnI8Y4lY5gjIQxlENF4LFm/eKH2O8Kg==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared/Content.Shared.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared/Content.Shared.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/jetbrains.annotations/2023.3.0/jetbrains.annotations.2023.3.0.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/libsodium/1.0.18.2/libsodium.1.0.18.2.nupkg.sha512",

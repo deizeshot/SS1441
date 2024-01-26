@@ -12,7 +12,6 @@ using Content.Server.StationRecords.Systems;
 using Content.Shared.Administration;
 using Content.Shared.Administration.Events;
 using Content.Shared.CCVar;
-using Content.Shared.Corvax.CCCVars;
 using Content.Shared.GameTicking;
 using Content.Shared.Hands.Components;
 using Content.Shared.IdentityManagement;
@@ -78,7 +77,6 @@ namespace Content.Server.Administration.Systems
             _config.OnValueChanged(CCVars.PanicBunkerShowReason, OnShowReasonChanged, true);
             _config.OnValueChanged(CCVars.PanicBunkerMinAccountAge, OnPanicBunkerMinAccountAgeChanged, true);
             _config.OnValueChanged(CCVars.PanicBunkerMinOverallHours, OnPanicBunkerMinOverallHoursChanged, true);
-            _config.OnValueChanged(CCCVars.PanicBunkerDenyVPN, OnPanicBunkerDenyVpnChanged, true); // Corvax-VPNGuard
 
             SubscribeLocalEvent<IdentityChangedEvent>(OnIdentityChanged);
             SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
@@ -108,7 +106,7 @@ namespace Content.Server.Administration.Systems
 
             foreach (var admin in _adminManager.ActiveAdmins)
             {
-                RaiseNetworkEvent(updateEv, admin.ConnectedClient);
+                RaiseNetworkEvent(updateEv, admin.Channel);
             }
         }
 
@@ -123,7 +121,7 @@ namespace Content.Server.Administration.Systems
 
             foreach (var admin in _adminManager.ActiveAdmins)
             {
-                RaiseNetworkEvent(playerInfoChangedEvent, admin.ConnectedClient);
+                RaiseNetworkEvent(playerInfoChangedEvent, admin.Channel);
             }
         }
 
@@ -159,7 +157,7 @@ namespace Content.Server.Administration.Systems
 
             if (!obj.IsAdmin)
             {
-                RaiseNetworkEvent(new FullPlayerListEvent(), obj.Player.ConnectedClient);
+                RaiseNetworkEvent(new FullPlayerListEvent(), obj.Player.Channel);
                 return;
             }
 
@@ -212,7 +210,7 @@ namespace Content.Server.Administration.Systems
 
             ev.PlayersInfo = _playerList.Values.ToList();
 
-            RaiseNetworkEvent(ev, playerSession.ConnectedClient);
+            RaiseNetworkEvent(ev, playerSession.Channel);
         }
 
         private PlayerInfo GetPlayerInfo(SessionData data, ICommonSession? session)
@@ -294,14 +292,6 @@ namespace Content.Server.Administration.Systems
             _panicBunker.MinOverallHours = hours;
             SendPanicBunkerStatusAll();
         }
-
-        // Corvax-VPNGuard-Start
-        private void OnPanicBunkerDenyVpnChanged(bool deny)
-        {
-            _panicBunker.DenyVpn = deny;
-            SendPanicBunkerStatusAll();
-        }
-        // Corvax-VPNGuard-End
 
         private void UpdatePanicBunker()
         {

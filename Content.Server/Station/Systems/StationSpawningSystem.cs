@@ -1,4 +1,4 @@
-﻿using Content.Server.Access.Systems;
+using Content.Server.Access.Systems;
 using Content.Server.DetailExaminable;
 using Content.Server.Humanoid;
 using Content.Server.IdentityManagement;
@@ -182,10 +182,13 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
         if (!InventorySystem.TryGetSlotEntity(entity, "id", out var idUid))
             return;
 
-        if (!EntityManager.TryGetComponent(idUid, out PdaComponent? pdaComponent) || !TryComp<IdCardComponent>(pdaComponent.ContainedId, out var card))
+        var cardId = idUid.Value;
+        if (TryComp<PdaComponent>(idUid, out var pdaComponent) && pdaComponent.ContainedId != null)
+            cardId = pdaComponent.ContainedId.Value;
+
+        if (!TryComp<IdCardComponent>(cardId, out var card))
             return;
 
-        var cardId = pdaComponent.ContainedId.Value;
         _cardSystem.TryChangeFullName(cardId, characterName, card);
         _cardSystem.TryChangeJobTitle(cardId, jobPrototype.LocalizedName, card);
 
@@ -203,7 +206,8 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
         _accessSystem.SetAccessToJob(cardId, jobPrototype, extendedAccess);
 
-        _pdaSystem.SetOwner(idUid.Value, pdaComponent, characterName);
+        if (pdaComponent != null)
+            _pdaSystem.SetOwner(idUid.Value, pdaComponent, characterName);
     }
 
 

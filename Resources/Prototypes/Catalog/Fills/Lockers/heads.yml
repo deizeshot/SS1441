@@ -71,10 +71,6 @@
       - id: WeaponAntiqueLaser
       - id: JetpackCaptainFilled
       - id: MedalCase
-      # Corvax-Resprite-Start
-      - id: ClothingHeadCaptainHat
-      - id: ClothingOuterCoatCaptain
-      # Corvax-Resprite-End
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -101,7 +97,6 @@
       - id: BoxEncryptionKeyService
       - id: ClothingBackpackIan
         prob: 0.5
-      - id: ClothingOuterCoatHOP # Corvax-Resprite
       - id: AccessConfigurator
 
 - type: entity
@@ -238,16 +233,9 @@
     contents:
       - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
-      - id: ClothingHeadHatCapHoS # Corvax-SecFashion
-        prob: 0.5
       - id: ClothingOuterCoatHoSTrench
-      - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
       - id: ClothingOuterHardsuitSecurityRed
       - id: ClothingMaskGasSwat
-#      - id: ClothingShoeSlippersDuck # Corvax-Resprite: Need more space for style
-#        prob: 0.2
-      - id: DrinkVacuumFlask
-        prob: 0.8
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSunglasses
@@ -261,7 +249,6 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
-      - id: BookBusido # Corvax-Books
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -272,10 +259,7 @@
     contents:
       - id: ClothingEyesHudSecurity
       - id: WeaponDisabler
-      - id: ClothingHeadHatCapHoS # Corvax-SecFashion
-        prob: 0.5
       - id: ClothingOuterCoatHoSTrench
-      - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity
       - id: ClothingEyesGlassesSunglasses

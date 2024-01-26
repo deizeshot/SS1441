@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/Content.Server.Database.csproj": {}
+    "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj": {}
   },
   "projects": {
-    "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/Content.Server.Database.csproj": {
+    "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/Content.Server.Database.csproj",
+        "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj",
         "projectName": "Content.Server.Database",
-        "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/Content.Server.Database.csproj",
+        "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj",
         "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-        "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/obj/",
+        "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/obj/",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
-          "/Users/denisvinogradov/Documents/GitHub/space-station-14/NuGet.Config",
+          "/Users/denisvinogradov/Documents/GitHub/space-station-1441/NuGet.Config",
           "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj": {
-                "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj"
+              "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj": {
+                "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj"
               }
             }
           }
@@ -61,11 +61,6 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.0, )",
-              "versionCentrallyManaged": true
-            },
-            "SQLitePCLRaw.bundle_e_sqlite3": {
-              "target": "Package",
-              "version": "[2.1.7, )",
               "versionCentrallyManaged": true
             }
           },
@@ -152,20 +147,25 @@
           },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        }
       }
     },
-    "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj": {
+    "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj",
+        "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj",
         "projectName": "Content.Shared.Database",
-        "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj",
+        "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj",
         "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-        "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/obj/",
+        "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/obj/",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
-          "/Users/denisvinogradov/Documents/GitHub/space-station-14/NuGet.Config",
+          "/Users/denisvinogradov/Documents/GitHub/space-station-1441/NuGet.Config",
           "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -273,6 +273,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }

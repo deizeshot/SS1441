@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zWNtYX7nfoyHP/dC+IwD0YsIaghHlxMF7QlotVWkhjoMwyEtT0B6muSSQA/ljmzX1Nppzsom2k9G4DriCoZQDA==",
+  "dgSpecHash": "V1Nbq2WX18OgM4PLAJeXbNrtfi2tSRxEvmoEjqt5jz2e/HbIJedzpWpoFadfV8+cHwMktJ+30iIrMTEDZgTq5Q==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Server.Database/Content.Server.Database.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Server.Database/Content.Server.Database.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -31,10 +31,7 @@
     "/Users/denisvinogradov/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/npgsql/8.0.0/npgsql.8.0.0.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/npgsql.entityframeworkcore.postgresql/8.0.0/npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
-    "/Users/denisvinogradov/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.7/sqlitepclraw.bundle_e_sqlite3.2.1.7.nupkg.sha512",
-    "/Users/denisvinogradov/.nuget/packages/sqlitepclraw.core/2.1.7/sqlitepclraw.core.2.1.7.nupkg.sha512",
-    "/Users/denisvinogradov/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.7/sqlitepclraw.lib.e_sqlite3.2.1.7.nupkg.sha512",
-    "/Users/denisvinogradov/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.7/sqlitepclraw.provider.e_sqlite3.2.1.7.nupkg.sha512",
+    "/Users/denisvinogradov/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/system.composition/6.0.0/system.composition.6.0.0.nupkg.sha512",

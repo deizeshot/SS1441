@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj": {}
+    "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj": {}
   },
   "projects": {
-    "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj": {
+    "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj",
+        "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj",
         "projectName": "Content.Shared.Database",
-        "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/Content.Shared.Database.csproj",
+        "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/Content.Shared.Database.csproj",
         "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-        "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14/Content.Shared.Database/obj/",
+        "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-1441/Content.Shared.Database/obj/",
         "projectStyle": "PackageReference",
         "centralPackageVersionsManagementEnabled": true,
         "configFilePaths": [
-          "/Users/denisvinogradov/Documents/GitHub/space-station-14/NuGet.Config",
+          "/Users/denisvinogradov/Documents/GitHub/space-station-1441/NuGet.Config",
           "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
@@ -123,6 +123,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
         }
       }
     }

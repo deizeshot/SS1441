@@ -32,14 +32,6 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField("roundStart", required: true)]
     public bool RoundStart { get; private set; } = false;
 
-    // Corvax-Sponsors-Start
-    /// <summary>
-    /// Whether the species is available only for sponsors
-    /// </summary>
-    [DataField("sponsorOnly")]
-    public bool SponsorOnly = false;
-    // Corvax-Sponsors-End
-
     // The below two are to avoid fetching information about the species from the entity
     // prototype.
 
@@ -95,13 +87,8 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField("femaleFirstNames")]
     public string FemaleFirstNames { get; private set; } = "names_first_female";
 
-    // Corvax-LastnameGender-Start: Split lastname field by gender
-    [DataField("maleLastNames")]
-    public string MaleLastNames { get; private set; } = "names_last_male";
-
-    [DataField("femaleLastNames")]
-    public string FemaleLastNames { get; private set; } = "names_last_female";
-    // Corvax-LastnameGender-End
+    [DataField("lastNames")]
+    public string LastNames { get; private set; } = "names_last";
 
     [DataField("naming")]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
