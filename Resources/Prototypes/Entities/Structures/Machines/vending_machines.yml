@@ -69,6 +69,8 @@
   - type: Anchorable
   - type: TypingIndicator
     proto: robot
+  - type: TTS # Corvax-TTS
+    voice: TrainingRobot
   - type: Speech
     speechVerb: Robotic
     speechSounds: Vending
@@ -147,7 +149,7 @@
     pack: AmmoVendAds
   - type: Speech
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/ammo.rsi
+    sprite: Corvax/Structures/Machines/VendingMachines/ammo.rsi
     layers:
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]

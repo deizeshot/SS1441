@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SYjjbqOeX5QrW/Gz9SLJsDamdvGdBj9xxehwx2O+liY7mxxxKcp/q/jelZQEUngWsfxHEnbR+9JYh5VgVmuigw==",
+  "dgSpecHash": "yoLiIFXkdVWRWHp5DTFixnuLGN3BlO247P5W0IYugmM1ShMqi0o3Hwy+GUPr9afH4Znpe1CDCrZcIdckjWn7Jw==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/libsodium/1.0.18.2/libsodium.1.0.18.2.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/linguini.bundle/0.1.3/linguini.bundle.0.1.3.nupkg.sha512",

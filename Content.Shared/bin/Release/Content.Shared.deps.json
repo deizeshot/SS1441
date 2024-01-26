@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Content.Shared/1.0.0": {
         "dependencies": {
+          "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared.Database": "1.0.0",
           "JetBrains.Annotations": "2023.3.0",
           "Robust.Shared": "208.0.0",
@@ -398,6 +399,14 @@
           }
         }
       },
+      "Content.Corvax.Interfaces.Shared/1.0.0": {
+        "dependencies": {
+          "Robust.Shared": "208.0.0"
+        },
+        "runtime": {
+          "Content.Corvax.Interfaces.Shared.dll": {}
+        }
+      },
       "Content.Shared.Database/1.0.0": {
         "runtime": {
           "Content.Shared.Database.dll": {}
@@ -682,6 +691,11 @@
       "sha512": "sha512-X4m1PnFcJwvAj1sCDMntg/eZcX96CJLrWMiYnq41KqhFVZPuw63ZTSxIGqgdCwHWHvCAyTxheELC/VDf1HsU2A==",
       "path": "yamldotnet/13.7.1",
       "hashPath": "yamldotnet.13.7.1.nupkg.sha512"
+    },
+    "Content.Corvax.Interfaces.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Content.Shared.Database/1.0.0": {
       "type": "project",

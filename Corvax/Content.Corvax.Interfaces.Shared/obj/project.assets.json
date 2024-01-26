@@ -1957,14 +1957,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
       "projectName": "Content.Corvax.Interfaces.Shared",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/Corvax/Content.Corvax.Interfaces.Shared/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -1979,8 +1979,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/space-station-14-rus/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
             }
           }
         }

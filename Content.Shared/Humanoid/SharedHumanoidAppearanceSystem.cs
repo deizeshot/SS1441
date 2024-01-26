@@ -2,6 +2,8 @@ using System.Linq;
 using Content.Shared.Decals;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
+using Content.Shared.Corvax.TTS;
+using Content.Shared.Decals;
 using Content.Shared.Preferences;
 using Robust.Shared.GameObjects.Components.Localization;
 using Robust.Shared.Network;
@@ -26,6 +28,15 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     [ValidatePrototypeId<SpeciesPrototype>]
     public const string DefaultSpecies = "Human";
+    // Corvax-TTS-Start
+    public const string DefaultVoice = "Garithos";
+    public static readonly Dictionary<Sex, string> DefaultSexVoice = new()
+    {
+        {Sex.Male, "Garithos"},
+        {Sex.Female, "Maiev"},
+        {Sex.Unsexed, "Myron"},
+    };
+    // Corvax-TTS-End
 
     public override void Initialize()
     {
@@ -320,6 +331,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         EnsureDefaultMarkings(uid, humanoid);
+        SetTTSVoice(uid, profile.Voice, humanoid); // Corvax-TTS
 
         humanoid.Gender = profile.Gender;
         if (TryComp<GrammarComponent>(uid, out var grammar))
@@ -398,4 +410,16 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         if (sync)
             Dirty(humanoid);
     }
+
+    // Corvax-TTS-Start
+    // ReSharper disable once InconsistentNaming
+    public void SetTTSVoice(EntityUid uid, string voiceId, HumanoidAppearanceComponent humanoid)
+    {
+        if (!TryComp<TTSComponent>(uid, out var comp))
+            return;
+
+        humanoid.Voice = voiceId;
+        comp.VoicePrototypeId = voiceId;
+    }
+    // Corvax-TTS-End
 }

@@ -43,6 +43,16 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
+            // Corvax-Start
+            "CorvaxAvrite",
+            "CorvaxDelta",
+			"CorvaxSpectrum",
+            "CorvaxGate",
+            "CorvaxSilly",
+            "CorvaxOutpost",
+            "CorvaxAstra",
+            "CorvaxGelta",
+            // Corvax-End
             "Dev",
             "TestTeg",
             "Fland",

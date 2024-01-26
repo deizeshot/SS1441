@@ -593,6 +593,19 @@
           }
         }
       },
+      "Content.Corvax.Interfaces.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Robust.Shared": "208.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
+        }
+      },
       "Content.Shared.Database/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1179,6 +1192,19 @@
           "lib/net7.0/YamlDotNet.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Content.Corvax.Interfaces.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Robust.Shared": "208.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
         }
       },
       "Content.Shared.Database/1.0.0": {
@@ -1993,6 +2019,11 @@
         "yamldotnet.nuspec"
       ]
     },
+    "Content.Corvax.Interfaces.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
+      "msbuildProject": "../Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
+    },
     "Content.Shared.Database/1.0.0": {
       "type": "project",
       "path": "../Content.Shared.Database/Content.Shared.Database.csproj",
@@ -2021,6 +2052,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Content.Corvax.Interfaces.Shared >= 1.0.0",
       "Content.Shared.Database >= 1.0.0",
       "JetBrains.Annotations >= 2023.3.0",
       "Robust.Shared >= 208.0.0",
@@ -2059,6 +2091,9 @@
           "projectReferences": {
             "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/Content.Shared.Database.csproj": {
               "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/Content.Shared.Database.csproj"
+            },
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
             },
             "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj": {
               "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj"
