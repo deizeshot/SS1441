@@ -12,7 +12,7 @@ enabled = false
 tickrate = 60
 port = 1212
 bindto = "::,0.0.0.0"
-max_connections = 256
+max_connections = 69
 # Automatic port forwarding!
 # Disabled by default because you may not want to do this.
 # upnp = true
@@ -32,7 +32,7 @@ enabled = true
 # connectaddress = "udp://localhost:1212"
 
 [game]
-hostname = "MyServer"
+hostname = "[SS1441] KOKOPOKO"
 
 [console]
 # If this is true, people connecting from this machine (loopback)
