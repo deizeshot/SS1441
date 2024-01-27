@@ -2,7 +2,7 @@
   id: CatEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Felinid]
+  speciesRestriction: [Human]
   sponsorOnly: false
   coloring:
     default:
@@ -26,7 +26,7 @@
   id: CatTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Felinid]
+  speciesRestriction: [Human]
   sponsorOnly: false
   coloring:
     default:
@@ -39,4 +39,4 @@
         - !type:SkinColoring
   sprites:
   - sprite: Mobs/Customization/cat_parts.rsi
-    state: tail_cat_wag
+    state: tail_cat_wag # Corvax-Sponsors

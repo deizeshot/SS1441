@@ -9,8 +9,6 @@ namespace Content.Shared.Humanoid
         Tail,
         Hair,
         FacialHair,
-        Wings,
-        Fluff,
         Chest,
         Head,
         Snout,

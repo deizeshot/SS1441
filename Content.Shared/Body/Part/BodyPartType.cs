@@ -11,8 +11,6 @@ namespace Content.Shared.Body.Part
     {
         Other = 0,
         Torso,
-        Wings,
-        Fluff,
         Head,
         Arm,
         Hand,
