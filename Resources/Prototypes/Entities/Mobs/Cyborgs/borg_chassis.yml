@@ -4,7 +4,8 @@
   components:
   - type: Sprite
     layers:
-    - state: robot
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: robot
     - state: robot_e_r
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
@@ -13,6 +14,12 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: robot
+      Critical:
+        base: gibdown-robot
   - type: BorgChassis
     maxModules: 6
     moduleWhitelist:
@@ -21,6 +28,10 @@
     hasMindState: robot_e
     noMindState: robot_e_r
   - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
     node: cyborg
   - type: Speech
     speechVerb: Robotic
@@ -50,31 +61,31 @@
       movement:
         state: miner
   - type: BorgChassis
-    maxModules: 4
+    maxModules: 8
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleCargo
     hasMindState: miner_e
     noMindState: miner_e_r
-  - type: Construction
-    node: mining
   - type: IntrinsicRadioTransmitter
     channels:
-    - Supply
     - Binary
+    - Supply
     - Common
-    - Science
   - type: ActiveRadio
     channels:
-    - Supply
     - Binary
+    - Supply
     - Common
-    - Science
-  - type: AccessReader
-    access: [["Cargo"], ["Salvage"], ["Command"], ["Research"]]
-  - type: Inventory
-    templateId: borgTall
+  - type: NameIdentifier
+    group: MIN
+  - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
+    node: mining
 
 - type: entity
   id: BorgChassisEngineer
@@ -83,7 +94,8 @@
   components:
   - type: Sprite
     layers:
-    - state: engineer
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: engineer
     - state: engineer_e_r
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
@@ -92,32 +104,42 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: engineer
+      Critical:
+        base: gibdown-engineer
   - type: BorgChassis
-    maxModules: 4
+    maxModules: 8
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleEngineering
     hasMindState: engineer_e
     noMindState: engineer_e_r
-  - type: Construction
-    node: engineer
+  - type: Repairable
+    fuelcost: 25
+    doAfterDelay: 30
+    allowSelfRepair: true
   - type: IntrinsicRadioTransmitter
     channels:
-    - Engineering
     - Binary
+    - Engineering
     - Common
-    - Science
   - type: ActiveRadio
     channels:
-    - Engineering
     - Binary
+    - Engineering
     - Common
-    - Science
-  - type: AccessReader
-    access: [["Engineering"], ["Command"], ["Research"]]
-  - type: Inventory
-    templateId: borgShort
+  - type: NameIdentifier
+    group: ENG
+  - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
+    node: engineer
 
 - type: entity
   id: BorgChassisJanitor
@@ -136,6 +158,12 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: janitor
+      Critical:
+        base: gibdown-janitor
   - type: SpriteMovement
     movementLayers:
       movement:
@@ -144,31 +172,30 @@
       movement:
         state: janitor
   - type: BorgChassis
-    maxModules: 4
+    maxModules: 8
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleJanitor
     hasMindState: janitor_e
     noMindState: janitor_e_r
-  - type: Construction
-    node: janitor
   - type: IntrinsicRadioTransmitter
     channels:
     - Service
-    - Binary
     - Common
-    - Science
   - type: ActiveRadio
     channels:
     - Service
-    - Binary
     - Common
-    - Science
-  - type: AccessReader
-    access: [["Service"], ["Command"], ["Research"]]
-  - type: Inventory
-    templateId: borgShort
+  - type: SolutionScanner
+  - type: NameIdentifier
+    group: JS
+  - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
+    node: janitor
 
 - type: entity
   id: BorgChassisMedical
@@ -187,6 +214,12 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: medical
+      Critical:
+        base: gibdown-medical
   - type: SpriteMovement
     movementLayers:
       movement:
@@ -195,33 +228,37 @@
       movement:
         state: medical
   - type: BorgChassis
-    maxModules: 4
+    maxModules: 8
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleMedical
     hasMindState: medical_e
     noMindState: medical_e_r
-  - type: Construction
-    node: medical
   - type: IntrinsicRadioTransmitter
     channels:
     - Medical
-    - Binary
     - Common
-    - Science
   - type: ActiveRadio
     channels:
     - Medical
-    - Binary
     - Common
-    - Science
-  - type: AccessReader
-    access: [["Medical"], ["Command"], ["Research"]]
-  - type: Inventory
-    templateId: borgDutch
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+  - type: SolutionScanner
+  - type: ShowHealthBars
+    damageContainers: 
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers: 
+    - Biological
+  - type: NameIdentifier
+    group: MBG
+  - type: MovementIgnoreGravity
+  - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
+    node: medical
 
 - type: entity
   id: BorgChassisService
@@ -230,7 +267,8 @@
   components:
   - type: Sprite
     layers:
-    - state: service
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: service
     - state: service_e_r
       map: ["enum.BorgVisualLayers.Light"]
       shader: unshaded
@@ -239,116 +277,37 @@
       shader: unshaded
       map: ["light"]
       visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: service
+      Critical:
+        base: gibdown-service
   - type: BorgChassis
-    maxModules: 4
+    maxModules: 8
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
       - BorgModuleService
     hasMindState: service_e
     noMindState: service_e_r
-  - type: Construction
-    node: service
   - type: IntrinsicRadioTransmitter
     channels:
     - Service
-    - Binary
     - Common
-    - Science
   - type: ActiveRadio
     channels:
     - Service
-    - Binary
     - Common
-    - Science
-  - type: AccessReader
-    access: [["Service"], ["Command"], ["Research"]]
+  - type: ShowHungerIcons
+  - type: ShowThirstIcons
+  - type: NameIdentifier
+    group: ANYA
+  - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
+    node: service
   - type: Inventory
     templateId: borgTall
-
-- type: entity
-  id: BorgChassisSyndicateAssault
-  parent: BaseBorgChassisSyndicate
-  name: syndicate assault cyborg
-  description: A lean, mean killing machine with access to a variety of deadly modules.
-  components:
-    - type: Sprite
-      layers:
-        - state: synd_sec
-        - state: synd_sec_e
-          map: ["enum.BorgVisualLayers.Light"]
-          shader: unshaded
-          visible: false
-        - state: synd_sec_l
-          shader: unshaded
-          map: ["light"]
-          visible: false
-    - type: BorgChassis
-      maxModules: 3
-      moduleWhitelist:
-        tags:
-          - BorgModuleGeneric
-          - BorgModuleSyndicate
-          - BorgModuleSyndicateAssault
-      hasMindState: synd_sec_e
-      noMindState: synd_sec
-    - type: Construction
-      node: syndicateassault
-
-- type: entity
-  id: BorgChassisSyndicateMedical
-  parent: BaseBorgChassisSyndicate
-  name: syndicate medical cyborg
-  description: A combat medical cyborg. Has limited offensive potential, but makes more than up for it with its support capabilities.
-  components:
-    - type: Sprite
-      layers:
-        - state: synd_medical
-        - state: synd_medical_e
-          map: ["enum.BorgVisualLayers.Light"]
-          shader: unshaded
-          visible: false
-        - state: synd_medical_l
-          shader: unshaded
-          map: ["light"]
-          visible: false
-    - type: BorgChassis
-      maxModules: 3
-      moduleWhitelist:
-        tags:
-          - BorgModuleGeneric
-          - BorgModuleMedical
-          - BorgModuleSyndicate
-      hasMindState: synd_medical_e
-      noMindState: synd_medical
-    - type: Construction
-      node: syndicatemedical
-
-- type: entity
-  id: BorgChassisSyndicateSaboteur
-  parent: BaseBorgChassisSyndicate
-  name: syndicate saboteur cyborg
-  description: A streamlined engineering cyborg, equipped with covert modules. Its chameleon projector lets it disguise itself as a Nanotrasen cyborg.
-  components:
-    - type: Sprite
-      layers:
-        - state: synd_engi
-        - state: synd_engi_e
-          map: ["enum.BorgVisualLayers.Light"]
-          shader: unshaded
-          visible: false
-        - state: synd_engi_l
-          shader: unshaded
-          map: ["light"]
-          visible: false
-    - type: BorgChassis
-      maxModules: 3
-      moduleWhitelist:
-        tags:
-          - BorgModuleGeneric
-          - BorgModuleEngineering
-          - BorgModuleSyndicate
-      hasMindState: synd_engi_e
-      noMindState: synd_engi
-    - type: Construction
-      node: syndicatesaboteur

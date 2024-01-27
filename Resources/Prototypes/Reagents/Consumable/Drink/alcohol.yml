@@ -131,7 +131,7 @@
           shouldHave: false
         damage:
           types:
-            Poison: 1
+            Poison: 0.1 # Sirena less damage from Ethanol
       # dwarves take less toxin damage and heal a marginal amount of brute
       - !type:HealthChange
         conditions:
@@ -141,7 +141,7 @@
           type: Dwarf
         damage:
           types:
-            Poison: 0.2
+            Poison: 0.02 # Sirena less damage from Ethanol
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -276,6 +276,17 @@
   physicalDesc: reagent-physical-desc-strong-smelling
   flavor: sake
   color: "#DDDDDD"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/ginvodkaglass.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.3
 
 - type: reagent
   id: Tequila
@@ -431,6 +442,14 @@
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/amasecglass.rsi
     state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.025
 
 - type: reagent
   id: Andalusia
@@ -659,6 +678,14 @@
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/demonsblood.rsi
     state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.025
 
 - type: reagent
   id: DevilsKiss
@@ -671,6 +698,14 @@
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/devilskiss.rsi
     state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.025
 
 - type: reagent
   id: DoctorsDelight

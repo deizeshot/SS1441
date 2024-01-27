@@ -49,9 +49,6 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
   - type: StaticPrice
     price: 10
 
@@ -75,9 +72,6 @@
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
-            - !type:PlaySoundBehavior
-              sound:
-                collection: MetalBreak
         - trigger:
             !type:DamageTrigger
             damage: 50
@@ -92,8 +86,5 @@
                   max: 1
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
-            - !type:PlaySoundBehavior
-              sound:
-                collection: MetalBreak
     - type: StaticPrice
       price: 66

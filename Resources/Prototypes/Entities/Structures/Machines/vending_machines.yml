@@ -52,7 +52,7 @@
         acts: [ "Destruction" ]
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalGlassBreak
+          path: /Audio/Effects/metalbreak.ogg
   - type: ActivatableUI
     key: enum.VendingMachineUiKey.Key
   - type: ActivatableUIRequiresPower
@@ -69,8 +69,6 @@
   - type: Anchorable
   - type: TypingIndicator
     proto: robot
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
   - type: Speech
     speechVerb: Robotic
     speechSounds: Vending

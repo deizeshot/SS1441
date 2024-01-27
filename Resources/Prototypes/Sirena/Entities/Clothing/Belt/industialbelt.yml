@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingBeltChiefEngineer
+  id: ClothingBeltIndustial
+  name: industrial belt
+  description: Belt for large and small instruments, heavy
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Belt/industialenginering.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Belt/industialenginering.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95

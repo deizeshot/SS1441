@@ -8,30 +8,6 @@
     },
     "states": [
         {
-            "name": "pump-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "pump-inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "enforcer-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "enforcer-inhand-right",
-            "directions": 4
-        },
-        {
-            "name": "db-inhand-left",
-            "directions": 4
-        },
-        {
-            "name": "db-inhand-right",
-            "directions": 4
-        },
-        {
             "name": "sawn-inhand-left",
             "directions": 4
         },

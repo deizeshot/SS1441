@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e8ZU3HecLi8ukk8GbWbldo4cDHAq2BhfpYrzZex9JAJFtZFErZiaYLrYScexs4tZVZxbY4dHdtIliUHThBu/CQ==",
+  "dgSpecHash": "RQA6CYdJV2Rx/Ig1BVMVYnckJLP8LFEM9mJ3/U/TcNqACo6+M+02cOD2C9jvXd2+ZKTJ4oLdxKUdmVPuAZE0hQ==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.YAMLLinter/Content.YAMLLinter.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.YAMLLinter/Content.YAMLLinter.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/benchmarkdotnet/0.13.12/benchmarkdotnet.0.13.12.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/benchmarkdotnet.annotations/0.13.12/benchmarkdotnet.annotations.0.13.12.nupkg.sha512",

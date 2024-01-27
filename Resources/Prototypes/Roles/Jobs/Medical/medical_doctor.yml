@@ -4,9 +4,9 @@
   description: job-description-doctor
   playTimeTracker: JobMedicalDoctor
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 7200 #2 hrs # Corvax-RoleTime
+    - !type:RoleTimeRequirement
+      role: JobMedicalIntern
+      time: 7200
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo
@@ -26,6 +26,9 @@
     id: MedicalPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

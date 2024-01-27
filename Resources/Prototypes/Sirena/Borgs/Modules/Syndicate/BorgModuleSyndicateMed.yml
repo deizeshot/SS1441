@@ -1,0 +1,35 @@
+- type: entity
+  id: BaseBorgModuleSyndicateMed
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSyndicateMed
+
+# - type: entity
+  # id: TestModuleSyndicateSirena
+  # parent: [ BaseBorgModuleSyndicateMed, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: syndicate
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: BaseAidModuleSyndicateSirena
+  parent: [ BaseBorgModuleSyndicateMed, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-treatment-syndie
+  - type: ItemBorgModule
+    items:
+    - HandheldHealthAnalyzerUnpowered
+    - RegenerativeMesh10Lingering
+    - MedicatedSuture10Lingering
+    - Bloodpack10Lingering

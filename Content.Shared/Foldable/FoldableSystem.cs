@@ -1,5 +1,4 @@
 using Content.Shared.Buckle;
-using Content.Shared.Buckle.Components;
 using Content.Shared.Storage.Components;
 using Content.Shared.Verbs;
 using Robust.Shared.Containers;
@@ -27,8 +26,6 @@ public sealed class FoldableSystem : EntitySystem
         SubscribeLocalEvent<FoldableComponent, ContainerGettingInsertedAttemptEvent>(OnInsertEvent);
         SubscribeLocalEvent<FoldableComponent, StoreMobInItemContainerAttemptEvent>(OnStoreThisAttempt);
         SubscribeLocalEvent<FoldableComponent, StorageOpenAttemptEvent>(OnFoldableOpenAttempt);
-
-        SubscribeLocalEvent<FoldableComponent, BuckleAttemptEvent>(OnBuckleAttempt);
     }
 
     private void OnGetState(EntityUid uid, FoldableComponent component, ref ComponentGetState args)
@@ -61,12 +58,6 @@ public sealed class FoldableSystem : EntitySystem
         args.Handled = true;
 
         if (comp.IsFolded)
-            args.Cancelled = true;
-    }
-
-    public void OnBuckleAttempt(EntityUid uid, FoldableComponent comp, ref BuckleAttemptEvent args)
-    {
-        if (args.Buckling && comp.IsFolded)
             args.Cancelled = true;
     }
 

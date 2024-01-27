@@ -44,7 +44,7 @@
             max: 5
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
@@ -107,6 +107,6 @@
             max: 10
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

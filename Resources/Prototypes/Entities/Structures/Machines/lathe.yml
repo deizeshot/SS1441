@@ -25,9 +25,6 @@
         !type:DamageTrigger
         damage: 100
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
       - !type:ChangeConstructionNodeBehavior
         node: machineFrame
       - !type:DoActsBehavior
@@ -169,7 +166,6 @@
        - MagazineBoxMagnum
        - MagazineBoxRifle
        - MagazineBoxLightRifle
-       - GrenadeBlast
     emagDynamicRecipes:
       - CartridgePistolRubber
       - CartridgeMagnumRubber
@@ -198,12 +194,6 @@
       - MagazineBoxMagnumUranium
       - MagazineBoxLightRifleUranium
       - MagazineBoxRifleUranium
-      - PowerCageSmall
-      - PowerCageMedium
-      - PowerCageHigh
-      - MagazineGrenadeEmpty
-      - GrenadeEMP
-      - GrenadeFlash
 
 - type: entity
   id: AutolatheHyperConvection
@@ -301,6 +291,9 @@
       - HolofanProjector
       - BluespaceBeaker
       - SyringeBluespace
+      - WeaponCrusher
+      - WeaponCrusherDagger
+      - WeaponCrusherGlaive
       - WeaponForceGun
       - WeaponLaserSvalinn
       - WeaponProtoKineticAccelerator
@@ -314,7 +307,16 @@
       - ClothingEyesGlassesChemical
       - FauxTileAstroGrass
       - FauxTileAstroIce
-      - OreBagOfHolding
+      - QuadraticCapacitorStockPart # Sirena Bluespace add
+      - BluespaceMatterBinStockPart # Sirena Bluespace add
+      - FemtoManipulatorStockPart # Sirena Bluespace add
+      - ClothingBackpackSatchelHolding # Sirena Bluespace add
+      - ClothingBackpackDuffelHolding # Sirena Bluespace add
+      - ClothingBackpackHolding # Sirena Bluespace add
+      - BlueSpaceOreBag # Sirena Bluespace add
+      - ClothingEyesHudOmni # Sirena Bluespace add
+      - HandheldHealthAnalyzerAdvEmpty # Sirena Advanced HandheldHealthAnalyzer
+      - ClothingBeltIndustial #Sirena add tool
       - DeviceQuantumSpinInverter
   - type: EmagLatheRecipes
     emagDynamicRecipes:
@@ -429,12 +431,10 @@
       - WallmountGeneratorElectronics
       - WallmountGeneratorAPUElectronics
       - WallmountSubstationElectronics
-      - PowerCageRechargerCircuitboard
       - EmitterCircuitboard
       - ThrusterMachineCircuitboard
       - GyroscopeMachineCircuitboard
       - MiniGravityGeneratorCircuitboard
-      - ShuttleGunKineticCircuitboard
       - GasRecyclerMachineCircuitboard
       - SeedExtractorMachineCircuitboard
       - AnalysisComputerCircuitboard
@@ -481,16 +481,6 @@
     - MMI
     - PositronicBrain
     - SciFlash
-    - BorgModuleCable
-    - BorgModuleFireExtinguisher
-    - BorgModuleGPS
-    - BorgModuleRadiationDetection
-    - BorgModuleTool
-    - BorgModuleAppraisal
-    - BorgModuleConstruction
-    - BorgModuleService
-    - BorgModuleTreatment
-    - BorgModuleCleaning
     - CyborgEndoskeleton
     - LeftArmBorg
     - RightArmBorg
@@ -525,25 +515,21 @@
     - LeftLegBorgService
     - RightLegBorgService
     - HeadBorgService
-    - TorsoBorgService
+    - TorsoBorgService 
+    - LeftArmBorgScience # Sirena add new robot start
+    - RightArmBorgScience
+    - LeftLegBorgScience
+    - RightLegBorgScience
+    - HeadBorgScience
+    - TorsoBorgScience
+    - LeftArmBorgSec
+    - RightArmBorgSec
+    - LeftLegBorgSec
+    - RightLegBorgSec
+    - HeadBorgSec
+    - TorsoBorgSec # Sirena add new robot end
     dynamicRecipes:
     - ProximitySensor
-    - BorgModuleLightReplacer
-    - BorgModuleAdvancedCleaning
-    - BorgModuleMining
-    - BorgModuleGrapplingGun
-    - BorgModuleGasAnalyzer
-    - BorgModuleAdvancedTool
-    - BorgModuleRCD
-    - BorgModuleArtifact
-    - BorgModuleAnomaly
-    - BorgModuleGardening
-    - BorgModuleHarvesting
-    - BorgModuleMusique
-    - BorgModuleClowning
-    - BorgModuleDiagnosis
-    - BorgModuleDefibrillator
-    - BorgModuleAdvancedTreatment
     - RipleyHarness
     - RipleyLArm
     - RipleyRArm
@@ -563,6 +549,32 @@
     - HamtrLLeg
     - HamtrRLeg
     - VimHarness
+    - AdvAidModuleMedicalSirena # Sirena module reworck start
+    - AnomalyModuleScienceSirena
+    - NonLethalModuleSecuritySirena
+    - CriminalisticModuleSecuritySirena
+    - AdvCleanerModuleJanitorSirena
+    - AdvInstrumentalModuleEngineeringSirena
+    - AdvMiningModuleCargoSirena
+    - AdvResourceModuleEngineeringSirena
+    - AdvStorageModuleGenericSirena
+    - BartenderModuleServiceSirena
+    - BaseAidModuleMedicalSirena
+    - BorgModuleTool
+    - CableModuleEngineeringSirena
+    - CleanerModuleJanitorSirena
+    - ClownModuleServiceSirena
+    - DeliveryModuleCargoSirena
+    - ExplorationModuleScienceSirena
+    - HydroponicsModuleServiceSirena
+    - JetpackModuleGenericSirena
+    - LiquidAidModuleMedicalSirena
+    - MiningModuleCargoSirena
+    - MusicalModuleServiceSirena
+    - RCDModuleEngineeringSirena
+    - ReanimationModuleMedicalSirena
+    - ResourceModuleEngineeringSirena
+    - SearchModuleGenericSirena # Sirena module reworck end
   - type: MaterialStorage
     whitelist:
       tags:
@@ -700,9 +712,6 @@
       - MagazineBoxMagnumRubber
       - MagazineBoxPistolRubber
       - MagazineBoxRifleRubber
-      - MagazineGrenadeEmpty
-      - GrenadeEMP
-      - GrenadeFlash
       - ShellShotgunBeanbag
       - ShellShotgunIncendiary
       - ShellShotgunUranium
@@ -718,13 +727,6 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
-      - PowerCageSmall
-      - PowerCageMedium
-      - PowerCageHigh
-      - ShuttleGunSvalinnMachineGunCircuitboard
-      - ShuttleGunPerforatorCircuitboard
-      - ShuttleGunFriendshipCircuitboard
-      - ShuttleGunDusterCircuitboard
   - type: MaterialStorage
     whitelist:
       tags:
@@ -823,6 +825,7 @@
       - MedkitAdvanced
       - MedkitRadiation
       - MedkitCombat
+      - ClothingEyesHudMedical # Sirena add
     dynamicRecipes:
       - HandheldCrewMonitor
       - ClothingHandsGlovesNitrile
@@ -837,6 +840,8 @@
       - Hemostat
       - BluespaceBeaker
       - SyringeBluespace
+      - BlueSpacePillCanister # Sirena Bluespace add
+      - HandheldHealthAnalyzerAdvEmpty # Sirena Advanced HandheldHealthAnalyzer
       - Jug
       - SyringeCryostasis
   - type: Machine
@@ -1055,6 +1060,8 @@
         - SheetPlasma30
         - SheetPGlass30
         - SheetRPGlass30
+      dynamicRecipes:
+        - BlueSpaceCrystal # Sirena Bluespace add
         - SheetUranium30
         - IngotGold30
         - IngotSilver30
@@ -1073,20 +1080,6 @@
   - type: Lathe
     materialUseMultiplier: 0.75
     timeMultiplier: 0.5
-    staticRecipes:
-      - SheetSteel30
-      - SheetGlass30
-      - SheetRGlass30
-      - SheetPlasma30
-      - SheetPGlass30
-      - SheetRPGlass30
-      - SheetPlasteel30
-      - SheetUranium30
-      - SheetUGlass30
-      - SheetRUGlass30
-      - IngotGold30
-      - IngotSilver30
-      - MaterialBananium10
 
 - type: entity
   parent: BaseLathe

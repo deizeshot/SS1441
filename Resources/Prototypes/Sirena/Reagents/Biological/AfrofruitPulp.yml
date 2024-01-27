@@ -1,0 +1,94 @@
+- type: reagent
+  id: AfrofruitPulp
+  name: reagent-name-afrofruitpulp
+  desc: reagent-desc-afrofruitpulp
+  group: Biological
+  physicalDesc: reagent-physical-desc-afrofruitpulp
+  flavor: afrofruitpulp
+  color: "#FF83F0"
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+        factor: 2.5
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2.5
+    Poison:
+      metabolismRate: 0.05 # 30 / 0.05 = 600 => 10 минут
+      effects:
+      - !type:RmPushMarkup # Удаляет добавленное описание на персонажа
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac
+          max: 1
+# ▬▬▬ Пол: М ▬▬▬ #
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:SexCondition
+          sex: 0
+        - !type:ERPStatusCondition
+          erp: 0 # Отказ от ЕРП
+          shouldHave: false # Подвержены все, кто без отказа
+        visualType: Medium
+        messages: [ aphrodisiac-popupmessage-s1-m-1, aphrodisiac-popupmessage-s1-m-2, aphrodisiac-popupmessage-s1-m-3 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac
+          min: 1
+        - !type:SexCondition
+          sex: 0
+        - !type:ERPStatusCondition
+          erp: 0 # Отказ от ЕРП
+          shouldHave: false # Подвержены все, кто без отказа
+        text: [ aphrodisiac-pushmarkup-s1-m ]
+# ▬▬▬ Пол: Ж ▬▬▬ #
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:SexCondition
+          sex: 1
+        - !type:ERPStatusCondition
+          erp: 0 # Отказ от ЕРП
+          shouldHave: false # Подвержены все, кто без отказа
+        visualType: Medium
+        messages: [ aphrodisiac-popupmessage-s1-fm-1, aphrodisiac-popupmessage-s1-fm-2, aphrodisiac-popupmessage-s1-fm-3 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac
+          min: 1
+        - !type:SexCondition
+          sex: 1
+        - !type:ERPStatusCondition
+          erp: 0 # Отказ от ЕРП
+          shouldHave: false # Подвержены все, кто без отказа
+        text: [ aphrodisiac-pushmarkup-s1-fm ]
+# ▬▬▬ Пол: U ▬▬▬ #
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:SexCondition
+          sex: 2
+        - !type:ERPStatusCondition
+          erp: 0 # Отказ от ЕРП
+          shouldHave: false # Подвержены все, кто без отказа
+        visualType: Medium
+        messages: [ aphrodisiac-popupmessage-s1-u-1, aphrodisiac-popupmessage-s1-u-2, aphrodisiac-popupmessage-s1-u-3 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Aphrodisiac
+          min: 1
+        - !type:SexCondition
+          sex: 2
+        - !type:ERPStatusCondition
+          erp: 0 # Отказ от ЕРП
+          shouldHave: false # Подвержены все, кто без отказа
+        text: [ aphrodisiac-pushmarkup-s1-u ]

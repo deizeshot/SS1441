@@ -1,0 +1,176 @@
+- type: entity
+  id: RegenerativeMesh10Lingering
+  parent: RegenerativeMesh
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 10
+
+- type: entity
+  id: MedicatedSuture10Lingering
+  parent: MedicatedSuture
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 10
+
+- type: entity
+  id: EmergencyMedipenSirena
+  parent: EmergencyMedipen
+  noSpawn: true
+  components:
+  - type: SolutionRegeneration
+    solution: pen
+    generated:
+      reagents:
+      - ReagentId: Epinephrine
+        Quantity: 0.8
+      - ReagentId: TranexamicAcid
+        Quantity: 0.2
+
+- type: entity
+  parent: BaseItem
+  id: DexalinPlusMedipenSirena
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Small
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: DexalinPlus
+          Quantity: 15
+  - type: ExaminableSolution
+    solution: pen
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionRegeneration
+    solution: pen
+    generated:
+      reagents:
+      - ReagentId: DexalinPlus
+        Quantity: 1
+
+- type: entity
+  parent: Hypospray
+  id: HyposprayBicaridineSirena
+  noSpawn: true
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 30
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 30
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: Bicaridine
+        Quantity: 1
+  - type: UseDelay
+    delay: 0.05
+
+- type: entity
+  parent: Hypospray
+  id: HyposprayDexalinPlusSirena
+  noSpawn: true
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 30
+        reagents:
+        - ReagentId: DexalinPlus
+          Quantity: 30
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: DexalinPlus
+        Quantity: 1
+  - type: UseDelay
+    delay: 0.05
+
+- type: entity
+  parent: Hypospray
+  id: HyposprayDermalineSirena
+  noSpawn: true
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 30
+        reagents:
+        - ReagentId: Dermaline
+          Quantity: 30
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: Dermaline
+        Quantity: 1
+  - type: UseDelay
+    delay: 0.05
+
+- type: entity
+  parent: Hypospray
+  id: HyposprayDyloveneSirena
+  noSpawn: true
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 30
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 30
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: Dylovene
+        Quantity: 1
+  - type: UseDelay
+    delay: 0.05
+
+- type: entity
+  parent: Hypospray
+  id: HypospraySigynateSirena
+  noSpawn: true
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 30
+        reagents:
+        - ReagentId: Sigynate
+          Quantity: 30
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: Sigynate
+        Quantity: 1
+  - type: UseDelay
+    delay: 0.05

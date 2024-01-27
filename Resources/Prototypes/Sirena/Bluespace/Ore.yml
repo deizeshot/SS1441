@@ -1,0 +1,135 @@
+# Ore
+- type: ore 
+  id: OreBlueSpaceCrystal
+  oreEntity: BlueSpaceCrystalOre1
+  minOreYield: 1
+  maxOreYield: 1
+
+# Items
+- type: entity
+  parent: OreBase
+  id: BlueSpaceCrystalOre
+  name: crude bluespace crystal
+  description: Very expensive and rare material used for bluespace technology.
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: BlueSpaceCrystalOre
+  - type: Sprite
+    sprite: Sirena/Bluespace/BluespaceCrystal.rsi
+    state: bluespace_crystal_ore
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      BlueSpaceCrystal: 100
+
+- type: entity
+  parent: BlueSpaceCrystalOre
+  id: BlueSpaceCrystalOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+# Cut crystal
+- type: entity 
+  parent: IngotBase
+  id: BlueSpaceCrystalCut
+  name: "bluespace crystal"
+  description: "A perfectly cut bluespace crystal. A very valuable resource"
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      BlueSpaceCrystal: 100
+  - type: Stack
+    stackType: BlueSpaceCrystalCut
+  - type: Sprite
+    sprite: Sirena/Bluespace/BluespaceCrystal.rsi
+    state: bluespace_crystal
+  - type: Item
+    sprite: Sirena/Bluespace/BluespaceCrystal.rsi
+  - type: Extractable
+    grindableSolutionName: bluespacecrystalcut
+  - type: SolutionContainerManager
+    solutions:
+      bluespacecrystalcut:
+        reagents:
+        - ReagentId: BlueSpaceCrystal
+          Quantity: 10
+
+- type: entity
+  parent: BlueSpaceCrystalCut
+  id: BlueSpaceCrystalCut1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+# Ore veins
+- type: entity
+  id: WallRockBluespace
+  parent: WallRock
+  description: An ore vein rich with bluespace ore.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreBlueSpaceCrystal
+    - type: Sprite
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+        - state: bluespace_ore
+
+- type: entity
+  id: WallRockBasaltBluespace
+  parent: WallRockBasalt
+  description: An ore vein rich with bluespace ore.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreBlueSpaceCrystal
+    - type: Sprite
+      layers:
+        - state: rock_wall
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_wall_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_wall_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_wall_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_wall_west
+        - state: bluespace_ore
+
+- type: entity
+  id: WallRockSnowBluespace
+  parent: WallRockSnow
+  description: An ore vein rich with bluespace ore.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: OreBlueSpaceCrystal
+    - type: Sprite
+      layers:
+        - state: rock_snow
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_snow_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_snow_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_snow_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_snow_west
+        - state: bluespace_ore

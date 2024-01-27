@@ -79,7 +79,7 @@
     - toggleautosave
     - toggledecals
 
-- Flags: QUERY
+- Flags: UPLOADFILES
   Commands:
     - uploadfile
     - loadprototype

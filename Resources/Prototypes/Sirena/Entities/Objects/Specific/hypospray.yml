@@ -1,0 +1,22 @@
+- type: entity
+  name: gorlex mediborg hypospray
+  parent: SyndiHypo
+  description: Using reverse engineered designs from NT, Cybersun produced these in limited quantities for Gorlex Marauder mediborgs.
+  id: SyndiMediborgHypo
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/syndihypo.rsi
+    state: hypo
+  - type: Item
+    sprite: Objects/Specific/Medical/syndihypo.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+  - type: UseDelay
+    delay: 0.75

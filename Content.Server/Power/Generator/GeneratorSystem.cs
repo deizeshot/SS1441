@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Content.Server.Audio;
+﻿using Content.Server.Audio;
 using Content.Server.Chemistry.Containers.EntitySystems;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Materials;
@@ -26,8 +25,11 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly PuddleSystem _puddle = default!;
 
+    private EntityQuery<UpgradePowerSupplierComponent> _upgradeQuery;
+
     public override void Initialize()
     {
+        _upgradeQuery = GetEntityQuery<UpgradePowerSupplierComponent>();
 
         UpdatesBefore.Add(typeof(PowerNetSystem));
 
@@ -79,7 +81,7 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
         foreach (var reagentQuantity in solution)
         {
-            if (!entity.Comp.Reagents.ContainsKey(reagentQuantity.Reagent.Prototype))
+            if (reagentQuantity.Reagent.Prototype != entity.Comp.Reagent)
             {
                 args.Clogged = true;
                 return;
@@ -92,23 +94,14 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
             return;
 
-        var totalAvailableReagents = solution.GetTotalPrototypeQuantity(entity.Comp.Reagents.Keys.Select(p => p.Id).ToArray()).Value;
-        if (totalAvailableReagents == 0) return; // Corvax-HOTFIX
-        foreach (var (reagentId, multiplier) in entity.Comp.Reagents)
-        {
-            var availableReagent = solution.GetTotalPrototypeQuantity(reagentId).Value;
-            if (availableReagent == 0) return; // Corvax-HOTFIX
-            var removalPercentage = availableReagent / totalAvailableReagents;
-            var fractionalReagent = entity.Comp.FractionalReagents.GetValueOrDefault(reagentId);
-            var toRemove = RemoveFractionalFuel(
-                ref fractionalReagent,
-                args.FuelUsed * removalPercentage,
-                multiplier * FixedPoint2.Epsilon.Float(),
-                availableReagent);
+        var availableReagent = solution.GetTotalPrototypeQuantity(entity.Comp.Reagent).Value;
+        var toRemove = RemoveFractionalFuel(
+            ref entity.Comp.FractionalReagent,
+            args.FuelUsed,
+            entity.Comp.Multiplier * FixedPoint2.Epsilon.Float(),
+            availableReagent);
 
-            entity.Comp.FractionalReagents[reagentId] = fractionalReagent;
-            _solutionContainer.RemoveReagent(entity.Comp.Solution.Value, reagentId, FixedPoint2.FromCents(toRemove));
-        }
+        _solutionContainer.RemoveReagent(entity.Comp.Solution.Value, entity.Comp.Reagent, FixedPoint2.FromCents(toRemove));
     }
 
     private void ChemicalGetFuel(Entity<ChemicalFuelGeneratorAdapterComponent> entity, ref GeneratorGetFuelEvent args)
@@ -116,19 +109,9 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
             return;
 
-        var totalAvailableReagents = solution.GetTotalPrototypeQuantity(entity.Comp.Reagents.Keys.Select(p => p.Id).ToArray());
-        var fuel = 0f;
-        foreach (var (reagentId, multiplier) in entity.Comp.Reagents)
-        {
-            var availableReagent = solution.GetTotalPrototypeQuantity(reagentId);
-            var percentage = availableReagent / totalAvailableReagents;
-            var fractionalReagent = (availableReagent * percentage).Float();
-
-            var reagent = entity.Comp.FractionalReagents.GetValueOrDefault(reagentId) * FixedPoint2.Epsilon.Float() + fractionalReagent;
-            fuel += reagent * multiplier;
-        }
-
-        args.Fuel = fuel;
+        var availableReagent = solution.GetTotalPrototypeQuantity(entity.Comp.Reagent).Float();
+        var reagent = entity.Comp.FractionalReagent * FixedPoint2.Epsilon.Float() + availableReagent;
+        args.Fuel = reagent * entity.Comp.Multiplier;
     }
 
     private void SolidUseFuel(EntityUid uid, SolidFuelGeneratorAdapterComponent component, GeneratorUseFuel args)
@@ -215,7 +198,9 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
             supplier.Enabled = true;
 
-            supplier.MaxSupply = gen.TargetPower;
+            var upgradeMultiplier = _upgradeQuery.CompOrNull(uid)?.ActualScalar ?? 1f;
+
+            supplier.MaxSupply = gen.TargetPower * upgradeMultiplier;
 
             var eff = 1 / CalcFuelEfficiency(gen.TargetPower, gen.OptimalPower, gen);
             var consumption = gen.OptimalBurnRate * frameTime * eff;

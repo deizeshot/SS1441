@@ -78,6 +78,12 @@
     sprite: Clothing/Shoes/Specific/cult.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Specific/cult.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
 
 - type: entity
   parent: ClothingShoesBase

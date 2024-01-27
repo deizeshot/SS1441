@@ -154,6 +154,7 @@
   - type: FlashImmunity
   - type: EyeProtection
     protectionTime: 5
+  - type: ShowSecurityIcons
   - type: Tag
     tags:
     - HamsterWearable
@@ -161,7 +162,6 @@
   - type: GuideHelp
     guides:
     - Security
-  - type: ShowSecurityIcons
 
 - type: entity
   parent: ClothingEyesBase
@@ -217,3 +217,4 @@
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: FlashImmunity
+  - type: PNV

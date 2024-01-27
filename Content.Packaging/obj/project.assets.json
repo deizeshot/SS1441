@@ -590,11 +590,11 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Packaging/208.0.0": {
+      "Robust.Packaging/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Packaging.dll": {}
@@ -603,7 +603,7 @@
           "bin/placeholder/Robust.Packaging.dll": {}
         }
       },
-      "Robust.Shared/208.0.0": {
+      "Robust.Shared/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -616,7 +616,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -634,7 +634,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/208.0.0": {
+      "Robust.Shared.Maths/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -1168,11 +1168,11 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Packaging/208.0.0": {
+      "Robust.Packaging/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Packaging.dll": {}
@@ -1181,7 +1181,7 @@
           "bin/placeholder/Robust.Packaging.dll": {}
         }
       },
-      "Robust.Shared/208.0.0": {
+      "Robust.Shared/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1194,7 +1194,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -1212,7 +1212,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/208.0.0": {
+      "Robust.Shared.Maths/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -1956,17 +1956,17 @@
       "path": "../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj",
       "msbuildProject": "../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj"
     },
-    "Robust.Packaging/208.0.0": {
+    "Robust.Packaging/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Packaging/Robust.Packaging.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Packaging/Robust.Packaging.csproj"
     },
-    "Robust.Shared/208.0.0": {
+    "Robust.Shared/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Shared/Robust.Shared.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Shared/Robust.Shared.csproj"
     },
-    "Robust.Shared.Maths/208.0.0": {
+    "Robust.Shared.Maths/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
@@ -1979,7 +1979,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Robust.Packaging >= 208.0.0"
+      "Robust.Packaging >= 206.0.0"
     ]
   },
   "packageFolders": {
@@ -1988,15 +1988,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Packaging/Content.Packaging.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Packaging/Content.Packaging.csproj",
       "projectName": "Content.Packaging",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Packaging/Content.Packaging.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Packaging/Content.Packaging.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Packaging/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Packaging/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -2011,8 +2011,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Packaging/Robust.Packaging.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Packaging/Robust.Packaging.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Packaging/Robust.Packaging.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Packaging/Robust.Packaging.csproj"
             }
           }
         }

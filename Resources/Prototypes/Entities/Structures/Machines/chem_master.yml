@@ -18,7 +18,7 @@
     sprite: Structures/Machines/mixer.rsi
     state: mixer_loaded
   - type: ChemMaster
-    pillDosageLimit: 20
+    pillDosageLimit: 50
   - type: Physics
     bodyType: Static
   - type: Fixtures
@@ -38,9 +38,6 @@
         !type:DamageTrigger
         damage: 50
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalGlassBreak
       - !type:ChangeConstructionNodeBehavior
         node: machineFrame
       - !type:DoActsBehavior

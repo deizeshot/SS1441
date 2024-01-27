@@ -1,0 +1,46 @@
+- type: entity
+  id: AdvancedChip
+  parent: BaseItem
+  components:
+  - type: Sprite
+    sprite: Sirena/Objects/advancedchip.rsi
+    state: icon
+
+- type: entity
+  id: HandheldHealthAnalyzerAdvUnpowered
+  parent: HandheldHealthAnalyzerUnpowered
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/healthanalyzer.rsi
+    state: icon-adv
+    layers:
+      - state: icon-adv
+      - state: analyzer
+        shader: unshaded
+        visible: true
+        map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+  - type: HealthAnalyzer
+    isAdvanced: true
+    scanDelay: 0.6
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
+
+- type: entity
+  id: HandheldHealthAnalyzerAdv
+  parent: [ HandheldHealthAnalyzerAdvUnpowered, PowerCellSlotSmallItem]
+  suffix: Powered
+  components:
+  - type: PowerCellDraw
+    drawRate: 0
+    useRate: 15
+  - type: ActivatableUIRequiresPowerCell
+
+- type: entity
+  id: HandheldHealthAnalyzerAdvEmpty
+  parent: HandheldHealthAnalyzerAdv
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default

@@ -13,11 +13,10 @@
     - AnomalyPyroclastic
     - AnomalyGravity
     - AnomalyElectricity
-    - AnomalyFlesh
+    # - AnomalyFlesh # Sirena rework in progress
     - AnomalyBluespace
     - AnomalyIce
     - AnomalyRock
     - AnomalyLiquid
-    - AnomalyFlora
     chance: 1
     offset: 0.15 # not to put it higher. The anomaly sychnronizer looks for anomalies within this radius, and if the radius is higher, the anomaly can be attracted from a neighboring tile.

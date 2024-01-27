@@ -4,9 +4,9 @@
   description: job-description-scientist
   playTimeTracker: JobScientist
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 18000 #5 hrs # Corvax-RoleTime
+    - !type:RoleTimeRequirement
+      role: JobResearchAssistant
+      time: 7200
   startingGear: ScientistGear
   icon: "JobIconScientist"
   supervisors: job-supervisors-rd
@@ -23,6 +23,9 @@
     outerClothing: ClothingOuterCoatRnd
     id: SciencePDA
     ears: ClothingHeadsetScience
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtScientist
   satchel: ClothingBackpackSatchelScienceFilled
   duffelbag: ClothingBackpackDuffelScienceFilled

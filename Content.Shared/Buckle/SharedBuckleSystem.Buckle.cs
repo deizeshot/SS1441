@@ -362,7 +362,8 @@ public abstract partial class SharedBuckleSystem
         ReAttach(buckleUid, strapUid, buckleComp, strapComp);
         SetBuckledTo(buckleUid, strapUid, strapComp, buckleComp);
         // TODO user is currently set to null because if it isn't the sound fails to play in some situations, fix that
-        _audio.PlayPredicted(strapComp.BuckleSound, strapUid, userUid);
+        var audioSourceUid = userUid == buckleUid ? userUid : strapUid;
+        _audio.PlayPredicted(strapComp.BuckleSound, strapUid, audioSourceUid);
 
         var ev = new BuckleChangeEvent(strapUid, buckleUid, true);
         RaiseLocalEvent(ev.BuckledEntity, ref ev);

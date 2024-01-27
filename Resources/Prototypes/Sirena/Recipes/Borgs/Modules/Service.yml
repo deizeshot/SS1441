@@ -1,0 +1,39 @@
+- type: latheRecipe
+  id: HydroponicsModuleServiceSirena
+  result: HydroponicsModuleServiceSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: MusicalModuleServiceSirena
+  result: MusicalModuleServiceSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: ClownModuleServiceSirena
+  result: ClownModuleServiceSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: BartenderModuleServiceSirena
+  result: BartenderModuleServiceSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50

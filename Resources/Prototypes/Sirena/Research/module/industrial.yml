@@ -1,0 +1,46 @@
+﻿# Tier 1
+- type: technology
+  id: BasicRoboticsSystemsSirena
+  name: research-technology-basicroboticssystemssirena
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: engineering
+  discipline: Industrial
+  tier: 1
+  cost: 2500
+  recipeUnlocks:
+  - BorgModuleTool
+  - MiningModuleCargoSirena
+
+# Tier 2
+- type: technology
+  id: TUHMR
+  name: research-technology-tuhmr
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: engineering
+  discipline: Industrial
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - BartenderModuleServiceSirena
+  technologyPrerequisites:
+  - BasicRoboticsSystemsSirena
+
+# Tier 3
+- type: technology
+  id: AdvancedToolsCyborgEngineers
+  name: research-technology-advancedtoolscyborgengineers 
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: engineering
+  discipline: Industrial
+  tier: 3
+  cost: 6000
+  recipeUnlocks:
+  - AdvInstrumentalModuleEngineeringSirena
+  technologyPrerequisites:
+  - BasicRoboticsSystemsSirena
+  - TUHMR
+
+# Tier 4

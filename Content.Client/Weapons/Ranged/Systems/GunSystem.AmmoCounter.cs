@@ -58,11 +58,11 @@ public sealed partial class GunSystem
         RaiseLocalEvent(uid, ev, false);
     }
 
-    protected override void UpdateAmmoCount(EntityUid uid, bool prediction = true)
+    protected override void UpdateAmmoCount(EntityUid uid)
     {
         // Don't use resolves because the method is shared and there's no compref and I'm trying to
         // share as much code as possible
-        if (prediction && !Timing.IsFirstTimePredicted ||
+        if (!Timing.IsFirstTimePredicted ||
             !TryComp<AmmoCounterComponent>(uid, out var clientComp))
         {
             return;
@@ -98,7 +98,7 @@ public sealed partial class GunSystem
         {
             MinHeight = 15;
             HorizontalExpand = true;
-            VerticalAlignment = Control.VAlignment.Center;
+            VerticalAlignment = VAlignment.Center;
             AddChild(new BoxContainer
             {
                 Orientation = BoxContainer.LayoutOrientation.Vertical,
@@ -213,7 +213,7 @@ public sealed partial class GunSystem
         {
             MinHeight = 15;
             HorizontalExpand = true;
-            VerticalAlignment = Control.VAlignment.Center;
+            VerticalAlignment = VAlignment.Center;
 
             AddChild(new BoxContainer
             {
@@ -300,7 +300,7 @@ public sealed partial class GunSystem
         {
             MinHeight = 15;
             HorizontalExpand = true;
-            VerticalAlignment = Control.VAlignment.Center;
+            VerticalAlignment = VAlignment.Center;
 
             AddChild(new BoxContainer
             {
@@ -419,7 +419,7 @@ public sealed partial class GunSystem
         {
             MinHeight = 15;
             HorizontalExpand = true;
-            VerticalAlignment = Control.VAlignment.Center;
+            VerticalAlignment = VAlignment.Center;
             AddChild((_bulletsList = new BoxContainer
             {
                 Orientation = BoxContainer.LayoutOrientation.Horizontal,

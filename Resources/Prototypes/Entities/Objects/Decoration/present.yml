@@ -360,6 +360,8 @@
         orGroup: GiftPool
       - id: RGBStaff
         orGroup: GiftPool
+      - id: PlushieRouter # Sirena Router
+        orGroup: GiftPool
     sound:
       path: /Audio/Effects/unwrap.ogg
 

@@ -28,8 +28,6 @@ namespace Robust.Client.Graphics.Clyde
         private int _verticesPerChunk(MapChunk chunk) => chunk.ChunkSize * chunk.ChunkSize * 4;
         private int _indicesPerChunk(MapChunk chunk) => chunk.ChunkSize * chunk.ChunkSize * GetQuadBatchIndexCount();
 
-        private List<Entity<MapGridComponent>> _grids = new();
-
         private void _drawGrids(Viewport viewport, Box2 worldAABB, Box2Rotated worldBounds, IEye eye)
         {
             var mapId = eye.Position.MapId;
@@ -39,15 +37,14 @@ namespace Robust.Client.Graphics.Clyde
                 mapId = MapId.Nullspace;
             }
 
-            _grids.Clear();
-            _mapManager.FindGridsIntersecting(mapId, worldBounds, ref _grids);
+            var grids = new List<Entity<MapGridComponent>>();
+            _mapManager.FindGridsIntersecting(mapId, worldBounds, ref grids);
 
             var requiresFlush = true;
             GLShaderProgram gridProgram = default!;
             var gridOverlays = GetOverlaysForSpace(OverlaySpace.WorldSpaceGrids);
-            var mapSystem = _entityManager.System<SharedMapSystem>();
 
-            foreach (var mapGrid in _grids)
+            foreach (var mapGrid in grids)
             {
                 if (!_mapChunkData.TryGetValue(mapGrid, out var data))
                 {
@@ -68,7 +65,7 @@ namespace Robust.Client.Graphics.Clyde
 
                 var transform = _entityManager.GetComponent<TransformComponent>(mapGrid);
                 gridProgram.SetUniform(UniIModelMatrix, transform.WorldMatrix);
-                var enumerator = mapSystem.GetMapChunks(mapGrid.Owner, mapGrid.Comp, worldBounds);
+                var enumerator = mapGrid.Comp.GetMapChunks(worldBounds);
 
                 while (enumerator.MoveNext(out var chunk))
                 {

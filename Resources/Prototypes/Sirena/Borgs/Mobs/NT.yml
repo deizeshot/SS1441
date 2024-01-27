@@ -1,0 +1,139 @@
+- type: entity
+  id: BorgChassisERT
+  parent: BaseBorgChassisERT
+  components:
+  - type: Sprite
+    sprite: Sirena/borg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: ERT
+    - state: ERT_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: ERT_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      750: Critical
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: ERT
+      Critical:
+        base: gibdown-ERT
+  - type: BorgChassis
+    maxModules: 8
+    moduleWhitelist:
+      tags: [ BorgModuleCargo, BorgModuleEngineering, BorgModuleERT, BorgModuleGeneric, BorgModuleJanitor, BorgModuleMedical, BorgModuleScience, BorgModuleSecurity, BorgModuleService, BorgModuleService ]
+    hasMindState: ERT_e
+    noMindState: ERT_e_r
+  - type: MovementIgnoreGravity
+  - type: ShowSecurityIcons
+  - type: SolutionScanner 
+  - type: NameIdentifier
+    group: ERT
+
+- type: entity
+  id: BorgChassisScience
+  parent: BaseBorgChassisNT
+  components:
+  - type: Sprite
+    sprite: Sirena/borg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: science
+    - state: science_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: science_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: science
+      Critical:
+        base: gibdown-science
+  - type: BorgChassis
+    maxModules: 8
+    moduleWhitelist:
+      tags: [ BorgModuleGeneric, BorgModuleScience ]
+    hasMindState: science_e
+    noMindState: science_e_r
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Science
+    - Common
+  - type: ActiveRadio
+    channels:
+    - Science
+    - Common
+  - type: MovementIgnoreGravity
+  - type: SolutionScanner
+  - type: NameIdentifier
+    group: SIN
+  - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
+    node: science
+
+- type: entity
+  id: BorgChassisSec
+  parent: BaseBorgChassisNT
+  components:
+  - type: Sprite
+    sprite: Sirena/borg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: Sec
+    - state: Sec_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: Sec_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      750: Critical
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: Sec
+      Critical:
+        base: gibdown-Sec
+  - type: BorgChassis
+    maxModules: 8
+    moduleWhitelist:
+      tags: [ BorgModuleGeneric, BorgModuleSecurity ]
+    hasMindState: Sec_e
+    noMindState: Sec_e_r
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Security
+    - Common
+  - type: ActiveRadio
+    channels:
+    - Security
+    - Common
+  - type: ShowSecurityIcons
+  - type: SiliconLawProvider
+    laws: SecDirectives
+  - type: NameIdentifier
+    group: SEC
+  - type: Construction
+    graph: Cyborg
+    containers:
+    - part-container
+    - cell_slot
+    node: sec

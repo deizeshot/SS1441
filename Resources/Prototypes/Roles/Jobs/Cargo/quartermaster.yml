@@ -4,17 +4,9 @@
   description: job-description-qm
   playTimeTracker: JobQuartermaster
   requirements:
-#    - !type:RoleTimeRequirement
-#      role: JobCargoTechnician
-#      time: 21600 #6 hrs
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 36000 #10 hrs # Corvax-RoleTime
-    - !type:DepartmentTimeRequirement
-      department: Cargo
-      time: 54000 #15 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
+      time: 14400
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
@@ -45,6 +37,9 @@
     ears: ClothingHeadsetQM
     belt: BoxFolderClipboard
     pocket1: AppraisalTool
+    underwearb: ClothingUnderwearBottomBoxersQM # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraQM # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesQM # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtQM
   satchel: ClothingBackpackSatchelQuartermasterFilled
   duffelbag: ClothingBackpackDuffelQuartermasterFilled

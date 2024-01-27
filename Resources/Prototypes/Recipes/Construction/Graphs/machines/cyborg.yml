@@ -152,6 +152,74 @@
       - tool: Screwing
         doAfter: 0.5
 
+    - to: science
+      steps:
+      - assemblyId: science
+        guideString: borg-construction-guide-string
+
+      - component: PowerCell
+        name: power cell
+        store: cell_slot
+        icon:
+          sprite: Objects/Power/power_cells.rsi
+          state: small
+
+      - material: Cable
+        amount: 1
+        doAfter: 1
+        store: part-container
+
+      - component: Flash
+        name: flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
+
+      - component: Flash
+        name: second flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
+
+      - tool: Screwing
+        doAfter: 0.5
+
+    - to: sec
+      steps:
+      - assemblyId: sec
+        guideString: borg-construction-guide-string
+
+      - component: PowerCell
+        name: power cell
+        store: cell_slot
+        icon:
+          sprite: Objects/Power/power_cells.rsi
+          state: small 
+
+      - material: Cable
+        amount: 1
+        doAfter: 1
+        store: part-container
+
+      - component: Flash
+        name: flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
+
+      - component: Flash
+        name: second flash
+        store: part-container
+        icon:
+          sprite: Objects/Weapons/Melee/flash.rsi
+          state: flash
+
+      - tool: Screwing
+        doAfter: 0.5
+
     - to: service
       steps:
       - assemblyId: service
@@ -194,14 +262,20 @@
   - node: medical
     entity: BorgChassisMedical
 
+  - node: science
+    entity: BorgChassisScience
+
+  - node: sec
+    entity: BorgChassisSec
+
   - node: service
     entity: BorgChassisService
 
-  - node: syndicateassault
-    entity: BorgChassisSyndicateAssault
+  # - node: syndicateassault
+    # entity: BorgChassisSyndicateAssault
 
-  - node: syndicatemedical
-    entity: BorgChassisSyndicateMedical
+  # - node: syndicatemedical
+    # entity: BorgChassisSyndicateMedical
 
-  - node: syndicatesaboteur
-    entity: BorgChassisSyndicateSaboteur
+  # - node: syndicatesaboteur
+    # entity: BorgChassisSyndicateSaboteur

@@ -1,6 +1,3 @@
-﻿using System.Collections.Frozen;
-using System.Linq;
-using System.Text.Json.Serialization;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Body.Prototypes;
 using Content.Shared.Chemistry.Components;
@@ -13,9 +10,11 @@ using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
 using Robust.Shared.Utility;
+using System.Collections.Frozen;
+using System.Linq;
+using System.Text.Json.Serialization;
 
 namespace Content.Shared.Chemistry.Reagent
 {
@@ -102,11 +101,24 @@ namespace Content.Shared.Chemistry.Reagent
         [DataField]
         public float Viscosity;
 
-         /// <summary>
+        /// <summary>
         /// Should this reagent work on the dead?
         /// </summary>
         [DataField]
         public bool WorksOnTheDead;
+
+        /// <summary>
+        /// Does the reagnet show up on advanced scanners.
+        /// </summary>
+        [DataField]
+        public bool IsScanned = true;
+
+        /// <summary>
+        /// Necessary to display overdose on advanced scanners.
+        /// null = no overdose
+        /// </summary>
+        [DataField]
+        public float? Overdose;
 
         [DataField(serverOnly: true)]
         public FrozenDictionary<ProtoId<MetabolismGroupPrototype>, ReagentEffectsEntry>? Metabolisms;
@@ -123,8 +135,9 @@ namespace Content.Shared.Chemistry.Reagent
         [DataField]
         public float PricePerUnit;
 
+        // TODO: Pick the highest reagent for sounds and add sticky to cola, juice, etc.
         [DataField]
-        public SoundSpecifier FootstepSound = new SoundCollectionSpecifier("FootstepWater", AudioParams.Default.WithVolume(6));
+        public SoundSpecifier FootstepSound = new SoundCollectionSpecifier("FootstepWater");
 
         public FixedPoint2 ReactionTile(TileRef tile, FixedPoint2 reactVolume)
         {

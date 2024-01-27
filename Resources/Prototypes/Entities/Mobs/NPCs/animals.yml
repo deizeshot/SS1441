@@ -60,6 +60,9 @@
         Piercing: 5
   - type: Puller
     needsHands: true
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
   - type: Tag
     tags:
     - VimPilot
@@ -163,16 +166,9 @@
   - type: Sprite
     drawdepth: Mobs
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: chicken-0
       sprite: Mobs/Animals/chicken.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: chicken-moving-0
-    noMovementLayers:
-      movement:
-        state: chicken-0
   - type: Fixtures
     fixtures:
       fix1:
@@ -205,8 +201,6 @@
     states:
       Alive:
         Base: chicken-0
-      Critical:
-        Base: dead-0
       Dead:
         Base: dead-0
   - type: Butcherable
@@ -234,56 +228,6 @@
   - type: NpcFactionMember
     factions:
     - Passive
-    
-- type: entity
-  parent: MobChicken
-  id: MobChicken1
-  components:
-  - type: Sprite
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: chicken-1
-      sprite: Mobs/Animals/chicken.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: chicken-moving-1
-    noMovementLayers:
-      movement:
-        state: chicken-1
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: chicken-1
-      Critical:
-        Base: dead-1
-      Dead:
-        Base: dead-1
-        
-- type: entity
-  parent: MobChicken
-  id: MobChicken2
-  components:
-  - type: Sprite
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: chicken-2
-      sprite: Mobs/Animals/chicken.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: chicken-moving-2
-    noMovementLayers:
-      movement:
-        state: chicken-2
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: chicken-2
-      Critical:
-        Base: dead-2
-      Dead:
-        Base: dead-2
 
 - type: entity
   id: FoodEggChickenFertilized
@@ -294,8 +238,6 @@
   - type: TimedSpawner
     prototypes:
     - MobChicken
-    - MobChicken1
-    - MobChicken2
     intervalSeconds: 20
     minimumEntitiesSpawned: 1
     maximumEntitiesSpawned: 1
@@ -443,15 +385,8 @@
   - type: Sprite
     sprite: Mobs/Animals/mothroach.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: mothroach
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: mothroach-moving
-    noMovementLayers:
-      movement:
-        state: mothroach
   - type: Item
     size: Normal
   - type: Clothing
@@ -793,16 +728,9 @@
   - type: Sprite
     drawdepth: Mobs
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: crab
       sprite: Mobs/Animals/crab.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: crab-moving
-    noMovementLayers:
-      movement:
-        state: crab
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -1462,15 +1390,8 @@
     drawdepth: SmallMobs
     sprite: Mobs/Animals/mouse.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: mouse-0
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: mouse-moving-0
-    noMovementLayers:
-      movement:
-        state: mouse-0
   - type: Item
     size: Tiny
   - type: Clothing
@@ -1624,15 +1545,8 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: mouse-1
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: mouse-moving-1
-    noMovementLayers:
-      movement:
-        state: mouse-1
   - type: Clothing
     equippedPrefix: 1
   - type: DamageStateVisuals
@@ -1650,15 +1564,8 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: mouse-2
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: mouse-moving-2
-    noMovementLayers:
-      movement:
-        state: mouse-2
   - type: Clothing
     equippedPrefix: 2
   - type: DamageStateVisuals
@@ -1783,16 +1690,9 @@
   - type: Sprite
     drawdepth: Mobs
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: frog
       sprite: Mobs/Animals/frog.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: frog-moving
-    noMovementLayers:
-      movement:
-        state: frog
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2064,16 +1964,9 @@
   - type: Sprite
     drawdepth: Mobs
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: tarantula
       sprite: Mobs/Animals/spider.rsi
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: tarantula-moving
-    noMovementLayers:
-      movement:
-        state: tarantula
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2149,6 +2042,9 @@
       Unsexed: UnisexArachnid
   - type: TypingIndicator
     proto: spider
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
   - type: Tag
     tags:
     - DoorBumpOpener
@@ -2381,15 +2277,8 @@
     drawdepth: Mobs
     sprite: Mobs/Animals/fox.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: fox
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: fox-moving
-    noMovementLayers:
-      movement:
-        state: fox
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -2923,15 +2812,8 @@
     drawdepth: SmallMobs
     sprite: Mobs/Animals/hamster.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: hamster-0
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: hamster-moving-0
-    noMovementLayers:
-      movement:
-        state: hamster-0
   - type: Item
     size: Tiny
   - type: Physics
@@ -3112,4 +2994,3 @@
   - type: NpcFactionMember
     factions:
     - Passive
-

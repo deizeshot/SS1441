@@ -10,7 +10,7 @@
   - type: MovedByPressure
   - type: EmitSoundOnCollide
     sound:
-      collection: WeakHit
+      path: /Audio/Effects/wall_bonk.ogg
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Effects/drop.ogg
@@ -21,7 +21,7 @@
       types:
         Blunt: 5
     soundHit:
-      collection: MetalThud
+      path: /Audio/Effects/hit_kick.ogg
   - type: CollisionWake
   - type: TileFrictionModifier
     modifier: 0.5

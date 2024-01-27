@@ -4,9 +4,9 @@
   description: job-description-detective
   playTimeTracker: JobDetective
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 72000 #20 hrs # Corvax-RoleTime
+  - !type:RoleTimeRequirement
+    role: JobSecurityCadet
+    time: 7200
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos
@@ -33,6 +33,9 @@
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltHolsterFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraSportsAlternative # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtDetective
   satchel: ClothingBackpackSatchelSecurityFilledDetective
   duffelbag: ClothingBackpackDuffelSecurityFilledDetective

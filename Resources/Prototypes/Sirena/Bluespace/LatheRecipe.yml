@@ -1,0 +1,126 @@
+# Ore into cut crystal
+
+- type: latheRecipe 
+  id: BlueSpaceCrystal
+  result: BlueSpaceCrystalCut1
+  completetime: 1
+  materials:
+    BlueSpaceCrystal: 100
+
+# Research
+# Biochemical
+- type: latheRecipe
+  id: BluespaceBeaker
+  result: BluespaceBeaker
+  completetime: 2
+  materials:
+    Steel: 500
+    Plastic: 500
+    Plasma: 150
+    Silver: 50
+
+- type: latheRecipe
+  id: SyringeBluespace
+  result: SyringeBluespace
+  completetime: 2
+  materials:
+    Steel: 100
+    Plastic: 150
+    Glass: 250
+    Plasma: 100
+    Silver: 50
+
+- type: latheRecipe
+  id: BlueSpacePillCanister
+  result: BlueSpacePillCanister
+  completetime: 5
+  materials:
+    Plastic: 300
+    Plasma: 150
+    Silver: 150
+    BlueSpaceCrystal: 100
+
+# Civilianservices
+# No fun
+
+# Experimental
+# T4 Stock Part
+- type: latheRecipe 
+  id: QuadraticCapacitorStockPart
+  result: QuadraticCapacitorStockPart
+  completetime: 4
+  materials:
+    Steel: 300
+    Plastic: 300
+    Plasma: 150
+    Gold: 175
+    BlueSpaceCrystal: 600
+
+- type: latheRecipe
+  id: BluespaceMatterBinStockPart
+  result: BluespaceMatterBinStockPart
+  completetime: 4
+  materials:
+    Steel: 300
+    Plastic: 300
+    Plasma: 150
+    Gold: 175
+    BlueSpaceCrystal: 500
+
+- type: latheRecipe
+  id: FemtoManipulatorStockPart
+  result: FemtoManipulatorStockPart
+  completetime: 4
+  materials:
+    Steel: 300
+    Plastic: 300
+    Plasma: 150
+    Gold: 175
+    BlueSpaceCrystal: 300
+
+# Industrial
+# Mining
+- type: latheRecipe
+  id: BlueSpaceOreBag
+  result: BlueSpaceOreBag
+  completetime: 30
+  materials:
+    Durathread: 300
+    Plasma: 100
+    Gold: 100
+    Silver: 100
+    BlueSpaceCrystal: 2500
+    
+# Backpacs Holding
+- type: latheRecipe
+  id: ClothingBackpackSatchelHolding
+  result: ClothingBackpackSatchelHolding
+  completetime: 30
+  materials:
+    Durathread: 300
+    Plasma: 100
+    Gold: 100
+    Silver: 100
+    BlueSpaceCrystal: 2500
+    
+- type: latheRecipe
+  id: ClothingBackpackDuffelHolding
+  result: ClothingBackpackDuffelHolding
+  completetime: 30
+  materials:
+    Durathread: 300
+    Plasma: 100
+    Gold: 100
+    Silver: 100
+    BlueSpaceCrystal: 2500
+    
+- type: latheRecipe
+  id: ClothingBackpackHolding
+  result: ClothingBackpackHolding
+  completetime: 30
+  materials:
+    Durathread: 300
+    Plasma: 100
+    Gold: 100
+    Silver: 100
+    BlueSpaceCrystal: 2500

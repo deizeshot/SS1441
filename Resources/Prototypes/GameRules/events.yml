@@ -75,16 +75,16 @@
     duration: 1
   - type: ClericalErrorRule
 
-- type: entity
-  parent: BaseGameRule
-  id: ClosetSkeleton
-  noSpawn: true
-  components:
-  - type: StationEvent
-    weight: 10
-    duration: 1
-  - type: RandomEntityStorageSpawnRule
-    prototype: MobSkeletonCloset
+# - type: entity
+  # parent: BaseGameRule
+  # id: ClosetSkeleton
+  # noSpawn: true
+  # components:
+  # - type: StationEvent
+    # weight: 10
+    # duration: 1
+  # - type: RandomEntityStorageSpawnRule
+    # prototype: MobSkeletonCloset
 
 - type: entity
   parent: BaseGameRule
@@ -200,10 +200,6 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    startDelay: 10
     earliestStart: 30
     minimumPlayers: 35
     weight: 5
@@ -226,10 +222,6 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    startDelay: 10
     weight: 5
     duration: 50
   - type: VentCrittersRule
@@ -339,10 +331,7 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    startDelay: 10
+    id: VentCritters
     earliestStart: 15
     minimumPlayers: 15
     weight: 5
@@ -362,10 +351,6 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -385,10 +370,6 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 5
@@ -404,10 +385,6 @@
   noSpawn: true
   components:
   - type: StationEvent
-    startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
-    startDelay: 10
     earliestStart: 20
     minimumPlayers: 15
     weight: 1
@@ -426,6 +403,7 @@
     earliestStart: 50
     weight: 5
     duration: 1
+    minimumPlayers: 25 # Sirena add
   - type: ZombieRule
     minStartDelay: 0 #let them know immediately
     maxStartDelay: 10

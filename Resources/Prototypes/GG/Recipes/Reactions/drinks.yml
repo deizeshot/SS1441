@@ -1,0 +1,211 @@
+- type: reaction
+  id: AppleCider
+  reactants:
+    Beer:
+      amount: 1
+    JuiceApple:
+      amount: 2
+  products:
+    AppleCider: 3
+
+- type: reaction
+  id: Kalua
+  reactants:
+    Lebovsky:
+      amount: 1
+    Rum:
+      amount: 2
+  products:
+    Kalua: 3
+
+- type: reaction
+  id: Kuantro
+  reactants:
+    CoffeeLiqueur:
+      amount: 2
+    JuiceOrange:
+      amount: 1
+  products:
+    Kuantro: 3
+
+- type: reaction
+  id: DevilsKiss
+  reactants:
+    Kalua:
+      amount: 4
+    Blood:
+      amount: 1
+  products:
+    DevilsKiss: 5
+
+- type: reaction
+  id: DemonsBlood
+  reactants:
+    Rum:
+      amount: 1
+    DrGibb:
+      amount: 1
+    Blood:
+      amount: 1
+    SpaceMountainWind:
+      amount: 1
+  products:
+    DemonsBlood: 4
+
+- type: reaction
+  id: Sake
+  reactants:
+    Rice:
+      amount: 2
+    Vodka:
+      amount: 1
+  products:
+    Sake: 3
+
+- type: reaction
+  id: Lebovsky
+  reactants:
+    Sugar:
+      amount: 1
+    Coffee:
+      amount: 1
+    Vodka:
+      amount: 2
+  products:
+    Lebovsky: 4
+
+- type: reaction
+  id: Amasec_GG
+  reactants:
+    Vodka:
+      amount: 5
+    Wine:
+      amount: 5
+    Iron:
+      amount: 1
+  products:
+    Amasec: 11
+
+- type: reaction
+  id: Barefoot_GG
+  reactants:
+    JuiceLemon:
+      amount: 2
+    Vodka:
+      amount: 2
+    Kuantro:
+      amount: 1
+  products:
+    Barefoot: 5
+
+- type: reaction
+  id: BlueHawaii
+  reactants:
+    Rum:
+      amount: 2
+    Vodka:
+      amount: 2
+    BlueCuracao:
+      amount: 1
+  products:
+    BlueHawaii: 5
+
+- type: reaction
+  id: Kamikadze
+  reactants:
+    Sake:
+      amount: 1
+    Beer:
+      amount: 1
+  products:
+    Kamikadze: 2
+
+- type: reaction
+  id: BahamaMama
+  reactants:
+    Rum:
+      amount: 1
+    Grenadine:
+      amount: 1
+    JuiceOrange:
+      amount: 1
+    JuicePineapple:
+      amount: 1
+    Ice:
+      amount: 1
+  products:
+      BahamaMama: 5
+
+- type: reaction
+  id: Silverjack #######
+  reactants:
+    Tequila:
+      amount: 1
+    Ice:
+      amount: 1
+    Beer:
+      amount: 1
+    Sulfur:
+      amount: 1
+  products:
+    Silverjack: 4
+
+- type: reaction
+  id: AtomicPunch
+  reactants:
+    Radium:
+      amount: 1
+    JuiceLime:
+      amount: 1
+    JuicePineapple:
+      amount: 1
+  products:
+    AtomicPunch: 3
+
+- type: reaction
+  id: PinkDrink
+  reactants:
+    Milk:
+      amount: 1
+    Grenadine:
+      amount: 1
+    IceCream:
+      amount: 1
+  products:
+    PinkDrink: 3
+
+- type: reaction
+  id: SapoPicante ################
+  reactants:
+    Gin:
+      amount: 1
+    CapsaicinOil:
+      amount: 1
+    JuiceTomato:
+      amount: 2
+  products:
+    SapoPicante: 4
+
+- type: reaction
+  id: Graveyard
+  reactants:
+    CoffeeLiqueur:
+      amount: 3
+    Ice:
+      amount: 1
+    Cream:
+      amount: 1
+  products:
+    Graveyard: 5
+
+- type: reaction
+  id: BubbleTea
+  reactants:
+    Flour:
+      amount: 1
+    IcedTea:
+      amount: 2
+    Cream:
+      amount: 2
+  products:
+    BubbleTea: 5

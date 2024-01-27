@@ -1,0 +1,57 @@
+- type: reagent
+  id: EmoAplife
+  name: reagent-name-emoaplife
+  desc: reagent-desc-emoaplife
+  group: Narcotics
+  physicalDesc: reagent-physical-desc-emoaplife
+  flavor: emoaplife
+  color: "#535362"
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.3 # 30 / 0.3 = 100 => 1,67 минуты
+      effects:
+# ▬▬▬ Побочка ▬▬▬ #
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: EmoAplife
+          max: 10
+        visualType: MediumCaution
+        messages: 
+        - emoaplife-popupmessage-sideeffect-1
+        - emoaplife-popupmessage-sideeffect-2
+        - emoaplife-popupmessage-sideeffect-3
+        - emoaplife-popupmessage-sideeffect-4
+        probability: 0.05
+# ▬▬▬ Первая стадия ▬▬▬ #
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: EmoAplife
+          max: 10
+        visualType: Medium
+        messages: [ emoaplife-popupmessage-s1 ]
+        probability: 0.2
+# ▬▬▬ Вторая стадия ▬▬▬ #
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: EmoAplife
+          min: 10
+          max: 20
+        visualType: Medium
+        messages: [ emoaplife-popupmessage-s2 ]
+        probability: 0.2
+# ▬▬▬ Третья стадия ▬▬▬ #
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: EmoAplife
+          min: 30
+        visualType: Medium
+        messages: [ emoaplife-popupmessage-s3 ]
+        probability: 0.2

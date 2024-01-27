@@ -24,6 +24,7 @@
   physicalDesc: reagent-physical-desc-translucent
   flavor: medicine
   color: "#3a1d8a"
+  overdose: 20
   metabolisms:
     Medicine:
       effects:
@@ -134,6 +135,7 @@
   physicalDesc: reagent-physical-desc-opaque
   flavor: medicine
   color: "#ffaa00"
+  overdose: 15
   metabolisms:
     Medicine:
       effects:
@@ -217,6 +219,7 @@
   physicalDesc: reagent-physical-desc-translucent
   flavor: medicine
   color: "#215263"
+  overdose: 10
   metabolisms:
     Medicine:
       effects:
@@ -249,6 +252,7 @@
   physicalDesc: reagent-physical-desc-opaque
   flavor: medicine
   color: "#0041a8"
+  overdose: 20
   metabolisms:
     Medicine:
       effects:
@@ -274,6 +278,7 @@
   physicalDesc: reagent-physical-desc-cloudy
   flavor: medicine
   color: "#4da0bd"
+  overdose: 25
   metabolisms:
     Medicine:
       effects:
@@ -307,6 +312,7 @@
   physicalDesc: reagent-physical-desc-odorless
   flavor: medicine
   color: "#d2fffa"
+  overdose: 20
   metabolisms:
     Medicine:
       effects:
@@ -368,6 +374,7 @@
   physicalDesc: reagent-physical-desc-cloudy
   flavor: medicine
   color: "#4cb580"
+  overdose: 30
   metabolisms:
     Medicine:
       effects:
@@ -503,6 +510,7 @@
   physicalDesc: reagent-physical-desc-viscous
   flavor: medicine
   color: "#ff867d"
+  overdose: 30
   metabolisms:
     Medicine:
       effects:
@@ -703,6 +711,7 @@
   physicalDesc: reagent-physical-desc-viscous
   flavor: medicine
   color: "#ba7d7d"
+  overdose: 15
   metabolisms:
     Medicine:
       effects:
@@ -785,6 +794,7 @@
   physicalDesc: reagent-physical-desc-thick-and-grainy
   flavor: medicine
   color: "#520e30"
+  overdose: 30
   metabolisms:
     Medicine:
       effects:
@@ -903,6 +913,7 @@
   physicalDesc: reagent-physical-desc-thick
   flavor: sweet
   color: "#e0a5b9"
+  overdose: 16
   metabolisms:
     Medicine:
       effects:
@@ -1136,25 +1147,3 @@
               Burn: -5
             types:
               Poison: -2
-
-- type: reagent
-  id : Aloxadone
-  name: reagent-name-aloxadone
-  group: Medicine
-  desc: reagent-desc-aloxadone
-  physicalDesc: reagent-physical-desc-soothing
-  flavor: medicine
-  color: "#89f77f"
-  worksOnTheDead: true
-  metabolisms:
-    Medicine:
-      effects:
-      - !type:HealthChange
-        conditions:
-        - !type:Temperature
-          max: 213.0
-        damage:
-          types:
-            Heat: -3.0
-            Shock: -3.0
-            Caustic: -1.0

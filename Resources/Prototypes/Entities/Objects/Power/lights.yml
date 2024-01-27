@@ -6,7 +6,8 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        collection: GlassSmash
+        path:
+          "/Audio/Effects/glass_hit.ogg"
   - type: Sprite
     sprite: Objects/Power/light_bulb.rsi
     layers:
@@ -66,9 +67,6 @@
     materialComposition:
       Glass: 25
   - type: SpaceGarbage
-  - type: WelderRefinable
-    refineResult:
-    - SheetGlass1
 
 - type: entity
   parent: BaseLightbulb
@@ -232,10 +230,6 @@
   - type: Construction
     graph: CyanLight
     node: icon
-  - type: WelderRefinable
-    refineResult:
-    - SheetGlass1
-    - ShardCrystalCyan
 
 - type: entity
   parent: LightTubeCrystalCyan
@@ -252,10 +246,6 @@
   - type: Construction
     graph: BlueLight
     node: icon
-  - type: WelderRefinable
-    refineResult:
-    - SheetGlass1
-    - ShardCrystalBlue
 
 - type: entity
   parent: LightTubeCrystalCyan
@@ -272,10 +262,6 @@
   - type: Construction
     graph: PinkLight
     node: icon
-  - type: WelderRefinable
-    refineResult:
-    - SheetGlass1
-    - ShardCrystalPink
 
 - type: entity
   parent: LightTubeCrystalCyan
@@ -292,10 +278,6 @@
   - type: Construction
     graph: OrangeLight
     node: icon
-  - type: WelderRefinable
-    refineResult:
-    - SheetGlass1
-    - ShardCrystalOrange
 
 - type: entity
   parent: LightTubeCrystalCyan
@@ -312,10 +294,6 @@
   - type: Construction
     graph: RedLight
     node: icon
-  - type: WelderRefinable
-    refineResult:
-    - SheetGlass1
-    - ShardCrystalRed
 
 - type: entity
   parent: LightTubeCrystalCyan
@@ -332,7 +310,3 @@
   - type: Construction
     graph: GreenLight
     node: icon
-  - type: WelderRefinable
-    refineResult:
-    - SheetGlass1
-    - ShardCrystalGreen

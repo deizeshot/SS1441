@@ -1,0 +1,86 @@
+# - type: entity
+  # id: TestModuleEngineeringSirena
+  # parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: engineering
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: AdvInstrumentalModuleEngineeringSirena
+  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: engineering
+    - state: icon-tools-adv
+  - type: ItemBorgModule
+    items:
+    - Omnitool
+    - WelderExperimental
+    - trayScanner
+    - GasAnalyzer
+
+- type: entity
+  id: CableModuleEngineeringSirena
+  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: engineering
+    - state: icon-cables
+  - type: ItemBorgModule
+    items:
+    - CableApcStackLingering10
+    - CableMVStackLingering10
+    - CableHVStackLingering10
+    - Wirecutter
+    - trayScanner
+
+- type: entity
+  id: ResourceModuleEngineeringSirena
+  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: engineering
+    - state: icon-resources
+  - type: ItemBorgModule
+    items:
+    - SheetSteelLingering30
+    - PartRodMetalLingering30
+    - SheetGlassLingering30
+    - SheetRGlassLingering30
+    - SheetPlasticLingering30
+
+- type: entity
+  id: AdvResourceModuleEngineeringSirena
+  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: engineering
+    - state: icon-resources-adv
+  - type: ItemBorgModule
+    items:
+    - SheetPlasteelLingering30
+    - SheetPGlassLingering30
+    - SheetRPGlassLingering30
+    - SheetUGlassLingering30
+    - SheetRUGlassLingering30
+
+- type: entity
+  id: RCDModuleEngineeringSirena
+  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: engineering
+    - state: icon-rcd
+  - type: ItemBorgModule
+    items:
+    - SirenaRCD

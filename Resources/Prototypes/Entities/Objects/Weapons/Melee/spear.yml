@@ -58,7 +58,7 @@
   - type: SolutionContainerManager
     solutions:
       melee:
-        maxVol: 2
+        maxVol: 5
   - type: MeleeChemicalInjector
     solution: melee
   - type: RefillableSolution
@@ -66,11 +66,11 @@
   - type: InjectableSolution
     solution: melee
   - type: SolutionInjectOnCollide
-    transferAmount: 2
+    transferAmount: 5
     fixtureId: "throw-fixture"
     blockSlots: NONE
   - type: SolutionTransfer
-    maxTransferAmount: 2
+    maxTransferAmount: 5
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:

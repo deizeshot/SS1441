@@ -1,0 +1,51 @@
+- type: stationGoal
+  id: StationGoalTechnologies
+  text: station-goal-technologies
+
+- type: stationGoal
+  id: StationGoalSeeds
+  text: station-goal-seeds
+
+- type: stationGoal
+  id: StationGoalChemistry
+  text: station-goal-chemistry
+
+- type: stationGoal
+  id: StationGoalAllDepartments
+  text: station-goal-all-departments
+
+- type: stationGoal
+  id: StationGoalPsychologist
+  text: station-goal-psychologist
+
+- type: stationGoal
+  id: StationGoalShuttle
+  text: station-goal-shuttle
+
+- type: stationGoal
+  id: StationGoalSingularity
+  text: station-goal-singularity
+
+- type: stationGoal
+  id: StationGoalSolarPanels
+  text: station-goal-solar-panels
+
+- type: stationGoal
+  id: StationGoalArtifacts
+  text: station-goal-artifacts
+
+- type: stationGoal
+  id: StationGoalStorage
+  text: station-goal-storage
+
+- type: stationGoal
+  id: StationGoalZOO
+  text: station-goal-zoo
+
+- type: stationGoal
+  id: StationGoalMiningOutpost
+  text: station-goal-mining-outpost
+
+- type: stationGoal
+  id: StationGoalContainment
+  text: station-goal-containment

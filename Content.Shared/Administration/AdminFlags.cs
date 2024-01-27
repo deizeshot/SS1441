@@ -90,6 +90,12 @@
         EditNotes = 1 << 14,
 
         /// <summary>
+        ///		Sirena add. Uploading files to the server. 
+        ///		GMs, learn how to work with git and don't break the server!
+        /// </summary>
+        UploadFiles = 1 << 15,
+
+        /// <summary>
         ///     Dangerous host permissions like scsi.
         /// </summary>
         Host = 1u << 31,

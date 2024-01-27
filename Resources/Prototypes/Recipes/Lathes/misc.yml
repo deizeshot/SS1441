@@ -1,7 +1,6 @@
 - type: latheRecipe
   id: LightTube
   result: LightTube
-  category: Lights
   completetime: 2
   materials:
     Steel: 50
@@ -10,7 +9,6 @@
 - type: latheRecipe
   id: SodiumLightTube
   result: SodiumLightTube
-  category: Lights
   completetime: 2
   materials:
     Steel: 50
@@ -19,7 +17,6 @@
 - type: latheRecipe
   id: ExteriorLightTube
   result: ExteriorLightTube
-  category: Lights
   completetime: 2
   materials:
     Steel: 50
@@ -28,7 +25,6 @@
 - type: latheRecipe
   id: LightBulb
   result: LightBulb
-  category: Lights
   completetime: 2
   materials:
     Steel: 50
@@ -37,7 +33,6 @@
 - type: latheRecipe
   id: GlowstickRed
   result: GlowstickRed
-  category: Lights
   completetime: 2
   materials:
     Plastic: 50
@@ -45,7 +40,6 @@
 - type: latheRecipe
   id: Flare
   result: Flare
-  category: Lights
   completetime: 2
   materials:
     Plastic: 50
@@ -53,7 +47,6 @@
 - type: latheRecipe
   id: FlashlightLantern
   result: EmptyFlashlightLantern
-  category: Lights
   completetime: 2
   materials:
     Steel: 100
@@ -63,7 +56,6 @@
 - type: latheRecipe
   id: FireExtinguisher
   result: FireExtinguisher
-  category: Tools
   completetime: 2
   materials:
     Steel: 200
@@ -96,7 +88,6 @@
 - type: latheRecipe
   id: NodeScanner
   result: NodeScanner
-  category: Tools
   completetime: 2
   materials:
     Steel: 100

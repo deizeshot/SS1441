@@ -1,0 +1,25 @@
+- type: entity
+  name: Gabapentin pill (15u)
+  parent: Pill
+  id: PillGabapentin
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Gabapentin
+          Quantity: 15
+
+- type: entity
+  name: EmoAplife pill (15u)
+  parent: Pill
+  id: PillEmoAplife
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: EmoAplife
+          Quantity: 15

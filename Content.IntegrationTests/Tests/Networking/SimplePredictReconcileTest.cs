@@ -10,7 +10,6 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.GameStates;
 using Robust.Shared.IoC;
 using Robust.Shared.Map;
-using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 
 namespace Content.IntegrationTests.Tests.Networking
@@ -421,7 +420,6 @@ namespace Content.IntegrationTests.Tests.Networking
             }
         }
 
-        [Serializable, NetSerializable]
         public sealed class SetFooMessage : EntityEventArgs
         {
             public SetFooMessage(NetEntity uid, bool newFoo)

@@ -46,7 +46,7 @@
     rules: ghost-role-information-cerberus-rules
   - type: GhostTakeoverAvailable
   - type: MeleeWeapon
-    altDisarm: false
+    angle: 0
     animation: WeaponArcBite
     damage:
       types:

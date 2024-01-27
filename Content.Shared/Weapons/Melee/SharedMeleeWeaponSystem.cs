@@ -516,12 +516,12 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             if (meleeUid == user)
             {
                 AdminLogger.Add(LogType.MeleeHit, LogImpact.Medium,
-                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using their hands and dealt {damageResult.GetTotal():damage} damage");
+                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using their hands and dealt {damageResult.Total:damage} damage");
             }
             else
             {
                 AdminLogger.Add(LogType.MeleeHit, LogImpact.Medium,
-                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.GetTotal():damage} damage");
+                    $"{ToPrettyString(user):actor} melee attacked (light) {ToPrettyString(target.Value):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.Total:damage} damage");
             }
 
             PlayHitSound(target.Value, user, GetHighestDamageSound(modifiedDamage, _protoManager), hitEvent.HitSoundOverride, component.HitSound);
@@ -542,7 +542,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             }
         }
 
-        if (damageResult?.GetTotal() > FixedPoint2.Zero)
+        if (damageResult?.Total > FixedPoint2.Zero)
         {
             DoDamageEffect(targets, user, targetXform);
         }
@@ -670,7 +670,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                 else
                 {
                     AdminLogger.Add(LogType.MeleeHit, LogImpact.Medium,
-                        $"{ToPrettyString(user):actor} melee attacked (heavy) {ToPrettyString(entity):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.GetTotal():damage} damage");
+                        $"{ToPrettyString(user):actor} melee attacked (heavy) {ToPrettyString(entity):subject} using {ToPrettyString(meleeUid):tool} and dealt {damageResult.Total:damage} damage");
                 }
             }
         }
@@ -736,31 +736,26 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         return true;
     }
 
-    public void PlayHitSound(EntityUid target, EntityUid? user, string? type, SoundSpecifier? hitSoundOverride, SoundSpecifier? hitSound)
+    private void PlayHitSound(EntityUid target, EntityUid? user, string? type, SoundSpecifier? hitSoundOverride, SoundSpecifier? hitSound)
     {
         var playedSound = false;
 
-        if (Deleted(target))
-            return;
-
-        // hitting can obv destroy an entity so we play at coords and not following them
-        var coords = Transform(target).Coordinates;
         // Play sound based off of highest damage type.
         if (TryComp<MeleeSoundComponent>(target, out var damageSoundComp))
         {
             if (type == null && damageSoundComp.NoDamageSound != null)
             {
-                Audio.PlayPredicted(damageSoundComp.NoDamageSound, coords, user, AudioParams.Default.WithVariation(DamagePitchVariation));
+                Audio.PlayPredicted(damageSoundComp.NoDamageSound, target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
                 playedSound = true;
             }
             else if (type != null && damageSoundComp.SoundTypes?.TryGetValue(type, out var damageSoundType) == true)
             {
-                Audio.PlayPredicted(damageSoundType, coords, user, AudioParams.Default.WithVariation(DamagePitchVariation));
+                Audio.PlayPredicted(damageSoundType, target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
                 playedSound = true;
             }
             else if (type != null && damageSoundComp.SoundGroups?.TryGetValue(type, out var damageSoundGroup) == true)
             {
-                Audio.PlayPredicted(damageSoundGroup, coords, user, AudioParams.Default.WithVariation(DamagePitchVariation));
+                Audio.PlayPredicted(damageSoundGroup, target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
                 playedSound = true;
             }
         }
@@ -770,12 +765,12 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         {
             if (hitSoundOverride != null)
             {
-                Audio.PlayPredicted(hitSoundOverride, coords, user, AudioParams.Default.WithVariation(DamagePitchVariation));
+                Audio.PlayPredicted(hitSoundOverride, target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
                 playedSound = true;
             }
             else if (hitSound != null)
             {
-                Audio.PlayPredicted(hitSound, coords, user, AudioParams.Default.WithVariation(DamagePitchVariation));
+                Audio.PlayPredicted(hitSound, target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
                 playedSound = true;
             }
         }
@@ -794,10 +789,10 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                     break;
                 // No damage, fallback to tappies
                 case null:
-                    Audio.PlayPredicted(new SoundCollectionSpecifier("WeakHit"), target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
+                    Audio.PlayPredicted(new SoundPathSpecifier("/Audio/Weapons/tap.ogg"), target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
                     break;
                 case "Brute":
-                    Audio.PlayPredicted(new SoundCollectionSpecifier("MetalThud"), target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
+                    Audio.PlayPredicted(new SoundPathSpecifier("/Audio/Weapons/smash.ogg"), target, user, AudioParams.Default.WithVariation(DamagePitchVariation));
                     break;
             }
         }

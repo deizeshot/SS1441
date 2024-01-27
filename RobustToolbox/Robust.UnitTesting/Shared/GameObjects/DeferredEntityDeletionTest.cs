@@ -3,7 +3,6 @@ using NUnit.Framework;
 using Robust.Shared.GameObjects;
 using Robust.Shared.IoC;
 using Robust.Shared.Map;
-using Robust.Shared.Reflection;
 
 namespace Robust.UnitTesting.Shared.GameObjects;
 
@@ -90,7 +89,6 @@ public sealed partial class DeferredEntityDeletionTest : RobustIntegrationTest
         await server.WaitIdleAsync();
     }
 
-    [Reflect(false)]
     private sealed class DeferredDeletionTestSystem : EntitySystem
     {
         public override void Initialize()
@@ -106,7 +104,6 @@ public sealed partial class DeferredEntityDeletionTest : RobustIntegrationTest
         }
     }
 
-    [Reflect(false)]
     private sealed class OtherDeferredDeletionTestSystem : EntitySystem
     {
         public override void Initialize() => SubscribeLocalEvent<OtherDeferredDeletionTestComponent, DeferredDeletionTestEvent>(OnTestEvent);
@@ -120,12 +117,10 @@ public sealed partial class DeferredEntityDeletionTest : RobustIntegrationTest
     }
 
     [RegisterComponent]
-    [Reflect(false)]
     private sealed partial class DeferredDeletionTestComponent : Component
     {
     }
 
-    [Reflect(false)]
     private sealed partial class OtherDeferredDeletionTestComponent : Component
     {
     }

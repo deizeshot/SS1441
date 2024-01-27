@@ -30,8 +30,7 @@ namespace Content.Server.Spawners.EntitySystems
         private void OnRandSpawnMapInit(EntityUid uid, RandomSpawnerComponent component, MapInitEvent args)
         {
             Spawn(uid, component);
-            if (component.DeleteSpawnerAfterSpawn)
-                QueueDel(uid);
+            QueueDel(uid);
         }
 
         private void OnRuleStarted(ref GameRuleStartedEvent args)

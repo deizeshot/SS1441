@@ -27,6 +27,9 @@
     id: ParamedicPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltParamedicFilled
+    underwearb: ClothingUnderwearBottomBoxersSeniorDoctor # Sirena-Underwear
+  underweart: ClothingUnderwearTopSeniorDoctor # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesSeniorDoctor # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtParamedic
   satchel: ClothingBackpackSatchelParamedicFilled
   duffelbag: ClothingBackpackDuffelParamedicFilled

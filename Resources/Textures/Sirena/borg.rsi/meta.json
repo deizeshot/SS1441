@@ -1,0 +1,104 @@
+{
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from OnyxBay - https://github.com/ChaoticOnyx/OnyxBay/blob/596f006f985b58c8532420a538a96d249b733a04/icons/mob/robots.dmi , https://github.com/ChaoticOnyx/OnyxBay/blob/596f006f985b58c8532420a538a96d249b733a04/icons/mob/robots_custom.dmi",
+  "version": 1,
+  "size": { "x": 32, "y": 32 },
+  "states": [
+    {
+      "name": "ERT",
+      "directions": 4
+    },
+    {
+      "name": "ERT_e",
+      "directions": 4,
+      "delays": [
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ]]
+    },
+    {
+      "name": "ERT_e_r",
+      "directions": 4,
+      "delays": [
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ]]
+    },
+    {
+      "name": "ERT_l",
+      "directions": 4,
+      "delays": [
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ],
+        [ 1.8, 0.1, 0.2, 0.1, 0.5, 0.1, 0.1, 0.1, 0.1 ]]
+    },
+	{
+	  "name": "gibdown-ERT"
+	},
+	{
+      "name": "science",
+      "directions": 4
+    },
+    {
+      "name": "science_e",
+      "directions": 4
+    },
+    {
+      "name": "science_e_r",
+      "directions": 4
+    },
+    {
+      "name": "science_l",
+      "directions": 4
+    },
+	{
+	  "name": "gibdown-science"
+	},
+	{
+      "name": "UIC",
+      "directions": 4,
+      "delays": [
+        [ 0.1, 0.1 ],
+        [ 0.1, 0.1 ],
+        [ 0.1, 0.1 ],
+        [ 0.1, 0.1 ]]
+    },
+    {
+      "name": "UIC_e",
+      "directions": 4
+    },
+    {
+      "name": "UIC_e_r",
+      "directions": 4
+    },
+    {
+      "name": "UIC_l",
+      "directions": 4
+    },
+	{
+	  "name": "gibdown-UIC"
+	},
+    {
+      "name": "Sec",
+      "directions": 4
+    },
+    {
+      "name": "Sec_e",
+      "directions": 4
+    },
+    {
+      "name": "Sec_e_r",
+      "directions": 4
+    },
+    {
+      "name": "Sec_l",
+      "directions": 4
+    },
+	{
+	  "name": "gibdown-Sec"
+	}
+  ]
+}

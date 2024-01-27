@@ -18,7 +18,7 @@ namespace Content.Client.ContextMenu.UI
         {
             if (GroupingContextMenuType == 0)
             {
-                var newEntities = entities.GroupBy(e => Identity.Name(e, _entityManager)).ToList();
+                var newEntities = entities.GroupBy(e => Identity.Name(e, _entityManager) + (_entityManager.GetComponent<MetaDataComponent>(e).EntityPrototype?.ID ?? string.Empty)).ToList();
                 return newEntities.Select(grp => grp.ToList()).ToList();
             }
             else

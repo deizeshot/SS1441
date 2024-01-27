@@ -1,0 +1,19 @@
+# Tier 1
+# Tier 2
+- type: technology
+  id: CyborgSecSystems
+  name: research-technology-cyborgsecsystems
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: security
+  discipline: Arsenal
+  tier: 2
+  cost: 3000
+  recipeUnlocks:
+  - NonLethalModuleSecuritySirena
+  - CriminalisticModuleSecuritySirena
+  technologyPrerequisites:
+  - BasicRoboticsSystemsSirena
+
+# Tier 3
+# Tier 4

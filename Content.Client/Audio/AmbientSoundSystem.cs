@@ -28,7 +28,6 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 {
     [Dependency] private readonly AmbientSoundTreeSystem _treeSys = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedTransformSystem _xformSystem = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
@@ -173,7 +172,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
         _targetTime = _gameTiming.CurTime+TimeSpan.FromSeconds(_cooldown);
 
-        var player = _playerManager.LocalEntity;
+        var player = _playerManager.LocalPlayer?.ControlledEntity;
         if (!EntityManager.TryGetComponent(player, out TransformComponent? xform))
         {
             ClearSounds();
@@ -199,13 +198,13 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
         public readonly Dictionary<string, List<(float Importance, AmbientSoundComponent)>> SourceDict = new();
         public readonly Vector2 MapPos;
         public readonly TransformComponent Player;
-        public readonly SharedTransformSystem TransformSystem;
+        public readonly EntityQuery<TransformComponent> Query;
 
-        public QueryState(Vector2 mapPos, TransformComponent player, SharedTransformSystem transformSystem)
+        public QueryState(Vector2 mapPos, TransformComponent player, EntityQuery<TransformComponent> query)
         {
             MapPos = mapPos;
             Player = player;
-            TransformSystem = transformSystem;
+            Query = query;
         }
     }
 
@@ -219,7 +218,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
 
         var delta = xform.ParentUid == state.Player.ParentUid
             ? xform.LocalPosition - state.Player.LocalPosition
-            : state.TransformSystem.GetWorldPosition(xform) - state.MapPos;
+            : xform.WorldPosition - state.MapPos;
 
         var range = delta.Length();
         if (range >= ambientComp.Range)
@@ -245,7 +244,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
     {
         var query = GetEntityQuery<TransformComponent>();
         var metaQuery = GetEntityQuery<MetaDataComponent>();
-        var mapPos = _xformSystem.GetMapCoordinates(playerXform);
+        var mapPos = playerXform.MapPosition;
 
         // Remove out-of-range ambiences
         foreach (var (comp, sound) in _playingSounds)
@@ -259,10 +258,9 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
                 xform.MapID == playerXform.MapID &&
                 !metaQuery.GetComponent(entity).EntityPaused)
             {
-                // TODO: This is just trydistance for coordinates.
                 var distance = (xform.ParentUid == playerXform.ParentUid)
                     ? xform.LocalPosition - playerXform.LocalPosition
-                    : _xformSystem.GetWorldPosition(xform) - mapPos.Position;
+                    : xform.WorldPosition - mapPos.Position;
 
                 if (distance.LengthSquared() < comp.Range * comp.Range)
                     continue;
@@ -279,7 +277,7 @@ public sealed class AmbientSoundSystem : SharedAmbientSoundSystem
             return;
 
         var pos = mapPos.Position;
-        var state = new QueryState(pos, playerXform, _xformSystem);
+        var state = new QueryState(pos, playerXform, query);
         var worldAabb = new Box2(pos - MaxAmbientVector, pos + MaxAmbientVector);
         _treeSys.QueryAabb(ref state, Callback, mapPos.MapId, worldAabb);
 

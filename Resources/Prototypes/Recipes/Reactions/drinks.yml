@@ -193,32 +193,6 @@
     CubaLibre: 3
 
 - type: reaction
-  id: DemonsBlood
-  reactants:
-    Rum:
-      amount: 1
-    Blood:
-      amount: 1
-    DrGibb:
-      amount: 1
-    SpaceMountainWind:
-      amount: 1
-  products:
-    DemonsBlood: 4
-
-- type: reaction
-  id: DevilsKiss
-  reactants:
-    Rum:
-      amount: 1
-    Blood:
-      amount: 1
-    CoffeeLiqueur:
-      amount: 1
-  products:
-    DevilsKiss: 3
-
-- type: reaction
   id: DoctorsDelight
   reactants:
     Cream:

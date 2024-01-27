@@ -73,7 +73,8 @@
   group: Foods
   desc: reagent-desc-ketchunaise
   physicalDesc: reagent-physical-desc-saucey
-  flavor: ketchunaise
+  #I love it when people just make up fake prototypes.
+  #flavor: piquant
   color: "#fba399"
   recognizable: true
 
@@ -83,7 +84,7 @@
   group: Foods
   desc: reagent-desc-mayo
   physicalDesc: reagent-physical-desc-thick
-  flavor: mayonnaise
+  flavor: sour
   color: "#f9f5e5"
   recognizable: true
 
@@ -93,7 +94,7 @@
   group: Foods
   desc: reagent-desc-mustard
   physicalDesc: reagent-physical-desc-thick
-  flavor: mustard
+  flavor: sour
   color: "#ffdb58"
   recognizable: true
 

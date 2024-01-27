@@ -6,15 +6,19 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 36000 #10 hrs # Corvax-RoleTime
+      time: 7200
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce
+  canBeAntag: false # Sirena - NO
   access:
   - Maintenance
   - Engineering
   - External
   - Atmospherics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
 
 - type: startingGear
   id: AtmosphericTechnicianGear
@@ -26,6 +30,9 @@
     id: AtmosPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtAtmos
   satchel: ClothingBackpackSatchelAtmosphericsFilled
   duffelbag: ClothingBackpackDuffelAtmosphericsFilled

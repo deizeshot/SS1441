@@ -1,0 +1,21 @@
+# biological.ftl
+- type: flavor
+  id: aphrodisiac
+  flavorType: Complex
+  description: flavor-base-aphrodisiac
+
+- type: flavor
+  id: afrofruitpulp
+  flavorType: Complex
+  description: flavor-complex-afrofruitpulp
+
+# narcotic.ftl
+- type: flavor
+  id: gabapentin
+  flavorType: Complex
+  description: flavor-complex-gabapentin
+
+- type: flavor
+  id: emoaplife
+  flavorType: Complex
+  description: flavor-complex-emoaplife

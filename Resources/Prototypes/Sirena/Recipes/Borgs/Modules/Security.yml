@@ -1,0 +1,19 @@
+- type: latheRecipe
+  id: NonLethalModuleSecuritySirena
+  result: NonLethalModuleSecuritySirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: CriminalisticModuleSecuritySirena
+  result: CriminalisticModuleSecuritySirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50

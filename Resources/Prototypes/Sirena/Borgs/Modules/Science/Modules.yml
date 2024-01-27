@@ -1,0 +1,50 @@
+- type: entity
+  id: BaseBorgModuleScience
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleScience
+
+# - type: entity
+  # id: TestModuleScienceSirena
+  # parent: [ BaseBorgModuleScience, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: science
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: ExplorationModuleScienceSirena
+  parent: [ BaseBorgModuleScience, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: science
+    - state: icon-exploring
+  - type: ItemBorgModule
+    items:
+    - HandheldGPSBasic
+    - GeigerCounter
+    - GasAnalyzer
+    - trayScanner
+
+- type: entity
+  id: AnomalyModuleScienceSirena
+  parent: [ BaseBorgModuleScience, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: science
+    - state: icon-anomalies
+  - type: ItemBorgModule
+    items:
+    - AnomalyLocatorUnpowered
+    - AnomalyPinpointer
+    - AnomalyScanner
+    - NodeScanner

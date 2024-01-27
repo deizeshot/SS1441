@@ -41,6 +41,9 @@
         - Geiger
         - TrayScanner
         - GasAnalyzer
+        - Signaller
+        - NodeScanner 
+        - AnomalyScanner 
   - type: ItemMapper
     mapLayers:
       drill:
@@ -121,6 +124,9 @@
         - Geiger
         - TrayScanner
         - GasAnalyzer
+        - Signaller  
+        - NodeScanner    
+        - AnomalyScanner  
   - type: ItemMapper
     mapLayers:
       drill:

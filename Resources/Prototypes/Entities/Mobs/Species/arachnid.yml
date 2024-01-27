@@ -44,7 +44,7 @@
       collection: AlienClaw
     damage:
       types:
-        Piercing: 5
+        Pierce: 5
   # Visual & Audio
   - type: DamageVisuals
     damageOverlayGroups:
@@ -81,11 +81,14 @@
         sprite: Mobs/Customization/masking_helpers.rsi
         state: unisex_full
         visible: false
-      - map: ["jumpsuit"]
-      - map: ["enum.HumanoidVisualLayers.LFoot"]
-      - map: ["enum.HumanoidVisualLayers.RFoot"]
-      - map: ["enum.HumanoidVisualLayers.LHand"]
-      - map: ["enum.HumanoidVisualLayers.RHand"]
+      - map: [ "underwearb" ] #Sirena
+      - map: [ "underweart" ] #Sirena
+      - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+      - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+      - map: [ "socks" ] #Sirena
+      - map: [ "jumpsuit" ]
+      - map: [ "enum.HumanoidVisualLayers.LHand" ]
+      - map: [ "enum.HumanoidVisualLayers.RHand" ]
       - map: [ "gloves" ]
       - map: [ "shoes" ]
       - map: [ "ears" ]

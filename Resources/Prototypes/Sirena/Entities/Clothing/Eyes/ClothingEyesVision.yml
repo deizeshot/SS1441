@@ -1,0 +1,64 @@
+- type: entity
+  name: night vision
+  id: ClothingEyesVision
+  parent: BaseItem
+  description: Night vision device. Provides an image of the terrain in low-light conditions.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Eyes/nvg.rsi
+    state: icon
+  - type: Clothing
+    sprite: Sirena/Clothing/Eyes/nvg.rsi
+    quickEquip: true
+    slots: [ Eyes ]
+  - type: Item
+    size: Small
+  - type: PNV
+
+- type: entity
+  name: night vision syndicate
+  id: ClothingEyesVisionSyndicate
+  parent: ClothingEyesVision
+  description: Night vision device. Use by syndicate
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Eyes/nvgsynd.rsi
+    state: icon
+  - type: Clothing
+    sprite: Sirena/Clothing/Eyes/nvgsynd.rsi
+
+- type: entity
+  name: NV Ert
+  id: ClothingEyesVisionERT
+  parent: ClothingEyesVision
+  description: Visor and NightVision in one item.
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: Sirena/Clothing/Eyes/nvgert.rsi
+    state: icon
+  - type: Clothing
+    sprite: Sirena/Clothing/Eyes/nvgert.rsi
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+
+- type: entity
+  name: DeathSquad Visor
+  id: ClothingEyesVisionDeathSquadron
+  parent: ClothingEyesVision
+  description: Death visor
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: Sirena/Clothing/Eyes/squadronvisor.rsi
+    state: icon
+  - type: Clothing
+    sprite: Sirena/Clothing/Eyes/squadronvisor.rsi
+  - type: ShowSecurityIcons
+  - type: FlashImmunity
+  - type: ShowHealthBars
+    damageContainers: 
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers: 
+    - Biological

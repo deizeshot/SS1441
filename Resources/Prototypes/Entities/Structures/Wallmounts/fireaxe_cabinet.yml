@@ -9,7 +9,8 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        collection: GlassSmash
+        path:
+          "/Audio/Effects/glass_hit.ogg"
   - type: WallMount
   - type: Clickable
   - type: InteractionOutline

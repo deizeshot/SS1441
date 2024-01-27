@@ -5,7 +5,7 @@
     "y": 32
   },
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/faf6db214927874c19b8fa8585d26b5d40de1acc",
+"copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/faf6db214927874c19b8fa8585d26b5d40de1acc | service - https://github.com/ss220-space/Paradise/tree/7d14d0d125101ba831ea656a3c20e3517cb646e2 | gibdown by discord user blazeba(437213945200377856)",
   "states": [
     {
       "name": "clown",
@@ -39,6 +39,9 @@
       "name": "engineer_l",
       "directions": 4
     },
+	{
+	  "name": "gibdown-engineer"
+	},
     {
       "name": "janitor",
       "directions": 4
@@ -85,6 +88,9 @@
       "name": "janitor_l",
       "directions": 4
     },
+	{
+	  "name": "gibdown-janitor"
+	},
     {
       "name": "medical",
       "directions": 4,
@@ -149,6 +155,9 @@
       "name": "medical_l",
       "directions": 4
     },
+	{
+	  "name": "gibdown-medical"
+	},
     {
       "name": "miner",
       "directions": 4
@@ -187,6 +196,9 @@
       "name": "miner_l",
       "directions": 4
     },
+	{
+	  "name": "gibdown-miner"
+	},
     {
       "name": "robot",
       "directions": 4
@@ -203,6 +215,9 @@
       "name": "robot_l",
       "directions": 4
     },
+	{
+	  "name": "gibdown-robot"
+	},
     {
       "name": "peace",
       "directions": 4
@@ -236,6 +251,28 @@
       "directions": 4
     },
 	{
+	  "name": "gibdown-service"
+	},
+    {
+      "name": "synd_engineer",
+      "directions": 4
+    },
+    {
+      "name": "synd_engineer_e",
+      "directions": 4
+    },
+    {
+      "name": "synd_engineer_e_r",
+      "directions": 4
+    },
+    {
+      "name": "synd_engineer_l",
+      "directions": 4
+    },
+	{
+	  "name": "gibdown-synd_engineer"
+	},
+    {
       "name": "synd_sec",
       "directions": 4
     },
@@ -244,38 +281,19 @@
       "directions": 4
     },
     {
+      "name": "synd_sec_e_r",
+      "directions": 4
+    },
+    {
       "name": "synd_sec_l",
       "directions": 4
     },
 	{
+	  "name": "gibdown-synd_sec"
+	},
+    {
       "name": "synd_medical",
       "directions": 4
-    },
-    {
-      "name": "synd_medical_l",
-      "directions": 4,
-      "delays": [
-        [
-          0.1,
-          0.2,
-          0.1
-        ],
-        [
-          0.1,
-          0.2,
-          0.1
-        ],
-        [
-          0.1,
-          0.2,
-          0.1
-        ],
-        [
-          0.1,
-          0.2,
-          0.1
-        ]
-      ]
     },
     {
       "name": "synd_medical_e",
@@ -304,17 +322,59 @@
       ]
     },
     {
-          "name": "synd_engi",
-          "directions": 4
-    },
-	{
-      "name": "synd_engi_e",
-      "directions": 4
+      "name": "synd_medical_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
     },
     {
-      "name": "synd_engi_l",
-      "directions": 4
-    }
-
+      "name": "synd_medical_l",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+	{
+	  "name": "gibdown-synd_medical"
+	}
   ]
 }

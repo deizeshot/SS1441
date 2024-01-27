@@ -1,0 +1,30 @@
+- type: guideEntry
+  id: ERPMain
+  name: guide-entry-ERPMain
+  text: "/ServerInfo/Guidebook/Sirena/ERPMain.xml"
+  children:
+  - ERPStatus
+  - 2E
+  - 3E
+  - 4E
+
+- type: guideEntry
+  id: ERPStatus
+  name: guide-entry-ERPStatus
+  text: "/ServerInfo/Guidebook/Sirena/ERPStatus.xml"
+
+- type: guideEntry
+  id: 2E
+  name: guide-entry-2E
+  text: "/ServerInfo/Guidebook/Sirena/2E.xml"
+
+- type: guideEntry
+  id: 3E
+  name: guide-entry-3E
+  text: "/ServerInfo/Guidebook/Sirena/3E.xml"
+
+- type: guideEntry
+  id: 4E
+  name: guide-entry-4E
+  text: "/ServerInfo/Guidebook/Sirena/4E.xml"
+

@@ -2,7 +2,6 @@
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.Power.Generator;
@@ -14,10 +13,11 @@ namespace Content.Server.Power.Generator;
 public sealed partial class ChemicalFuelGeneratorAdapterComponent : Component
 {
     /// <summary>
-    /// A dictionary relating a reagent to accept as fuel to a value to multiply reagent amount by to get fuel amount.
+    /// The reagent to accept as fuel.
     /// </summary>
-    [DataField]
-    public Dictionary<ProtoId<ReagentPrototype>, float> Reagents = new();
+    [DataField("reagent", customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
+    [ViewVariables(VVAccess.ReadWrite)]
+    public string Reagent = "WeldingFuel";
 
     /// <summary>
     /// The name of <see cref="Solution"/>.
@@ -33,9 +33,15 @@ public sealed partial class ChemicalFuelGeneratorAdapterComponent : Component
     public Entity<SolutionComponent>? Solution = null;
 
     /// <summary>
+    /// Value to multiply reagent amount by to get fuel amount.
+    /// </summary>
+    [DataField("multiplier"), ViewVariables(VVAccess.ReadWrite)]
+    public float Multiplier = 1f;
+
+    /// <summary>
     /// How much reagent (can be fractional) is left in the generator.
     /// Stored in units of <see cref="FixedPoint2.Epsilon"/>.
     /// </summary>
-    [DataField]
-    public Dictionary<ProtoId<ReagentPrototype>, float> FractionalReagents = new();
+    [DataField("fractionalReagent"), ViewVariables(VVAccess.ReadWrite)]
+    public float FractionalReagent;
 }

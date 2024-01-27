@@ -254,13 +254,8 @@
   - type: Extractable
     juiceSolution:
       reagents:
-      - ReagentId: JuiceBanana
-        Quantity: 10
       - ReagentId: Nothing
         Quantity: 5
-  - type: Tag
-    tags:
-    - Fruit
 
 - type: entity
   name: banana peel
@@ -383,14 +378,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 12
+        maxVol: 9
         reagents:
         - ReagentId: JuiceCarrot
           Quantity: 5
         - ReagentId: Vitamin
           Quantity: 4
-        - ReagentId: Oculine
-          Quantity: 3
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/carrot.rsi
   - type: Produce
@@ -400,8 +393,6 @@
       reagents:
       - ReagentId: JuiceCarrot
         Quantity: 10
-      - ReagentId: Oculine
-        Quantity: 2
 
 - type: entity
   name: cabbage
@@ -557,7 +548,7 @@
         Quantity: 10
   - type: Tag
     tags:
-    - Fruit
+    - Meat
 
 - type: entity
   name: pineapple
@@ -926,7 +917,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 18
+        maxVol: 14
         reagents:
         - ReagentId: Nutriment
           Quantity: 10
@@ -1602,9 +1593,6 @@
     sprite: Objects/Specific/Hydroponics/bungo.rsi
   - type: Produce
     seedId: bungo
-  - type: Tag
-    tags:
-    - Fruit
 
 - type: entity
   name: bungo pit

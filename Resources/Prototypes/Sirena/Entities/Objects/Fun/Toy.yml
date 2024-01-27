@@ -1,0 +1,66 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieRouter
+  name: router plushie
+  description: A very peculiar stuffed toy resembling a distribution machine. It even has zip-up randomized bluespace portals!
+  components:
+  - type: Sprite
+    state: PlushieRouter
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
+      volume: 12
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
+      volume: 12
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
+      volume: 12
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Sirena/PlushieRouter/router.ogg
+      volume: 12
+
+- type: entity
+  parent: BasePlushie
+  id: PlushAurora
+  name: plush Aurora
+  description: A nice touch plush toy made by Cybersun, which looks like one of the leaders of the fictional Gorlax Marauders. Sometimes it seems as if it moves.
+  components:
+  - type: Sprite
+    state: PlushAurora
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+      
+- type: entity
+  parent: BasePlushie
+  id: PlushRaysoft
+  name: plush Raysoft
+  description: A nice touch plush toy made by Cybersun, which looks like one of the leaders of the fictional Gorlax Marauders. Staring at it, you can't help but notice it shimmering into the background.
+  components:
+  - type: Sprite
+    state: PlushRaysoft
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Machines/Nuke/general_beep.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Machines/Nuke/general_beep.ogg

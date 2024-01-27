@@ -1,0 +1,43 @@
+# - type: entity
+  # id: TestModuleJanitorSirena
+  # parent: [ BaseBorgModuleJanitor, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: janitor
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: CleanerModuleJanitorSirena
+  parent: [ BaseBorgModuleJanitor, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: janitor
+    - state: icon-mop
+  - type: ItemBorgModule
+    items:
+    - MopItem
+    - Bucket
+    - TrashBag
+    - Holoprojector
+    - LightReplacer
+
+- type: entity
+  id: AdvCleanerModuleJanitorSirena
+  parent: [ BaseBorgModuleJanitor, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: janitor
+    - state: icon-mop-adv
+  - type: ItemBorgModule
+    items:
+    - AdvMopItem
+    - SprayBottleSpaceCleanerSirena
+    - TrashBag
+    - Holoprojector
+    - LightReplacer

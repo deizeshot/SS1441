@@ -54,6 +54,9 @@
         Slash: 6
   - type: ReplacementAccent
     accent: genericAggressive
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
 
 - type: entity
   parent: BaseMobFlesh

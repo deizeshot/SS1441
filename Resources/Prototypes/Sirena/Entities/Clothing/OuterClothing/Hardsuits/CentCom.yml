@@ -1,0 +1,51 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitCentCom
+  name: CentCom Hardsuit
+  description: A special spacesuit for central command personnel, lightweight but also durable.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Hardsuits/CentCom/chestplate.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Hardsuits/CentCom/chestplate.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.80
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCentCom
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitCentCom
+  noSpawn: true
+  name: CentCom hardsuit helmet
+  description: Armored hardsuit helmet for centcom personnel.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Hardsuits/CentCom/helmet.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Hardsuits/CentCom/helmet.rsi
+  - type: PointLight
+    color: "#00cfff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.95
+        Heat: 0.9

@@ -12,9 +12,9 @@ namespace Content.Server.Medical.Components
     public sealed partial class HealthAnalyzerComponent : Component
     {
         /// <summary>
-        /// How long it takes to scan someone.
+        /// 	How long it takes to scan someone.
         /// </summary>
-        [DataField("scanDelay")]
+        [DataField("scanDelay"), ViewVariables(VVAccess.ReadWrite)]
         public float ScanDelay = 0.8f;
 
         /// <summary>
@@ -28,5 +28,11 @@ namespace Content.Server.Medical.Components
         /// </summary>
         [DataField("scanningEndSound")]
         public SoundSpecifier? ScanningEndSound;
+		
+		/// <summary>
+		/// 	Indicates whether the scanner can detect reagents in blood
+		/// </summary>
+		[DataField("isAdvanced"), ViewVariables(VVAccess.ReadWrite)]
+		public bool IsAdvanced = false;
     }
 }

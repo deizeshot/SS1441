@@ -4128,7 +4128,7 @@
           }
         }
       },
-      "Avalonia.Base/208.0.0": {
+      "Avalonia.Base/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -4146,9 +4146,9 @@
           "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared": "1.0.0",
           "Nett": "0.15.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Client": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -4163,7 +4163,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Content.Corvax.Interfaces.Shared": "1.0.0",
-          "Robust.Client": "208.0.0"
+          "Robust.Client": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Client.dll": {}
@@ -4177,7 +4177,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Content.Corvax.Interfaces.Shared": "1.0.0",
-          "Robust.Server": "208.0.0"
+          "Robust.Server": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Server.dll": {}
@@ -4190,7 +4190,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
@@ -4210,11 +4210,11 @@
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "NUnit": "4.0.1",
           "NUnit3TestAdapter": "4.5.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
-          "Robust.UnitTesting": "208.0.0"
+          "Robust.Client": "206.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
+          "Robust.UnitTesting": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.IntegrationTests.dll": {}
@@ -4227,7 +4227,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Packaging": "208.0.0"
+          "Robust.Packaging": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Packaging.dll": {}
@@ -4244,9 +4244,9 @@
           "Content.Packaging": "1.0.0",
           "Content.Server.Database": "1.0.0",
           "Content.Shared": "1.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -4277,8 +4277,8 @@
         "dependencies": {
           "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared.Database": "1.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -4308,11 +4308,11 @@
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "NUnit": "4.0.1",
           "NUnit3TestAdapter": "4.5.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
-          "Robust.UnitTesting": "208.0.0"
+          "Robust.Client": "206.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
+          "Robust.UnitTesting": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Tests.dll": {}
@@ -4331,15 +4331,15 @@
           "bin/placeholder/OpenToolkit.GraphicsLibraryFramework.dll": {}
         }
       },
-      "Robust.Benchmarks/208.0.0": {
+      "Robust.Benchmarks/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BenchmarkDotNet": "0.13.12",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.4",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.UnitTesting": "208.0.0"
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.UnitTesting": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Benchmarks.dll": {}
@@ -4348,11 +4348,11 @@
           "bin/placeholder/Robust.Benchmarks.dll": {}
         }
       },
-      "Robust.Client/208.0.0": {
+      "Robust.Client/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Avalonia.Base": "208.0.0",
+          "Avalonia.Base": "206.0.0",
           "DiscordRichPresence": "1.2.1.24",
           "JetBrains.Profiler.Api": "1.4.0",
           "Microsoft.Data.Sqlite.Core": "8.0.0",
@@ -4362,8 +4362,8 @@
           "OpenToolkit.GraphicsLibraryFramework": "1.0.0",
           "Robust.LoaderApi": "1.0.0",
           "Robust.Natives": "0.1.1",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
           "SixLabors.ImageSharp": "3.1.2",
           "SpaceWizards.Lidgren.Network": "1.0.0",
@@ -4401,11 +4401,11 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Packaging/208.0.0": {
+      "Robust.Packaging/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Packaging.dll": {}
@@ -4414,7 +4414,7 @@
           "bin/placeholder/Robust.Packaging.dll": {}
         }
       },
-      "Robust.Server/208.0.0": {
+      "Robust.Server/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -4425,10 +4425,10 @@
           "Microsoft.Extensions.ObjectPool": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
           "Microsoft.NET.ILLink.Tasks": "8.0.0",
-          "Robust.Packaging": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
-          "Robust.Shared.Scripting": "208.0.0",
+          "Robust.Packaging": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
+          "Robust.Shared.Scripting": "206.0.0",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
           "Serilog.Sinks.Loki": "4.0.0-beta3",
           "SharpZstd.Interop": "1.5.2-beta2",
@@ -4446,7 +4446,7 @@
           "bin/placeholder/Robust.Server.dll": {}
         }
       },
-      "Robust.Shared/208.0.0": {
+      "Robust.Shared/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -4459,7 +4459,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -4477,7 +4477,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/208.0.0": {
+      "Robust.Shared.Maths/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -4487,7 +4487,7 @@
           "bin/placeholder/Robust.Shared.Maths.dll": {}
         }
       },
-      "Robust.Shared.Scripting/208.0.0": {
+      "Robust.Shared.Scripting/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -4495,8 +4495,8 @@
           "Microsoft.CodeAnalysis.CSharp.Features": "4.8.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "4.8.0",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.8.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0"
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Shared.Scripting.dll": {}
@@ -4505,7 +4505,7 @@
           "bin/placeholder/Robust.Shared.Scripting.dll": {}
         }
       },
-      "Robust.UnitTesting/208.0.0": {
+      "Robust.UnitTesting/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -4518,10 +4518,10 @@
           "NUnit": "4.0.1",
           "NUnit.Analyzers": "3.10.0",
           "NUnit3TestAdapter": "4.5.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Client": "206.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -8610,7 +8610,7 @@
           }
         }
       },
-      "Avalonia.Base/208.0.0": {
+      "Avalonia.Base/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -8628,9 +8628,9 @@
           "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared": "1.0.0",
           "Nett": "0.15.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Client": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -8645,7 +8645,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Content.Corvax.Interfaces.Shared": "1.0.0",
-          "Robust.Client": "208.0.0"
+          "Robust.Client": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Client.dll": {}
@@ -8659,7 +8659,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Content.Corvax.Interfaces.Shared": "1.0.0",
-          "Robust.Server": "208.0.0"
+          "Robust.Server": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Server.dll": {}
@@ -8672,7 +8672,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
@@ -8692,11 +8692,11 @@
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "NUnit": "4.0.1",
           "NUnit3TestAdapter": "4.5.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
-          "Robust.UnitTesting": "208.0.0"
+          "Robust.Client": "206.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
+          "Robust.UnitTesting": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.IntegrationTests.dll": {}
@@ -8709,7 +8709,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Packaging": "208.0.0"
+          "Robust.Packaging": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Packaging.dll": {}
@@ -8726,9 +8726,9 @@
           "Content.Packaging": "1.0.0",
           "Content.Server.Database": "1.0.0",
           "Content.Shared": "1.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -8759,8 +8759,8 @@
         "dependencies": {
           "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared.Database": "1.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -8790,11 +8790,11 @@
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "NUnit": "4.0.1",
           "NUnit3TestAdapter": "4.5.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
-          "Robust.UnitTesting": "208.0.0"
+          "Robust.Client": "206.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
+          "Robust.UnitTesting": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Tests.dll": {}
@@ -8813,15 +8813,15 @@
           "bin/placeholder/OpenToolkit.GraphicsLibraryFramework.dll": {}
         }
       },
-      "Robust.Benchmarks/208.0.0": {
+      "Robust.Benchmarks/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BenchmarkDotNet": "0.13.12",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.4",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.UnitTesting": "208.0.0"
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.UnitTesting": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Benchmarks.dll": {}
@@ -8830,11 +8830,11 @@
           "bin/placeholder/Robust.Benchmarks.dll": {}
         }
       },
-      "Robust.Client/208.0.0": {
+      "Robust.Client/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Avalonia.Base": "208.0.0",
+          "Avalonia.Base": "206.0.0",
           "DiscordRichPresence": "1.2.1.24",
           "JetBrains.Profiler.Api": "1.4.0",
           "Microsoft.Data.Sqlite.Core": "8.0.0",
@@ -8844,8 +8844,8 @@
           "OpenToolkit.GraphicsLibraryFramework": "1.0.0",
           "Robust.LoaderApi": "1.0.0",
           "Robust.Natives": "0.1.1",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
           "SixLabors.ImageSharp": "3.1.2",
           "SpaceWizards.Lidgren.Network": "1.0.0",
@@ -8883,11 +8883,11 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Packaging/208.0.0": {
+      "Robust.Packaging/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Packaging.dll": {}
@@ -8896,7 +8896,7 @@
           "bin/placeholder/Robust.Packaging.dll": {}
         }
       },
-      "Robust.Server/208.0.0": {
+      "Robust.Server/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -8907,10 +8907,10 @@
           "Microsoft.Extensions.ObjectPool": "8.0.0",
           "Microsoft.Extensions.Primitives": "8.0.0",
           "Microsoft.NET.ILLink.Tasks": "8.0.0",
-          "Robust.Packaging": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
-          "Robust.Shared.Scripting": "208.0.0",
+          "Robust.Packaging": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
+          "Robust.Shared.Scripting": "206.0.0",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
           "Serilog.Sinks.Loki": "4.0.0-beta3",
           "SharpZstd.Interop": "1.5.2-beta2",
@@ -8928,7 +8928,7 @@
           "bin/placeholder/Robust.Server.dll": {}
         }
       },
-      "Robust.Shared/208.0.0": {
+      "Robust.Shared/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -8941,7 +8941,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -8959,7 +8959,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/208.0.0": {
+      "Robust.Shared.Maths/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -8969,7 +8969,7 @@
           "bin/placeholder/Robust.Shared.Maths.dll": {}
         }
       },
-      "Robust.Shared.Scripting/208.0.0": {
+      "Robust.Shared.Scripting/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -8977,8 +8977,8 @@
           "Microsoft.CodeAnalysis.CSharp.Features": "4.8.0",
           "Microsoft.CodeAnalysis.CSharp.Scripting": "4.8.0",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.8.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0"
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Robust.Shared.Scripting.dll": {}
@@ -8987,7 +8987,7 @@
           "bin/placeholder/Robust.Shared.Scripting.dll": {}
         }
       },
-      "Robust.UnitTesting/208.0.0": {
+      "Robust.UnitTesting/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -9000,10 +9000,10 @@
           "NUnit": "4.0.1",
           "NUnit.Analyzers": "3.10.0",
           "NUnit3TestAdapter": "4.5.0",
-          "Robust.Client": "208.0.0",
-          "Robust.Server": "208.0.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Client": "206.0.0",
+          "Robust.Server": "206.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0"
         },
         "compile": {
@@ -17128,7 +17128,7 @@
         "yamldotnet.nuspec"
       ]
     },
-    "Avalonia.Base/208.0.0": {
+    "Avalonia.Base/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Avalonia.Base/Avalonia.Base.csproj",
       "msbuildProject": "../RobustToolbox/Avalonia.Base/Avalonia.Base.csproj"
@@ -17193,12 +17193,12 @@
       "path": "../RobustToolbox/OpenToolkit.GraphicsLibraryFramework/OpenToolkit.GraphicsLibraryFramework.csproj",
       "msbuildProject": "../RobustToolbox/OpenToolkit.GraphicsLibraryFramework/OpenToolkit.GraphicsLibraryFramework.csproj"
     },
-    "Robust.Benchmarks/208.0.0": {
+    "Robust.Benchmarks/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Benchmarks/Robust.Benchmarks.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Benchmarks/Robust.Benchmarks.csproj"
     },
-    "Robust.Client/208.0.0": {
+    "Robust.Client/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Client/Robust.Client.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Client/Robust.Client.csproj"
@@ -17213,32 +17213,32 @@
       "path": "../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj",
       "msbuildProject": "../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj"
     },
-    "Robust.Packaging/208.0.0": {
+    "Robust.Packaging/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Packaging/Robust.Packaging.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Packaging/Robust.Packaging.csproj"
     },
-    "Robust.Server/208.0.0": {
+    "Robust.Server/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Server/Robust.Server.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Server/Robust.Server.csproj"
     },
-    "Robust.Shared/208.0.0": {
+    "Robust.Shared/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Shared/Robust.Shared.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Shared/Robust.Shared.csproj"
     },
-    "Robust.Shared.Maths/208.0.0": {
+    "Robust.Shared.Maths/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
     },
-    "Robust.Shared.Scripting/208.0.0": {
+    "Robust.Shared.Scripting/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Shared.Scripting/Robust.Shared.Scripting.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Shared.Scripting/Robust.Shared.Scripting.csproj"
     },
-    "Robust.UnitTesting/208.0.0": {
+    "Robust.UnitTesting/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj",
       "msbuildProject": "../RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj"
@@ -17257,11 +17257,11 @@
       "Content.Server >= 1.0.0",
       "Content.Shared >= 1.0.0",
       "Content.Tests >= 1.0.0",
-      "Robust.Benchmarks >= 208.0.0",
-      "Robust.Client >= 208.0.0",
-      "Robust.Server >= 208.0.0",
-      "Robust.Shared >= 208.0.0",
-      "Robust.Shared.Maths >= 208.0.0"
+      "Robust.Benchmarks >= 206.0.0",
+      "Robust.Client >= 206.0.0",
+      "Robust.Server >= 206.0.0",
+      "Robust.Shared >= 206.0.0",
+      "Robust.Shared.Maths >= 206.0.0"
     ]
   },
   "packageFolders": {
@@ -17270,15 +17270,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Benchmarks/Content.Benchmarks.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Benchmarks/Content.Benchmarks.csproj",
       "projectName": "Content.Benchmarks",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Benchmarks/Content.Benchmarks.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Benchmarks/Content.Benchmarks.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Benchmarks/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Benchmarks/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -17293,35 +17293,35 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Client/Content.Client.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Client/Content.Client.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Client/Content.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Client/Content.Client.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.IntegrationTests/Content.IntegrationTests.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.IntegrationTests/Content.IntegrationTests.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.IntegrationTests/Content.IntegrationTests.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.IntegrationTests/Content.IntegrationTests.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Server/Content.Server.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Server/Content.Server.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared/Content.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared/Content.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/Content.Tests.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/Content.Tests.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tests/Content.Tests.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tests/Content.Tests.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Benchmarks/Robust.Benchmarks.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Benchmarks/Robust.Benchmarks.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Benchmarks/Robust.Benchmarks.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Benchmarks/Robust.Benchmarks.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Client/Robust.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Client/Robust.Client.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Server/Robust.Server.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Server/Robust.Server.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
             }
           }
         }

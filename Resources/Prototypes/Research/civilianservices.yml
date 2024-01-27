@@ -10,8 +10,8 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  - BorgModuleGardening
-  - BorgModuleHarvesting
+  # - BorgModuleGardening  # Sirena module reworck
+  # - BorgModuleHarvesting  # Sirena module reworck
   - SeedExtractorMachineCircuitboard
   - HydroponicsTrayMachineCircuitboard
 
@@ -81,8 +81,8 @@
   recipeUnlocks:
     - ComputerTelevisionCircuitboard
     - SynthesizerInstrument
-    - BorgModuleMusique
-    - BorgModuleClowning
+    # - BorgModuleMusique
+    # - BorgModuleClowning
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
 
@@ -112,7 +112,6 @@
   - FatExtractorMachineCircuitboard
 
 # Tier 2
-
 - type: technology
   id: FauxAstroTiles
   name: research-technology-faux-astro-tiles

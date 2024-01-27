@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateEliteHardsuitBundle # this ID is just horribly long 
+  name: syndicate elite hardsuit bundle
+  description: "Contains the Syndicate's elite hardsuit. Burning plasma not included."
+  components:
+  - type: Storage
+    grid:
+    - 0,0,9,7
+    maxItemSize: Ginormous
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitSyndieElite
+      - id: ClothingMaskGasSyndicate
+      - id: ClothingHandsGlovesCombat

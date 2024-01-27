@@ -29,7 +29,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: WoodDestroy
+          path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank:

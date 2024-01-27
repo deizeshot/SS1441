@@ -1,0 +1,28 @@
+- type: reagent
+  id: PolymorphDebugReagent
+  name: Debug
+  group: Medicine
+  desc: reagent-desc-dexalin
+  physicalDesc: "Reagent for familiarization with new Conditions and Effects"
+  flavor: medicine
+  color: "#0041a8"
+  metaboliseWhileDead: true
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:Revival
+        changeDamage:
+          types:
+            Asphyxiation: -40
+      # - !type:AdjustReagent
+        # conditions:
+        # - !type:SexCondition #Checking for sex
+          # sex: 2 #0 - Male, 1 - Female, 2 - Unsexed.
+          # shouldHave: true
+        # - !type:ERPStatusCondition #Checking for ERP status
+          # erp: 2 #0 - NO, 1 - Half, 2 - Full.
+          # shouldHave: false
+        # reagent: PolymorphDebugReagent
+        # amount: 1
+      # - !type:Polymorph
+        # prototype: Mouse

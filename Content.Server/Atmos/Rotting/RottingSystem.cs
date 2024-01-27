@@ -16,7 +16,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Atmos.Rotting;
 
-public sealed class RottingSystem : SharedRottingSystem
+public sealed class RottingSystem : EntitySystem
 {
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
@@ -37,6 +37,7 @@ public sealed class RottingSystem : SharedRottingSystem
         SubscribeLocalEvent<RottingComponent, ComponentShutdown>(OnShutdown);
         SubscribeLocalEvent<RottingComponent, MobStateChangedEvent>(OnRottingMobStateChanged);
         SubscribeLocalEvent<RottingComponent, BeingGibbedEvent>(OnGibbed);
+        SubscribeLocalEvent<RottingComponent, ExaminedEvent>(OnExamined);
         SubscribeLocalEvent<RottingComponent, RejuvenateEvent>(OnRejuvenate);
 
         SubscribeLocalEvent<TemperatureComponent, IsRottingEvent>(OnTempIsRotting);
@@ -44,12 +45,12 @@ public sealed class RottingSystem : SharedRottingSystem
 
     private void OnPerishableMapInit(EntityUid uid, PerishableComponent component, MapInitEvent args)
     {
-        component.RotNextUpdate = _timing.CurTime + component.PerishUpdateRate;
+        component.NextPerishUpdate = _timing.CurTime + component.PerishUpdateRate;
     }
 
     private void OnPerishableUnpaused(EntityUid uid, PerishableComponent component, ref EntityUnpausedEvent args)
     {
-        component.RotNextUpdate += args.PausedTime;
+        component.NextPerishUpdate += args.PausedTime;
     }
 
     private void OnMobStateChanged(EntityUid uid, PerishableComponent component, MobStateChangedEvent args)
@@ -61,7 +62,7 @@ public sealed class RottingSystem : SharedRottingSystem
             return;
 
         component.RotAccumulator = TimeSpan.Zero;
-        component.RotNextUpdate = _timing.CurTime + component.PerishUpdateRate;
+        component.NextPerishUpdate = _timing.CurTime + component.PerishUpdateRate;
     }
 
     private void OnRottingUnpaused(EntityUid uid, RottingComponent component, ref EntityUnpausedEvent args)
@@ -73,7 +74,7 @@ public sealed class RottingSystem : SharedRottingSystem
     {
         if (TryComp<PerishableComponent>(uid, out var perishable))
         {
-            perishable.RotNextUpdate = TimeSpan.Zero;
+            perishable.NextPerishUpdate = TimeSpan.Zero;
         }
     }
 
@@ -126,8 +127,9 @@ public sealed class RottingSystem : SharedRottingSystem
 
     private void OnPerishableExamined(Entity<PerishableComponent> perishable, ref ExaminedEvent args)
     {
-        int stage = PerishStage(perishable, MaxStages);
-        if (stage < 1 || stage > MaxStages)
+        int maxStages = 3;
+        int stage = PerishStage(perishable, maxStages);
+        if (stage < 1 || stage > maxStages)
         {
             // We dont push an examined string if it hasen't started "perishing" or it's already rotting
             return;
@@ -146,6 +148,29 @@ public sealed class RottingSystem : SharedRottingSystem
         if (perishable.Comp.RotAfter.TotalSeconds == 0 || perishable.Comp.RotAccumulator.TotalSeconds == 0)
             return 0;
         return (int)(1 + maxStages * perishable.Comp.RotAccumulator.TotalSeconds / perishable.Comp.RotAfter.TotalSeconds);
+    }
+
+    private void OnExamined(EntityUid uid, RottingComponent component, ExaminedEvent args)
+    {
+        var stage = RotStage(uid, component);
+        var description = stage switch
+        {
+            >= 2 => "rotting-extremely-bloated",
+            >= 1 => "rotting-bloated",
+               _ => "rotting-rotting"
+        };
+        args.PushMarkup(Loc.GetString(description, ("target", Identity.Entity(uid, EntityManager))));
+    }
+
+    /// <summary>
+    /// Return the rot stage, usually from 0 to 2 inclusive.
+    /// </summary>
+    public int RotStage(EntityUid uid, RottingComponent? comp = null, PerishableComponent? perishable = null)
+    {
+        if (!Resolve(uid, ref comp, ref perishable))
+            return 0;
+
+        return (int) (comp.TotalRotTime.TotalSeconds / perishable.RotAfter.TotalSeconds);
     }
 
     private void OnRejuvenate(EntityUid uid, RottingComponent component, RejuvenateEvent args)
@@ -177,6 +202,30 @@ public sealed class RottingSystem : SharedRottingSystem
         return 1f;
     }
 
+    public void ReduceAccumulator(EntityUid uid, TimeSpan time)
+    {
+        if (!TryComp<PerishableComponent>(uid, out var perishable))
+            return;
+
+        if (!TryComp<RottingComponent>(uid, out var rotting))
+        {
+            perishable.RotAccumulator -= time;
+            return;
+        }
+        var total = (rotting.TotalRotTime + perishable.RotAccumulator) - time;
+
+        if (total < perishable.RotAfter)
+        {
+            RemCompDeferred(uid, rotting);
+            perishable.RotAccumulator = total;
+        }
+
+        else
+            rotting.TotalRotTime = total - perishable.RotAfter;
+    }
+
+
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -184,16 +233,9 @@ public sealed class RottingSystem : SharedRottingSystem
         var perishQuery = EntityQueryEnumerator<PerishableComponent>();
         while (perishQuery.MoveNext(out var uid, out var perishable))
         {
-            if (_timing.CurTime < perishable.RotNextUpdate)
+            if (_timing.CurTime < perishable.NextPerishUpdate)
                 continue;
-            perishable.RotNextUpdate += perishable.PerishUpdateRate;
-
-            var stage = PerishStage((uid, perishable), MaxStages);
-            if (stage != perishable.Stage)
-            {
-                perishable.Stage = stage;
-                Dirty(uid, perishable);
-            }
+            perishable.NextPerishUpdate += perishable.PerishUpdateRate;
 
             if (IsRotten(uid) || !IsRotProgressing(uid, perishable))
                 continue;

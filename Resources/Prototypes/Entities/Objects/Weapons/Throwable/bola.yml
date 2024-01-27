@@ -31,8 +31,7 @@
         damage: 15
       behaviors:
       - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
+        sound: /Audio/Effects/metalbreak.ogg
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: DamageOnLand

@@ -1,0 +1,75 @@
+- type: entity
+  parent: Clothing
+  id: CBURNFlamethrowerPack
+  name: CBURN flamethrower pack
+  description: Roomy knapsack with fuel cylinder for flamethrower. The best products of the NT&SKFC collaboration.
+  components:
+  - type: Tag
+    tags: 
+    - FlamethrowerBackTank
+  - type: Sprite
+    sprite: Sirena/Clothing/Back/Backpacks/flamethrowertank.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    slots: BACK
+    sprite: Sirena/Clothing/Back/Backpacks/flamethrowertank.rsi
+  - type: SolutionAmmoProvider
+    solutionId: tank
+    proto: BulletFireShot
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 1000
+        reagents:
+         - ReagentId: FlamethrowerFuel
+           Quantity: 1000
+  - type: SolutionTransfer
+    transferAmount: 50
+    maxTransferAmount: 100
+    minTransferAmount: 10
+    canChangeTransferAmount: true
+  - type: UserInterface
+    interfaces:
+    - key: enum.TransferAmountUiKey.Key
+      type: TransferAmountBoundUserInterface
+    - key: enum.StorageUiKey.Key
+      type: StorageBoundUserInterface
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,9,7
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: SolutionRegeneration
+    solution: tank
+    generated:
+      reagents:
+      - ReagentId: FlamethrowerFuel
+        Quantity: 1.0
+  - type: DrawableSolution
+    solution: tank
+  - type: RefillableSolution
+    solution: tank
+  - type: DrainableSolution
+    solution: tank
+  - type: ExaminableSolution
+    solution: tank
+
+- type: entity
+  noSpawn: True
+  parent: CBURNFlamethrowerPack
+  id: CBURNFlamethrowerPackfilld
+  components:
+  - type: StorageFill
+    contents:
+    - id: CBURNFlamethrower
+    - id: WeaponShotgunBulldog
+    - id: BoxMagazineShotgunIncendiary
+      amount: 2
+    - id: MedkitCombatFilled
+    - id: MedkitAdvancedFilled
+    - id: PillCanisterAmbuzolPlus

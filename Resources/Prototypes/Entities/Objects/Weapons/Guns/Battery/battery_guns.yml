@@ -313,6 +313,9 @@
     sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
   - type: Gun
     fireRate: 1.5
+    availableModes:
+      - SemiAuto
+      - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: HitscanBatteryAmmoProvider

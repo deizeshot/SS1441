@@ -20,6 +20,9 @@
                 <Label
                     Name="BloodLevel"
                     Margin="0 5 0 0"/>
+				<RichTextLabel
+					Name="Reagents"
+					Margin="0 5 0 5"/>
                 <Label
                     Name="patientDamageAmount"
                     Margin="0 15 0 0"/>

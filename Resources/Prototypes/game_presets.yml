@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: false # secret
+  showInVote: false
   description: survival-description
   rules:
     - RampingStationEventScheduler
@@ -14,7 +14,7 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: false #2boring2vote
+  showInVote: true
   description: extended-description
   rules:
   - BasicStationEventScheduler
@@ -45,7 +45,7 @@
     - sandbox
   name: sandbox-title
   description: sandbox-description
-  showInVote: true
+  showInVote: false # Sirena-sandbox-off
   maxPlayers: 5
   rules:
     - Sandbox
@@ -69,7 +69,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31

@@ -3,10 +3,6 @@
   name: job-name-bartender
   description: job-description-bartender
   playTimeTracker: JobBartender
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Civilian
-      time: 3600 #1 hrs # Corvax-RoleTime
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop
@@ -28,6 +24,9 @@
     shoes: ClothingShoesColorBlack
     id: BartenderPDA
     ears: ClothingHeadsetService
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtBartender
   satchel: ClothingBackpackSatchelFilled
   duffelbag: ClothingBackpackDuffelFilled

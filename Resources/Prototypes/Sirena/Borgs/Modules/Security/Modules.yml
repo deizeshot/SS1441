@@ -1,0 +1,49 @@
+- type: entity
+  id: BaseBorgModuleSecurity
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSecurity
+
+# - type: entity
+  # id: TestModuleSecuritySirena
+  # parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: security
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: NonLethalModuleSecuritySirena
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-sec
+  - type: ItemBorgModule
+    items:
+    - StunbatonSirena
+    - WeaponDisablerSirena
+    - BoxZiptie
+
+- type: entity
+  id: CriminalisticModuleSecuritySirena
+  parent: [ BaseBorgModuleSecurity, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: security
+    - state: icon-forensic
+  - type: ItemBorgModule
+    items:
+    - ForensicScanner
+    - BoxFolderBlack
+    - BoxForensicPad
+    - HoloprojectorSecurity

@@ -1,7 +1,6 @@
 - type: latheRecipe
   id: TimerTrigger
   result: TimerTrigger
-  category: Parts
   completetime: 2
   materials:
     Steel: 300
@@ -10,7 +9,6 @@
 - type: latheRecipe
   id: SignalTrigger
   result: SignalTrigger
-  category: Parts
   completetime: 2
   materials:
     Steel: 300
@@ -19,7 +17,6 @@
 - type: latheRecipe
   id: VoiceTrigger
   result: VoiceTrigger
-  category: Parts
   completetime: 2
   materials:
     Steel: 300
@@ -28,7 +25,6 @@
 - type: latheRecipe
   id: Igniter
   result: Igniter
-  category: Parts
   completetime: 2
   materials:
     Steel: 300
@@ -38,7 +34,6 @@
 - type: latheRecipe
   id: ChemicalPayload
   result: ChemicalPayload
-  category: Weapons
   completetime: 2
   materials:
     Steel: 200
@@ -47,7 +42,6 @@
 - type: latheRecipe
   id: FlashPayload
   result: FlashPayload
-  category: Weapons
   completetime: 2
   materials:
     Steel: 50
@@ -58,7 +52,6 @@
 - type: latheRecipe
   id: ExplosivePayload
   result: ExplosivePayload
-  category: Weapons
   completetime: 4
   materials:
     Steel: 100
@@ -70,7 +63,6 @@
 - type: latheRecipe
   id: Signaller
   result: RemoteSignaller
-  category: Parts
   completetime: 2
   materials:
     Steel: 100
@@ -80,7 +72,6 @@
 - type: latheRecipe
   id: AnomalyLocator
   result: AnomalyLocatorEmpty
-  category: Tools
   completetime: 3
   materials:
     Steel: 400
@@ -89,7 +80,6 @@
 - type: latheRecipe
   id: AnomalyLocatorWide
   result: AnomalyLocatorWideEmpty
-  category: Tools
   completetime: 3
   materials:
     Steel: 400
@@ -98,7 +88,6 @@
 - type: latheRecipe
   id: AnomalyScanner
   result: AnomalyScanner
-  category: Tools
   completetime: 2
   materials:
     Plastic: 200
@@ -107,7 +96,6 @@
 - type: latheRecipe
   id: WeaponPistolCHIMP
   result: WeaponPistolCHIMP
-  category: Tools
   completetime: 5
   materials:
     Steel: 500
@@ -116,7 +104,6 @@
 - type: latheRecipe
   id: WeaponGauntletGorilla
   result: WeaponGauntletGorilla
-  category: Tools
   completetime: 5
   materials:
     Steel: 1500
@@ -125,50 +112,76 @@
     Plasma: 500
     Silver: 250
 
-- type: latheRecipe
-  id: ClothingBackpackHolding
-  result: ClothingBackpackHolding
-  completetime: 5
-  materials:
-    Steel: 2000
-    Silver: 750
-    Plasma: 1500
-    Uranium: 150
+# - type: latheRecipe
+  # id: ClothingBackpackHolding
+  # result: ClothingBackpackHolding
+  # completetime: 5
+  # materials:
+    # Steel: 2000
+    # Silver: 750
+    # Plasma: 1500
+    # Uranium: 150
+
+# - type: latheRecipe
+  # id: ClothingBackpackSatchelHolding
+  # result: ClothingBackpackSatchelHolding
+  # completetime: 5
+  # materials:
+    # Steel: 2000
+    # Silver: 750
+    # Plasma: 1500
+    # Uranium: 150
+
+# - type: latheRecipe
+  # id: ClothingBackpackDuffelHolding
+  # result: ClothingBackpackDuffelHolding
+  # completetime: 5
+  # materials:
+    # Steel: 2000
+    # Silver: 750
+    # Plasma: 1500
+    # Uranium: 150
+
+# - type: latheRecipe
+  # id: OreBagOfHolding
+  # result: OreBagOfHolding
+  # completetime: 5
+  # materials:
+    # Steel: 2000
+    # Silver: 750
+    # Plasma: 1500
+    # Uranium: 150
 
 - type: latheRecipe
-  id: ClothingBackpackSatchelHolding
-  result: ClothingBackpackSatchelHolding
+  id: WeaponCrusher
+  result: WeaponCrusher
   completetime: 5
   materials:
-    Steel: 2000
-    Silver: 750
-    Plasma: 1500
-    Uranium: 150
+    Steel: 1000
+    Glass: 250
+    Plastic: 100
 
 - type: latheRecipe
-  id: ClothingBackpackDuffelHolding
-  result: ClothingBackpackDuffelHolding
+  id: WeaponCrusherDagger
+  result: WeaponCrusherDagger
   completetime: 5
   materials:
-    Steel: 2000
-    Silver: 750
-    Plasma: 1500
-    Uranium: 150
+    Steel: 500
+    Glass: 250
+    Plastic: 50
 
 - type: latheRecipe
-  id: OreBagOfHolding
-  result: OreBagOfHolding
+  id: WeaponCrusherGlaive
+  result: WeaponCrusherGlaive
   completetime: 5
   materials:
-    Steel: 2000
-    Silver: 750
-    Plasma: 1500
-    Uranium: 150
+    Steel: 1500
+    Glass: 250
+    Silver: 250
 
 - type: latheRecipe
   id: WeaponForceGun
   result: WeaponForceGun
-  category: Tools
   completetime: 5
   materials:
     Steel: 500
@@ -187,7 +200,6 @@
 - type: latheRecipe
   id: WeaponProtoKineticAccelerator
   result: WeaponProtoKineticAccelerator
-  category: Weapons
   completetime: 5
   materials:
     Steel: 1000
@@ -197,7 +209,6 @@
 - type: latheRecipe
   id: WeaponTetherGun
   result: WeaponTetherGun
-  category: Tools
   completetime: 5
   materials:
     Steel: 500
@@ -207,7 +218,6 @@
 - type: latheRecipe
   id: WeaponGrapplingGun
   result: WeaponGrapplingGun
-  category: Tools
   completetime: 5
   materials:
     Steel: 500

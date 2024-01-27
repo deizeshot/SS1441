@@ -1,0 +1,8 @@
+#Belt
+- type: latheRecipe
+  id: ClothingBeltIndustial
+  result: ClothingBeltIndustial
+  completetime: 20
+  materials:
+    Steel: 400
+    Durathread: 400

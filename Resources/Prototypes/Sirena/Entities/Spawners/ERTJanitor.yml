@@ -1,0 +1,41 @@
+- type: randomHumanoidSettings
+  id: ERTJanitorSirena
+  speciesBlacklist: [ Arachnid, Diona, Dwarf, Moth, Reptilian, SlimePerson, Vulpkanin ]
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ertjanitorsirena-name
+      description: ghost-role-information-ertjanitorsirena-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTJanitorGearEVA ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+
+- type: entity
+  id: RandomHumanoidSpawnerERTJanitorSirena
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertjanitoreva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTJanitorSirena
+
+- type: entity
+  id: SpawnerERTJanitorSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - RandomHumanoidSpawnerERTJanitorSirena

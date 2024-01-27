@@ -48,9 +48,6 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
   - type: Appearance
   - type: EntityStorageVisuals
     stateDoorOpen: open
@@ -114,9 +111,6 @@
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
   - type: Construction
     graph: CrateSecure
     node: cratesecure

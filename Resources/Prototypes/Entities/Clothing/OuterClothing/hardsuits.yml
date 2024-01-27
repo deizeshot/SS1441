@@ -470,117 +470,49 @@
 #ANTAG HARDSUITS
 #Blood-red Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: ClothingOuterHardsuitSyndieNoIdentification
   id: ClothingOuterHardsuitSyndie
   name: blood-red hardsuit
   description: A heavily armored hardsuit designed for work in special operations. Property of Gorlex Marauders.
   components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
-  - type: Item
-    size: Huge
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.5
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-        Radiation: 0.5
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: HeldSpeedModifier
+  - type: HardsuitIdentification
+    faction: Syndicate
+  - type: Speech
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndie
 
 # Syndicate Medic Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndie
+  parent: ClothingOuterHardsuitSyndieMedicNoIdentification
   id: ClothingOuterHardsuitSyndieMedic
   name: blood-red medic hardsuit
   description: A heavily armored and agile advanced hardsuit specifically designed for field medic operations.
   components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitSyndieMedic
+  - type: HardsuitIdentification
+    faction: Syndicate
+  - type: Speech
 
 #Syndicate Elite Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: ClothingOuterHardsuitSyndieEliteNoIdentification
   id: ClothingOuterHardsuitSyndieElite
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
   components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.02
-    lowPressureMultiplier: 1000
-  - type: TemperatureProtection
-    coefficient: 0.001
-  - type: ExplosionResistance
-    damageCoefficient: 0.2
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
-        Heat: 0.2
-        Radiation: 0.01
-        Caustic: 0.5
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
+  - type: HardsuitIdentification
+    faction: Syndicate
+  - type: Speech
 
 #Syndicate Commander Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: ClothingOuterHardsuitSyndieCommanderNoIdentification
   id: ClothingOuterHardsuitSyndieCommander
   name: syndicate commander hardsuit
   description: A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
   components:
-  - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
-  - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
-  - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
-  - type: ExplosionResistance
-    damageCoefficient: 0.5
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.3
-        Heat: 0.5
-        Radiation: 0.25
-        Caustic: 0.4
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
-  - type: HeldSpeedModifier
-  - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
+  - type: HardsuitIdentification
+    faction: Syndicate
+  - type: Speech
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
@@ -744,7 +676,7 @@
 #CENTCOMM / ERT HARDSUITS
 #ERT Leader Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndieCommander
+  parent: ClothingOuterHardsuitSyndieCommanderNoIdentification
   id: ClothingOuterHardsuitERTLeader
   name: ERT leader's hardsuit
   description: A protective hardsuit worn by the leader of an emergency response team.
@@ -758,7 +690,7 @@
 
 #ERT Engineer Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitCBURN
+  parent: ClothingOuterHardsuitSyndieNoIdentification
   id: ClothingOuterHardsuitERTEngineer
   name: ERT engineer's hardsuit
   description: A protective hardsuit worn by the engineers of an emergency response team.
@@ -772,7 +704,7 @@
 
 #ERT Medic Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndieMedic
+  parent: ClothingOuterHardsuitSyndieEliteNoIdentification
   id: ClothingOuterHardsuitERTMedical
   name: ERT medic's hardsuit
   description: A protective hardsuit worn by the medics of an emergency response team.
@@ -786,7 +718,7 @@
 
 #ERT Security Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitSyndie
+  parent: ClothingOuterHardsuitSyndieNoIdentification
   id: ClothingOuterHardsuitERTSecurity
   name: ERT security's hardsuit
   description: A protective hardsuit worn by the security officers of an emergency response team.
@@ -800,7 +732,7 @@
 
 #ERT Janitor Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitCBURN
+  parent: ClothingOuterHardsuitSyndieNoIdentification
   id: ClothingOuterHardsuitERTJanitor
   name: ERT janitor's hardsuit
   description: A protective hardsuit worn by the janitors of an emergency response team.

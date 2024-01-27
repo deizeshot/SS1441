@@ -1,0 +1,49 @@
+- type: latheRecipe
+  id: AdvInstrumentalModuleEngineeringSirena
+  result: AdvInstrumentalModuleEngineeringSirena
+  completetime: 3
+  materials:
+    Steel: 750
+    Glass: 1000
+    Plastic: 500
+    Gold: 100
+
+- type: latheRecipe
+  id: CableModuleEngineeringSirena
+  result: CableModuleEngineeringSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: ResourceModuleEngineeringSirena
+  result: ResourceModuleEngineeringSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: AdvResourceModuleEngineeringSirena
+  result: AdvResourceModuleEngineeringSirena
+  completetime: 3
+  materials:
+    Steel: 750
+    Glass: 1000
+    Plastic: 500
+    Gold: 100
+
+- type: latheRecipe
+  id: RCDModuleEngineeringSirena
+  result: RCDModuleEngineeringSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50

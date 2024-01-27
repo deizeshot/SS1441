@@ -11,9 +11,9 @@
   cost: 7500
   recipeUnlocks:
   - MiningDrill
-  - BorgModuleMining
+  # - BorgModuleMining
   - OreProcessorIndustrialMachineCircuitboard
-  - OreBagOfHolding
+  # - OreBagOfHolding
 
 - type: technology
   id: AdvancedPowercells
@@ -39,6 +39,20 @@
   cost: 10000
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
+
+- type: technology
+  id: CompactPower
+  name: research-technology-compact-power
+  icon:
+    sprite: Structures/Power/Generation/wallmount_generator.rsi
+    state: panel
+  discipline: Industrial
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - WallmountSubstationElectronics
+  - WallmountGeneratorElectronics
+  - WallmountGeneratorAPUElectronics
 
 - type: technology
   id: IndustrialEngineering
@@ -82,7 +96,7 @@
   tier: 1
   cost: 7500
   recipeUnlocks:
-  - BorgModuleGasAnalyzer
+  # - BorgModuleGasAnalyzer # Sirena module reworck
   - ThermomachineFreezerMachineCircuitBoard
   - GasRecyclerMachineCircuitboard
 
@@ -118,7 +132,7 @@
   cost: 5000
   recipeUnlocks:
   - WeaponGrapplingGun
-  - BorgModuleGrapplingGun
+  # - BorgModuleGrapplingGun # Sirena module reworck
 
 - type: technology
   id: Shuttlecraft
@@ -163,24 +177,25 @@
     - WelderExperimental
     - PowerDrill
     - JawsOfLife
-    - BorgModuleAdvancedTool
-    - BorgModuleRCD
+    - ClothingBeltIndustial #Sirena add tool
+    # - BorgModuleAdvancedTool # Sirena module reworck
+    - RCDModuleEngineeringSirena # Sirena module reworck
 
 # Tier 3
 
-- type: technology
-  id: BluespaceStorage
-  name: research-technology-bluespace-storage
-  icon:
-    sprite: Clothing/Back/Backpacks/holding.rsi
-    state: holding
-  discipline: Industrial
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - ClothingBackpackHolding
-  - ClothingBackpackSatchelHolding
-  - ClothingBackpackDuffelHolding
+# - type: technology
+  # id: BluespaceStorage
+  # name: research-technology-bluespace-storage
+  # icon:
+    # sprite: Clothing/Back/Backpacks/holding.rsi
+    # state: holding
+  # discipline: Industrial
+  # tier: 3
+  # cost: 15000
+  # recipeUnlocks:
+  # - ClothingBackpackHolding
+  # - ClothingBackpackSatchelHolding
+  # - ClothingBackpackDuffelHolding
 
 - type: technology
   id: PortableFission

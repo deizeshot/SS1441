@@ -4,10 +4,8 @@
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 36000 #10 hrs # Corvax-RoleTime
-      inverted: true # stop playing intern if you're good at engineering!
+    - !type:OverallPlaytimeRequirement
+      time: 7200 #2 hrs
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"
   supervisors: job-supervisors-engineering
@@ -26,6 +24,9 @@
     id: TechnicalAssistantPDA
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorYellow
   satchel: ClothingBackpackSatchelEngineeringFilled
   duffelbag: ClothingBackpackDuffelEngineeringFilled

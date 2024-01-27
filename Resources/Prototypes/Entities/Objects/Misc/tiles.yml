@@ -34,7 +34,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -8
       - !type:DoActsBehavior

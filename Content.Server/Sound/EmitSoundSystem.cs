@@ -29,7 +29,7 @@ public sealed class EmitSoundSystem : SharedEmitSoundSystem
             {
                 if (soundSpammer.PopUp != null)
                     Popup.PopupEntity(Loc.GetString(soundSpammer.PopUp), uid);
-                TryEmitSound(uid, soundSpammer, predict: false);
+                TryEmitSound(uid, soundSpammer);
             }
         }
     }
@@ -44,12 +44,12 @@ public sealed class EmitSoundSystem : SharedEmitSoundSystem
 
     private void HandleEmitSoundOnUIOpen(EntityUid uid, EmitSoundOnUIOpenComponent component, AfterActivatableUIOpenEvent args)
     {
-        TryEmitSound(uid, component, args.User, false);
+        TryEmitSound(uid, component, args.User);
     }
 
     private void HandleEmitSoundOnTrigger(EntityUid uid, EmitSoundOnTriggerComponent component, TriggerEvent args)
     {
-        TryEmitSound(uid, component, args.User, false);
+        TryEmitSound(uid, component);
         args.Handled = true;
     }
 }

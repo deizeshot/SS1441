@@ -1,0 +1,41 @@
+- type: randomHumanoidSettings
+  id: ERTMedicalSirena
+  speciesBlacklist: [ Arachnid, Diona, Dwarf, Moth, Reptilian, SlimePerson, Vulpkanin ]
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ertmedicalsirena-name
+      description: ghost-role-information-ertmedicalsirena-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ ERTMedicalGearEVA ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMedicalSirena
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: ertmedicaleva
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitary
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: ERTMedicalSirena
+
+- type: entity
+  id: SpawnerERTMedicalSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - RandomHumanoidSpawnerERTMedicalSirena

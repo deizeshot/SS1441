@@ -163,7 +163,7 @@ namespace Content.Server.Ghost.Roles
                 var response = new GhostUpdateGhostRoleCountEvent(GetGhostRolesInfo().Length);
                 foreach (var player in _playerManager.Sessions)
                 {
-                    RaiseNetworkEvent(response, player.Channel);
+                    RaiseNetworkEvent(response, player.ConnectedClient);
                 }
             }
         }
@@ -173,7 +173,7 @@ namespace Content.Server.Ghost.Roles
             if (args.NewStatus == SessionStatus.InGame)
             {
                 var response = new GhostUpdateGhostRoleCountEvent(_ghostRoles.Count);
-                RaiseNetworkEvent(response, args.Session.Channel);
+                RaiseNetworkEvent(response, args.Session.ConnectedClient);
             }
         }
 

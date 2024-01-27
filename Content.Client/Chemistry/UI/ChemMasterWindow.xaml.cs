@@ -114,11 +114,11 @@ namespace Content.Client.Chemistry.UI
             InputEjectButton.Disabled = castState.InputContainerInfo is null;
             OutputEjectButton.Disabled = output is null;
             CreateBottleButton.Disabled = output?.Reagents == null;
-            CreatePillButton.Disabled = output?.Entities == null;
+            // CreatePillButton.Disabled = output?.Entities == null; // Sirena - disable the need for a pill print container
 
             var remainingCapacity = output is null ? 0 : (output.MaxVolume - output.CurrentVolume).Int();
             var holdsReagents = output?.Reagents != null;
-            var pillNumberMax = holdsReagents ? 0 : remainingCapacity;
+            var pillNumberMax = 500; // Sirena - disable the need for a pill print container
             var bottleAmountMax = holdsReagents ? remainingCapacity : 0;
 
             PillTypeButtons[castState.SelectedPillType].Pressed = true;

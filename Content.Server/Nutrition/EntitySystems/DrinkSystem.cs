@@ -147,7 +147,7 @@ public sealed class DrinkSystem : EntitySystem
         if (TryComp<ExaminableSolutionComponent>(entity, out var comp))
         {
             //provide exact measurement for beakers
-            args.PushText(Loc.GetString("drink-component-on-examine-exact-volume", ("amount", DrinkVolume(entity, entity.Comp))));
+            args.AddMarkup(Loc.GetString("drink-component-on-examine-exact-volume", ("amount", DrinkVolume(entity, entity.Comp))));
         }
         else
         {

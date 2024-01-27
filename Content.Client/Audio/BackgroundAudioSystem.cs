@@ -1,7 +1,6 @@
 using Content.Client.GameTicking.Managers;
 using Content.Client.Lobby;
 using Content.Shared.CCVar;
-using Content.Shared.GameTicking;
 using JetBrains.Annotations;
 using Robust.Client;
 using Robust.Client.State;
@@ -40,8 +39,6 @@ public sealed class BackgroundAudioSystem : EntitySystem
         _client.PlayerLeaveServer += OnLeave;
 
         _gameTicker.LobbySongUpdated += LobbySongUpdated;
-
-        SubscribeNetworkEvent<RoundRestartCleanupEvent>(PlayRestartSound);
     }
 
     public override void Shutdown()
@@ -131,23 +128,5 @@ public sealed class BackgroundAudioSystem : EntitySystem
     private void EndLobbyMusic()
     {
         LobbyStream = _audio.Stop(LobbyStream);
-    }
-
-    private void PlayRestartSound(RoundRestartCleanupEvent ev)
-    {
-        if (!_configManager.GetCVar(CCVars.LobbyMusicEnabled))
-            return;
-
-        var file = _gameTicker.RestartSound;
-        if (string.IsNullOrEmpty(file))
-        {
-            return;
-        }
-
-        var volume = _lobbyParams.WithVolume(_lobbyParams.Volume +
-                                             SharedAudioSystem.GainToVolume(
-                                                 _configManager.GetCVar(CCVars.LobbyMusicVolume)));
-
-        _audio.PlayGlobal(file, Filter.Local(), false, volume);
     }
 }

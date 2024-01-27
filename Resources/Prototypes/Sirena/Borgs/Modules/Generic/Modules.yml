@@ -1,0 +1,65 @@
+# - type: entity
+  # id: TestModuleGenericSirena
+  # parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: generic
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: BorgModuleTool
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-tools
+  - type: ItemBorgModule
+    items:
+    - Crowbar 
+    - Screwdriver
+    - Wirecutter
+    - Wrench
+    - Welder
+
+- type: entity
+  id: AdvStorageModuleGenericSirena
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-storage-of-holding
+  - type: ItemBorgModule
+    items:
+    - ClothingBackpackHolding
+
+- type: entity
+  id: SearchModuleGenericSirena
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-gps
+  - type: ItemBorgModule
+    items:
+    - HandheldGPSBasic
+    - HandheldStationMap
+    - HandheldCrewMonitorSirena
+
+- type: entity
+  id: JetpackModuleGenericSirena
+  parent: [ BaseBorgModule, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: generic
+    - state: icon-jetpack
+  - type: ItemBorgModule
+    items:
+    - JetpackSirena

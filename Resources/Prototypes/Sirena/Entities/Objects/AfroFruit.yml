@@ -1,0 +1,56 @@
+- type: entity
+  name: afro fruit
+  parent: FoodProduceBase
+  id: AfroFruit
+  description: "According to our geneticist, this is a genetically modified version of breeding crops such as cherry and peach. Due to the special mutation, it has received, in addition to its excellent taste and nutritional qualities, also a side chemical composition."
+  components:
+  - type: FlavorProfile
+    flavors: [ afrofruitpulp ]
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: AfrofruitPulp
+          Quantity: 15
+  - type: Sprite
+    sprite: Sirena/Objects/afro.rsi
+  - type: Produce
+    seedId: AfroFruitPlant
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: AfrofruitPulp
+        Quantity: 20
+
+- type: seed
+  id: AfroFruitPlant
+  name: seeds-afrofruit-name
+  noun: seeds-noun-seeds
+  displayName: seeds-afrofruit-display-name
+  plantRsi: Sirena/Objects/afro.rsi
+  packetPrototype: AfroFruitSeed
+  productPrototypes:
+    - AfroFruit
+  harvestRepeat: Repeat
+  lifespan: 55
+  maturation: 10
+  production: 1
+  yield: 1
+  potency: 10
+  idealLight: 6
+  chemicals:
+    AfrofruitPulp:
+      Min: 15
+      Max: 15
+      PotencyDivisor: 100
+
+- type: entity
+  parent: SeedBase
+  name: packet of afro fruit seeds
+  id: AfroFruitSeed
+  components:
+    - type: Seed
+      seedId: AfroFruitPlant
+    - type: Sprite
+      sprite: Sirena/Objects/afro.rsi

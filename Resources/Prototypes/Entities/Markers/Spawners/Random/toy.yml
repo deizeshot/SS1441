@@ -34,6 +34,7 @@
         - ToyMouse
         - PlushieDiona
         - PlushieArachind
+        - PlushieRouter # Sirena Router
       chance: 0.5
       offset: 0.2
 

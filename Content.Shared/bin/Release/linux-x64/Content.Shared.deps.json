@@ -12,8 +12,8 @@
           "Content.Corvax.Interfaces.Shared": "1.0.0",
           "Content.Shared.Database": "1.0.0",
           "JetBrains.Annotations": "2023.3.0",
-          "Robust.Shared": "208.0.0",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared": "206.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "SpaceWizards.Lidgren.Network": "1.0.0",
           "Robust.NetSerializer.Reference": "4.1.1.0"
         },
@@ -338,7 +338,7 @@
       },
       "Content.Corvax.Interfaces.Shared/1.0.0": {
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "runtime": {
           "Content.Corvax.Interfaces.Shared.dll": {}

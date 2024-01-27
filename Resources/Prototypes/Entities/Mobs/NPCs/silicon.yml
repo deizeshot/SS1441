@@ -124,6 +124,8 @@
     softness: 2
     mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
+  - type: TypingIndicator
+    proto: robot
 
 - type: entity
   parent: MobSiliconBaseVehicle
@@ -145,8 +147,6 @@
   - type: Construction
     graph: TaxiBot
     node: bot
-  - type: TTS # Corvax-TTS
-    voice: Robold
 
 - type: entity
   parent: MobSiliconBaseVehicle
@@ -180,8 +180,6 @@
     containers:
       storagebase: !type:Container
         ents: []
-  - type: TTS # Corvax-TTS
-    voice: Robold
 
 - type: entity
   parent: MobSiliconBase

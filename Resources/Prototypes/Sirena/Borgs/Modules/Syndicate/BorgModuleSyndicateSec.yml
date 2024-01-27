@@ -1,0 +1,47 @@
+- type: entity
+  id: BaseBorgModuleSyndicateSec
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSyndicateSec
+
+# - type: entity
+  # id: TestModuleSyndicateSirena
+  # parent: [ BaseBorgModuleSyndicateSec, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: syndicate
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: CR20ModuleSyndicateSirena
+  parent: [ BaseBorgModuleSyndicateSec, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-cr20
+  - type: ItemBorgModule
+    items:
+    - WeaponSubMachineGunC20r
+    - BoxMagazinePistolSubMachineGun
+    - BoxMagazinePistolSubMachineGun
+
+- type: entity
+  id: EswordModuleSyndicateSirena
+  parent: [ BaseBorgModuleSyndicateSec, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-emelee
+  - type: ItemBorgModule
+    items:
+    - EnergySword
+    # - EnergyShieldBorg

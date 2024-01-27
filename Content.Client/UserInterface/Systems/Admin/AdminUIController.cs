@@ -1,4 +1,4 @@
-﻿using Content.Client.Administration.Managers;
+using Content.Client.Administration.Managers;
 using Content.Client.Administration.Systems;
 using Content.Client.Administration.UI;
 using Content.Client.Administration.UI.Tabs.ObjectsTab;
@@ -167,7 +167,7 @@ public sealed class AdminUIController : UIController,
 
     private void Toggle()
     {
-        if (_window is {IsOpen: true})
+        if (_window is { IsOpen: true })
         {
             _window.Close();
         }

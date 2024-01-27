@@ -1,0 +1,30 @@
+﻿# Tier 2
+- type: technology
+  id: AdvHealthAnalyzer
+  name: technologies-advhealthanalyzer
+  icon:
+    sprite: Objects/Specific/Medical/healthanalyzer.rsi
+    state: icon-adv
+  discipline: Biochemical
+  tier: 2
+  cost: 7000
+  recipeUnlocks:
+  - HandheldHealthAnalyzerAdvEmpty
+
+# Tier 4
+- type: technology
+  id: BlueSpaceСhemistry
+  name: technologies-cheam
+  icon:
+    sprite: Objects/Specific/Chemistry/beaker_bluespace.rsi
+    state: beakerbluespace
+  discipline: Biochemical
+  tier: 4
+  cost: 15000
+  recipeUnlocks:
+  - BluespaceBeaker
+  - BlueSpacePillCanister
+  - SyringeBluespace
+  technologyPrerequisites:
+  - BluespaceProcessing
+  - Chemistry

@@ -1,0 +1,17 @@
+- type: entity
+  noSpawn: false
+  parent: Stunbaton
+  id: StunbatonSirena
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40
+
+- type: entity
+  noSpawn: false
+  parent: WeaponDisabler
+  id:  WeaponDisablerSirena
+  components:
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 40

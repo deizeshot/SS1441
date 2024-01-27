@@ -26,7 +26,7 @@
     drawdepth: Objects
   - type: Damageable
     damageContainer: Inorganic
-    damageModifierSet: Electronic
+    damageModifierSet: Metallic
   - type: Destructible
     thresholds:
     - trigger:
@@ -90,7 +90,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalGlassBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior

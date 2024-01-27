@@ -92,6 +92,50 @@ GeneratorUranium: PortableGeneratorSuperPacman
 GeneratorPlasmaMachineCircuitboard: PortableGeneratorPacmanMachineCircuitboard
 GeneratorUraniumMachineCircuitboard: PortableGeneratorSuperPacmanMachineCircuitboard
 
+# 2023-10-27 Sirena
+# generic modules
+BorgModuleCable: CableModuleEngineeringSirena
+BorgModuleFireExtinguisher: null
+BorgModuleGPS: SearchModuleGenericSirena
+BorgModuleRadiationDetection: null
+# cargo modules
+BorgModuleAppraisal: null
+BorgModuleMining: MiningModuleCargoSirena
+BorgModuleGrapplingGun: null
+# engineering modules
+BorgModuleAdvancedTool: AdvInstrumentalModuleEngineeringSirena
+BorgModuleGasAnalyzer: null
+BorgModuleConstruction: ResourceModuleEngineeringSirena
+BorgModuleRCD: RCDModuleEngineeringSirena
+# janitorial modules
+BorgModuleLightReplacer: null
+BorgModuleCleaning: CleanerModuleJanitorSirena
+BorgModuleTrashCollection: null
+# medical modules
+BorgModuleDiagnosis: null
+BorgModuleTreatment: BaseAidModuleMedicalSirena
+BorgModuleDefibrillator: ReanimationModuleMedicalSirena
+BorgModuleAdvancedTreatment: AdvAidModuleMedicalSirena
+# science modules
+BorgModuleArtifact: null
+BorgModuleAnomaly: AnomalyModuleScienceSirena
+# service modules
+BorgModuleLiteracy: null
+BorgModuleMusique: MusicalModuleServiceSirena
+BorgModuleGardening: HydroponicsModuleServiceSirena
+BorgModuleHarvesting: HydroponicsModuleServiceSirena
+BorgModuleClowning: ClownModuleServiceSirena
+
+# 03.12.2023 Sirena
+AmbientOfNature: null
+
+# 04.12.2023 Sirena
+Artecalcet_sirena_ChemistryBottle: null
+Arteicog_sirena_ChemistryBottle: null
+Gadoiprinim_sirena_ChemistryBottle: null
+Vinikefastatin_sirena_ChemistryBottle: null
+Aphrodisiac_sirena_ChemistryBottle: Aphrodisiac_ChemistryBottle
+
 # 2023-12-10
 SpawnPointSeniorResearcher: null
 SpawnPointSeniorOfficer: null
@@ -109,6 +153,9 @@ VendingMachineSmartFridge: SmartFridge
 ReagentContainerMilk: DrinkMilkCarton
 ReagentContainerMilkSoy: DrinkSoyMilkCarton
 ReagentContainerMilkOat: DrinkOatMilkCarton
+
+# 19.12.2023 Sirena
+EnergyShieldBorg: null
 
 # 2023-12-20
 MiasmaCanister: AmmoniaCanister
@@ -133,7 +180,6 @@ DrinkGoldschlagerBottleFull: DrinkGildlagerBottleFull
 DrinkGoldschlagerGlass: DrinkGildlagerGlass
 
 # 2024-01-07
-ClosetBase: ClosetSteelBase
 MonkeyCubeBox: VariantCubeBox
 
 # 2024-01-08
@@ -163,9 +209,3 @@ ClothingHeadHatHoodRad: null
 
 # 2024-01-12
 SpaceMedipen: null
-
-# 2024-01-18
-ClothingHeadHelmetVoidParamed: null
-
-# 2024-01-19
-DefaultStationBeaconTeslaEngine: null

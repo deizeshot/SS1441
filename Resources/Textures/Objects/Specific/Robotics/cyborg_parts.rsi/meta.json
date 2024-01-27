@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/cf45322c7ee16f9d7e43d5260daf24ceb77c1b25",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/cf45322c7ee16f9d7e43d5260daf24ceb77c1b25 | Add sec, science and service for Sirena by blazeba(1107296217953746974)",
   "size": {
     "x": 32,
     "y": 32
@@ -213,6 +213,30 @@
     },
     {
       "name": "service_r_leg+o"
-    }
+    },
+    {      "name": "science_l_arm"    },
+    {      "name": "science_r_arm"    },
+    {      "name": "science_l_leg"    },
+    {      "name": "science_r_leg"    },
+    {      "name": "science_chest"    },
+    {      "name": "science_head"    },
+    {      "name": "science_head+o"    },
+    {      "name": "science_chest+o"    },
+    {      "name": "science_l_arm+o"    },
+    {      "name": "science_r_arm+o"    },
+    {      "name": "science_l_leg+o"    },
+    {      "name": "science_r_leg+o"    },
+    {      "name": "sec_l_arm"    },
+    {      "name": "sec_r_arm"    },
+    {      "name": "sec_l_leg"    },
+    {      "name": "sec_r_leg"    },
+    {      "name": "sec_chest"    },
+    {      "name": "sec_head"    },
+    {      "name": "sec_head+o"    },
+    {      "name": "sec_chest+o"    },
+    {      "name": "sec_l_arm+o"    },
+    {      "name": "sec_r_arm+o"    },
+    {      "name": "sec_l_leg+o"    },
+    {      "name": "sec_r_leg+o"    }
   ]
 }

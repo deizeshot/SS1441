@@ -1,0 +1,74 @@
+# - type: entity
+  # id: TestModuleMedicalSirena
+  # parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: medical
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: BaseAidModuleMedicalSirena
+  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: medical
+    - state: icon-treatment
+  - type: ItemBorgModule
+    items:
+    - HandheldHealthAnalyzerUnpowered
+    - Gauze10Lingering
+    - Brutepack10Lingering
+    - Ointment10Lingering
+    - Bloodpack10Lingering
+
+- type: entity
+  id: AdvAidModuleMedicalSirena
+  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: medical
+    - state: icon-treatment-adv
+  - type: ItemBorgModule
+    items:
+    - HandheldHealthAnalyzerAdvUnpowered
+    - RegenerativeMesh10Lingering
+    - MedicatedSuture10Lingering
+    - Bloodpack10Lingering
+    
+- type: entity
+  id: LiquidAidModuleMedicalSirena
+  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: medical
+    - state: icon-treatment-hypo
+  - type: ItemBorgModule
+    items:
+    - HandheldHealthAnalyzerAdvUnpowered
+    - HyposprayBicaridineSirena 
+    - HyposprayDexalinPlusSirena
+    - HyposprayDermalineSirena
+    - HyposprayDyloveneSirena
+    - HypospraySigynateSirena
+    
+- type: entity
+  id: ReanimationModuleMedicalSirena
+  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: medical
+    - state: icon-defib
+  - type: ItemBorgModule
+    items:
+    - HandheldHealthAnalyzerAdvUnpowered
+    - DefibrillatorOneHandedUnpowered
+    - EmergencyMedipenSirena
+    - DexalinPlusMedipenSirena

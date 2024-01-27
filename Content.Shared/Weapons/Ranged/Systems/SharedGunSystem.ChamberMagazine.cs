@@ -232,10 +232,7 @@ public abstract partial class SharedGunSystem
                 {
                     foreach (var (ent, _) in relayedArgs.Ammo)
                     {
-                        if (!IsClientSide(ent!.Value))
-                            continue;
-
-                        Del(ent.Value);
+                        Del(ent!.Value);
                     }
                 }
             }

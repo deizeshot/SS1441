@@ -1,0 +1,38 @@
+- type: entity
+  id: FireExtinguisherSirena
+  parent: FireExtinguisher
+  noSpawn: true
+  components:
+  - type: SolutionRegeneration
+    solution: spray
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: 1
+
+- type: entity
+  id: JetpackSirena
+  parent: JetpackBlueFilled
+  noSpawn: true
+  components:
+  - type: Jetpack
+    moleUsage: 0 # да
+  - type: GasTank
+    outputPressure: 42.6
+    air:
+      volume: 5
+      temperature: 293.15
+      moles:
+        - 1.025689525 # oxygen
+        - 1.025689525 # nitrogen
+
+- type: entity
+  id: HandheldCrewMonitorSirena
+  parent: HandheldCrewMonitor
+  noSpawn: true
+  components:
+  - type: PowerCellDraw
+    drawRate: 0
+    useRate: 0
+  - type: WirelessNetworkConnection
+    range: 5000

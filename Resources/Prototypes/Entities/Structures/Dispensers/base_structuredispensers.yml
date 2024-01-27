@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   abstract: true
   id: ReagentDispenserBase
   parent: ConstructibleMachine
@@ -53,17 +53,15 @@
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalGlassBreak
+          path: /Audio/Effects/metalbreak.ogg
   - type: ReagentDispenser
-    storageWhitelist:
-      tags:
-      - Bottle
-    beakerSlot:
-      whitelistFailPopup: reagent-dispenser-component-cannot-put-entity-message
-      whitelist:
-        components:
-        - FitsInDispenser
   - type: ItemSlots
+    slots:
+      beakerSlot:
+        whitelistFailPopup: reagent-dispenser-component-cannot-put-entity-message
+        whitelist:
+          components:
+          - FitsInDispenser
   - type: ContainerContainer
     containers:
       machine_board: !type:Container

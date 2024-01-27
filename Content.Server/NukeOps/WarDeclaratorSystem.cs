@@ -3,12 +3,9 @@ using Content.Server.GameTicking.Rules;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Popups;
 using Content.Server.UserInterface;
-using Content.Shared.CCVar;
-using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.NukeOps;
 using Robust.Server.GameObjects;
-using Robust.Shared.Configuration;
 
 namespace Content.Server.NukeOps;
 
@@ -21,7 +18,6 @@ public sealed class WarDeclaratorSystem : EntitySystem
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly NukeopsRuleSystem _nukeopsRuleSystem = default!;
     [Dependency] private readonly PopupSystem _popupSystem = default!;
-    [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     public override void Initialize()
     {
@@ -56,8 +52,22 @@ public sealed class WarDeclaratorSystem : EntitySystem
             return;
         }
 
-        var maxLength = _cfg.GetCVar(CCVars.ChatMaxAnnouncementLength);
-        var message = SharedChatSystem.SanitizeAnnouncement(args.Message, maxLength);
+        var text = (args.Message.Length <= component.MaxMessageLength ? args.Message.Trim() : $"{args.Message.Trim().Substring(0, 256)}...").ToCharArray();
+
+        // No more than 2 newlines, other replaced to spaces
+        var newlines = 0;
+        for (var i = 0; i < text.Length; i++)
+        {
+            if (text[i] != '\n')
+                continue;
+
+            if (newlines >= 2)
+                text[i] = ' ';
+
+            newlines++;
+        }
+
+        string message = new string(text);
         if (component.AllowEditingMessage && message != string.Empty)
         {
             component.Message = message;

@@ -41,7 +41,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior
@@ -98,7 +98,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: WoodDestroy
+          path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank1:
@@ -141,7 +141,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior
@@ -182,7 +182,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior
@@ -220,7 +220,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior
@@ -267,16 +267,13 @@
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
-        - !type:PlaySoundBehavior
-          sound:
-            collection: GlassBreak
     - trigger:
         !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: GlassBreak
+          path: /Audio/Effects/glass_break2.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlass:
@@ -319,16 +316,13 @@
       behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
     - trigger:
         !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: GlassBreak
+          path: /Audio/Effects/glass_break2.ogg
       - !type:ChangeConstructionNodeBehavior
         node: TableFrame
       - !type:SpawnEntitiesBehavior
@@ -374,16 +368,13 @@
       behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
     - trigger:
         !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: GlassBreak
+          path: /Audio/Effects/glass_break2.ogg
       - !type:ChangeConstructionNodeBehavior
         node: TableFrame
       - !type:SpawnEntitiesBehavior
@@ -423,16 +414,13 @@
       behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
     - trigger:
         !type:DamageTrigger
         damage: 15
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: WoodDestroy
+          path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank:
@@ -470,7 +458,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: WoodDestroy
+          path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank:
@@ -601,7 +589,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: WoodDestroy
+          path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank1:
@@ -644,7 +632,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior

@@ -1,0 +1,20 @@
+- type: entity
+  parent: PinpointerBase
+  id: AnomalyPinpointer
+  name: M.A.F.
+  description: Manual Anomaly Finder. Shows where this freaking anomaly is. Amazing!
+  components:
+  - type: Sprite
+    layers:
+    - state: pinpointer-crew
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    state: pinpointer-crew
+  - type: Item
+    state: pinpointer-crew
+  - type: Pinpointer
+    component: Anomaly

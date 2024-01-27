@@ -1,0 +1,38 @@
+- type: entity
+  id: BaseBorgModuleUIC
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleUIC
+
+# - type: entity
+  # id: TestModuleUICSirena
+  # parent: [ BaseBorgModuleUIC, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: uic
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: UICStandartModuleUICSirena
+  parent: [ BaseBorgModuleUIC, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: uic
+    - state: icon-uic
+  - type: ItemBorgModule
+    items:
+    - JawsOfLife
+    - HandheldHealthAnalyzerUnpowered
+    - Gauze10Lingering
+    - Brutepack10Lingering
+    - Ointment10Lingering
+    - Bloodpack10Lingering
+    # - TechFabUIC

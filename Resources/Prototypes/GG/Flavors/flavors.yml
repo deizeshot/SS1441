@@ -1,0 +1,104 @@
+- type: flavor
+  id: applecider
+  flavorType: Complex
+  description: flavor-complex-applecider
+
+- type: flavor
+  id: kuantro
+  flavorType: Complex
+  description: flavor-complex-kuantro
+
+- type: flavor
+  id: lebovsky
+  flavorType: Complex
+  description: flavor-complex-lebovksy
+
+- type: flavor
+  id: medovuha
+  flavorType: Complex
+  description: flavor-complex-medovuha
+
+- type: flavor
+  id: suidream
+  flavorType: Complex
+  description: flavor-complex-suidream
+
+- type: flavor
+  id: homeland
+  flavorType: Complex
+  description: flavor-complex-homeland
+
+- type: flavor
+  id: enthralling
+  flavorType: Complex
+  description: flavor-complex-enthralling
+
+- type: flavor
+  id: sublime
+  flavorType: Complex
+  description: flavor-complex-sublime
+
+- type: flavor
+  id: cotton
+  flavorType: Complex
+  description: flavor-complex-cotton
+
+- type: flavor
+  id: vanilla
+  flavorType: Complex
+  description: flavor-complex-vanilla
+
+- type: flavor
+  id: jail
+  flavorType: Complex
+  description: flavor-complex-jail
+
+- type: flavor
+  id: orangecreamcicle
+  flavorType: Complex
+  description: flavor-complex-orangecreamcicle
+
+- type: flavor
+  id: silverjack
+  flavorType: Complex
+  description: flavor-complex-silverjack
+
+- type: flavor
+  id: brainbomb
+  flavorType: Complex
+  description: flavor-complex-brainbomb
+
+- type: flavor
+  id: atomicpunch
+  flavorType: Complex
+  description: flavor-complex-atomicpunch
+
+- type: flavor
+  id: circusjuice
+  flavorType: Complex
+  description: flavor-complex-circusjuice 
+
+- type: flavor
+  id: pinkdrink
+  flavorType: Complex
+  description: flavor-complex-pinkdrink
+
+- type: flavor
+  id: sapopicante
+  flavorType: Complex
+  description: flavor-complex-sapopicante
+
+- type: flavor
+  id: graveyard
+  flavorType: Complex
+  description: flavor-complex-graveyard
+
+- type: flavor
+  id: bubbletea
+  flavorType: Complex
+  description: flavor-complex-bubbletea
+
+- type: flavor
+  id: corncob
+  flavorType: Complex
+  description: flavor-complex-corncob

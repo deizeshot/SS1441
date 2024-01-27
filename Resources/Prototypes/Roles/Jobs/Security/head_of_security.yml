@@ -6,15 +6,7 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 36000 #10 hrs # Corvax-RoleTime
-#    - !type:RoleTimeRequirement
-#      role: JobSecurityOfficer
-#      time: 36000 #10 hrs
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 108000 #50 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
+      time: 14400
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
@@ -52,6 +44,9 @@
     ears: ClothingHeadsetAltSecurity
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
+    underwearb: ClothingUnderwearBottomBoxersHOS # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraHOS # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesHOS # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtHoS
   satchel: ClothingBackpackSatchelHOSFilled
   duffelbag: ClothingBackpackDuffelHOSFilled

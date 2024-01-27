@@ -8,6 +8,7 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Overlays;
 using Content.Shared.Radio;
+using Content.Shared.Sirena.NightVision.Systems; // GG
 using Content.Shared.Slippery;
 using Content.Shared.Strip.Components;
 using Content.Shared.Temperature;
@@ -36,6 +37,10 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, GetEyeProtectionEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, GetBlurEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, SolutionScanEvent>(RelayInventoryEvent);
+
+        // GG
+        SubscribeLocalEvent<InventoryComponent, CanVisionAttemptEvent>(RelayInventoryEvent);
+        // GG
 
         // ComponentActivatedClientSystems
         SubscribeLocalEvent<InventoryComponent, RefreshEquipmentHudEvent<ShowSecurityIconsComponent>>(RelayInventoryEvent);

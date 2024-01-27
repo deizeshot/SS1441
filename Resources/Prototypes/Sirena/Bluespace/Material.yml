@@ -1,0 +1,7 @@
+- type: material
+  id: BlueSpaceCrystal
+  stackEntity: BlueSpaceCrystalCut1
+  name: materials-bluespacecrystal
+  icon: { sprite: /Textures/Sirena/Bluespace/BluespaceCrystal.rsi, state: bluespace_crystal }
+  color: "#2E50B7"
+  price: 2.5

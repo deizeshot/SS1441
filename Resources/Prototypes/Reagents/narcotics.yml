@@ -8,6 +8,7 @@
   color: "#FAFAFA"
   boilingPoint: 212.0  # Dexosyephedrine vape when?
   meltingPoint: 170.0
+  overdose: 30
   metabolisms:
     Poison:
       effects:
@@ -57,6 +58,7 @@
   color: "#D2FFFA"
   boilingPoint: 255.0
   meltingPoint: 36.0
+  overdose: 20
   metabolisms:
     Narcotic:
       effects:

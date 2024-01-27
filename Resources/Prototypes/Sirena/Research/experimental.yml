@@ -1,0 +1,31 @@
+﻿# Tier 4
+- type: technology
+  id: BlueSpaceParts
+  name: technologies-bluespace
+  icon:
+    sprite: Objects/Misc/stock_parts.rsi
+    state: quadratic_capacitor
+  discipline: Experimental
+  tier: 4
+  cost: 15000
+  recipeUnlocks:
+  - QuadraticCapacitorStockPart
+  - BluespaceMatterBinStockPart
+  - FemtoManipulatorStockPart
+  technologyPrerequisites:
+  - SuperParts
+  - BluespaceProcessing
+
+- type: technology
+  id: AdvHUD
+  name: technologies-advhud
+  icon:
+    sprite: Clothing/Eyes/Hud/omni.rsi
+    state: icon
+  discipline: Experimental
+  tier: 4
+  cost: 5000
+  recipeUnlocks:
+  - ClothingEyesHudOmni
+  technologyPrerequisites:
+  - BluespaceProcessing

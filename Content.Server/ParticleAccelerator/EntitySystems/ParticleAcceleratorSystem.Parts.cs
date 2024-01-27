@@ -48,12 +48,12 @@ public sealed partial class ParticleAcceleratorSystem
             return;
 
         var gridUid = xform.GridUid;
-        if (gridUid == null || gridUid != xform.ParentUid || !TryComp<MapGridComponent>(gridUid, out var grid))
+        if (gridUid == null || gridUid != xform.ParentUid || !_mapManager.TryGetGrid(gridUid, out var grid))
             return;
 
         // Find fuel chamber first by scanning cardinals.
         var fuelQuery = GetEntityQuery<ParticleAcceleratorFuelChamberComponent>();
-        foreach (var adjacent in _mapSystem.GetCardinalNeighborCells(gridUid.Value, grid, xform.Coordinates))
+        foreach (var adjacent in grid.GetCardinalNeighborCells(xform.Coordinates))
         {
             if (fuelQuery.HasComponent(adjacent)
             && partQuery.TryGetComponent(adjacent, out var partState)
@@ -75,23 +75,21 @@ public sealed partial class ParticleAcceleratorSystem
         // You'll have to take my word for it that that breaks everything, yeah?
         controller.CurrentlyRescanning = true;
 
-        // Automatically rotate the control box sprite to face the fuel chamber
+        // Align ourselves to match fuel chamber orientation.
+        // This means that if you mess up the orientation of the control box it's not a big deal,
+        // because the sprite is far from obvious about the orientation.
         var fuelXform = xformQuery.GetComponent(controller.FuelChamber!.Value);
-        var fuelDir = (fuelXform.LocalPosition - xform.LocalPosition).GetDir();
-        _transformSystem.SetLocalRotation(uid, fuelDir.ToAngle(), xform);
+        var rotation = fuelXform.LocalRotation;
+        _transformSystem.SetLocalRotation(uid, rotation, xform);
 
         // Calculate offsets for each of the parts of the PA.
         // These are all done relative to the fuel chamber BC that is basically the center of the machine.
-        var rotation = fuelXform.LocalRotation;
-        var offsetVect = rotation.GetCardinalDir().ToIntVec();
-        var orthoOffsetVect = new Vector2i(-offsetVect.Y, offsetVect.X);
-
-        var positionFuelChamber = _mapSystem.TileIndicesFor(gridUid!.Value, grid, fuelXform.Coordinates); //   n   // n: End Cap
-        var positionEndCap = positionFuelChamber - offsetVect;                                            //  CF   // C: Control Box, F: Fuel Chamber
-        var positionPowerBox = positionFuelChamber + offsetVect;                                          //   P   // P: Power Box
-        var positionPortEmitter = positionFuelChamber + offsetVect * 2 + orthoOffsetVect;                 //  EEE  // E: Emitter (Starboard, Fore, Port)
-        var positionForeEmitter = positionFuelChamber + offsetVect * 2;
-        var positionStarboardEmitter = positionFuelChamber + offsetVect * 2 - orthoOffsetVect;
+        var positionFuelChamber = grid.TileIndicesFor(fuelXform.Coordinates);                           //       //
+        var positionEndCap = positionFuelChamber + (Vector2i) rotation.RotateVec(new Vector2(0, 1));               //   n   // n: End Cap
+        var positionPowerBox = positionFuelChamber + (Vector2i) rotation.RotateVec(new Vector2(0, -1));            //  CF   // C: Control Box, F: Fuel Chamber
+        var positionPortEmitter = positionFuelChamber + (Vector2i) rotation.RotateVec(new Vector2(1, -2));         //   P   // P: Power Box
+        var positionForeEmitter = positionFuelChamber + (Vector2i) rotation.RotateVec(new Vector2(0, -2));         //  EEE  // E: Emitter (Starboard, Fore, Port)
+        var positionStarboardEmitter = positionFuelChamber + (Vector2i) rotation.RotateVec(new Vector2(-1, -2));   //       //
 
         ScanPart<ParticleAcceleratorEndCapComponent>(gridUid!.Value, positionEndCap, rotation, out controller.EndCap, out var _, grid);
         ScanPart<ParticleAcceleratorPowerBoxComponent>(gridUid!.Value, positionPowerBox, rotation, out controller.PowerBox, out var _, grid);
@@ -139,7 +137,7 @@ public sealed partial class ParticleAcceleratorSystem
         }
 
         var compQuery = GetEntityQuery<T>();
-        foreach (var entity in _mapSystem.GetAnchoredEntities(uid, grid, coordinates))
+        foreach (var entity in grid.GetAnchoredEntities(coordinates))
         {
             if (compQuery.TryGetComponent(entity, out comp)
             && TryComp<ParticleAcceleratorPartComponent>(entity, out var partState) && partState.Master == null

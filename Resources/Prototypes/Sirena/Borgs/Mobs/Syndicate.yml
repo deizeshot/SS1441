@@ -1,0 +1,105 @@
+- type: entity
+  id: BorgChassisSyndicateSec
+  parent: BaseBorgChassisSyndicate
+  name: syndicate sec cyborg
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: synd_sec
+    - state: synd_sec_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: synd_sec_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      750: Critical
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: synd_sec
+      Critical:
+        base: gibdown-synd_sec
+  - type: BorgChassis
+    maxModules: 8
+    moduleWhitelist:
+      tags: [ BorgModuleCargo, BorgModuleEngineering, BorgModuleGeneric, BorgModuleJanitor, BorgModuleMedical, BorgModuleScience, BorgModuleSecurity, BorgModuleService, BorgModuleService, BorgModuleSyndicateGen, BorgModuleSyndicateSec ]
+    hasMindState: synd_sec_e
+    noMindState: synd_sec_e_r
+  - type: NameIdentifier
+    group: SSEC
+
+- type: entity
+  id: BorgChassisSyndicateEngineer
+  parent: BaseBorgChassisSyndicate
+  name: syndicate engineer cyborg
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: synd_engineer
+    - state: synd_engineer_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: synd_engineer_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: synd_engineer
+      Critical:
+        base: gibdown-synd_engineer
+  - type: BorgChassis
+    maxModules: 8
+    moduleWhitelist:
+      tags: [ BorgModuleCargo, BorgModuleEngineering, BorgModuleGeneric, BorgModuleJanitor, BorgModuleMedical, BorgModuleScience, BorgModuleSecurity, BorgModuleService, BorgModuleService, BorgModuleSyndicateGen, BorgModuleSyndicateEng ]
+    hasMindState: synd_engineer_e
+    noMindState: synd_engineer_e_r
+  - type: Repairable
+    fuelcost: 25
+    doAfterDelay: 30
+    allowSelfRepair: true
+  - type: NameIdentifier
+    group: SENG
+
+- type: entity
+  id: BorgChassisSyndicateMedical
+  parent: BaseBorgChassisSyndicate
+  name: syndicate medical cyborg
+  components:
+  - type: Sprite
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: synd_medical
+    - state: synd_medical_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: synd_medical_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: synd_medical
+      Critical:
+        base: gibdown-synd_medical
+  - type: BorgChassis
+    maxModules: 8
+    moduleWhitelist:
+      tags: [ BorgModuleCargo, BorgModuleEngineering, BorgModuleGeneric, BorgModuleJanitor, BorgModuleMedical, BorgModuleScience, BorgModuleSecurity, BorgModuleService, BorgModuleService, BorgModuleSyndicateGen, BorgModuleSyndicateMed ]
+    hasMindState: synd_medical_e
+    noMindState: synd_medical_e_r
+  - type: MovementIgnoreGravity
+  - type: SolutionScanner
+  - type: NameIdentifier
+    group: SMBG

@@ -1,0 +1,19 @@
+- type: latheRecipe
+  id: CleanerModuleJanitorSirena
+  result: CleanerModuleJanitorSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: AdvCleanerModuleJanitorSirena
+  result: AdvCleanerModuleJanitorSirena
+  completetime: 3
+  materials:
+    Steel: 750
+    Glass: 1000
+    Plastic: 500
+    Gold: 100

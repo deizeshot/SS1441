@@ -1,0 +1,97 @@
+# Science
+- type: latheRecipe
+  id: LeftArmBorgScience
+  result: LeftArmBorgScience
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: RightArmBorgScience
+  result: RightArmBorgScience
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: LeftLegBorgScience
+  result: LeftLegBorgScience
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: RightLegBorgScience
+  result: RightLegBorgScience
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: TorsoBorgScience
+  result: TorsoBorgScience
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: HeadBorgScience
+  result: HeadBorgScience
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+# Sec
+- type: latheRecipe
+  id: LeftArmBorgSec
+  result: LeftArmBorgSec
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: RightArmBorgSec
+  result: RightArmBorgSec
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: LeftLegBorgSec
+  result: LeftLegBorgSec
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: RightLegBorgSec
+  result: RightLegBorgSec
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: HeadBorgSec
+  result: HeadBorgSec
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150
+
+- type: latheRecipe
+  id: TorsoBorgSec
+  result: TorsoBorgSec
+  completetime: 2
+  materials:
+    Steel: 500
+    Glass: 150

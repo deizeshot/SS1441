@@ -11,7 +11,6 @@ public sealed partial class ActionUpgradeComponent : Component
     /// <summary>
     ///     Current Level of the action.
     /// </summary>
-    [ViewVariables]
     public int Level = 1;
 
     /// <summary>

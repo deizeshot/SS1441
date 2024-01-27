@@ -1,0 +1,22 @@
+- type: marking
+  id: FoxTailSirena
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Human ]
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: Sirena/Mobs/Customization/fox_tail.rsi
+    state: tail_fox_wag_stripes_prime
+  - sprite: Sirena/Mobs/Customization/fox_tail.rsi
+    state: tail_fox_wag_stripes_second
+  - sprite: Sirena/Mobs/Customization/fox_tail.rsi
+    state: tail_fox_wag_stripes_third
+    #thaks to ADT

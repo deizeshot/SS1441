@@ -47,8 +47,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
-              sound:
-                collection: MetalBreak
+              sound: /Audio/Effects/metalbreak.ogg
             - !type:SpawnEntitiesBehavior
               spawn:
                 SheetSteel:
@@ -161,8 +160,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
-              sound:
-                collection: WoodDestroy
+              sound: /Audio/Effects/metalbreak.ogg
             - !type:SpawnEntitiesBehavior
               spawn:
                 MaterialWoodPlank:
@@ -184,16 +182,16 @@
     - type: Blocking
       passiveBlockModifier:
         coefficients:
-          Blunt: 0.95
-          Slash: 0.95
-          Piercing: 0.95
-          Heat: 0.9
-      activeBlockModifier:
-        coefficients:
           Blunt: 0.85
           Slash: 0.85
           Piercing: 0.85
           Heat: 0.8
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.8
+          Heat: 0.7
         flatReductions:
           Blunt: 0.5
           Slash: 0.5
@@ -212,13 +210,12 @@
               acts: [ "Destruction" ]
         - trigger:
             !type:DamageTrigger
-            damage: 20 #Very weak shield
+            damage: 30 
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
-              sound:
-                collection: MetalBreak
+              sound: /Audio/Effects/metalbreak.ogg
             - !type:SpawnEntitiesBehavior
               spawn:
                 SheetSteel:
@@ -276,7 +273,7 @@
                   max: 1
             - !type:PlaySoundBehavior
               sound:
-                collection: WoodDestroy
+                path: /Audio/Effects/woodhit.ogg
 
 #Magic/Cult Shields (give these to wizard for now)
 
@@ -349,8 +346,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
-              sound:
-                collection: GlassBreak
+              sound: /Audio/Effects/glass_break1.ogg
             - !type:SpawnEntitiesBehavior
               spawn:
                 SheetGlass:
@@ -444,8 +440,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
-              sound:
-                collection: GlassBreak
+              sound: /Audio/Effects/metalbreak.ogg
             - !type:SpawnEntitiesBehavior
               spawn:
                 BrokenEnergyShield:
@@ -523,8 +518,7 @@
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
-              sound:
-                collection: MetalGlassBreak
+              sound: /Audio/Effects/metalbreak.ogg
             - !type:SpawnEntitiesBehavior
               spawn:
                 SheetSteel:

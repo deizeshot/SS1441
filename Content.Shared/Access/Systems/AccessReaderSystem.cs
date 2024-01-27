@@ -76,8 +76,6 @@ public sealed class AccessReaderSystem : EntitySystem
 
     private void OnEmagged(EntityUid uid, AccessReaderComponent reader, ref GotEmaggedEvent args)
     {
-        if (!reader.BreakOnEmag)
-            return;
         args.Handled = true;
         reader.Enabled = false;
         reader.AccessLog.Clear();

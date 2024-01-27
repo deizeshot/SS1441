@@ -12,12 +12,10 @@ public enum VoiceMaskUIKey : byte
 public sealed class VoiceMaskBuiState : BoundUserInterfaceState
 {
     public string Name { get; }
-    public string Voice { get; } // Corvax-TTS
 
-    public VoiceMaskBuiState(string name, string voice)  // Corvax-TTS
+    public VoiceMaskBuiState(string name)
     {
         Name = name;
-        Voice = voice;  // Corvax-TTS
     }
 }
 

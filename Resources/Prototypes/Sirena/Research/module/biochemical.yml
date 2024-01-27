@@ -1,0 +1,69 @@
+﻿# Tier 1
+
+# Tier 2
+- type: technology
+  id: ApplicationRoboticsMedicine
+  name: research-technology-applicationroboticsmedicine
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: medical
+  discipline: Biochemical
+  tier: 2
+  cost: 7000
+  recipeUnlocks:
+  - BaseAidModuleMedicalSirena
+  technologyPrerequisites:
+  - BasicRoboticsSystemsSirena
+
+# Tier 3
+- type: technology
+  id: ChemicalGeneratorModules
+  name: research-technology-chemicalgeneratormodules
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: medical
+  discipline: Biochemical
+  tier: 3
+  cost: 7000
+  recipeUnlocks:
+  - LiquidAidModuleMedicalSirena
+  technologyPrerequisites:
+  - AdvHealthAnalyzer
+  - ApplicationRoboticsMedicine
+  - BasicRoboticsSystemsSirena
+  - TUHMR
+
+- type: technology
+  id: AdvApplicationRoboticsMedicine
+  name: research-technology-advapplicationroboticsmedicine
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: medical
+  discipline: Biochemical
+  tier: 3
+  cost: 8000
+  recipeUnlocks:
+  - AdvAidModuleMedicalSirena
+  technologyPrerequisites:
+  - AdvHealthAnalyzer
+  - ApplicationRoboticsMedicine
+  - BasicRoboticsSystemsSirena
+
+- type: technology
+  id: RenimationModule
+  name: research-technology-renimationmodule
+  icon:
+    sprite: Objects/Specific/Robotics/borgmodule.rsi
+    state: medical
+  discipline: Biochemical
+  tier: 3
+  cost: 8000
+  recipeUnlocks:
+  - ReanimationModuleMedicalSirena
+  technologyPrerequisites:
+  - AdvHealthAnalyzer
+  - ApplicationRoboticsMedicine
+  - BasicRoboticsSystemsSirena
+  - TUHMR
+
+# Tier 4

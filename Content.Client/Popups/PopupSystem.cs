@@ -1,4 +1,5 @@
-using System.Linq;
+using Content.Client.UserInterface.Systems.Chat;
+using Content.Shared.Chat;
 using Content.Shared.GameTicking;
 using Content.Shared.Popups;
 using Robust.Client.Graphics;
@@ -13,6 +14,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Replays;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using System.Linq;
 
 namespace Content.Client.Popups
 {
@@ -72,6 +74,24 @@ namespace Content.Client.Popups
             };
 
             _aliveWorldLabels.Add(label);
+
+            // Для отображения Popup в чате. Взято с няно и чутка модифицировано
+            if (type == PopupType.Small)
+                return;
+
+            Color color;
+            if (type == PopupType.SmallCaution || type == PopupType.MediumCaution || type == PopupType.LargeCaution)
+            {
+                color = Color.Red;
+            }
+            else
+            {
+                color = Color.White;
+            }
+
+            var msg = new ChatMessage(ChatChannel.Emotes, message, message, default, (int?) entity, false, color);
+            var chatCon = _uiManager.GetUIController<ChatUIController>();
+            chatCon.ProcessChatMessage(msg);
         }
 
         #region Abstract Method Implementations
@@ -138,7 +158,7 @@ namespace Content.Client.Popups
                 PopupEntity(message, uid, type);
         }
 
-        public override void PopupEntity(string message, EntityUid uid, Filter filter, bool recordReplay, PopupType type=PopupType.Small)
+        public override void PopupEntity(string message, EntityUid uid, Filter filter, bool recordReplay, PopupType type = PopupType.Small)
         {
             if (!filter.Recipients.Contains(_playerManager.LocalPlayer?.Session))
                 return;

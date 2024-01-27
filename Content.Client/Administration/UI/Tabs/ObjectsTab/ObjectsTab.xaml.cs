@@ -117,4 +117,3 @@ public sealed partial class ObjectsTab : Control
         Stations,
     }
 }
-

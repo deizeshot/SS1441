@@ -530,6 +530,8 @@
       - id: GoldenBikeHorn
         prob: 0.1
         orGroup: GiftPool
+      - id: PlushieRouter # Sirena Router
+        orGroup: GiftPool
 
 - type: entity
   id: HappyHonkMime

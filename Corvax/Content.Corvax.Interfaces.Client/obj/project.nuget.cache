@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m5oRn0Je85cSaUgHCfyv7dP9ESsbbG9OowpOgmXj23+t9RV9jzQtzDH4ah3zNuuQAfIgmXx7mgJQKLSylhMMfA==",
+  "dgSpecHash": "nk+T6xvBJZSVwaZIpPzivd20OaLVMn5nc5D28l4N6W5XX2+eJtqBEyKzXOzE0SxlhoYJArz5a4zxnE8o0yB4+A==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Corvax/Content.Corvax.Interfaces.Client/Content.Corvax.Interfaces.Client.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/discordrichpresence/1.2.1.24/discordrichpresence.1.2.1.24.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/jetbrains.formatripper/2.0.1/jetbrains.formatripper.2.0.1.nupkg.sha512",

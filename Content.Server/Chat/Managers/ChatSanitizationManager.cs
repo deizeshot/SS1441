@@ -11,6 +11,12 @@ public sealed class ChatSanitizationManager : IChatSanitizationManager
 
     private static readonly Dictionary<string, string> SmileyToEmote = new()
     {
+        // Sirena add
+        { "0_0", "chatsan-wide-eyed" }, 
+        { "o_0", "chatsan-wide-eyed" },
+        { "о_0", "chatsan-wide-eyed" }, // cyrillic о
+        { "о_о", "chatsan-wide-eyed" }, // cyrillic о
+        // Sirena end
         // Corvax-Localization-Start
         { "хд", "chatsan-laughs" },
         { "о-о", "chatsan-wide-eyed" }, // cyrillic о

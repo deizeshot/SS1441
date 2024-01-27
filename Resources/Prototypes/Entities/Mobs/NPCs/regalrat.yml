@@ -114,6 +114,9 @@
   - type: Grammar
     attributes:
       gender: male
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
 
 - type: entity
   id: MobRatKingBuff
@@ -182,15 +185,8 @@
     drawdepth: SmallMobs
     sprite: Mobs/Animals/mouse.rsi
     layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: mouse-3
-  - type: SpriteMovement
-    movementLayers:
-      movement:
-        state: mouse-moving-3
-    noMovementLayers:
-      movement:
-        state: mouse-3
   - type: Physics
     bodyType: KinematicController
   - type: Fixtures

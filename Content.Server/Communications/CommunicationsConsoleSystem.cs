@@ -11,7 +11,6 @@ using Content.Server.Station.Systems;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.CCVar;
-using Content.Shared.Chat;
 using Content.Shared.Communications;
 using Content.Shared.Database;
 using Content.Shared.Emag.Components;
@@ -36,6 +35,8 @@ namespace Content.Server.Communications
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
+        private const int MaxMessageLength = 256;
+        private const int MaxMessageNewlines = 2;
         private const float UIUpdateInterval = 5.0f;
 
         public override void Initialize()
@@ -230,8 +231,22 @@ namespace Content.Server.Communications
         private void OnAnnounceMessage(EntityUid uid, CommunicationsConsoleComponent comp,
             CommunicationsConsoleAnnounceMessage message)
         {
-            var maxLength = _cfg.GetCVar(CCVars.ChatMaxAnnouncementLength);
-            var msg = SharedChatSystem.SanitizeAnnouncement(message.Message, maxLength);
+            var msgWords = message.Message.Trim();
+            var msgChars = (msgWords.Length <= MaxMessageLength ? msgWords : $"{msgWords[0..MaxMessageLength]}...").ToCharArray();
+
+            var newlines = 0;
+            for (var i = 0; i < msgChars.Length; i++)
+            {
+                if (msgChars[i] != '\n')
+                    continue;
+
+                if (newlines >= MaxMessageNewlines)
+                    msgChars[i] = ' ';
+
+                newlines++;
+            }
+
+            var msg = new string(msgChars);
             var author = Loc.GetString("comms-console-announcement-unknown-sender");
             if (message.Session.AttachedEntity is { Valid: true } mob)
             {

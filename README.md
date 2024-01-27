@@ -1,8 +1,8 @@
-<p align="center"> <img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg" /></p>
+<p align="center"> <img alt="Space Station 14" width="500" height="154" src="https://codeberg.org/Sirena/Sirena_website/raw/commit/2251dfb284b514df7adce6c558ca92f7c18cfa10/static/images/logo.png" /></p>
 
 Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 
-Это репозиторий первого русскоязычного сервера по Space Station 14, целью которого является полный перевод игры на русский язык, поддержка актуальных изменений из основного репозитория, а так же добавление собственных изменений по необходимости.
+Это репозиторий сервера Sirena. Здесь публикуются актуальные изменения и в целом разные вещи ТОЛЬКО для данного проекта.
 
 ## Ссылки
 
@@ -26,8 +26,16 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Лицензия
 
-Весь код репозитория лицензирован под [MIT](https://github.com/space-syndicate/space-station-14/blob/master/LICENSE.TXT).
+Весь код репозитория лицензирован под [GNU General Public License, Version 2.0](https://codeberg.org/Sirena/SS14-Sirena/src/branch/master/LICENSE.TXT).
 
 Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://github.com/space-syndicate/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
 Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+
+<!--## Проверки
+[![status-badge](https://ci.codeberg.org/api/badges/Sirena/SS14-Sirena/status.svg)](https://ci.codeberg.org/Sirena/SS14-Sirena)-->
+
+## Feedback/обратная связь
+If you notice that any license is infringing, please report it immediately either on Neko Dar#8948 in discord, or at email sirena.server@mail.ru
+
+Если вы заметили, что какая либо лицензия нарушает права, просьба немедленно сообщить об этом или в дискорд Neko Dar#8948, или на почту sirena.server@mail.ru

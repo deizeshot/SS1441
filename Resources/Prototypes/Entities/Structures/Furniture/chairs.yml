@@ -45,7 +45,7 @@
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
   - type: StaticPrice
     price: 10
 
@@ -191,7 +191,7 @@
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
-          collection: WoodDestroy
+          path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWoodPlank:
@@ -289,7 +289,7 @@
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
-          collection: WoodDestroy
+          path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialWebSilk:

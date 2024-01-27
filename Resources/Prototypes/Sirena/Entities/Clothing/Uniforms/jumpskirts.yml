@@ -1,0 +1,43 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtArtistRed
+  name: artist's red skirt
+  description: A neat mini skirt for musical performances. The red one.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_red.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_red.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtArtistBlue
+  name: artist's blue skirt
+  description: A neat mini skirt for musical performances. The blue one.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_blue.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_blue.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtArtistGreen
+  name: artist's green skirt
+  description: A neat mini skirt for musical performances. The green one.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_green.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_green.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtArtistYellow
+  name: artist's yellow skirt
+  description: A neat mini skirt for musical performances. The yellow one.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_yellow.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Uniforms/Jumpskirt/artist_yellow.rsi

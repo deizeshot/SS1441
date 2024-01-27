@@ -41,19 +41,17 @@
     stopSearchVerbPopup: pai-system-stopped-searching
   - type: Examiner
   - type: IntrinsicRadioReceiver
-  - type: IntrinsicRadioTransmitter
-    channels:
-    - Binary
+  - type: CollectiveMind
+    channel: Binary
+    showRank: true
+    rankName: collective-mind-pai-rank
   - type: ActiveRadio
     channels:
-    - Binary
     - Common
   - type: DoAfter
   - type: Actions
   - type: TypingIndicator
     proto: robot
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai

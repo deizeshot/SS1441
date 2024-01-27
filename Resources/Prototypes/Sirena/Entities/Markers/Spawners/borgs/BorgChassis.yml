@@ -1,0 +1,171 @@
+- type: entity
+  id: SpawnerBorgChassisUICSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Sirena/borg.rsi
+        state: UIC
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgUIC
+
+#station   
+- type: entity
+  id: SpawnerBorgChassisSecSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Sirena/borg.rsi
+        state: Sec
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisSec
+  
+- type: entity
+  id: SpawnerBorgChassisScienceSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Sirena/borg.rsi
+        state: science
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisScience
+
+- type: entity
+  id: SpawnerBorgChassisGenericSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: robot
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisGeneric
+
+- type: entity
+  id: SpawnerBorgChassisEngineerSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: engineer
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisEngineer
+
+- type: entity
+  id: SpawnerBorgChassisJanitorSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: janitor
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisJanitor
+
+- type: entity
+  id: SpawnerBorgChassisMedicalSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: medical
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisMedical
+
+- type: entity
+  id: SpawnerBorgChassisMiningSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: miner
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisMining
+
+- type: entity
+  id: SpawnerBorgChassisServiceSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: service
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisService
+
+#Syndicate
+- type: entity
+  id: SpawnerBorgChassisSyndEngSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: synd_engineer
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisSyndicateEngineer
+
+- type: entity
+  id: SpawnerBorgChassisSyndMedSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: synd_medical
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisSyndicateMedical
+
+- type: entity
+  id: SpawnerBorgChassisSyndSecSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Mobs/Silicon/chassis.rsi
+        state: synd_sec
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisSyndicateSec
+
+#ert
+- type: entity
+  id: SpawnerBorgChassisERTSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Sirena/borg.rsi
+        state: ERT
+  - type: ConditionalSpawner
+    prototypes:
+      - BorgChassisERT

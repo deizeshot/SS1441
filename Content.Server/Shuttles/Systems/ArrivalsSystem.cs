@@ -81,7 +81,7 @@ public sealed class ArrivalsSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<PlayerSpawningEvent>(OnPlayerSpawn, before: new[] { typeof(SpawnPointSystem), typeof(ContainerSpawnPointSystem) });
+        SubscribeLocalEvent<PlayerSpawningEvent>(OnPlayerSpawn, before: new[] { typeof(SpawnPointSystem) });
         SubscribeLocalEvent<StationArrivalsComponent, ComponentStartup>(OnArrivalsStartup);
 
         SubscribeLocalEvent<ArrivalsShuttleComponent, ComponentStartup>(OnShuttleStartup);
@@ -315,9 +315,6 @@ public sealed class ArrivalsSystem : EntitySystem
 
     private void OnPlayerSpawn(PlayerSpawningEvent ev)
     {
-        if (ev.SpawnResult != null)
-            return;
-
         // Only works on latejoin even if enabled.
         if (!Enabled || _ticker.RunLevel != GameRunLevel.InRound)
             return;

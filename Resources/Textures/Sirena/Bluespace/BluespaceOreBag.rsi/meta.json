@@ -1,0 +1,23 @@
+{
+  "license": "CC-BY-SA-3.0", 
+  "copyright": "Taken from https://github.com/tgstation/tgstation/blob/47f0f52a0d40fb04ffe8056bb4c5d62198d06ad8/icons/obj/mining.dmi",
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bluespace_ore_bag",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

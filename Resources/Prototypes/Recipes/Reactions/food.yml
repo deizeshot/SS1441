@@ -307,8 +307,8 @@
     JuiceBanana:
       amount: 10
   products:
-    Sugar: 5
-    Potassium: 5
+    Sugar: 9
+    Potassium: 1
 
 - type: reaction
   id: OilBreakdown

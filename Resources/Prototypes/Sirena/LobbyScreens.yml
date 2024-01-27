@@ -1,0 +1,21 @@
+- type: lobbyBackground
+  id: Slime
+  background: /Textures/Sirena/LobbyScreens/slime.png
+
+- type: lobbyBackground
+  id: NekoAndHOS
+  background: /Textures/Sirena/LobbyScreens/nekoandhos.png
+
+- type: lobbyBackground
+  id: Milashka_VETA
+  background: /Textures/Sirena/LobbyScreens/milashkaveta.png
+
+- type: lobbyBackground
+  id: Server
+  background: /Textures/Sirena/LobbyScreens/server.png
+
+- type: lobbyBackground
+  id: Slimegirl
+  background: /Textures/Sirena/LobbyScreens/slimegirl.png
+
+

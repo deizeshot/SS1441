@@ -1,7 +1,5 @@
-﻿using Content.Shared.CCVar;
-using Content.Shared.Chat;
-using Content.Shared.Communications;
-using Robust.Shared.Configuration;
+﻿using Content.Shared.Communications;
+using Robust.Client.GameObjects;
 using Robust.Shared.Timing;
 
 namespace Content.Client.Communications.UI
@@ -9,7 +7,6 @@ namespace Content.Client.Communications.UI
     public sealed class CommunicationsConsoleBoundUserInterface : BoundUserInterface
     {
         [Dependency] private readonly IGameTiming _gameTiming = default!;
-        [Dependency] private readonly IConfigurationManager _cfg = default!;
 
         [ViewVariables]
         private CommunicationsConsoleMenu? _menu;
@@ -66,9 +63,22 @@ namespace Content.Client.Communications.UI
 
         public void AnnounceButtonPressed(string message)
         {
-            var maxLength = _cfg.GetCVar(CCVars.ChatMaxAnnouncementLength);
-            var msg = SharedChatSystem.SanitizeAnnouncement(message, maxLength);
-            SendMessage(new CommunicationsConsoleAnnounceMessage(msg));
+            var msg = (message.Length <= 256 ? message.Trim() : $"{message.Trim().Substring(0, 256)}...").ToCharArray();
+
+            // No more than 2 newlines, other replaced to spaces
+            var newlines = 0;
+            for (var i = 0; i < msg.Length; i++)
+            {
+                if (msg[i] != '\n')
+                    continue;
+
+                if (newlines >= 2)
+                    msg[i] = ' ';
+
+                newlines++;
+            }
+
+            SendMessage(new CommunicationsConsoleAnnounceMessage(new string(msg)));
         }
 
         public void CallShuttle()

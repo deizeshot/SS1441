@@ -1,0 +1,46 @@
+﻿# Tier 2
+- type: technology
+  id: AdvOreProcessing
+  name: technologies-adv-ore-processing
+  icon:
+    sprite: Objects/Misc/eggspider.rsi # lol
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 4500
+  recipeUnlocks:
+  - SheetUranium30
+  - IngotGold30
+  - IngotSilver30
+  - MaterialBananium10
+
+# Tier 3
+- type: technology
+  id: BluespaceProcessing
+  name: technologies-bluespace-processing
+  icon:
+    sprite: Sirena/Bluespace/BluespaceCrystal.rsi
+    state: bluespace_crystal_ore
+  discipline: Industrial
+  tier: 3
+  cost: 6000
+  recipeUnlocks:
+  - BlueSpaceCrystal
+
+# Tier 4
+- type: technology
+  id: BlueSpaceBackpacsHoldingTechnology
+  name: technologies-bluespacebackpacsholding
+  icon:
+    sprite: Clothing/Back/Duffels/holding.rsi
+    state: icon
+  discipline: Industrial
+  tier: 4
+  cost: 15000
+  recipeUnlocks:
+  - ClothingBackpackSatchelHolding
+  - ClothingBackpackDuffelHolding
+  - ClothingBackpackHolding
+  - BlueSpaceOreBag
+  technologyPrerequisites:
+  - BluespaceProcessing

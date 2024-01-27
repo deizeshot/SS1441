@@ -112,9 +112,6 @@
       behaviors: #excess damage, don't spawn entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalGlassBreak
     - trigger:
         !type:DamageTrigger
         damage: 50
@@ -126,9 +123,6 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalGlassBreak
   - type: StationInfiniteBatteryTarget
   - type: Electrified
     onHandInteract: false
@@ -183,9 +177,6 @@
           SheetSteel1:
             min: 1
             max: 1
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 

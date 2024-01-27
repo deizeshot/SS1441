@@ -2,7 +2,6 @@ using System.Numerics;
 using NUnit.Framework;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
-using Robust.Shared.Reflection;
 
 namespace Robust.UnitTesting.Server.GameObjects;
 
@@ -39,7 +38,6 @@ public sealed partial class ComponentMapInitTest
         mapManager.DeleteMap(mapId);
     }
 
-    [Reflect(false)]
     private sealed class MapInitTestSystem : EntitySystem
     {
         public override void Initialize()
@@ -54,7 +52,6 @@ public sealed partial class ComponentMapInitTest
         }
     }
 
-    [Reflect(false)]
     private sealed partial class MapInitTestComponent : Component
     {
         public int Count = 0;

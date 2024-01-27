@@ -6,15 +6,10 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobAtmosphericTechnician
-      time: 36000 #10 hrs # Corvax-RoleTime
-#    - !type:RoleTimeRequirement
-#      role: JobStationEngineer
-#      time: 21600 #6 hrs
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 54000 #15 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
+      time: 14400
+    - !type:RoleTimeRequirement
+      role: JobStationEngineer
+      time: 14400
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"
@@ -47,6 +42,9 @@
     eyes: ClothingEyesGlassesMeson
     ears: ClothingHeadsetCE
     belt: ClothingBeltUtilityEngineering
+    underwearb: ClothingUnderwearBottomBoxersCE # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraCE # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesCE # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtChiefEngineer
   satchel: ClothingBackpackSatchelChiefEngineerFilled
   duffelbag: ClothingBackpackDuffelChiefEngineerFilled

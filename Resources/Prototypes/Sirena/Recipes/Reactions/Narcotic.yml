@@ -1,0 +1,49 @@
+# - type: reaction
+  # id: BloodBreakdown
+  # minTemp: 347
+  # requiredMixerCategories:
+  # - Centrifuge # Electrolysis
+  # reactants:
+    # Blood:
+      # amount: 20
+      # catalyst: true
+  # products:
+    # Water: 11
+    # Iron: 0.5
+    # Sugar: 2
+    # CarbonDioxide: 3
+    # Protein: 4
+
+- type: reaction
+  id: GabapentinCreate
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    Silver:
+      amount: 10
+    Iron:
+      amount: 5
+    Radium:
+      amount: 5
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    Gabapentin: 20
+
+- type: reaction
+  id: EmoAplifeCreate
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    Silver:
+      amount: 10
+    Iron:
+      amount: 5
+    Potassium:
+      amount: 5
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    EmoAplife: 20

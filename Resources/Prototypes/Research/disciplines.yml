@@ -9,6 +9,7 @@
     1: 0
     2: 0.75
     3: 0.75
+    4: 0.75 #Sirena T4 add
 
 - type: techDiscipline
   id: Biochemical
@@ -21,6 +22,7 @@
     1: 0
     2: 0.75
     3: 0.75
+    4: 0.75 #Sirena T4 add
 
 - type: techDiscipline
   id: Arsenal
@@ -33,6 +35,7 @@
     1: 0
     2: 0.75
     3: 0.75
+    4: 0.75 #Sirena T4 add
 
 - type: techDiscipline
   id: Experimental
@@ -45,6 +48,7 @@
     1: 0
     2: 0.75
     3: 0.75
+    4: 0.75 #Sirena T4 add
 
 - type: techDiscipline
   id: CivilianServices
@@ -57,3 +61,4 @@
     1: 0
     2: 0.75
     3: 0.75
+    4: 0.75 #Sirena T4 add

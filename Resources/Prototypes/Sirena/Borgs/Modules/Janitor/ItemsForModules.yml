@@ -1,0 +1,11 @@
+- type: entity
+  parent: SprayBottleSpaceCleaner
+  id: SprayBottleSpaceCleanerSirena
+  noSpawn: true
+  components:
+  - type: SolutionRegeneration
+    solution: spray
+    generated:
+      reagents:
+      - ReagentId: SpaceCleaner
+        Quantity: 1

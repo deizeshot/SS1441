@@ -41,7 +41,7 @@
       - !type:EmptyAllContainersBehaviour
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalGlassBreak
+          path: /Audio/Effects/metalbreak.ogg
 
 - type: entity
   parent: BaseLightStructure

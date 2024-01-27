@@ -11,8 +11,6 @@
     ClothingHeadBandGreen: 2
     ClothingHeadBandRed: 2
     ClothingHeadBandSkull: 2
-    ClothingHeadHatGreyFlatcap: 3
-    ClothingHeadHatBrownFlatcap: 3
     ClothingUniformJumpsuitColorGrey: 8
     ClothingUniformJumpskirtColorGrey: 8
     ClothingUniformJumpsuitColorWhite: 3
@@ -83,6 +81,13 @@
     ClothingHandsGlovesColorGreen: 2
     ClothingHandsGlovesColorOrange: 2
     ClothingHandsGlovesColorPurple: 2
+    # Sirena-Start
+    ClothingNeckChokerHeart: 2
+    ClothingNeckChokerSpike: 2
+    ClothingUnderwearBottomPantiesWhite: 5
+    ClothingUnderwearTopBraWhite: 5
+    ClothingUnderwearBottomBoxersWhite: 5
+    # Sirena-End
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
     ClothingUniformJumpsuitTacticool: 1

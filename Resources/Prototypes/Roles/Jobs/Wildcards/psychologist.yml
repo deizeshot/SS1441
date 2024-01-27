@@ -20,6 +20,9 @@
     shoes: ClothingShoesLeather
     id: PsychologistPDA
     ears: ClothingHeadsetMedical
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtPsychologist # Corvax-Resprite
   satchel: ClothingBackpackSatchelPsychologistFilled # Corvax-Stamp
   duffelbag: ClothingBackpackDuffelPsychologistFilled # Corvax-Stamp

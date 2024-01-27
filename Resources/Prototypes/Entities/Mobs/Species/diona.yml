@@ -5,6 +5,8 @@
   id: BaseMobDiona
   abstract: true
   components:
+  - type: CollectiveMind
+    channel: DionsCollectiveMind
   - type: HumanoidAppearance
     species: Diona
   - type: Hunger
@@ -96,7 +98,6 @@
       Unsexed: UnisexDiona
   - type: BodyEmotes
     soundsId: DionaBodyEmotes
-  - type: Pacified # Corvax-DionaPacifist
   - type: IgnoreKudzu
 
 - type: entity

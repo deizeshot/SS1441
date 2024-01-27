@@ -26,7 +26,6 @@ public abstract partial class SharedFultonSystem : EntitySystem
     [Dependency] protected readonly SharedAudioSystem Audio = default!;
     [Dependency] private   readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private   readonly FoldableSystem _foldable = default!;
-    [Dependency] protected readonly SharedContainerSystem Container = default!;
     [Dependency] private   readonly SharedPopupSystem _popup = default!;
     [Dependency] private   readonly SharedStackSystem _stack = default!;
     [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
@@ -139,7 +138,7 @@ public abstract partial class SharedFultonSystem : EntitySystem
             return;
         }
 
-        if (!CanApplyFulton(args.Target.Value, component))
+        if (!CanFulton(args.Target.Value, uid, component))
         {
             _popup.PopupClient(Loc.GetString("fulton-invalid"), uid, uid);
             return;
@@ -178,27 +177,15 @@ public abstract partial class SharedFultonSystem : EntitySystem
         return;
     }
 
-    protected bool CanApplyFulton(EntityUid targetUid, FultonComponent component)
+    private bool CanFulton(EntityUid targetUid, EntityUid uid, FultonComponent component)
     {
-        if (!CanFulton(targetUid))
+        if (Transform(targetUid).Anchored)
             return false;
 
         if (component.Whitelist?.IsValid(targetUid, EntityManager) != true)
+        {
             return false;
-
-        return true;
-    }
-
-    protected bool CanFulton(EntityUid uid)
-    {
-        var xform = Transform(uid);
-
-        if (xform.Anchored)
-            return false;
-
-        // Shouldn't need recursive container checks I think.
-        if (Container.IsEntityInContainer(uid))
-            return false;
+        }
 
         return true;
     }

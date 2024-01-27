@@ -1,0 +1,8 @@
+- type: latheRecipe
+  id: HandheldHealthAnalyzerAdvEmpty
+  result: HandheldHealthAnalyzerAdvEmpty
+  completetime: 30
+  materials:
+    Steel: 800
+    Glass: 700
+    Gold: 100

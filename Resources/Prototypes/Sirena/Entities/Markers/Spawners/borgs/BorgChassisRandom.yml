@@ -1,0 +1,21 @@
+- type: entity
+  name: Borgs spawner
+  id: BorgRandomSpawnSirena
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Silicon/chassis.rsi
+          state: robot
+    - type: RandomSpawner
+      prototypes:
+        - BorgChassisScience
+        - BorgChassisSec
+        - BorgChassisGeneric
+        - BorgChassisEngineer
+        - BorgChassisJanitor
+        - BorgChassisMedical
+        - BorgChassisMining
+        - BorgChassisService
+      offset: 0.2

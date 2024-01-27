@@ -401,7 +401,7 @@
               acts: ["Destruction"]
             - !type:PlaySoundBehavior
               sound:
-                collection: MetalBreak
+                path: /Audio/Effects/metalbreak.ogg
     - type: ItemMapper
       mapLayers:
         cart_plunger:
@@ -544,7 +544,7 @@
               acts: [ "Destruction" ]
             - !type:PlaySoundBehavior
               sound:
-                collection: MetalBreak
+                path: /Audio/Effects/metalbreak.ogg
 
 - type: entity
   name: plunger

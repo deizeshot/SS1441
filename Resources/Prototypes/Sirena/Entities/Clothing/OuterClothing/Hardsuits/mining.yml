@@ -1,0 +1,57 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitMiners
+  name: miner hardsuit
+  description: Spacesuit for NT miners, more suitable for planetary missions.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Hardsuits/Mining/mining.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Hardsuits/Mining/mining.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMiners
+
+- type: entity
+  parent: ClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitMiners
+  noSpawn: true
+  name: miner hardsuit helmet
+  description: Helmet for miner's suit
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Sirena/Clothing/Hardsuits/Mining/mininghelmet.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
+    - state: light-overlay
+      visible: false
+      shader: unshaded
+      map: [ "light" ]
+  - type: Clothing
+    clothingVisuals:
+      head:
+      - state: equipped-head
+      - state: equipped-head-unshaded
+        shader: unshaded
+  - type: PointLight
+    color: "#a4fef4"
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000

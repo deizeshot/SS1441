@@ -118,8 +118,15 @@
   - type: NoSlip
   - type: Perishable #Ummmm the acid kills a lot of the bacteria or something
     molsPerSecondPerUnitMass: 0.0005
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
   - type: Speech
     speechVerb: LargeMob
+  - type: CollectiveMind
+    channel: XenoCollectiveMind
+    showRank: true
+    rankName: collective-mind-burrower-rank
 
 - type: entity
   name: Praetorian
@@ -153,6 +160,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-praetorian-rank
 
 - type: entity
   name: Drone
@@ -190,7 +199,9 @@
         - MobMask
         layer:
         - MobLayer
-
+  - type: CollectiveMind
+    rankName: collective-mind-drone-rank
+    
 - type: entity
   name: Queen
   parent: MobXeno
@@ -229,6 +240,8 @@
   - type: Tag
     tags:
     - CannotSuicide
+  - type: CollectiveMind
+    rankName: collective-mind-queen-rank
 
 - type: entity
   name: Ravager
@@ -266,6 +279,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-ravager-rank
 
 - type: entity
   name: Runner
@@ -296,6 +311,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-runner-rank
 
 - type: entity
   name: Rouny
@@ -311,6 +328,8 @@
     spawned:
     - id: FoodMeatRouny
       amount: 3
+  - type: CollectiveMind
+    rankName: collective-mind-rouny-rank
 
 - type: entity
   name: Spitter
@@ -358,6 +377,8 @@
         - MobMask
         layer:
         - MobLayer
+  - type: CollectiveMind
+    rankName: collective-mind-spitter-rank
 
 - type: entity
   name: space adder

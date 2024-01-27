@@ -251,6 +251,9 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
         if (HasComp<UnremoveableComponent>(toInsert))
             return false;
 
+        if (HasComp<UnremoveableComponent>(toInsert))
+            return false;
+
         // Material Whitelist checked implicitly by CanChangeMaterialAmount();
 
         var multiplier = TryComp<StackComponent>(toInsert, out var stackComponent) ? stackComponent.Count : 1;

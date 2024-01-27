@@ -1,0 +1,20 @@
+{
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from tg station: https://github.com/tgstation/tgstation/blob/7846612d09f2f020c1148b10ed48dcd4230a8c80/icons/obj/medical/chemical.dmi , Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/11402f6ae62facc2e8bcfa1f8ef5353b26663278 and visually offset.",
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "MBRChemistryDispenser"
+    },
+    {
+      "name": "PortableBoozeDispenser"
+    },
+    {
+      "name": "PortableSodaDispenser"
+    }
+  ]
+}

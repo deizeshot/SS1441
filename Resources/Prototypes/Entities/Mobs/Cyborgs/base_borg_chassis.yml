@@ -14,7 +14,7 @@
       types:
         Blunt: 5
     soundHit:
-      collection: MetalThud
+      path: /Audio/Effects/hit_kick.ogg
   - type: CombatMode
   - type: NoSlip
   - type: StaticPrice
@@ -41,12 +41,10 @@
     allowedStates:
     - Alive
     - Critical
-    - Dead
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
-      200: Dead
+      500: Critical
     stateAlertDict:
       Alive: BorgHealth
       Critical: BorgCrit
@@ -76,7 +74,6 @@
     stunTime: 5
     emagLaws: SyndicateStatic
   - type: IonStormTarget
-  - type: Strippable
   - type: InventorySlots
   - type: Inventory
     templateId: borg
@@ -87,15 +84,14 @@
     channels:
     - Binary
     - Common
-    - Science
   - type: ActiveRadio
     channels:
     - Binary
     - Common
-    - Science
   - type: ZombieImmune
   - type: Repairable
-    doAfterDelay: 10
+    fuelcost: 25
+    doAfterDelay: 30
     allowSelfRepair: false
   - type: BorgChassis
   - type: WiresPanel
@@ -120,53 +116,18 @@
       cell_slot:
         name: power-cell-slot-component-slot-name-default
   - type: Body
-  - type: StatusEffects
-    allowed:
-    - Stun
-    - KnockedDown
-    - SlowedDown
+    prototype: BorgArmSirena
   - type: TypingIndicator
     proto: robot
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai
-  - type: UnblockableSpeech
-  - type: Construction
-    graph: Cyborg
-    containers:
-    - part-container
-    - cell_slot
   - type: Lock
     locked: true
   - type: ActivatableUIRequiresLock
   - type: Flashable
   - type: Damageable
     damageContainer: Silicon
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 75
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: /Audio/Machines/warning_buzzer.ogg
-          params:
-            volume: 5
-    - trigger:
-        !type:DamageTrigger
-        damage: 300
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
-      - !type:EmptyContainersBehaviour
-        containers:
-        - borg_brain
-        - borg_module
-        - cell_slot
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: HandheldLight
     toggleOnInteract: false
     wattage: 0.2
@@ -197,19 +158,24 @@
     netsync: false
   - type: Pullable
   - type: Puller
-    needsHands: false
   - type: StandingState
+  - type: Climbing
+  - type: Stripping
+  - type: Strippable
+  - type: Examiner
   - type: Tag
     tags:
     - ShoesRequiredStepTriggerImmune
     - DoorBumpOpener
     - CanPilot
   - type: Emoting
+  - type: CollectiveMind
+    channel: Binary
+    showRank: true
+    rankName: collective-mind-borg-rank
   - type: GuideHelp
     guides:
       - Cyborgs
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
 
 - type: entity
   id: BaseBorgChassisNT
@@ -219,6 +185,8 @@
   - type: NpcFactionMember
     factions:
     - NanoTrasen
+  - type: SiliconLawProvider
+    laws: Corporate
   - type: Access
     enabled: false
     groups:
@@ -227,28 +195,28 @@
     access: [["Command"], ["Research"]]
   - type: ShowSecurityIcons
 
-- type: entity
-  id: BaseBorgChassisSyndicate
-  parent: BaseBorgChassis
-  abstract: true
-  components:
-    - type: NpcFactionMember
-      factions:
-        - Syndicate
-    - type: Access
-      tags:
-       - NuclearOperative
-       - SyndicateAgent
-    - type: AccessReader
-      access: [["SyndicateAgent"], ["NuclearOperative"]]
-    - type: SiliconLawProvider
-      laws: SyndicateStatic
-    - type: IntrinsicRadioTransmitter
-      channels:
-        - Binary
-        - Syndicate
-    - type: ActiveRadio
-      channels:
-        - Syndicate
-    - type: ShowSyndicateIcons
-    - type: MovementAlwaysTouching
+# - type: entity
+  # id: BaseBorgChassisSyndicate
+  # parent: BaseBorgChassis
+  # abstract: true
+  # components:
+    # - type: NpcFactionMember
+      # factions:
+        # - Syndicate
+    # - type: Access
+      # tags:
+       # - NuclearOperative
+       # - SyndicateAgent
+    # - type: AccessReader
+      # access: [["SyndicateAgent"], ["NuclearOperative"]]
+    # - type: SiliconLawProvider
+      # laws: SyndicateStatic
+    # - type: IntrinsicRadioTransmitter
+      # channels:
+        # - Binary
+        # - Syndicate
+    # - type: ActiveRadio
+      # channels:
+        # - Syndicate
+    # - type: ShowSyndicateIcons
+    # - type: MovementAlwaysTouching

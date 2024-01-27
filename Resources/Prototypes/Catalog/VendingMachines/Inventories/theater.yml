@@ -40,6 +40,12 @@
     ClothingOuterClownPriest: 1
     ClothingMaskSadMime: 1
     ClothingMaskScaredMime: 1
+    # Sirena-Start
+    ClothingUniformJumpskirtArtistRed: 1
+    ClothingUniformJumpskirtArtistBlue: 1
+    ClothingUniformJumpskirtArtistGreen: 1
+    ClothingUniformJumpskirtArtistYellow: 1
+    # Sirena-End
     ClothingUniformJumpsuitKimono: 1
     ClothingHeadHatCasa: 1
     ClothingHeadHatHairflower: 1

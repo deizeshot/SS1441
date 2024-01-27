@@ -1,0 +1,74 @@
+# NT
+- type: nameIdentifierGroup
+  id: MIN
+  prefix: Mining
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: ENG
+  prefix: Eng
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: JS
+  prefix: Js
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: MBG
+  prefix: Mbg
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: ANYA
+  prefix: Anya
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: ERT
+  prefix: Ert
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: SEC
+  prefix: Sec
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: SIN
+  prefix: Sin
+  minValue: 1000
+  maxValue: 9999
+
+# Syndicate
+- type: nameIdentifierGroup
+  id: SMBG
+  prefix: GLX-Mbg
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: SENG
+  prefix: GLX-Eng
+  minValue: 1000
+  maxValue: 9999
+
+- type: nameIdentifierGroup
+  id: SSEC
+  prefix: GLX-Sec
+  minValue: 1000
+  maxValue: 9999
+
+# UIC
+- type: nameIdentifierGroup
+  id: UIC
+  prefix: Uic
+  minValue: 1000
+  maxValue: 9999

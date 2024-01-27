@@ -25,7 +25,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitNinja
     # belt holds katana so satchel has the tools for sabotaging things
-    back: ClothingBackpackSatchelTools
+    back: ClothingBackpackNinjaFill
     mask: ClothingMaskNinja
     head: ClothingHeadHelmetSpaceNinja
     eyes: ClothingEyesVisorNinja
@@ -38,6 +38,9 @@
     pocket2: PinpointerStation
     belt: EnergyKatana
     suitstorage: YellowOxygenTankFilled
+    underwearb: ClothingUnderwearBottomBoxersSpaceNinja # Sirena-Underwear
+  underweart: ClothingUnderwearTopSpaceNinja # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesSpaceNinja # Sirena-Underwear
   inhand:
     - JetpackBlackFilled
 
@@ -45,20 +48,25 @@
 - type: startingGear
   id: DeathSquadGear
   equipment:
+    back: ClothingDeathSquadronBackpackFilled
     jumpsuit: ClothingUniformJumpsuitDeathSquad
-    back: ClothingBackpackDeathSquadFilled
     mask: ClothingMaskGasDeathSquad
-    eyes: ClothingEyesHudSecurity
+    eyes: ClothingEyesVisionDeathSquadron
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitDeathsquad
-    suitstorage: AirTankFilled
+    suitstorage: BluespaceAirTank
     shoes: ClothingShoesBootsMagAdv
     id: DeathsquadPDA
     pocket1: EnergySword
     pocket2: EnergyShield
-    belt: ClothingBeltMilitaryWebbingMedFilled
+    belt: ClothingBeltChiefEngineerFilled
+    underwearb: ClothingUnderwearBottomBoxersDeathSquad # Sirena-Underwear
+  underweart: ClothingUnderwearTopDeathBra # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesDeathSquad # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorBlack
+  satchel: ClothingDeathSquadronBackpackFilled
+  duffelbag: ClothingDeathSquadronBackpackFilled
 
 # Syndicate Operative Outfit - Monkey
 - type: startingGear
@@ -69,7 +77,7 @@
     mask: CigaretteSyndicate
   innerClothingSkirt: ClothingUniformJumpsuitOperative
 
-# Syndicate Operative Outfit - Barratry
+# Syndicate Operative Outfit - Poverty
 - type: startingGear
   id: SyndicateOperativeGearExtremelyBasic
   equipment:
@@ -77,6 +85,9 @@
     back: ClothingBackpackDuffelSyndicateOperative
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesColorBlack
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -92,6 +103,9 @@
     shoes: ClothingShoesBootsCombatFilled
     pocket1: BaseUplinkRadio40TC
     id: SyndiPDA
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -112,6 +126,9 @@
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbing
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -132,11 +149,14 @@
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbing
-  inhand:
-    - NukeOpsDeclarationOfWar
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
+  inhand:
+    - NukeOpsDeclarationOfWar
 
 #Nuclear Operative Medic Gear
 - type: startingGear
@@ -154,6 +174,9 @@
     pocket1: DoubleEmergencyOxygenTankFilled
     pocket2: BaseUplinkRadio40TC
     belt: ClothingBeltMilitaryWebbingMedFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtOperative
   satchel: ClothingBackpackDuffelSyndicateOperativeMedic
   duffelbag: ClothingBackpackDuffelSyndicateOperativeMedic
@@ -171,6 +194,9 @@
     back: ClothingBackpackFilled
     shoes: ClothingShoesBootsCombat
     id: SyndiPDA #a subtype of this for footsoldiers would probably be good to have
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -189,6 +215,9 @@
     shoes: ClothingShoesBootsCombat
     pocket1: CombatKnife
     id: SyndiPDA
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -208,6 +237,9 @@
     pocket1: EnergySword
     pocket2: EnergyShield
     id: SyndiPDA
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -226,6 +258,9 @@
     shoes: ClothingShoesBootsCombat
     pocket1: WeaponPistolViper
     id: SyndiPDA
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitOperative
   satchel: ClothingBackpackDuffelSyndicateOperative
   duffelbag: ClothingBackpackDuffelSyndicateOperative
@@ -243,18 +278,41 @@
     outerClothing: ClothingOuterArmorBasicSlim
     ears: ClothingHeadsetSecurity
     gloves: ClothingHandsGlovesCombat
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtSec
   satchel: ClothingBackpackSatchelSecurityFilled
   duffelbag: ClothingBackpackDuffelSecurityFilled
 
 #CBURN Unit Gear - Full Kit
+- type: statusIcon
+  parent: JobIcon
+  id: IconCBURN
+  icon:
+    sprite: Interface/Misc/job_icons.rsi
+    state: CBURN
+
+- type: job #Sirena Add
+  id: CBURN
+  name: job-name-cburn
+  playTimeTracker: JobCBURN
+  description: job-description-cburn
+  setPreference: false
+  startingGear: CBURNGear
+  icon: "IconCBURN"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+
 - type: startingGear
   id: CBURNGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackDuffelCBURNFilled
+    back: CBURNFlamethrowerPackfilld
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesVisionERT
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
@@ -262,11 +320,37 @@
     id: CBURNPDA
     pocket1: RadioHandheld
     pocket2: WeaponLaserGun
-    suitstorage: YellowOxygenTankFilled
-    belt: ClothingBeltBandolier
+    suitstorage: BluespaceAirTank
+    belt: ClothingBeltUtilityFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpsuitColorBrown
-  satchel: ClothingBackpackDuffelCBURNFilled
-  duffelbag: ClothingBackpackDuffelCBURNFilled
+  satchel: CBURNFlamethrowerPackfilld
+  duffelbag: CBURNFlamethrowerPackfilld
+
+- type: startingGear #Sirena add
+  id: CBURNLeaderGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: CBURNFlamethrowerPackfilld
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesVisionERT
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURNLeader
+    shoes: ClothingShoesBootsCombatFilled
+    id: CBURNPDA
+    pocket1: RadioHandheld
+    pocket2: WeaponLaserGun
+    suitstorage: BluespaceAirTank
+    belt: ClothingBeltUtilityFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
+  innerClothingSkirt: ClothingUniformJumpsuitColorBrown
+  satchel: CBURNFlamethrowerPackfilld
+  duffelbag: CBURNFlamethrowerPackfilld
 
 - type: startingGear
   id: BoxingKangarooGear
@@ -319,6 +403,9 @@
     ears: ClothingHeadsetBrigmedic
     mask: ClothingMaskBreathMedicalSecurity
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtBrigmedic
   satchel: ClothingBackpackSatchelBrigmedicFilled
   duffelbag: ClothingBackpackDuffelBrigmedicFilled

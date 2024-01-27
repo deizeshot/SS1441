@@ -316,6 +316,11 @@
     sprite: Objects/Misc/bureaucracy.rsi
     heldPrefix: overpriced_pen
     size: Tiny
+  - type: Flash
+  - type: LimitedCharges
+    maxCharges: 1
+    charges: 1
+  - type: AutoRecharge     
 
 - type: entity
   name: captain's fountain pen

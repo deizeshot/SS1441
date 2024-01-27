@@ -1,0 +1,18 @@
+- type: entity
+  noSpawn: True
+  parent: ClothingDeathSquadronBackpack
+  id: ClothingDeathSquadronBackpackFilled
+  name: death squadron backpack
+  description: A spacious backpack using bluespace technology.
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPulseRifle
+    - id: WeaponRevolverMateba
+    - id: MedkitToxinFilled
+    - id: MedkitCombatFilled
+    - id: Hypospray
+    - id: OmnizineChemistryBottle
+      amount: 3
+    - id: SpeedLoaderMagnum
+      amount: 2

@@ -16,3 +16,5 @@
       contents:
         - id: BoxSurvivalMedical
         - id: RubberStampPsychologist
+        - id: PillCanisterGabapentin # sirena add
+        - id: PillCanisterEmoAplife  # sirena add

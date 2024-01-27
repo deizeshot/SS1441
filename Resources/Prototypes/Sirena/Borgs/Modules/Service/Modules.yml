@@ -1,0 +1,66 @@
+# - type: entity
+  # id: TestModuleServiceSirena
+  # parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: service
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: HydroponicsModuleServiceSirena
+  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: service
+    - state: icon-gardening
+  - type: ItemBorgModule
+    items:
+    - HydroponicsToolHatchet
+    - HydroponicsToolMiniHoe
+    - HydroponicsToolScythe
+    - HydroponicsToolSpade
+    - HydroponicsToolClippers
+    - PlantBag
+
+- type: entity
+  id: MusicalModuleServiceSirena
+  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: service
+    - state: icon-musique
+  - type: ItemBorgModule
+    items:
+    - SynthesizerInstrument
+
+- type: entity
+  id: ClownModuleServiceSirena
+  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: service
+    - state: icon-clown 
+  - type: ItemBorgModule
+    items:
+    - BikeHorn
+    - ClownRecorder
+
+- type: entity
+  id: BartenderModuleServiceSirena
+  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: service
+    - state: icon-drink
+  - type: ItemBorgModule
+    items:
+    - PortableSodaDispenser
+    - PortableBoozeDispenser

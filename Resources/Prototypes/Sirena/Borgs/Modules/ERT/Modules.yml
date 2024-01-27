@@ -1,0 +1,33 @@
+- type: entity
+  id: BaseBorgModuleERT
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleERT
+
+# - type: entity
+  # id: TestModuleERTSirena
+  # parent: [ BaseBorgModuleERT, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: ert
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: DSModuleERTSirena
+  parent: [ BaseBorgModuleERT, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: ert
+    - state: icon-epsilon
+  - type: ItemBorgModule
+    items:
+    - EnergySword
+    - WeaponPulseRifleSirena

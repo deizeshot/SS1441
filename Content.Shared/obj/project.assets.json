@@ -597,7 +597,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
@@ -626,7 +626,7 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Shared/208.0.0": {
+      "Robust.Shared/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -639,7 +639,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -657,7 +657,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/208.0.0": {
+      "Robust.Shared.Maths/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -1198,7 +1198,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Robust.Shared": "208.0.0"
+          "Robust.Shared": "206.0.0"
         },
         "compile": {
           "bin/placeholder/Content.Corvax.Interfaces.Shared.dll": {}
@@ -1227,7 +1227,7 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Shared/208.0.0": {
+      "Robust.Shared/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1240,7 +1240,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "208.0.0",
+          "Robust.Shared.Maths": "206.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -1258,7 +1258,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/208.0.0": {
+      "Robust.Shared.Maths/206.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -2034,12 +2034,12 @@
       "path": "../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj",
       "msbuildProject": "../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj"
     },
-    "Robust.Shared/208.0.0": {
+    "Robust.Shared/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Shared/Robust.Shared.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Shared/Robust.Shared.csproj"
     },
-    "Robust.Shared.Maths/208.0.0": {
+    "Robust.Shared.Maths/206.0.0": {
       "type": "project",
       "path": "../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj",
       "msbuildProject": "../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
@@ -2055,8 +2055,8 @@
       "Content.Corvax.Interfaces.Shared >= 1.0.0",
       "Content.Shared.Database >= 1.0.0",
       "JetBrains.Annotations >= 2023.3.0",
-      "Robust.Shared >= 208.0.0",
-      "Robust.Shared.Maths >= 208.0.0",
+      "Robust.Shared >= 206.0.0",
+      "Robust.Shared.Maths >= 206.0.0",
       "SpaceWizards.Lidgren.Network >= 1.0.0"
     ]
   },
@@ -2066,15 +2066,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared/Content.Shared.csproj",
       "projectName": "Content.Shared",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared/Content.Shared.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -2089,20 +2089,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/Content.Shared.Database.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared.Database/Content.Shared.Database.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared.Database/Content.Shared.Database.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared.Database/Content.Shared.Database.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Lidgren.Network/Lidgren.Network.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
             }
           }
         }

@@ -102,7 +102,7 @@
             acts: [ "Destruction" ]
           - !type:PlaySoundBehavior
             sound:
-              collection: MetalGlassBreak
+              path: /Audio/Effects/metalbreak.ogg
               params:
                 volume: -4
 

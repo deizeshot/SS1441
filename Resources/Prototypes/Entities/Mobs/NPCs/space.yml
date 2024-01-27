@@ -67,6 +67,9 @@
   - type: GhostTakeoverAvailable
   - type: Speech
     speechVerb: LargeMob
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
 
 - type: entity
   name: space bear

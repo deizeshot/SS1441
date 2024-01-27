@@ -1,0 +1,179 @@
+# science parts
+- type: entity
+  id: LeftArmBorgScience
+  parent: BaseBorgArmLeft
+  name: science cyborg left arm
+  components:
+  - type: Sprite
+    state: science_l_arm
+  - type: Icon
+    state: science_l_arm
+  - type: Tag
+    tags:
+    - Trash
+    - BorgArm
+    - BorgScienceLArm
+
+- type: entity
+  id: RightArmBorgScience
+  parent: BaseBorgArmRight
+  name: science cyborg right arm
+  components:
+  - type: Sprite
+    state: science_r_arm
+  - type: Icon
+    state: science_r_arm
+  - type: Tag
+    tags:
+    - Trash
+    - BorgArm
+    - BorgScienceRArm
+
+- type: entity
+  id: LeftLegBorgScience
+  parent: BaseBorgLegLeft
+  name: science cyborg left leg
+  components:
+  - type: Sprite
+    state: science_l_leg
+  - type: Icon
+    state: science_l_leg
+  - type: Tag
+    tags:
+    - Trash
+    - BorgLeg
+    - BorgScienceLLeg
+
+- type: entity
+  id: RightLegBorgScience
+  parent: BaseBorgLegRight
+  name: science cyborg right leg
+  components:
+  - type: Sprite
+    state: science_r_leg
+  - type: Icon
+    state: science_r_leg
+  - type: Tag
+    tags:
+    - Trash
+    - BorgLeg
+    - BorgScienceRLeg
+
+- type: entity
+  id: HeadBorgScience
+  parent: BaseBorgHead
+  name: science cyborg head
+  components:
+  - type: Sprite
+    state: science_head
+  - type: Icon
+    state: science_head
+  - type: Tag
+    tags:
+    - Trash
+    - BorgHead
+    - BorgScienceHead
+
+- type: entity
+  id: TorsoBorgScience
+  parent: BaseBorgTorso
+  name: science cyborg torso
+  components:
+  - type: Sprite
+    state: science_chest
+  - type: Icon
+    state: science_chest
+  - type: Tag
+    tags:
+    - Trash
+    - BorgScienceTorso
+
+# sec parts
+- type: entity
+  id: LeftArmBorgSec
+  parent: BaseBorgArmLeft
+  name: sec cyborg left arm
+  components:
+  - type: Sprite
+    state: sec_l_arm
+  - type: Icon
+    state: sec_l_arm
+  - type: Tag
+    tags:
+    - Trash
+    - BorgArm
+    - BorgSecLArm
+
+- type: entity
+  id: RightArmBorgSec
+  parent: BaseBorgArmRight
+  name: sec cyborg right arm
+  components:
+  - type: Sprite
+    state: sec_r_arm
+  - type: Icon
+    state: sec_r_arm
+  - type: Tag
+    tags:
+    - Trash
+    - BorgArm
+    - BorgSecRArm
+
+- type: entity
+  id: LeftLegBorgSec
+  parent: BaseBorgLegLeft
+  name: sec cyborg left leg
+  components:
+  - type: Sprite
+    state: sec_l_leg
+  - type: Icon
+    state: sec_l_leg
+  - type: Tag
+    tags:
+    - Trash
+    - BorgLeg
+    - BorgSecLLeg
+
+- type: entity
+  id: RightLegBorgSec
+  parent: BaseBorgLegRight
+  name: sec cyborg right leg
+  components:
+  - type: Sprite
+    state: sec_r_leg
+  - type: Icon
+    state: sec_r_leg
+  - type: Tag
+    tags:
+    - Trash
+    - BorgLeg
+    - BorgSecRLeg
+
+- type: entity
+  id: HeadBorgSec
+  parent: BaseBorgHead
+  name: sec cyborg head
+  components:
+  - type: Sprite
+    state: sec_head
+  - type: Icon
+    state: sec_head
+  - type: Tag
+    tags:
+    - Trash
+    - BorgHead
+    - BorgSecHead
+
+- type: entity
+  id: TorsoBorgSec
+  parent: BaseBorgTorso
+  name: sec cyborg torso
+  components:
+  - type: Sprite
+    state: sec_chest
+  - type: Icon
+    state: sec_chest
+  - type: Tag
+    tags:
+    - Trash
+    - BorgSecTorso

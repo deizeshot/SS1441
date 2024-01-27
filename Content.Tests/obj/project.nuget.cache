@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rPUgx+y5qIiEIDLpuUXZEmGXjtIm+BG6P0kXgrHdXXjG4WhcfdtI19YhyKKkt+1Px3ooDO2IvM230T7oO2jwcQ==",
+  "dgSpecHash": "KhRRiHSwD1t4ELgryeqNCmT0KrJJjK39CPl5E38VHa1F9s+AYf8u5fNP6FghcI/9f76+WM3X5t2b45z9OmK9Dg==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/Content.Tests.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tests/Content.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/benchmarkdotnet/0.13.12/benchmarkdotnet.0.13.12.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/benchmarkdotnet.annotations/0.13.12/benchmarkdotnet.annotations.0.13.12.nupkg.sha512",

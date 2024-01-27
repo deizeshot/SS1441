@@ -99,8 +99,7 @@ public sealed class GlueSystem : SharedGlueSystem
 
     private void OnHandPickUp(Entity<GluedComponent> entity, ref GotEquippedHandEvent args)
     {
-        var comp = EnsureComp<UnremoveableComponent>(entity);
-        comp.DeleteOnDrop = false;
+        EnsureComp<UnremoveableComponent>(entity);
         entity.Comp.Until = _timing.CurTime + entity.Comp.Duration;
     }
 }

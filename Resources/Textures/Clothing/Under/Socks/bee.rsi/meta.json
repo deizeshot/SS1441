@@ -11,7 +11,11 @@
       "name": "icon"
     },
     {
-      "name": "equipped-FEET",
+      "name": "equipped-SOCKS",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SOCKS-digi",
       "directions": 4
     }
   ]

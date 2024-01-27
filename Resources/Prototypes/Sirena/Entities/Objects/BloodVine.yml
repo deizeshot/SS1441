@@ -1,0 +1,57 @@
+- type: entity
+  name: blood vine
+  parent: FoodProduceBase
+  id: BloodVine
+  components:
+  - type: FlavorProfile
+    flavors: 
+       - Blood
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Blood
+          Quantity: 15
+  - type: Sprite
+    sprite: Sirena/Objects/bloodvine.rsi
+    scale: 0.75, 0.75
+  - type: Produce
+    seedId: BloodVinePlant
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: seed
+  id: BloodVinePlant
+  name: seeds-bloodvine-name
+  noun: seeds-noun-seeds
+  displayName: seeds-bloodvine-display-name
+  plantRsi: Sirena/Objects/bloodvine.rsi
+  packetPrototype: BloodVineSeed
+  productPrototypes:
+    - BloodVine
+  harvestRepeat: Repeat
+  lifespan: 55
+  maturation: 10
+  production: 1
+  yield: 1
+  potency: 10
+  idealLight: 6
+  chemicals:
+    Blood:
+      Min: 10
+      Max: 35
+      PotencyDivisor: 10
+
+- type: entity
+  parent: SeedBase
+  name: packet of blood vine seeds
+  id: BloodVineSeed
+  components:
+    - type: Seed
+      seedId: BloodVinePlant
+    - type: Sprite
+      sprite: Sirena/Objects/bloodvine.rsi

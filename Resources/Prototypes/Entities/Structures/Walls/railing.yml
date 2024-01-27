@@ -43,7 +43,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior
@@ -112,7 +112,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior
@@ -172,7 +172,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior
@@ -247,7 +247,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
           params:
             volume: -6
       - !type:SpawnEntitiesBehavior

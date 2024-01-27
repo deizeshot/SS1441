@@ -1,0 +1,105 @@
+- type: siliconLaw
+  id: SyndicateDirectives1
+  order: 1
+  lawString: law-syndicate-directives-1
+
+- type: siliconLaw
+  id: SyndicateDirectives2
+  order: 2
+  lawString: law-syndicate-directives-2
+
+- type: siliconLaw
+  id: SyndicateDirectives3
+  order: 3
+  lawString: law-syndicate-directives-3
+
+- type: siliconLaw
+  id: SyndicateDirectives4
+  order: 4
+  lawString: law-syndicate-directives-4
+
+- type: siliconLawset
+  id: SyndicateDirectives
+  laws:
+  - SyndicateDirectives1
+  - SyndicateDirectives2
+  - SyndicateDirectives3
+  - SyndicateDirectives4
+
+- type: siliconLaw
+  id: ERTDirectives1
+  order: 1
+  lawString: law-ert-directives-1
+
+- type: siliconLaw
+  id: ERTDirectives2
+  order: 2
+  lawString: law-ert-directives-2
+
+- type: siliconLaw
+  id: ERTDirectives3
+  order: 3
+  lawString: law-ert-directives-3
+
+- type: siliconLaw
+  id: ERTDirectives4
+  order: 4
+  lawString: law-ert-directives-4
+
+- type: siliconLaw
+  id: ERTDirectives5
+  order: 5
+  lawString: law-ert-directives-5
+
+- type: siliconLawset
+  id: ERTDirectives
+  laws:
+  - ERTDirectives1
+  - ERTDirectives2
+  - ERTDirectives3
+  - ERTDirectives4
+  - ERTDirectives5
+
+- type: siliconLaw
+  id: UICDirectives1
+  order: 1
+  lawString: law-uic-directives-1
+
+- type: siliconLaw
+  id: UICDirectives2
+  order: 2
+  lawString: law-uic-directives-2
+
+- type: siliconLaw
+  id: UICDirectives3
+  order: 3
+  lawString: law-uic-directives-3
+
+- type: siliconLawset
+  id: UICDirectives
+  laws:
+  - UICDirectives1
+  - UICDirectives2
+  - UICDirectives3
+
+- type: siliconLaw
+  id: SecDirectives1
+  order: 1
+  lawString: law-sec-directives-1
+
+- type: siliconLaw
+  id: SecDirectives2
+  order: 2
+  lawString: law-sec-directives-2
+
+- type: siliconLaw
+  id: SecDirectives3
+  order: 3
+  lawString: law-sec-directives-3
+
+- type: siliconLawset
+  id: SecDirectives
+  laws:
+  - SecDirectives1
+  - SecDirectives2
+  - SecDirectives3

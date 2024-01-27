@@ -1,8 +1,4 @@
 - type: lobbyBackground
-  id: BarLife
-  background: /Textures/Corvax/LobbyScreens/bar-life.png
-
-- type: lobbyBackground
   id: DeadInSpace
   background: /Textures/Corvax/LobbyScreens/dead-in-space.png
 
@@ -17,10 +13,6 @@
 - type: lobbyBackground
   id: EngineersChill
   background: /Textures/Corvax/LobbyScreens/engineers-chill.png
-
-- type: lobbyBackground
-  id: Greytide
-  background: /Textures/Corvax/LobbyScreens/greytide.png
 
 - type: lobbyBackground
   id: Hydroponics
@@ -123,10 +115,6 @@
   background: /Textures/Corvax/LobbyScreens/singulord-cage.png
 
 - type: lobbyBackground
-  id: YouLookLonely
-  background: /Textures/Corvax/LobbyScreens/you-look-lonely.png
-
-- type: lobbyBackground
   id: NewYearBar
   background: /Textures/Corvax/LobbyScreens/new-year-bar.png
 
@@ -149,10 +137,6 @@
 - type: lobbyBackground
   id: NewYearPine
   background: /Textures/Corvax/LobbyScreens/new-year-pine.png
-
-- type: lobbyBackground
-  id: NewYearExplosion
-  background: /Textures/Corvax/LobbyScreens/new-year-explosion.png
 
 - type: lobbyBackground
   id: SpaceNuke

@@ -149,10 +149,7 @@ public sealed class CharacterUIController : UIController, IOnStateEntered<Gamepl
         if (briefing != null)
         {
             var briefingControl = new ObjectiveBriefingControl();
-            var text = new FormattedMessage();
-            text.PushColor(Color.Yellow);
-            text.AddText(briefing);
-            briefingControl.Label.SetMessage(text);
+            briefingControl.Label.Text = briefing;
             _window.Objectives.AddChild(briefingControl);
         }
 

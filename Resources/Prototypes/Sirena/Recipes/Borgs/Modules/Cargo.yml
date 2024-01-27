@@ -1,0 +1,30 @@
+- type: latheRecipe
+  id: MiningModuleCargoSirena
+  result: MiningModuleCargoSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  id: AdvMiningModuleCargoSirena
+  result: AdvMiningModuleCargoSirena
+  completetime: 3
+  materials:
+    Steel: 750
+    Glass: 1000
+    Plastic: 500
+    Gold: 100
+    BlueSpaceCrystal: 1000
+
+- type: latheRecipe
+  id: DeliveryModuleCargoSirena
+  result: DeliveryModuleCargoSirena
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 750
+    Plastic: 250
+    Gold: 50

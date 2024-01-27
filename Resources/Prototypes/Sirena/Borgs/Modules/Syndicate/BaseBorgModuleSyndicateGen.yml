@@ -1,0 +1,32 @@
+- type: entity
+  id: BaseBorgModuleSyndicateGen
+  parent: BaseBorgModule
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleSyndicateGen
+
+# - type: entity
+  # id: TestModuleSyndicateSirena
+  # parent: [ BaseBorgModuleSyndicateGen, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: syndicate
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: EmagModuleSyndicateSirena
+  parent: [ BaseBorgModuleSyndicateGen, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-emag
+  - type: ItemBorgModule
+    items:
+    - Emag

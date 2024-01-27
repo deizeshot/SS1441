@@ -4,7 +4,7 @@
   description: Wallmount reagent dispenser.
   placement:
     mode: SnapgridCenter
-    snap:
+    snap: 
     - Wallmount
   components:
   - type: WallMount
@@ -50,7 +50,7 @@
         solution: tank
       - !type:PlaySoundBehavior
         sound:
-          collection: MetalBreak
+          path: /Audio/Effects/metalbreak.ogg
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: SolutionContainerManager

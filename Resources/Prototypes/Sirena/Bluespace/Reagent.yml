@@ -1,0 +1,10 @@
+- type: reagent
+  id: BlueSpaceCrystal
+  name: reagent-name-bluespacecrystal
+  group: Elements
+  desc: reagent-desc-bluespacecrystal
+  physicalDesc: reagent-physical-desc-bluespacecrystal
+  flavor: bitter
+  color: "#2E50B7"
+  boilingPoint: 59000.0
+  meltingPoint: 3695.0

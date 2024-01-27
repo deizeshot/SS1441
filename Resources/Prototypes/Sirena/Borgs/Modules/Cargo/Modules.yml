@@ -1,0 +1,50 @@
+# - type: entity
+  # id: TestModuleCargoSirena
+  # parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  # components:
+  # - type: Sprite
+    # layers:
+    # - state: cargo
+    # - state: icon-template
+  # - type: ItemBorgModule
+    # items:
+    # - бла бла бла
+
+- type: entity
+  id: MiningModuleCargoSirena
+  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: cargo
+    - state: icon-mining
+  - type: ItemBorgModule
+    items:
+    - Pickaxe
+    - OreBag
+
+- type: entity
+  id: AdvMiningModuleCargoSirena
+  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: cargo
+    - state: icon-mining-adv
+  - type: ItemBorgModule
+    items:
+    - MiningDrill
+    - BlueSpaceOreBag
+
+- type: entity
+  id: DeliveryModuleCargoSirena
+  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
+  components:
+  - type: Sprite
+    layers:
+    - state: cargo
+    - state: icon-appraisal
+  - type: ItemBorgModule
+    items:
+    - WeaponTetherGun
+    - AppraisalTool

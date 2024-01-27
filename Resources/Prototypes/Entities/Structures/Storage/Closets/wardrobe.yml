@@ -1,7 +1,7 @@
 # Base
 - type: entity
   id: WardrobeBase
-  parent: ClosetSteelBase
+  parent: ClosetBase
   abstract: true
   description: It's a storage unit for standard-issue Nanotrasen attire.
 

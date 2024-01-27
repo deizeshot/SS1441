@@ -1,0 +1,25 @@
+- type: entity
+  noSpawn: true
+  id: CrateSyndicateBorgSec
+  parent: CrateSyndicate
+  components:
+  - type: StorageFill
+    contents:
+      - id: PositronicBrain
+      - id: PowerCellHigh
+      - id: Screwdriver
+      - id: Crowbar
+      - id: BorgChassisSyndicateSec
+
+- type: entity
+  noSpawn: true
+  id: CrateSyndicateBorgMed
+  parent: CrateSyndicate
+  components:
+  - type: StorageFill
+    contents:
+      - id: PositronicBrain
+      - id: PowerCellHigh
+      - id: Screwdriver
+      - id: Crowbar
+      - id: BorgChassisSyndicateMedical

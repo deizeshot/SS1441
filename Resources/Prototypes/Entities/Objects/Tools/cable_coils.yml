@@ -78,10 +78,13 @@
 - type: entity
   parent: CableHVStack10
   id: CableHVStackLingering10
+  noSpawn: true
   suffix: Lingering, 10
   components:
   - type: Stack
     lingering: true
+    isRegen: true # Sirena module rewock
+    duration: 10 # Sirena module rewock
     count: 10
 
 - type: entity
@@ -143,10 +146,13 @@
 - type: entity
   parent: CableMVStack10
   id: CableMVStackLingering10
+  noSpawn: true
   suffix: Lingering, 10
   components:
   - type: Stack
     lingering: true
+    isRegen: true # Sirena module rewock
+    duration: 10 # Sirena module rewock
     count: 10
 
 - type: entity
@@ -207,10 +213,13 @@
 - type: entity
   parent: CableApcStack10
   id: CableApcStackLingering10
+  noSpawn: true
   suffix: Lingering, 10
   components:
   - type: Stack
     lingering: true
+    isRegen: true # Sirena module rewock
+    duration: 10 # Sirena module rewock
     count: 10
 
 - type: entity

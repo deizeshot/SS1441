@@ -1,0 +1,35 @@
+- type: Tag
+  id: BorgSecHead
+
+- type: Tag
+  id: BorgSecLArm
+
+- type: Tag
+  id: BorgSecLLeg
+
+- type: Tag
+  id: BorgSecRArm
+
+- type: Tag
+  id: BorgSecRLeg
+
+- type: Tag
+  id: BorgSecTorso
+
+- type: Tag
+  id: BorgScienceHead
+
+- type: Tag
+  id: BorgScienceLArm
+
+- type: Tag
+  id: BorgScienceLLeg
+
+- type: Tag
+  id: BorgScienceRArm
+
+- type: Tag
+  id: BorgScienceRLeg
+
+- type: Tag
+  id: BorgScienceTorso

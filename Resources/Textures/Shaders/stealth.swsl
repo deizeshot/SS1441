@@ -24,7 +24,7 @@ void fragment() {
 
     w *= (3.0 + visibility * 2.0);
 
-    highp vec4 background = zTextureSpec(SCREEN_TEXTURE, ( FRAGCOORD.xy + vec2(w) ) * SCREEN_PIXEL_SIZE );
+    highp vec4 background = zTextureSpec(SCREEN_TEXTURE, FRAGCOORD.xy * SCREEN_PIXEL_SIZE);
 
     lowp float alpha;
     if (visibility>0.0)

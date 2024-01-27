@@ -1,0 +1,23 @@
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineUndervendrop
+  name: Undervendrop
+  description: "Don't let Niane near the machine!"
+  components:
+  - type: VendingMachine
+    pack: UndervendropInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+    loopDeny: false
+  - type: Sprite
+    sprite: Sirena/Structures/Machines/VendingMachines/undervendrop.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]

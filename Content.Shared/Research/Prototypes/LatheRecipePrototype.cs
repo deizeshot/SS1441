@@ -1,4 +1,3 @@
-using Content.Shared.Lathe.Prototypes;
 using Content.Shared.Materials;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -39,7 +38,6 @@ namespace Content.Shared.Research.Prototypes
         [DataField("materials", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<int, MaterialPrototype>))]
         private Dictionary<string, int> _requiredMaterials = new();
 
-        //todo make these function calls because we're eating tons of resolves here.
         /// <summary>
         ///     Name displayed in the lathe GUI.
         /// </summary>
@@ -48,8 +46,7 @@ namespace Content.Shared.Research.Prototypes
         {
             get
             {
-                if (_name.Trim().Length != 0)
-                    return _name;
+                if (_name.Trim().Length != 0) return _name;
                 var protoMan = IoCManager.Resolve<IPrototypeManager>();
                 protoMan.TryIndex(Result, out EntityPrototype? prototype);
                 if (prototype?.Name != null)
@@ -66,8 +63,7 @@ namespace Content.Shared.Research.Prototypes
         {
             get
             {
-                if (_description.Trim().Length != 0)
-                    return _description;
+                if (_description.Trim().Length != 0) return _description;
                 var protoMan = IoCManager.Resolve<IPrototypeManager>();
                 protoMan.TryIndex(Result, out EntityPrototype? prototype);
                 if (prototype?.Description != null)
@@ -97,11 +93,5 @@ namespace Content.Shared.Research.Prototypes
 
         [DataField("applyMaterialDiscount")]
         public bool ApplyMaterialDiscount = true;
-
-        /// <summary>
-        /// A category used for visually sorting lathe recipes in the UI.
-        /// </summary>
-        [DataField]
-        public ProtoId<LatheCategoryPrototype>? Category;
     }
 }

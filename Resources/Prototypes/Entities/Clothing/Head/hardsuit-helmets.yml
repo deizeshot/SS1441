@@ -669,7 +669,7 @@
       - state: equipped-head-unshaded
         shader: unshaded
   - type: PointLight
-    color: "#a4fef4" # Corvax-Resprite
+    color: orange # Sirena-comeback
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000

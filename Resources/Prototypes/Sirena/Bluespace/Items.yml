@@ -1,0 +1,64 @@
+- type: entity
+  parent: AirTank
+  id: BluespaceAirTank
+  name: bluespace air tank
+  description: "Are you sure that's enough for you?"
+  components:
+    - type: Clothing
+      sprite: Sirena/Objects/Tools/Tanks/BluespaceAirTank.rsi
+    - type: Sprite
+      sprite: Sirena/Objects/Tools/Tanks/BluespaceAirTank.rsi
+      state: icon
+    - type: GasTank
+      outputPressure: 101.325
+      air:
+        volume: 10000
+        moles:
+          - 2100 # oxygen
+          - 7900 # nitrogen
+        temperature: 293.15
+
+
+- type: entity
+  name: bluespace ore bag
+  id: BlueSpaceOreBag
+  parent: OreBag
+  description: "Special ore storage. Bluespace technology was used to increase the capacity"
+  components:
+  - type: Sprite
+    sprite: Sirena/Bluespace/BluespaceOreBag.rsi
+    state: bluespace_ore_bag
+  - type: Clothing
+    sprite: Objects/Specific/Mining/ore_bag_holding.rsi
+  - type: MagnetPickup
+    range: 2
+  - type: Storage
+    grid:
+    - 0,0,19,9
+
+- type: entity
+  name: bluespace pill canister
+  id: BlueSpacePillCanister
+  parent: BaseStorageItem
+  description: "Holds up to 200 pills."
+  components:
+  - type: Sprite
+    sprite: Sirena/Bluespace/BluespacePillCanister.rsi
+    state: bluespace_pill_canister
+  - type: Item
+    sprite: Sirena/Bluespace/BluespacePillCanister.rsi
+  - type: Tag
+    tags:
+      - PillCanister
+  - type: Storage
+    grid:
+    - 0,0,19,9
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 2
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist:
+      tags:
+        - Pill
+  - type: Dumpable

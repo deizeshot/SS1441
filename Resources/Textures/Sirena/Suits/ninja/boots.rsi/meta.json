@@ -1,0 +1,22 @@
+{
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from https://github.com/ss220club/Skyrat-tg.git",
+  "version": 1,
+  "size": {"x": 32, "y": 32},
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "icon-on"
+    },
+    {
+      "name": "equipped-FEET",
+	  "directions": 4
+    },
+    {
+      "name": "on-equipped-FEET",
+	  "directions": 4
+    }
+  ]
+}

@@ -235,12 +235,6 @@ public sealed partial class ShuttleSystem
         component.State = FTLState.Starting;
         var audio = _audio.PlayPvs(_startupSound, uid);
         audio.Value.Component.Flags |= AudioFlags.GridAudio;
-
-        if (_physicsQuery.TryGetComponent(uid, out var gridPhysics))
-        {
-            _transform.SetLocalPosition(audio.Value.Entity, gridPhysics.LocalCenter);
-        }
-
         // Make sure the map is setup before we leave to avoid pop-in (e.g. parallax).
         SetupHyperspace();
         return true;
@@ -266,7 +260,6 @@ public sealed partial class ShuttleSystem
             {
                 // Startup time has elapsed and in hyperspace.
                 case FTLState.Starting:
-                {
                     DoTheDinosaur(xform);
 
                     comp.State = FTLState.Travelling;
@@ -275,8 +268,7 @@ public sealed partial class ShuttleSystem
                     var fromRotation = _transform.GetWorldRotation(xform);
 
                     var width = Comp<MapGridComponent>(uid).LocalAABB.Width;
-                    xform.Coordinates = new EntityCoordinates(_mapManager.GetMapEntityId(_hyperSpaceMap!.Value),
-                        new Vector2(_index + width / 2f, 0f));
+                    xform.Coordinates = new EntityCoordinates(_mapManager.GetMapEntityId(_hyperSpaceMap!.Value), new Vector2(_index + width / 2f, 0f));
                     xform.LocalRotation = Angle.Zero;
                     _index += width + Buffer;
                     comp.Accumulator += comp.TravelTime - DefaultArrivalTime;
@@ -293,9 +285,7 @@ public sealed partial class ShuttleSystem
 
                     SetDockBolts(uid, true);
                     _console.RefreshShuttleConsoles(uid);
-                    var target = comp.TargetUid != null
-                        ? new EntityCoordinates(comp.TargetUid.Value, Vector2.Zero)
-                        : comp.TargetCoordinates;
+                    var target = comp.TargetUid != null ? new EntityCoordinates(comp.TargetUid.Value, Vector2.Zero) : comp.TargetCoordinates;
 
                     var ev = new FTLStartedEvent(uid, target, fromMapUid, fromMatrix, fromRotation);
                     RaiseLocalEvent(uid, ref ev, true);
@@ -303,15 +293,8 @@ public sealed partial class ShuttleSystem
                     var wowdio = _audio.PlayPvs(comp.TravelSound, uid);
                     comp.TravelStream = wowdio?.Entity;
                     if (wowdio?.Component != null)
-                    {
                         wowdio.Value.Component.Flags |= AudioFlags.GridAudio;
 
-                        if (_physicsQuery.TryGetComponent(uid, out var gridPhysics))
-                        {
-                            _transform.SetLocalPosition(wowdio.Value.Entity, gridPhysics.LocalCenter);
-                        }
-                    }
-                }
                     break;
                 // Arriving, play effects
                 case FTLState.Travelling:
@@ -330,7 +313,6 @@ public sealed partial class ShuttleSystem
                     break;
                 // Arrived
                 case FTLState.Arriving:
-                {
                     DoTheDinosaur(xform);
                     SetDockBolts(uid, false);
                     SetDocks(uid, true);
@@ -401,12 +383,6 @@ public sealed partial class ShuttleSystem
                     comp.TravelStream = _audio.Stop(comp.TravelStream);
                     var audio = _audio.PlayPvs(_arrivalSound, uid);
                     audio.Value.Component.Flags |= AudioFlags.GridAudio;
-                    // TODO: Shitcode til engine fix
-
-                    if (_physicsQuery.TryGetComponent(uid, out var gridPhysics))
-                    {
-                        _transform.SetLocalPosition(audio.Value.Entity, gridPhysics.LocalCenter);
-                    }
 
                     if (TryComp<FTLDestinationComponent>(uid, out var dest))
                     {
@@ -421,7 +397,6 @@ public sealed partial class ShuttleSystem
 
                     var ftlEvent = new FTLCompletedEvent(uid, _mapManager.GetMapEntityId(mapId));
                     RaiseLocalEvent(uid, ref ftlEvent, true);
-                    }
                     break;
                 case FTLState.Cooldown:
                     RemComp<FTLComponent>(uid);
@@ -725,7 +700,7 @@ public sealed partial class ShuttleSystem
             return;
 
         // Flatten anything not parented to a grid.
-        var transform = _physics.GetPhysicsTransform(uid, xform);
+        var transform = _physics.GetPhysicsTransform(uid, xform, _xformQuery);
         var aabbs = new List<Box2>(manager.Fixtures.Count);
         var immune = new HashSet<EntityUid>();
         var tileSet = new List<(Vector2i, Tile)>();
@@ -736,9 +711,6 @@ public sealed partial class ShuttleSystem
                 continue;
 
             var aabb = fixture.Shape.ComputeAABB(transform, 0);
-
-            // Shift it slightly
-            aabb = aabb.Translated(-grid.TileSizeHalfVector);
             // Create a small border around it.
             aabb = aabb.Enlarged(0.2f);
             aabbs.Add(aabb);

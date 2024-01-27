@@ -27,7 +27,6 @@ namespace Robust.UnitTesting.Shared.GameObjects
             public int X;
         }
 
-        [Reflect(false)]
         private abstract class TestSystemBase : IEntitySystem
         {
             public Counter? Counter;
@@ -48,25 +47,21 @@ namespace Robust.UnitTesting.Shared.GameObjects
 
         // Expected update order is is A -> D -> C -> B
 
-        [Reflect(false)]
         private sealed class TestSystemA : TestSystemBase
         {
 
         }
 
-        [Reflect(false)]
         private sealed class TestSystemB : TestSystemBase
         {
             public override IEnumerable<Type> UpdatesAfter => new[] {typeof(TestSystemA)};
         }
 
-        [Reflect(false)]
         private sealed class TestSystemC : TestSystemBase
         {
             public override IEnumerable<Type> UpdatesBefore => new[] {typeof(TestSystemB)};
         }
 
-        [Reflect(false)]
         private sealed class TestSystemD : TestSystemBase
         {
             public override IEnumerable<Type> UpdatesAfter => new[] {typeof(TestSystemA)};

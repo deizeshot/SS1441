@@ -1,0 +1,205 @@
+- type: reagent
+  id: Gabapentin
+  name: reagent-name-gabapentin
+  desc: reagent-desc-gabapentin
+  group: Narcotics
+  physicalDesc: reagent-physical-desc-gabapentin
+  flavor: gabapentin
+  color: "#FFFFE0"
+  overdose: 30
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.2 # 30 / 0.2 = 150 => 2,5 минуты
+      effects:
+      - !type:RmPushMarkup # Удаляет добавленное описание на персонажа
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          max: 10
+# ▬▬▬ Передоз ▬▬▬ #
+      - !type:MovespeedModifier # Вторая стадия
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 10
+          max: 20
+        walkSpeedModifier: 0.9
+        sprintSpeedModifier: 0.9
+      - !type:MovespeedModifier # Третья стадия
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 30
+        walkSpeedModifier: 0.8
+        sprintSpeedModifier: 0.8
+# ▬▬▬ Первая стадия ▬▬▬ #
+# Пол: М
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          max: 10
+        - !type:SexCondition
+          sex: 0
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s1 ]
+        probability: 0.3
+# ▬▬▬ Вторая стадия ▬▬▬ #
+# Пол: М
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 10
+          max: 20
+        - !type:SexCondition
+          sex: 0
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s2-1, gabapentin-popupmessage-s2-2 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 10
+          max: 20
+        - !type:SexCondition
+          sex: 0
+        text: [ gabapentin-pushmarkup-s2-m ]
+# ▬▬▬ Третья стадия ▬▬▬ #
+# Пол: М
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 30
+        - !type:SexCondition
+          sex: 0
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s3-1, gabapentin-popupmessage-s3-2 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 30
+        - !type:SexCondition
+          sex: 0
+        text: [ gabapentin-pushmarkup-s3-m ]
+# ▬▬▬ Первая стадия ▬▬▬ #
+# Пол: Ж
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          max: 10
+        - !type:SexCondition
+          sex: 1
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s1 ]
+        probability: 0.3
+# ▬▬▬ Вторая стадия ▬▬▬ #
+# Пол: Ж
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 10
+          max: 20
+        - !type:SexCondition
+          sex: 1
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s2-1, gabapentin-popupmessage-s2-2 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 10
+          max: 20
+        - !type:SexCondition
+          sex: 1
+        text: [ gabapentin-pushmarkup-s2-fm ]
+# ▬▬▬ Третья стадия ▬▬▬ #
+# Пол: Ж
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 30
+        - !type:SexCondition
+          sex: 1
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s3-1, gabapentin-popupmessage-s3-2 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 30
+        - !type:SexCondition
+          sex: 1
+        text: [ gabapentin-pushmarkup-s3-fm ]
+# ▬▬▬ Первая стадия ▬▬▬ #
+# Пол: Unsex
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          max: 10
+        - !type:SexCondition
+          sex: 2
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s1 ]
+        probability: 0.3
+# ▬▬▬ Вторая стадия ▬▬▬ #
+# Пол: Unsex
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 10
+          max: 20
+        - !type:SexCondition
+          sex: 2
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s2-1, gabapentin-popupmessage-s2-2 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 10
+          max: 20
+        - !type:SexCondition
+          sex: 2
+        text: [ gabapentin-pushmarkup-s2-u ]
+# ▬▬▬ Третья стадия ▬▬▬ #
+# Пол: Unsex
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 30
+        - !type:SexCondition
+          sex: 2
+        visualType: Medium
+        messages: [ gabapentin-popupmessage-s3-1, gabapentin-popupmessage-s3-2 ]
+        probability: 0.3
+      - !type:AddPushMarkup 
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Gabapentin
+          min: 30
+        - !type:SexCondition
+          sex: 2
+        text: [ gabapentin-pushmarkup-s3-u ]

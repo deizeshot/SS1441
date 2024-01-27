@@ -4,10 +4,8 @@
   description: job-description-intern
   playTimeTracker: JobMedicalIntern
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 36000 #10 hrs # Corvax-RoleTime
-      inverted: true # stop playing intern if you're good at med!
+    - !type:OverallPlaytimeRequirement
+      time: 7200 #2 hrs
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"
   supervisors: job-supervisors-medicine
@@ -25,6 +23,9 @@
     id: MedicalInternPDA
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtColorWhite
   satchel: ClothingBackpackSatchelMedicalFilled
   duffelbag: ClothingBackpackDuffelMedicalFilled

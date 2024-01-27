@@ -1,0 +1,51 @@
+# - type: reaction
+  # id: BloodBreakdown
+  # minTemp: 347
+  # requiredMixerCategories:
+  # - Centrifuge # Electrolysis
+  # reactants:
+    # Blood:
+      # amount: 20
+      # catalyst: true
+  # products:
+    # Water: 11
+    # Iron: 0.5
+    # Sugar: 2
+    # CarbonDioxide: 3
+    # Protein: 4
+
+- type: reagent
+  id: AphrodisiacComponent
+  name: reagent-name-aphrodisiaccomponent
+  desc: reagent-desc-aphrodisiaccomponent
+  group: Biological
+  physicalDesc: reagent-physical-desc-aphrodisiaccomponent
+  color: "#75b1f0"
+
+- type: reaction
+  id: AfrofruitPulpBreakdown
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    AfrofruitPulp:
+      amount: 10
+  products:
+    AphrodisiacComponent: 5
+    Nutriment: 3
+    Water: 2
+
+- type: reaction
+  id: AphrodisiacCreate
+  minTemp: 550
+  reactants:
+    AphrodisiacComponent:
+      amount: 12
+    FluorosulfuricAcid:
+      amount: 3
+    Bruizine: 
+      amount: 5
+    Plasma:
+      amount: 5
+      catalyst: true
+  products:
+    Aphrodisiac: 5

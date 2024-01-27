@@ -1,0 +1,57 @@
+- type: Tag
+  id: socks
+  
+- type: Tag
+  id: underwearb
+  
+- type: Tag
+  id: underweart
+  
+- type: Tag
+  id: FlamethrowerBackTank
+
+- type: Tag
+  id: BorgModuleSyndicateSec
+
+- type: Tag
+  id: BorgModuleSyndicateMed
+
+- type: Tag
+  id: BorgModuleSyndicateGen
+
+- type: Tag
+  id: BorgModuleSyndicateEng
+
+- type: Tag
+  id: BorgModuleScience
+
+- type: Tag
+  id: BorgModuleSecurity
+
+- type: Tag
+  id: BorgModuleUIC
+
+- type: Tag
+  id: BorgModuleERT
+
+- type: Tag
+  id: AdvancedChip
+
+# for Crystal
+- type: Tag
+  id: CrystalShardBlue
+
+- type: Tag
+  id: CrystalShardCyan
+
+- type: Tag
+  id: CrystalShardGreen
+
+- type: Tag
+  id: CrystalShardGrey
+
+- type: Tag
+  id: CrystalShardOrange
+
+- type: Tag
+  id: CrystalShardPink

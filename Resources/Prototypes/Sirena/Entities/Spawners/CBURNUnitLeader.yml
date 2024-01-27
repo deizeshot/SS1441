@@ -1,0 +1,41 @@
+- type: randomHumanoidSettings
+  id: CBURNUnitLeaderSirena
+  speciesBlacklist: [ Arachnid, Diona, Dwarf, Moth, Reptilian, SlimePerson, Vulpkanin ]
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-cburnunitleadersirena-name
+      description: ghost-role-information-cburnunitleadersirena-description
+    - type: GhostTakeoverAvailable
+    - type: Loadout
+      prototypes: [ CBURNLeaderGear ]
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+
+- type: entity
+  id: RandomHumanoidSpawnerCBURNUnitLeaderSirena
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomMetadata
+      nameSegments:
+      - NamesFirstMilitaryLeader
+      - NamesLastMilitary
+    - type: RandomHumanoidSpawner
+      settings: CBURNUnitLeaderSirena
+
+- type: entity
+  id: SpawnerCBURNUnitLeaderSirena
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - RandomHumanoidSpawnerCBURNUnitLeaderSirena

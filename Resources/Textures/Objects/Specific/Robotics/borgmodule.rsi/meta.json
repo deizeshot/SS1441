@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC0-1.0",
-  "copyright": "Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github).",
+  "copyright": "Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github). | Add some icons for Sirena by discord user serj3428(490213271102685214) | Add module template for Sirena by discord user blazeba(437213945200377856)",
   "size": {
     "x": 32,
     "y": 32
@@ -44,6 +44,9 @@
       "name": "icon-diagnosis"
     },
     {
+      "name": "icon-drink"
+    },
+    {
       "name": "icon-fire-extinguisher"
     },
     {
@@ -68,6 +71,9 @@
       "name": "icon-mining"
     },
     {
+      "name": "icon-mining-adv"
+    },
+    {
       "name": "icon-mop"
     },
     {
@@ -86,6 +92,16 @@
       "name": "icon-rcd"
     },
     {
+      "name": "icon-resources"
+    },
+    {
+      "name": "icon-resources-adv"
+    },
+    {
+      "name": "icon-storage-of-holding",
+      "delays": [ [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ] ]
+    },
+    {
       "name": "icon-template"
     },
     {
@@ -100,6 +116,42 @@
     {
       "name": "icon-treatment"
     },
+    {
+      "name": "icon-treatment-adv"
+    },
+    {
+      "name": "icon-treatment-hypo"
+    },
+	{
+	  "name": "icon-jetpack"
+	},
+	{
+	  "name": "icon-exploring"
+	},
+	{
+	  "name": "icon-cr20"
+	},
+	{
+	  "name": "icon-emelee"
+	},
+	{
+	  "name": "icon-emag"
+	},
+	{
+	  "name": "icon-epsilon"
+	},
+	{
+	  "name": "icon-forensic"
+	},
+	{
+	  "name": "icon-sec"
+	},
+	{
+	  "name": "icon-treatment-syndie"
+	},
+	{
+	  "name": "icon-uic"
+	},
     {
       "name": "icon-syndicate"
     },
@@ -120,6 +172,12 @@
     },
     {
       "name": "syndicate"
-    }
+    },
+	{ 
+      "name": "uic" 
+	},
+	{ 
+      "name": "ert" 
+	}
   ]
 }

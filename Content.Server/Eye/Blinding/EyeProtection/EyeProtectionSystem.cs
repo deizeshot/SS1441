@@ -60,7 +60,7 @@ namespace Content.Server.Eye.Blinding.EyeProtection
         }
         private void OnWelderToggled(EntityUid uid, RequiresEyeProtectionComponent component, ItemToggledEvent args)
         {
-            component.Toggled = args.Activated;
+            component.Toggled = _itemToggle.IsActivated(uid);
         }
     }
 }

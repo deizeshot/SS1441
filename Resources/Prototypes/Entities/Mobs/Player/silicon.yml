@@ -13,7 +13,7 @@
       types:
         Blunt: 5
     soundHit:
-      collection: MetalThud
+      path: /Audio/Effects/hit_kick.ogg
   - type: Clickable
   - type: Damageable
     damageContainer: Inorganic
@@ -66,6 +66,8 @@
   - type: Puller
   - type: StandingState
   - type: Alerts
+  - type: TypingIndicator #Sirena: adding unused typingIndicators
+    proto: robot
   - type: Tag
     tags:
       - ShoesRequiredStepTriggerImmune
@@ -274,22 +276,22 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
 
-- type: entity
-  id: PlayerBorgSyndicateAssaultBattery
-  parent: BorgChassisSyndicateAssault
-  suffix: Battery, Module, Operative
-  components:
-    - type: NukeOperative
-    - type: ContainerFill
-      containers:
-        borg_brain:
-          - PositronicBrain
-        borg_module:
-          - BorgModuleOperative
-          - BorgModuleL6C
-          - BorgModuleEsword
-    - type: ItemSlots
-      slots:
-        cell_slot:
-          name: power-cell-slot-component-slot-name-default
-          startingItem: PowerCellHyper
+# - type: entity
+  # id: PlayerBorgSyndicateAssaultBattery
+  # parent: BorgChassisSyndicateAssault
+  # suffix: Battery, Module, Operative
+  # components:
+    # - type: NukeOperative
+    # - type: ContainerFill
+      # containers:
+        # borg_brain:
+          # - PositronicBrain
+        # borg_module:
+          # - BorgModuleOperative
+          # - BorgModuleL6C
+          # - BorgModuleEsword
+    # - type: ItemSlots
+      # slots:
+        # cell_slot:
+          # name: power-cell-slot-component-slot-name-default
+          # startingItem: PowerCellHyper

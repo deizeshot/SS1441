@@ -29,6 +29,9 @@
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolN1984Nonlethal
     pocket2: FlashlightSeclite
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTLeaderGearEVA
@@ -37,15 +40,18 @@
     back: ClothingBackpackERTLeaderFilled
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesVisionERT
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
-    suitstorage: AirTankFilled
+    suitstorage: BluespaceAirTank
     id: ERTLeaderPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolN1984Nonlethal
     pocket2: FlashlightSeclite
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTLeaderGearEVALecter
@@ -54,7 +60,7 @@
     back: ClothingBackpackERTLeaderFilled
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesVisionERT
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
     suitstorage: WeaponRifleLecter
@@ -64,7 +70,7 @@
     pocket1: MagazineRifle
     pocket2: MagazineRifle
   inhand:
-    - AirTankFilled
+    - BluespaceAirTank
 
 # Engineer
 - type: job
@@ -97,6 +103,9 @@
     belt: ClothingBeltChiefEngineerFilled
     pocket1: Flare
     pocket2: GasAnalyzer
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTEngineerGearEVA
@@ -105,15 +114,18 @@
     back: ClothingBackpackERTEngineerFilled
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesMeson
+    eyes: ClothingEyesVisionERT
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
-    suitstorage: AirTankFilled
+    suitstorage: BluespaceAirTank
     id: ERTEngineerPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
     pocket1: Flare
     pocket2: GasAnalyzer
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 # Security
 - type: job
@@ -146,23 +158,29 @@
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
     pocket2: FlashlightSeclite
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTSecurityGearEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurityFilled
-    shoes: ClothingShoesBootsMag
+    shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
-    gloves: ClothingHandsGlovesCombat
+    eyes: ClothingEyesVisionERT
+    gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterHardsuitERTSecurity
-    suitstorage: AirTankFilled
+    suitstorage: BluespaceAirTank
     id: ERTSecurityPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltSecurityFilled
     pocket1: WeaponPistolMk58Nonlethal
     pocket2: FlashlightSeclite
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTSecurityGearEVALecter
@@ -171,7 +189,7 @@
     back: ClothingBackpackERTSecurityFilled
     shoes: ClothingShoesBootsMag
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesGlassesSecurity
+    eyes: ClothingEyesVisionERT
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTSecurity
     suitstorage: WeaponRifleLecter
@@ -214,23 +232,29 @@
     belt: ClothingBeltMedicalFilled
     pocket1: HandheldHealthAnalyzer
     pocket2: Flare
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTMedicalGearEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTMedic
     back: ClothingBackpackERTMedicalFilled
-    shoes: ClothingShoesBootsMag
+    shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
     eyes: ClothingEyesHudMedical
     gloves: ClothingHandsGlovesNitrile
     outerClothing: ClothingOuterHardsuitERTMedical
-    suitstorage: AirTankFilled
+    suitstorage: BluespaceAirTank
     id: ERTMedicPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMedicalFilled
     pocket1: HandheldHealthAnalyzer
     pocket2: Flare
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 # Janitor
 - type: job
@@ -261,18 +285,25 @@
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltJanitorFilled
     pocket1: Flare
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear
 
 - type: startingGear
   id: ERTJanitorGearEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTJanitor
     back: ClothingBackpackERTJanitorFilled
-    shoes: ClothingShoesBootsMag
+    shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
+    eyes: ClothingEyesVisionERT
     gloves: ClothingHandsGlovesColorPurple
     outerClothing: ClothingOuterHardsuitERTJanitor
-    suitstorage: AirTankFilled
+    suitstorage: BluespaceAirTank
     id: ERTJanitorPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltJanitorFilled
     pocket1: Flare
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraWhite # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesWhite # Sirena-Underwear

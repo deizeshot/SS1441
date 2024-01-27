@@ -1,0 +1,344 @@
+- type: reagent
+  id: AppleCider
+  name: reagent-name-applecider
+  parent: BaseAlcohol
+  desc: reagent-desc-applecider
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: applecider
+  color: "#cec153"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/applecider.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.25
+
+- type: reagent
+  id: Kalua
+  name: reagent-name-kalua
+  parent: BaseAlcohol
+  desc: reagent-desc-kalua
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: alcohol
+  color: "#cfa85f"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/kalua.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.25
+
+- type: reagent
+  id: Kuantro
+  name: reagent-name-kuantro
+  parent: BaseAlcohol
+  desc: reagent-desc-kuantro
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: kuantro
+  color: "#800000"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/kuantro.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.25
+
+- type: reagent
+  id: Lebovsky
+  name: reagent-name-lebovsky
+  parent: BaseAlcohol
+  desc: reagent-desc-lebovsky
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: lebovsky
+  color: "#800000"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/lebovsky.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.25
+
+- type: reagent
+  id: BlueHawaii
+  name: reagent-name-bluehawaii
+  parent: BaseAlcohol
+  desc: reagent-desc-bluehawaii
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: alcohol
+  color: "#7CB9E8"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/bluehawaii.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.25
+
+- type: reagent
+  id: Kamikadze
+  name: reagent-name-kamikadze
+  parent: BaseAlcohol
+  desc: reagent-desc-kamikadze
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: alcohol
+  color: "#E6E600"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/kamikaze.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.5
+
+- type: reagent
+  id: Medovuha
+  name: reagent-name-medovuha
+  parent: BaseAlcohol
+  desc: reagent-desc-medovuha
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medovuha
+  color: "#E6E600"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/medovuha.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.2
+
+- type: reagent
+  id: HomeLand
+  name: reagent-name-homeland
+  parent: BaseAlcohol
+  desc: reagent-desc-homeland
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: homeland
+  color: "#008000"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/homeland.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.025
+
+- type: reagent
+  id: OrangeCreamice
+  name: reagent-name-orange-creamcicle
+  parent: BaseAlcohol
+  desc: reagent-desc-orange-creamcicle
+  physicalDesc: reagent-physical-desc-creamy
+  flavor: orangecreamcicle
+  color: "#efaa16"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/orangecreamcicle.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.05
+
+- type: reagent
+  id: Silverjack
+  name: reagent-name-silverjack
+  parent: BaseAlcohol
+  desc: reagent-desc-silverjack
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: silverjack
+  color: "#978647"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/silverjack.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.0625
+
+- type: reagent
+  id: ClownBlood
+  name: reagent-name-clownblood
+  parent: BaseAlcohol
+  desc: reagent-desc-clownblood
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: funny
+  color: "#94001c"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/clownblood.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.025
+
+- type: reagent
+  id: CircusJuice
+  name: reagent-name-circusjuice
+  parent: BaseAlcohol
+  desc: reagent-desc-circusjuice
+  physicalDesc: reagent-physical-desc-glittery
+  flavor: circusjuice
+  color: "#c47872"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/circusjuice.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.0625
+      - !type:Emote #It's very funny
+        emote: Laugh
+        probability: 0.15
+
+- type: reagent
+  id: SapoPicante
+  name: reagent-name-sapopicante
+  parent: BaseAlcohol
+  desc: reagent-desc-sapopicante
+  physicalDesc: reagent-physical-desc-oily
+  flavor: sapopicante
+  color: "#c0501a"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/sapopicante.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.065
+      - !type:AdjustTemperature
+        amount: 75 # thermal energy, not temperature!
+
+- type: reagent
+  id: Graveyard
+  name: reagent-name-graveyard
+  parent: BaseAlcohol
+  desc: reagent-desc-graveyard
+  physicalDesc: reagent-physical-desc-dark-red
+  flavor: graveyard
+  color: "#4f1b1b"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/graveyard.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.03
+
+- type: reagent
+  id: AtomicPunch
+  name: reagent-name-atomicpunch
+  parent: BaseDrink
+  desc: reagent-desc-atomicpunch
+  physicalDesc: reagent-physical-desc-volatile
+  flavor: atomicpunch
+  color: "#d04949"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/atomicpunch.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:AdjustReagent
+        reagent: Radium
+        amount: 0.01
+
+- type: reagent
+  id: PinkDrink
+  name: reagent-name-pinkdrink
+  parent: BaseDrink
+  desc: reagent-desc-pinkdrink
+  physicalDesc: reagent-physical-desc-glowing
+  flavor: pinkdrink
+  color: "#d04949"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/pinkdrink.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+
+- type: reagent
+  id: BubbleTea
+  name: reagent-name-bubbletea
+  parent: BaseDrink
+  desc: reagent-desc-bubbletea
+  physicalDesc: reagent-physical-desc-bubbly
+  flavor: bubbletea
+  color: "#d2b18c"
+  metamorphicSprite:
+    sprite: GG/Objects/Consumable/Drinks/bubbletea.rsi
+    state: icon
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.2
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1

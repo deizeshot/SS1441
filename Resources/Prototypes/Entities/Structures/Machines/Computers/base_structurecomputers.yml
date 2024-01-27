@@ -8,7 +8,8 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        collection: GlassSmash
+        path:
+          "/Audio/Effects/glass_hit.ogg"
   - type: Construction
     graph: Computer
     node: computer
@@ -52,8 +53,6 @@
   - type: EmitSoundOnUIOpen
     sound:
       collection: Keyboard
-      params:
-        volume: -1
   - type: ContainerContainer
     containers:
       board: !type:Container

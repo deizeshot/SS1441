@@ -26,8 +26,8 @@
   recipeUnlocks:
   - AnomalyScanner
   - AnomalyLocator
-  - AnomalyLocatorWide
-  - BorgModuleAnomaly
+  # - AnomalyLocatorWide  # Sirena module reworck
+  # - BorgModuleAnomaly  # Sirena module reworck
   - APECircuitboard
   - AnomalyVesselCircuitboard
 
@@ -42,7 +42,7 @@
   cost: 5000
   recipeUnlocks:
   - NodeScanner
-  - BorgModuleArtifact
+  # - BorgModuleArtifact # Sirena module reworck
   - AnalysisComputerCircuitboard
   - ArtifactAnalyzerMachineCircuitboard
 
@@ -152,6 +152,7 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
+    - DeliveryModuleCargoSirena # Sirena module reworck
 
 - type: technology
   id: QuantumLeaping

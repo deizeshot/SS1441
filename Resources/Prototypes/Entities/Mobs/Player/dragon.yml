@@ -120,6 +120,13 @@
       - Door
       tags:
       - Wall
+  - type: NightVision
+    isToggle: true
+    color: "#808080"
+  - type: CollectiveMind
+    channel: CarpCollectiveMind
+    showRank: true
+    rankName: collective-mind-dragon-rank
   - type: Tag
     tags:
     - CannotSuicide

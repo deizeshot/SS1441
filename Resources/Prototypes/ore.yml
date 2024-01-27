@@ -90,6 +90,7 @@
     OreUranium: 1
     OreBananium: 0.5
     OreArtifactFragment: 0.5
+    OreBlueSpaceCrystal: 0.25 # Sirena Bluespace add
 
 - type: weightedRandomOre
   id: OreCrab

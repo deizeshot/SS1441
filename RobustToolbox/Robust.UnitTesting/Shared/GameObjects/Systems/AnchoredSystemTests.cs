@@ -9,7 +9,6 @@ using Robust.Shared.Maths;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
-using Robust.Shared.Reflection;
 using Robust.UnitTesting.Server;
 
 // ReSharper disable AccessToStaticMemberViaDerivedType
@@ -89,10 +88,8 @@ namespace Robust.UnitTesting.Shared.GameObjects.Systems
         }
 
         [ComponentProtoName("AnchorOnInit")]
-        [Reflect(false)]
         private sealed partial class AnchorOnInitComponent : Component { };
 
-        [Reflect(false)]
         private sealed class AnchorOnInitTestSystem : EntitySystem
         {
             public override void Initialize()
@@ -102,7 +99,6 @@ namespace Robust.UnitTesting.Shared.GameObjects.Systems
             }
         }
 
-        [Reflect(false)]
         internal sealed class MoveEventTestSystem : EntitySystem
         {
             [Dependency] private readonly SharedTransformSystem _transform = default!;

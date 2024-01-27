@@ -126,12 +126,13 @@
     - id: FoodBanana
       amount: 3
       maxAmount: 6
-  - type: ChemicalPuddleArtifact
-    chemicalSolution:
-      maxVol: 100
-      canReact: false
-    possibleChemicals:
-    - Potassium
+      #Я Б***ТЬ НЕНАВИЖУ КАЛИЕВЫЕ ЛУЖИ!!!!! / I F***ING HATE POTASSIUM PUDDLES!!!!!
+#  - type: ChemicalPuddleArtifact
+#    chemicalSolution:
+#      maxVol: 100
+#     canReact: false
+#   possibleChemicals:
+#    - Potassium
 
 - type: artifactEffect
   id: EffectFloraSpawn
@@ -175,7 +176,6 @@
     - Nitrogen
     - Oxygen
     - Phosphorus
-    - Potassium
     - Radium
     - Silicon
     - Sodium
@@ -330,6 +330,12 @@
     - id: UraniumOre1
       prob: 0.3
       maxAmount: 3
+    - id: BlueSpaceCrystalOre1
+      prob: 0.3
+      maxAmount: 3
+    - id: BananiumOre1
+      prob: 0.3
+      maxAmount: 3
 
 - type: artifactEffect
   id: EffectAngryCarpSpawn
@@ -337,7 +343,7 @@
   effectHint: artifact-effect-hint-creation
   components:
   - type: SpawnArtifact
-    maxSpawns: 5
+    maxSpawns: 10
     spawns:
     - id: MobCarpHolo
       orGroup: carp
@@ -556,6 +562,10 @@
   components:
   - type: RadiationSource
     intensity: 6
+  - type: PointLight
+    radius: 5
+    energy: 10
+    color: "#00ff04"
 
 - type: artifactEffect
   id: EffectMaterialSpawn
@@ -623,6 +633,21 @@
     maxSpawns: 1
     spawns:
     - id: RandomArtifactSpawner
+    - type: artifactEffect
+  
+#Нуждается в тестировании
+#  id: EffectFlesh
+#  targetDepth: 3
+#  effectHint: artifact-effect-hint-creation
+#  components:
+#  - type: SpawnArtifact
+#    maxSpawns: 10
+#    spawns:
+#    - id: MobFleshJared
+#    - id: MobFleshGolem
+#    - id: MobFleshClamp
+#    - id: MobFleshLover
+#    - id: FleshBlocker
 
 - type: artifactEffect
   id: EffectAnomaly
@@ -657,7 +682,7 @@
 
 - type: artifactEffect
   id: EffectSingulo
-  targetDepth: 10
+  targetDepth: 25 #i'm tired of this effect
   effectHint: artifact-effect-hint-destruction
   components:
   - type: SpawnArtifact

@@ -14,7 +14,6 @@ namespace Robust.UnitTesting.Shared.Map
     /// <summary>
     /// Tests whether grid fixtures are being generated correctly.
     /// </summary>
-    [Parallelizable(ParallelScope.All)]
     [TestFixture]
     public sealed class GridFixtures_Tests : RobustIntegrationTest
     {

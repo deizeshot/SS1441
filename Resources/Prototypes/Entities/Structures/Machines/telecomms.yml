@@ -41,9 +41,6 @@
         !type:DamageTrigger
         damage: 100
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
       - !type:ChangeConstructionNodeBehavior
         node: machineFrame
       - !type:DoActsBehavior

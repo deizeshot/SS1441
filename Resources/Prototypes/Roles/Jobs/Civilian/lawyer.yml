@@ -25,6 +25,9 @@
     id: LawyerPDA
     ears: ClothingHeadsetSecurity
     # TODO add copy of space law
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearToplaceBra # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesLace # Sirena-Underwear
   inhand:
     - BriefcaseBrownFilled
   innerClothingSkirt: ClothingUniformJumpskirtLawyerBlack

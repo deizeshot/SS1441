@@ -1,0 +1,71 @@
+# - type: shuttleType
+  # id:
+  # defaultIsAnnounce:
+  # forsedAnnounce:
+  # announceColor:
+  # isPlayAuidoFromAnnouncement:
+  # announcementText:
+  # announcshuttleext:
+  # isPlayAudio:
+  # audioPath:
+  # volume: 0
+  # isLoadGrid:
+  # gridPath:
+  # isSetAlshuttleLevel:
+  # alertLevelCode:
+  # hintText:
+
+- type: shuttleType
+  id: ERTDefault
+  announcementText: shuttle-send-ertdefault-announcement
+  gridPath: /Maps/Sirena/Shuttles/default.yml
+  hintText: send-shuttle-hint-type-ertdefault
+
+- type: shuttleType
+  id: ERTSecurity
+  announcementText: shuttle-send-ertsecurity-announcement
+  gridPath: /Maps/Sirena/Shuttles/security.yml
+  hintText: send-shuttle-hint-type-ertsecurity
+
+- type: shuttleType
+  id: ERTEengineer
+  announcementText: shuttle-send-ertengineer-announcement
+  gridPath: /Maps/Sirena/Shuttles/engineer.yml
+  hintText: send-shuttle-hint-type-ertengineer
+
+- type: shuttleType
+  id: ERTMedical
+  announcementText: shuttle-send-ertmedical-announcement
+  gridPath: /Maps/Sirena/Shuttles/medical.yml
+  hintText: send-shuttle-hint-type-ertmedical
+
+- type: shuttleType
+  id: ERTJanitor
+  announcementText: shuttle-send-ertjanitor-announcement
+  gridPath: /Maps/Sirena/Shuttles/janitor.yml
+  hintText: send-shuttle-hint-type-ertjanitor
+
+- type: shuttleType
+  id: CBRN
+  announcementText: shuttle-send-cbrn-announcement
+  gridPath: /Maps/Sirena/Shuttles/cbrn.yml
+  hintText: send-shuttle-hint-type-cbrn
+
+- type: shuttleType
+  id: DeathSquad
+  announceColor: white
+  announcementText: shuttle-send-deathsquad-announcement
+  isPlayAudio: false
+  gridPath: /Maps/Sirena/Shuttles/deathsquad.yml
+  isSetAlshuttleLevel: true
+  alshuttleLevelCode: epsilon
+  hintText: send-shuttle-hint-type-deathsquad
+
+- type: shuttleType
+  id: ERTDenial
+  defaultIsAnnounce: true
+  forsedAnnounce: true
+  announcementText: shuttle-send-ertdenial-announcement
+  audioPath: /Audio/Sirena/Announcements/shuttleno.ogg
+  isLoadGrid: false
+  hintText: send-shuttle-hint-type-ertdenial

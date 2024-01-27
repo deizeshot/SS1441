@@ -1,3 +1,4 @@
+using Content.Client.StatusIcon;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
 using Content.Shared.Mobs;
@@ -7,7 +8,6 @@ using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
 using System.Numerics;
-using Content.Shared.StatusIcon.Components;
 using static Robust.Shared.Maths.Color;
 
 namespace Content.Client.Overlays;
@@ -21,6 +21,7 @@ public sealed class EntityHealthBarOverlay : Overlay
     private readonly SharedTransformSystem _transform;
     private readonly MobStateSystem _mobStateSystem;
     private readonly MobThresholdSystem _mobThresholdSystem;
+    private readonly StatusIconSystem _statusIcon;
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
     public HashSet<string> DamageContainers = new();
 
@@ -30,6 +31,7 @@ public sealed class EntityHealthBarOverlay : Overlay
         _transform = _entManager.EntitySysManager.GetEntitySystem<SharedTransformSystem>();
         _mobStateSystem = _entManager.EntitySysManager.GetEntitySystem<MobStateSystem>();
         _mobThresholdSystem = _entManager.EntitySysManager.GetEntitySystem<MobThresholdSystem>();
+        _statusIcon = _entManager.System<StatusIconSystem>();
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -61,13 +63,15 @@ public sealed class EntityHealthBarOverlay : Overlay
                 continue;
             }
 
+            if (!_statusIcon.IsVisible(uid))
+                continue;
+
             if (damageableComponent.DamageContainerID == null || !DamageContainers.Contains(damageableComponent.DamageContainerID))
             {
                 continue;
             }
 
-            // we use the status icon component bounds if specified otherwise use sprite
-            var bounds = _entManager.GetComponentOrNull<StatusIconComponent>(uid)?.Bounds ?? spriteComponent.Bounds;
+            var bounds = spriteComponent.Bounds;
             var worldPos = _transform.GetWorldPosition(xform, xformQuery);
 
             if (!bounds.Translated(worldPos).Intersects(args.WorldAABB))
@@ -83,21 +87,21 @@ public sealed class EntityHealthBarOverlay : Overlay
 
             handle.SetTransform(matty);
 
-            var yOffset = bounds.Height * EyeManager.PixelsPerMeter / 2 - 3f;
-            var widthOfMob = bounds.Width * EyeManager.PixelsPerMeter;
+            var yOffset = spriteComponent.Bounds.Height * EyeManager.PixelsPerMeter / 2 - 3f;
+            var widthOfMob = spriteComponent.Bounds.Width * EyeManager.PixelsPerMeter;
 
             var position = new Vector2(-widthOfMob / EyeManager.PixelsPerMeter / 2, yOffset / EyeManager.PixelsPerMeter);
 
             // we are all progressing towards death every day
-            (float ratio, bool inCrit) deathProgress = CalcProgress(uid, mobStateComponent, damageableComponent, mobThresholdsComponent);
+            (float ratio, bool inCrit) = CalcProgress(uid, mobStateComponent, damageableComponent, mobThresholdsComponent);
 
-            var color = GetProgressColor(deathProgress.ratio, deathProgress.inCrit);
+            var color = GetProgressColor(ratio, inCrit);
 
             // Hardcoded width of the progress bar because it doesn't match the texture.
             const float startX = 8f;
             var endX = widthOfMob - 8f;
 
-            var xProgress = (endX - startX) * deathProgress.ratio + startX;
+            var xProgress = (endX - startX) * ratio + startX;
 
             var boxBackground = new Box2(new Vector2(startX, 0f) / EyeManager.PixelsPerMeter, new Vector2(endX, 3f) / EyeManager.PixelsPerMeter);
             boxBackground = boxBackground.Translated(position);
@@ -151,7 +155,7 @@ public sealed class EntityHealthBarOverlay : Overlay
     {
         if (progress >= 1.0f)
         {
-            return SeaBlue;
+            return Lime;
         }
 
         if (!crit)
@@ -159,14 +163,14 @@ public sealed class EntityHealthBarOverlay : Overlay
             switch (progress)
             {
                 case > 0.90F:
-                    return SeaBlue;
+                    return Lime;
                 case > 0.50F:
-                    return Violet;
+                    return Yellow;
                 case > 0.15F:
-                    return Ruber;
+                    return Orange;
             }
         }
 
-        return VividGamboge;
+        return Red;
     }
 }

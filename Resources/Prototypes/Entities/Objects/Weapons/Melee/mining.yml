@@ -81,6 +81,13 @@
     damage:
       types:
         Slash: 15
+  - type: Tool
+    qualities:
+      - Prying # Окей теперь эта вещица не настолько плоха. / Okay, now this thing isn't that bad.
+    speed: 0.75
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: TilePrying
   - type: Tag
     tags:
     - Knife

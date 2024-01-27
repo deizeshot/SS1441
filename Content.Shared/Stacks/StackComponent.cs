@@ -1,5 +1,6 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Stacks
@@ -78,6 +79,17 @@ namespace Content.Shared.Stacks
         [DataField("layerStates")]
         [ViewVariables(VVAccess.ReadWrite)]
         public List<string> LayerStates = new();
+
+        #region Sirena add regen stack
+        [DataField("isRegen"), ViewVariables(VVAccess.ReadWrite)]
+        public bool IsRegen = false;
+
+        [DataField("duration"), ViewVariables(VVAccess.ReadWrite)]
+        public TimeSpan Duration = TimeSpan.FromSeconds(1);
+
+        [DataField("nextChargeTime", customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
+        public TimeSpan NextRegenTime = TimeSpan.FromSeconds(0);
+        #endregion
     }
 
     [Serializable, NetSerializable]

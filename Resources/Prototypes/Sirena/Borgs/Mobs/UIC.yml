@@ -1,0 +1,31 @@
+- type: entity
+  id: BorgUIC
+  parent: BaseBorgChassisUIC
+  components:
+  - type: Sprite
+    sprite: Sirena/borg.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: UIC
+    - state: UIC_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: UIC_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        base: UIC
+      Critical:
+        base: gibdown-UIC
+  - type: BorgChassis
+    maxModules: 5
+    moduleWhitelist:
+      tags: [ BorgModuleCargo, BorgModuleEngineering, BorgModuleGeneric, BorgModuleJanitor, BorgModuleMedical, BorgModuleScience, BorgModuleSecurity, BorgModuleService, BorgModuleService, BorgModuleUIC ]
+    hasMindState: UIC_e
+    noMindState: UIC_e_r
+  - type: NameIdentifier
+    group: UIC

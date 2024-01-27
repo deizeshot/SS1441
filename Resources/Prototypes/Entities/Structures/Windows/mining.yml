@@ -28,7 +28,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: WindowShatter
+          collection: GlassBreak
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassReinforced:

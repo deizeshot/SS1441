@@ -3,12 +3,27 @@
   name: job-name-iaa
   playTimeTracker: JobIAA
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Command
-    time: 72000
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 36000
+    - !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 7200
+    - !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 7200
+    - !type:RoleTimeRequirement
+      role: JobHeadOfPersonnel
+      time: 7200
+    - !type:RoleTimeRequirement
+      role: JobChiefEngineer
+      time: 7200
+    - !type:RoleTimeRequirement
+      role: JobChiefMedicalOfficer
+      time: 7200
+    - !type:RoleTimeRequirement
+      role: JobResearchDirector
+      time: 7200
+    - !type:RoleTimeRequirement
+      role: JobHeadOfSecurity
+      time: 7200
   startingGear: IAAGear
   icon: "JobIconIAA"
   supervisors: job-supervisors-centcom
@@ -34,8 +49,11 @@
     eyes: ClothingEyesGlassesSunglasses
     ears: ClothingHeadsetIAA
     neck: ClothingNeckLawyerbadge
-  inhand:
-    - BriefcaseIAAFilled
+    underwearb: ClothingUnderwearBottomBoxersWhite # Sirena-Underwear
+  underweart: ClothingUnderwearToplaceBra # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesLace # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtLawyerBlack
   satchel: ClothingBackpackSatchelIAAFilled
   duffelbag: ClothingBackpackDuffelIAAFilled
+  inhand:
+    - BriefcaseIAAFilled

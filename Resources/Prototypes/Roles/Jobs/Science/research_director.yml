@@ -4,11 +4,9 @@
   description: job-description-rd
   playTimeTracker: JobResearchDirector
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 54000 #15 hrs # Corvax-RoleTime
-#    - !type:OverallPlaytimeRequirement
-#      time: 144000 #40 hrs
+    - !type:RoleTimeRequirement
+      role: JobScientist
+      time: 14400
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
@@ -37,6 +35,9 @@
     outerClothing: ClothingOuterCoatRD
     id: RnDPDA
     ears: ClothingHeadsetRD
+    underwearb: ClothingUnderwearBottomBoxersRD # Sirena-Underwear
+  underweart: ClothingUnderwearTopBraRD # Sirena-Underwear
+  underwearb: ClothingUnderwearBottomPantiesRD # Sirena-Underwear
   innerClothingSkirt: ClothingUniformJumpskirtResearchDirector
   satchel: ClothingBackpackSatchelResearchDirectorFilled
   duffelbag: ClothingBackpackDuffelResearchDirectorFilled

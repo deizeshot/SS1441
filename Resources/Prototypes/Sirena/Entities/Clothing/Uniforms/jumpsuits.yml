@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUICoperative
+  name: UIC operative uniform
+  description: Advanced uniform for UIC operatives.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Uniforms/Jumpsuit/jumpsuitUICoperative.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Uniforms/Jumpsuit/jumpsuitUICoperative.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUICutility
+  name: UIC uniform
+  description: Standard uniform for UIC employees from securiry to engineer.
+  components:
+  - type: Sprite
+    sprite: Sirena/Clothing/Uniforms/Jumpsuit/jumpsuitUIC.rsi
+  - type: Clothing
+    sprite: Sirena/Clothing/Uniforms/Jumpsuit/jumpsuitUIC.rsi

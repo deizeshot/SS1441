@@ -2,7 +2,6 @@ using System.Linq;
 using System.Globalization;
 using System.Text.RegularExpressions;
 using Content.Shared.CCVar;
-using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
@@ -15,6 +14,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+using Content.Shared.Sirena;
 
 namespace Content.Shared.Preferences
 {
@@ -35,8 +35,8 @@ namespace Content.Shared.Preferences
         private HumanoidCharacterProfile(
             string name,
             string flavortext,
+            int erpStatus,
             string species,
-            string voice, // Corvax-TTS
             int age,
             Sex sex,
             Gender gender,
@@ -50,8 +50,8 @@ namespace Content.Shared.Preferences
         {
             Name = name;
             FlavorText = flavortext;
+            ERPStatus = (EnumERPStatus)erpStatus;
             Species = species;
-            Voice = voice; // Corvax-TTS
             Age = age;
             Sex = sex;
             Gender = gender;
@@ -70,8 +70,8 @@ namespace Content.Shared.Preferences
             Dictionary<string, JobPriority> jobPriorities,
             List<string> antagPreferences,
             List<string> traitPreferences)
-            : this(other.Name, other.FlavorText, other.Species, other.Voice, other.Age, other.Sex, other.Gender, other.Appearance, other.Clothing, other.Backpack,
-                jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences)
+            : this(other.Name, other.FlavorText, (int)other.ERPStatus, other.Species, other.Age,
+            other.Sex, other.Gender, other.Appearance, other.Clothing, other.Backpack, jobPriorities, other.PreferenceUnavailable, antagPreferences, traitPreferences)
         {
         }
 
@@ -84,8 +84,8 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
+            int erpStatus,
             string species,
-            string voice, // Corvax-TTS
             int age,
             Sex sex,
             Gender gender,
@@ -96,7 +96,7 @@ namespace Content.Shared.Preferences
             PreferenceUnavailableMode preferenceUnavailable,
             IReadOnlyList<string> antagPreferences,
             IReadOnlyList<string> traitPreferences)
-            : this(name, flavortext, species, voice, age, sex, gender, appearance, clothing, backpack, new Dictionary<string, JobPriority>(jobPriorities),
+            : this(name, flavortext, erpStatus, species, age, sex, gender, appearance, clothing, backpack, new Dictionary<string, JobPriority>(jobPriorities),
                 preferenceUnavailable, new List<string>(antagPreferences), new List<string>(traitPreferences))
         {
         }
@@ -105,16 +105,15 @@ namespace Content.Shared.Preferences
         ///     Get the default humanoid character profile, using internal constant values.
         ///     Defaults to <see cref="SharedHumanoidAppearanceSystem.DefaultSpecies"/> for the species.
         /// </summary>
-        /// <returns></returns>
         public HumanoidCharacterProfile() : this(
             "John Doe",
             "",
+            0,
             SharedHumanoidAppearanceSystem.DefaultSpecies,
-            SharedHumanoidAppearanceSystem.DefaultVoice, // Corvax-TTS
-                18,
-                Sex.Male,
-                Gender.Male,
-               new HumanoidCharacterAppearance(),
+            18,
+            Sex.Male,
+            Gender.Male,
+            new HumanoidCharacterAppearance(),
             ClothingPreference.Jumpsuit,
             BackpackPreference.Backpack,
             new Dictionary<string, JobPriority>
@@ -127,6 +126,7 @@ namespace Content.Shared.Preferences
         {
         }
 
+
         /// <summary>
         ///     Return a default character profile, based on species.
         /// </summary>
@@ -137,8 +137,8 @@ namespace Content.Shared.Preferences
             return new(
                 "John Doe",
                 "",
+                0,
                 species,
-                SharedHumanoidAppearanceSystem.DefaultVoice, // Corvax-TTS
                 18,
                 Sex.Male,
                 Gender.Male,
@@ -182,18 +182,11 @@ namespace Content.Shared.Preferences
                 age = random.Next(speciesPrototype.MinAge, speciesPrototype.OldAge); // people don't look and keep making 119 year old characters with zero rp, cap it at middle aged
             }
 
-            // Corvax-TTS-Start
-            var voiceId = random.Pick(prototypeManager
-                .EnumeratePrototypes<TTSVoicePrototype>()
-                .Where(o => CanHaveVoice(o, sex)).ToArray()
-            ).ID;
-            // Corvax-TTS-End
-
             var gender = sex == Sex.Male ? Gender.Male : Gender.Female;
 
             var name = GetName(species, gender);
 
-            return new HumanoidCharacterProfile(name, "", species, voiceId, age, sex, gender, HumanoidCharacterAppearance.Random(species, sex), ClothingPreference.Jumpsuit, BackpackPreference.Backpack,
+            return new HumanoidCharacterProfile(name, "", 0, species, age, sex, gender, HumanoidCharacterAppearance.Random(species, sex), ClothingPreference.Jumpsuit, BackpackPreference.Backpack,
                 new Dictionary<string, JobPriority>
                 {
                     {SharedGameTicker.FallbackOverflowJob, JobPriority.High},
@@ -202,8 +195,8 @@ namespace Content.Shared.Preferences
 
         public string Name { get; private set; }
         public string FlavorText { get; private set; }
+        public EnumERPStatus ERPStatus {get; set;} // Sirena-ERPStatus
         public string Species { get; private set; }
-        public string Voice { get; private set; } // Corvax-TTS
 
         [DataField("age")]
         public int Age { get; private set; }
@@ -235,6 +228,13 @@ namespace Content.Shared.Preferences
             return new(this) { FlavorText = flavorText };
         }
 
+        // Sirena-ERPStatus-Start
+        public HumanoidCharacterProfile WithERPStatus(EnumERPStatus state)
+        {
+            return new(this) { ERPStatus = state };
+        }
+        // Sirena-ERPStatus-End
+
         public HumanoidCharacterProfile WithAge(int age)
         {
             return new(this) { Age = age };
@@ -254,13 +254,6 @@ namespace Content.Shared.Preferences
         {
             return new(this) { Species = species };
         }
-
-        // Corvax-TTS-Start
-        public HumanoidCharacterProfile WithVoice(string voice)
-        {
-            return new(this) { Voice = voice };
-        }
-        // Corvax-TTS-End
 
         public HumanoidCharacterProfile WithCharacterAppearance(HumanoidCharacterAppearance appearance)
         {
@@ -526,21 +519,7 @@ namespace Content.Shared.Preferences
 
             _traitPreferences.Clear();
             _traitPreferences.AddRange(traits);
-
-            // Corvax-TTS-Start
-            prototypeManager.TryIndex<TTSVoicePrototype>(Voice, out var voice);
-            if (voice is null || !CanHaveVoice(voice, Sex))
-                Voice = SharedHumanoidAppearanceSystem.DefaultSexVoice[sex];
-            // Corvax-TTS-End
         }
-
-        // Corvax-TTS-Start
-        // MUST NOT BE PUBLIC, BUT....
-        public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex)
-        {
-            return voice.RoundStart && sex == Sex.Unsexed || (voice.Sex == sex || voice.Sex == Sex.Unsexed);
-        }
-        // Corvax-TTS-End
 
         // sorry this is kind of weird and duplicated,
         /// working inside these non entity systems is a bit wack

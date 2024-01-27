@@ -164,11 +164,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
 
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
-        {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
-        }
+        var playTimes = _tracking.GetTrackerTimes(player);
 
         return JobRequirements.TryRequirementsMet(job, playTimes, out _, EntityManager, _prototypes);
     }
@@ -179,11 +175,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         if (!_cfg.GetCVar(CCVars.GameRoleTimers))
             return roles;
 
-        if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
-        {
-            Log.Error($"Unable to check playtimes {Environment.StackTrace}");
-            playTimes = new Dictionary<string, TimeSpan>();
-        }
+        var playTimes = _tracking.GetTrackerTimes(player);
 
         foreach (var job in _prototypes.EnumeratePrototypes<JobPrototype>())
         {
@@ -210,7 +202,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
         if (!_cfg.GetCVar(CCVars.GameRoleTimers))
             return;
 
-        var player = _playerManager.GetSessionById(userId);
+        var player = _playerManager.GetSessionByUserId(userId);
         if (!_tracking.TryGetTrackerTimes(player, out var playTimes))
         {
             // Sorry mate but your playtimes haven't loaded.

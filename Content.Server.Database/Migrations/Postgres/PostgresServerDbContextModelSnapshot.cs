@@ -742,6 +742,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("clothing");
 
+                    b.Property<int>("ERPStatus")
+                        .HasColumnType("integer")
+                        .HasColumnName("erpstatus");
+
                     b.Property<string>("EyeColor")
                         .IsRequired()
                         .HasColumnType("text")
@@ -807,13 +811,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("species");
-
-                    // Corvax-TTS-Start
-                    b.Property<string>("Voice")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("voice");
-                    // Corvax-TTS-End
 
                     b.HasKey("Id")
                         .HasName("PK_profile");

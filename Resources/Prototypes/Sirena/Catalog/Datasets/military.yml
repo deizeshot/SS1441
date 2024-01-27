@@ -1,0 +1,29 @@
+- type: dataset
+  id: NamesFirstDeadsquadSirena
+  values:
+  - Агент
+  
+- type: dataset
+  id: NamesSecondDeadsquadSirena
+  values:
+  - Ромео
+  - Сьера
+  - Танго
+  - Юниформ
+  - Виктор
+  - Виски
+  - Иксрей
+  - Зулу
+  - Мю
+  - Ню
+  - Кси
+  - Омикрон
+  - Пи
+  - Ро
+  - Сигма
+  - Тау
+  - Ипсилон
+  - Фи
+  - Хи
+  - Пси
+  - Омега

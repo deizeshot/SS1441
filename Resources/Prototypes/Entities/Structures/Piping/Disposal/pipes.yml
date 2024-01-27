@@ -43,9 +43,6 @@
         !type:DamageTrigger
         damage: 50
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: MetalBreak
       - !type:DoActsBehavior
         acts: ["Breakage"]
       - !type:ChangeConstructionNodeBehavior

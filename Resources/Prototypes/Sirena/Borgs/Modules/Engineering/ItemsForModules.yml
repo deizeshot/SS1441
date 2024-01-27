@@ -1,0 +1,118 @@
+- type: entity # Сталь
+  parent: SheetSteel
+  id: SheetSteelLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity # Стекло
+  parent: SheetGlass
+  id: SheetGlassLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity # Стекло бронированное
+  parent: SheetRGlass
+  id: SheetRGlassLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity  # Стекло плазменное
+  parent: SheetPGlass
+  id: SheetPGlassLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity  # Стекло бронированное плазменное
+  parent: SheetRPGlass
+  id: SheetRPGlassLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity # Стекло урановое
+  parent: SheetUGlass
+  id: SheetUGlassLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity # Стекло бронированное урановое
+  parent: SheetRUGlass
+  id: SheetRUGlassLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity # Пласталь
+  parent: SheetPlasteel
+  id: SheetPlasteelLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity # Пластик
+  parent: SheetPlastic
+  id: SheetPlasticLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity # Железные жезлы
+  parent: PartRodMetal
+  id: PartRodMetalLingering30
+  noSpawn: true
+  components:
+  - type: Stack
+    lingering: true
+    isRegen: true
+    duration: 10
+    count: 30
+
+- type: entity
+  parent: RCDRecharging
+  id: SirenaRCD
+  noSpawn: true
+  components:
+  - type: LimitedCharges
+    maxCharges: 15
+    charges: 15

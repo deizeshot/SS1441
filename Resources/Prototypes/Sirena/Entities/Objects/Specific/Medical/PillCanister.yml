@@ -1,0 +1,29 @@
+- type: entity
+  parent: PillCanister
+  id: PillCanisterAmbuzolPlus
+  suffix: AmbuzolPlus, 10
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillAmbuzolPlus
+      amount: 10
+
+- type: entity
+  parent: PillCanister
+  id: PillCanisterEmoAplife
+  suffix: EmoAplife, 10
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillEmoAplife
+      amount: 10
+
+- type: entity
+  parent: PillCanister
+  id: PillCanisterGabapentin
+  suffix: Gabapentin, 10
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillGabapentin
+      amount: 10

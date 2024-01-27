@@ -34,7 +34,7 @@ public abstract partial class SharedEntityStorageComponent : Component
     /// The total amount of items that can fit in one entitystorage
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public int Capacity = 30;
+    public int Capacity = 300; // Sirena Storage buff
 
     /// <summary>
     /// Whether or not the entity still has collision when open

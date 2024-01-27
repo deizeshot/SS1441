@@ -64,7 +64,7 @@ namespace Content.IntegrationTests.Tests.Destructible
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-            collection: WoodDestroy
+            path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           {SpawnedEntityId}:
@@ -86,7 +86,7 @@ namespace Content.IntegrationTests.Tests.Destructible
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-            collection: WoodDestroyHeavy
+            path: /Audio/Effects/woodhit.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           {SpawnedEntityId}:

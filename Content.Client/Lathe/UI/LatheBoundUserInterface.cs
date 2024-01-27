@@ -43,8 +43,7 @@ namespace Content.Client.Lathe.UI
                 case LatheUpdateState msg:
                     if (_menu != null)
                         _menu.Recipes = msg.Recipes;
-                    _menu?.PopulateRecipes();
-                    _menu?.UpdateCategories();
+                    _menu?.PopulateRecipes(Owner);
                     _menu?.PopulateQueueList(msg.Queue);
                     _menu?.SetQueueInfo(msg.CurrentlyProducing);
                     break;

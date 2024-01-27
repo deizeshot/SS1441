@@ -56,7 +56,6 @@ public sealed partial class IdCardConsoleComponent : Component
         "ChiefEngineer",
         "ChiefMedicalOfficer",
         "Command",
-        "Cryogenics",
         "Engineering",
         "External",
         "HeadOfPersonnel",

@@ -180,16 +180,18 @@ namespace Content.Server.Chemistry.EntitySystems
         private void OnCreatePillsMessage(Entity<ChemMasterComponent> chemMaster, ref ChemMasterCreatePillsMessage message)
         {
             var user = message.Session.AttachedEntity;
-            var maybeContainer = _itemSlotsSystem.GetItemOrNull(chemMaster, SharedChemMaster.OutputSlotName);
-            if (maybeContainer is not { Valid: true } container
-                || !TryComp(container, out StorageComponent? storage))
-            {
-                return; // output can't fit pills
-            }
+            // Sirena - disable the need for a pill print container - start
+            //var maybeContainer = _itemSlotsSystem.GetItemOrNull(chemMaster, SharedChemMaster.OutputSlotName); 
+            //if (maybeContainer is not { Valid: true } container
+            //    || !TryComp(container, out StorageComponent? storage))
+            //{
+            //    return; // output can't fit pills
+            //}
 
-            // Ensure the number is valid.
-            if (message.Number == 0 || !_storageSystem.HasSpace((container, storage)))
-                return;
+            //// Ensure the number is valid.
+            //if (message.Number == 0 || !_storageSystem.HasSpace((container, storage)))
+            //    return;
+            // Sirena - disable the need for a pill print container - end
 
             // Ensure the amount is valid.
             if (message.Dosage == 0 || message.Dosage > chemMaster.Comp.PillDosageLimit)
@@ -203,12 +205,12 @@ namespace Content.Server.Chemistry.EntitySystems
             if (!WithdrawFromBuffer(chemMaster, needed, user, out var withdrawal))
                 return;
 
-            _labelSystem.Label(container, message.Label);
+            //_labelSystem.Label(container, message.Label); // Sirena - disable the need for a pill print container
 
             for (var i = 0; i < message.Number; i++)
             {
-                var item = Spawn(PillPrototypeId, Transform(container).Coordinates);
-                _storageSystem.Insert(container, item, out _, user: user, storage);
+                var item = Spawn(PillPrototypeId, Transform(chemMaster).Coordinates);
+                //_storageSystem.Insert(container, item, out _, user: user, storage); // Sirena - disable the need for a pill print container
                 _labelSystem.Label(item, message.Label);
 
                 var itemSolution = _solutionContainerSystem.EnsureSolutionEntity(item, SharedChemMaster.PillSolutionName, message.Dosage, null, out _);

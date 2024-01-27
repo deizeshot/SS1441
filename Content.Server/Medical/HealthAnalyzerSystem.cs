@@ -92,7 +92,9 @@ namespace Content.Server.Medical
             _uiSystem.SendUiMessage(ui, new HealthAnalyzerScannedUserMessage(
                 GetNetEntity(target),
                 bodyTemperature,
-                bloodAmount
+                bloodAmount,
+                null,
+                healthAnalyzer.IsAdvanced
             ));
         }
     }

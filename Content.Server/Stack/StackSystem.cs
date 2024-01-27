@@ -4,6 +4,7 @@ using Content.Shared.Verbs;
 using JetBrains.Annotations;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Timing;
 
 namespace Content.Server.Stack
 {
@@ -15,6 +16,7 @@ namespace Content.Server.Stack
     public sealed class StackSystem : SharedStackSystem
     {
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+        [Dependency] private readonly IGameTiming _timing = default!;
 
         public static readonly int[] DefaultSplitAmounts = { 1, 5, 10, 20, 30, 50 };
 
@@ -23,8 +25,31 @@ namespace Content.Server.Stack
             base.Initialize();
 
             SubscribeLocalEvent<StackComponent, GetVerbsEvent<AlternativeVerb>>(OnStackAlternativeInteract);
+            SubscribeLocalEvent<StackComponent, EntityUnpausedEvent>(OnUnpaused);
         }
+        #region Sirena add regen stack
+        public override void Update(float frameTime)
+        {
+            base.Update(frameTime);
 
+            var query = EntityQueryEnumerator<StackComponent>();
+            while (query.MoveNext(out var uid, out var comp))
+            {
+                if (comp.IsRegen && (GetCount(uid, comp) < GetMaxCount(comp)))
+                {
+                    if (_timing.CurTime < comp.NextRegenTime)
+                        continue;
+                    comp.NextRegenTime = _timing.CurTime + comp.Duration;
+                    int temp = GetCount(uid, comp);
+                    SetCount(uid, ++temp, comp);
+                }
+            }
+        }
+        private void OnUnpaused(EntityUid uid, StackComponent comp, ref EntityUnpausedEvent args)
+        {
+            comp.NextRegenTime += args.PausedTime;
+        }
+        #endregion
         public override void SetCount(EntityUid uid, int amount, StackComponent? component = null)
         {
             if (!Resolve(uid, ref component, false))

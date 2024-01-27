@@ -83,6 +83,10 @@
   - type: Stripping
   - type: SolutionScanner
   - type: IgnoreUIRange
+  - type: Halo
+    desc: halo-component-on-examine-detailed-message
+    path: Sirena/Objects/Misc/halo.rsi
+    state: halo
 
 - type: entity
   id: ActionAGhostShowSolar

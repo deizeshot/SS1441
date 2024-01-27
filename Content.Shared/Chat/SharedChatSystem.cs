@@ -21,6 +21,7 @@ public abstract class SharedChatSystem : EntitySystem
     public const char EmotesAltPrefix = '*';
     public const char AdminPrefix = ']';
     public const char WhisperPrefix = ',';
+    public const char CollectiveMindPrefix = '+';
     public const char DefaultChannelKey = 'р'; // Corvax-Localization
 
     [ValidatePrototypeId<RadioChannelPrototype>]
@@ -183,35 +184,5 @@ public abstract class SharedChatSystem : EntitySystem
         }
 
         return message;
-    }
-
-    public static string SanitizeAnnouncement(string message, int maxLength = 0, int maxNewlines = 2)
-    {
-        var trimmed = message.Trim();
-        if (maxLength > 0 && trimmed.Length > maxLength)
-        {
-            trimmed = $"{message[..maxLength]}...";
-        }
-
-        // No more than max newlines, other replaced to spaces
-        if (maxNewlines > 0)
-        {
-            var chars = trimmed.ToCharArray();
-            var newlines = 0;
-            for (var i = 0; i < chars.Length; i++)
-            {
-                if (chars[i] != '\n')
-                    continue;
-
-                if (newlines >= maxNewlines)
-                    chars[i] = ' ';
-
-                newlines++;
-            }
-
-            return new string(chars);
-        }
-
-        return trimmed;
     }
 }

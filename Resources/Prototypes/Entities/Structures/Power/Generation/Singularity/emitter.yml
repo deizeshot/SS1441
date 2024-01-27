@@ -69,7 +69,7 @@
         behaviors:
         - !type:PlaySoundBehavior
           sound:
-            collection: MetalBreak
+            path: /Audio/Effects/metalbreak.ogg
         - !type:SpawnEntitiesBehavior
           spawn:
             SheetSteel1:

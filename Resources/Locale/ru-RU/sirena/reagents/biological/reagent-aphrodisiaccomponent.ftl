@@ -1,0 +1,3 @@
+reagent-name-aphrodisiaccomponent = эссенция афрофрукта
+reagent-desc-aphrodisiaccomponent = Основной компонент в приготовлении афродизиака. Сам по себе бесполезен чуть меньше, чем богиня воды...
+reagent-physical-desc-aphrodisiaccomponent = прозрачное

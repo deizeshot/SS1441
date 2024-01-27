@@ -1,0 +1,22 @@
+- type: vendingMachineInventory
+  id: UndervendropInventory
+  startingInventory:
+    ClothingUnderwearBottomPantiesWhite: 10
+    ClothingUnderwearBottomBoxersWhite: 10
+    ClothingUnderwearTopBraWhite: 10
+    ClothingUnderwearTopBraSports: 10
+    ClothingUnderwearTopBraSportsAlternative: 10
+    ClothingUnderwearSocksHigh: 5
+    ClothingUnderSocksBee: 5
+    ClothingUnderSocksCoder: 5
+    ClothingUnderwearSocksNormal: 5
+    ClothingUnderwearSocksShort: 5
+    ClothingUnderwearSocksThigh: 5
+    ClothingUnderwearSocksPantyhose: 5
+    ClothingUnderwearSocksFishnettights: 5
+    ClothingUnderwearBottomPantiesNeko: 5
+    ClothingUnderwearBottomPantiesThong: 5
+    ClothingUnderwearTopNekoBra: 5
+    ClothingUnderwearBottomPantiesLace: 5
+    ClothingUnderwearToplaceBra: 5
+    ClothingUnderwearSocksGarters: 5

@@ -1,0 +1,82 @@
+- type: entity
+  name: LoveBottleI
+  parent: BaseChemistryEmptyBottle
+  description: A jar for storing liquids
+  id: LoveBottleI
+  components:
+  - type: Sprite
+    sprite: Sirena/Objects/bottles.rsi
+    layers:
+      - state: LoveBottle
+      - state: LoveBottle-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: LoveBottle-
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+    
+- type: entity
+  name: TreuBottleI
+  parent: BaseChemistryEmptyBottle
+  id: TreuBottleI
+  description: A jar for storing liquids
+  components:
+  - type: Sprite
+    sprite: Sirena/Objects/bottles.rsi
+    layers:
+      - state: TreuBottle
+      - state: TreuBottle-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: TreuBottle-
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+
+- type: entity
+  name: ReagentBottleI
+  parent: BaseChemistryEmptyBottle
+  id: ReagentBottleI
+  description: A jar for storing liquids
+  components:
+  - type: Sprite
+    sprite: Sirena/Objects/bottles.rsi
+    layers:
+      - state: ReagentBottle
+      - state: ReagentBottle-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: ReagentBottle-
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+
+- type: entity
+  id: Aphrodisiac_ChemistryBottle
+  name: jar of aphrodisiac
+  description: Artecalcet-based drug. Stimulates sexual arousal.
+  parent: LoveBottleI
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Aphrodisiac
+          Quantity: 50
+  - type: Tag
+    tags:
+    - Bottle
