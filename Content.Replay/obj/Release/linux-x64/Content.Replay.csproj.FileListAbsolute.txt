@@ -1,0 +1,6 @@
+/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Replay/obj/Release/linux-x64/Content.Replay.csproj.AssemblyReference.cache
+/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Replay/obj/Release/linux-x64/Content.Replay.GeneratedMSBuildEditorConfig.editorconfig
+/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Replay/obj/Release/linux-x64/Content.Replay.AssemblyInfoInputs.cache
+/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Replay/obj/Release/linux-x64/Content.Replay.AssemblyInfo.cs
+/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Replay/obj/Release/linux-x64/Content.Replay.csproj.CoreCompileInputs.cache
+/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Replay/obj/Release/linux-x64/Content.Replay.sourcelink.json

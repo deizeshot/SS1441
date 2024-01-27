@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xRrlIgkdXcPp6mFv33i51OIlrYU4nw+QlG1QtQtvNH6km6rRDwjPoUCGo8e9lkyEQukiZ961Zm9TdrK11TJKrA==",
+  "dgSpecHash": "sjxHSbcmEXYupOkkK3j7AgDQ1fjbICLB154vZQFpIiKCxwTn6MUVbhsL79r6wUGNkqgBo/xP2Jg6C1SxCgsAmw==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Client/Content.Client.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Client/Content.Client.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/discordrichpresence/1.2.1.24/discordrichpresence.1.2.1.24.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/jetbrains.annotations/2023.3.0/jetbrains.annotations.2023.3.0.nupkg.sha512",

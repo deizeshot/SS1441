@@ -2106,8 +2106,7 @@
         "dependencies": {
           "Content.Shared.Database": "1.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "8.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
-          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
         },
         "runtime": {
           "Content.Server.Database.dll": {}

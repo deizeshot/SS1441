@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OpenToolkit.GraphicsLibraryFramework/1.0.0": {
+        "runtime": {
+          "OpenToolkit.GraphicsLibraryFramework.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OpenToolkit.GraphicsLibraryFramework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

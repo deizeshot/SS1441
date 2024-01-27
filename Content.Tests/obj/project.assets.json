@@ -17131,15 +17131,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tests/Content.Tests.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/Content.Tests.csproj",
       "projectName": "Content.Tests",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tests/Content.Tests.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/Content.Tests.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tests/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tests/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -17154,29 +17154,29 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Client/Content.Client.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Client/Content.Client.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Client/Content.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Client/Content.Client.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Server/Content.Server.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Server/Content.Server.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared/Content.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Shared/Content.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Shared/Content.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Client/Robust.Client.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Client/Robust.Client.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Client/Robust.Client.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Server/Robust.Server.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Server/Robust.Server.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Server/Robust.Server.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
             },
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.UnitTesting/Robust.UnitTesting.csproj"
             }
           }
         }

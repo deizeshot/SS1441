@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YXAFQ4grnjQJZfAjwxo5ZiEdZPpV0+2jIwwYn3VJ2kO34NL5lAFFDeE4npg71OO2JWD8n+CCHs+mPcplXvhYCg==",
+  "dgSpecHash": "3KgKtBwGvMfIIVwMG05r6dPWMymUoKcOKVN6kT9jDYp1VWmQy2IBmYm6thnZSnn/D8HO6naVxSnhsKhATBbuSA==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Shared/Content.Corvax.Interfaces.Shared.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/libsodium/1.0.18.2/libsodium.1.0.18.2.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/linguini.bundle/0.1.3/linguini.bundle.0.1.3.nupkg.sha512",

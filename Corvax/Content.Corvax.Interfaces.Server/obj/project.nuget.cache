@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p2n20LNzIrwdTgn7tLn4HtwFhdB/P3xBoZ8dCU5xAbx9JcyJiVuMoRYkA1hu9CBHMdpN92I0aoXeBbqcX7QPxA==",
+  "dgSpecHash": "+EcwSzfseaS4Ph/Tw2WRFj0VQRPkq+XCJCWsRK8qrRVgg/kNdABIZ5Wz0b/Vl8kKT6S4zVydNuqrj1g80HEjxQ==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Corvax/Content.Corvax.Interfaces.Server/Content.Corvax.Interfaces.Server.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Corvax/Content.Corvax.Interfaces.Server/Content.Corvax.Interfaces.Server.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/fastaccessors/1.0.0.1/fastaccessors.1.0.0.1.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

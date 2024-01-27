@@ -2261,6 +2261,30 @@
           }
         }
       },
+      "ILVerification/8.0.0.0": {
+        "runtime": {
+          "ILVerification.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Nett.Reference/0.15.0.0": {
+        "runtime": {
+          "Nett.dll": {
+            "assemblyVersion": "0.15.0.0",
+            "fileVersion": "0.15.0.0"
+          }
+        }
+      },
+      "VorbisPizza.Reference/1.3.0.0": {
+        "runtime": {
+          "VorbisPizza.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          }
+        }
+      },
       "Serilog.Sinks.Loki.Reference/4.0.0.0": {
         "runtime": {
           "Serilog.Sinks.Loki.dll": {
@@ -3784,6 +3808,21 @@
       "sha512": ""
     },
     "SharpZstd.Interop.Reference/1.5.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ILVerification/8.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nett.Reference/0.15.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "VorbisPizza.Reference/1.3.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

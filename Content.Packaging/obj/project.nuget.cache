@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G0dlszNjw/BKZxqRiACS1HxJ1kQ9DXSEzsrQn4sf+cftY+qcOXb7ko8yfZb/cJ0RK9EfeeSrLxjYXPPbBh+Z5g==",
+  "dgSpecHash": "wOKoJ0md+bFQyijQ2RKKYiLWsV8XlQxCCzA0iduavKS9mqE/AoQQZr6NHj6QNVwqV0kBPBd64/UzjIQ0Yl/SGQ==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Packaging/Content.Packaging.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Packaging/Content.Packaging.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/libsodium/1.0.18.2/libsodium.1.0.18.2.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/linguini.bundle/0.1.3/linguini.bundle.0.1.3.nupkg.sha512",

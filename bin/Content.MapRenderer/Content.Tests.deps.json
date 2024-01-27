@@ -2919,8 +2919,7 @@
         "dependencies": {
           "Content.Shared.Database": "1.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite.Core": "8.0.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0",
-          "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
         },
         "runtime": {
           "Content.Server.Database.dll": {}
@@ -2953,9 +2952,6 @@
           "Avalonia.Base": "206.0.0",
           "DiscordRichPresence": "1.2.1.24",
           "JetBrains.Profiler.Api": "1.4.0",
-          "Microsoft.CodeAnalysis.CSharp.Features": "4.8.0",
-          "Microsoft.CodeAnalysis.CSharp.Scripting": "4.8.0",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.8.0",
           "Microsoft.Data.Sqlite.Core": "8.0.0",
           "Microsoft.NET.ILLink.Tasks": "8.0.0",
           "OpenTK.OpenAL": "4.7.7",
@@ -2965,7 +2961,6 @@
           "Robust.Natives": "0.1.1",
           "Robust.Shared": "206.0.0",
           "Robust.Shared.Maths": "206.0.0",
-          "Robust.Shared.Scripting": "206.0.0",
           "SQLitePCLRaw.bundle_e_sqlite3": "2.1.7",
           "SixLabors.ImageSharp": "3.1.2",
           "SpaceWizards.Lidgren.Network": "1.0.0",

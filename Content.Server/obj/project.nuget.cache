@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TR9o9N+VrOGc8K1sY7g1iVxXL+jqgoskV1ZgKsPVO0HxVOTxeMYO6m5JZqxr758FAYFLHZ4D1N+6S1AR4qxq+Q==",
+  "dgSpecHash": "QyKaonaGut5Cc8ct7h4KNR8/tzK1kAXOmoqMB650N70v5aQXuqPA34fLtVVqnrkB7ZCS9meoVf86aLA/1cgg5A==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Server/Content.Server.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Server/Content.Server.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/fastaccessors/1.0.0.1/fastaccessors.1.0.0.1.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
