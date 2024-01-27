@@ -641,6 +641,571 @@
           "bin/placeholder/SpaceWizards.Lidgren.Network.dll": {}
         }
       }
+    },
+    "net8.0/linux-x64": {
+      "libsodium/1.0.18.2": {
+        "type": "package",
+        "native": {
+          "runtimes/linux-x64/native/libsodium.so": {}
+        }
+      },
+      "Linguini.Bundle/0.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Linguini.Shared": "0.1.3",
+          "Linguini.Syntax": "0.1.3"
+        },
+        "compile": {
+          "lib/net5.0/Linguini.Bundle.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Linguini.Bundle.dll": {}
+        }
+      },
+      "Linguini.Shared/0.1.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Linguini.Shared.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Linguini.Shared.dll": {}
+        }
+      },
+      "Linguini.Syntax/0.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Linguini.Shared": "0.1.3"
+        },
+        "compile": {
+          "lib/net5.0/Linguini.Syntax.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Linguini.Syntax.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Http/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Logging": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Binder": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection": "3.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Options": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.ObjectPool/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.ObjectPool.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Options/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.0",
+          "Microsoft.Extensions.Primitives": "3.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.ILVerification/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Metadata": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ILVerification.dll": {}
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.Registry/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Nett/0.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nett.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Pidgin/3.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Pidgin.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Pidgin.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "prometheus-net/8.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Http": "3.1.0",
+          "Microsoft.Extensions.ObjectPool": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/Prometheus.NetStandard.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Prometheus.NetStandard.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Robust.Shared.AuthLib/0.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Robust.Shared.AuthLib.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Robust.Shared.AuthLib.dll": {}
+        }
+      },
+      "Serilog/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SharpZstd.Interop/1.5.2-beta2": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpZstd.Interop.dll": {}
+        },
+        "native": {
+          "runtimes/linux-x64/native/zstd.so": {}
+        }
+      },
+      "SixLabors.ImageSharp/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "SpaceWizards.Sodium/0.2.1": {
+        "type": "package",
+        "dependencies": {
+          "SpaceWizards.Sodium.Interop": "1.0.18-beta4"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SpaceWizards.Sodium.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SpaceWizards.Sodium.Interop/1.0.18-beta4": {
+        "type": "package",
+        "dependencies": {
+          "libsodium": "1.0.18.2"
+        },
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SpaceWizards.Sodium.Interop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Collections.Immutable/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "7.0.0"
+        },
+        "compile": {
+          "lib/net7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "TerraFX.Interop.Windows/10.0.22621.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/TerraFX.Interop.Windows.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "VorbisPizza/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/VorbisPizza.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "YamlDotNet/13.7.1": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/YamlDotNet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/YamlDotNet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Robust.NetSerializer/4.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Robust.NetSerializer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robust.NetSerializer.dll": {}
+        }
+      },
+      "Robust.Shared/206.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Linguini.Bundle": "0.1.3",
+          "Microsoft.Extensions.ObjectPool": "8.0.0",
+          "Microsoft.ILVerification": "8.0.0",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.0",
+          "Microsoft.Win32.Registry": "5.0.0",
+          "Nett": "0.15.0",
+          "Pidgin": "3.2.2",
+          "Robust.NetSerializer": "4.1.1",
+          "Robust.Shared.AuthLib": "0.1.2",
+          "Robust.Shared.Maths": "206.0.0",
+          "Serilog": "3.1.1",
+          "SharpZstd.Interop": "1.5.2-beta2",
+          "SixLabors.ImageSharp": "3.1.2",
+          "SpaceWizards.Lidgren.Network": "1.0.0",
+          "SpaceWizards.Sodium": "0.2.1",
+          "TerraFX.Interop.Windows": "10.0.22621.5",
+          "VorbisPizza": "1.3.0",
+          "YamlDotNet": "13.7.1",
+          "prometheus-net": "8.2.1"
+        },
+        "compile": {
+          "bin/placeholder/Robust.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robust.Shared.dll": {}
+        }
+      },
+      "Robust.Shared.Maths/206.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Robust.Shared.Maths.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Robust.Shared.Maths.dll": {}
+        }
+      },
+      "SpaceWizards.Lidgren.Network/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SpaceWizards.Lidgren.Network.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SpaceWizards.Lidgren.Network.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -1393,15 +1958,15 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tools/Content.Tools.csproj",
+      "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tools/Content.Tools.csproj",
       "projectName": "Content.Tools",
-      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tools/Content.Tools.csproj",
+      "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tools/Content.Tools.csproj",
       "packagesPath": "/Users/denisvinogradov/.nuget/packages/",
-      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tools/obj/",
+      "outputPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tools/obj/",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "configFilePaths": [
-        "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/NuGet.Config",
+        "/Users/denisvinogradov/Documents/GitHub/SS1441/NuGet.Config",
         "/Users/denisvinogradov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -1416,8 +1981,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
+            "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
+              "projectPath": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj"
             }
           }
         }
@@ -1514,12 +2079,23 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.0, 8.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "linux-x64": {
+        "#import": []
       }
     }
   }
