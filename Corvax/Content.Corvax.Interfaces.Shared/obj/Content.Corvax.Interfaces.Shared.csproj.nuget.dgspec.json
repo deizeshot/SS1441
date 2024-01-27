@@ -264,7 +264,7 @@
       }
     },
     "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj": {
-      "version": "206.0.0",
+      "version": "208.0.0",
       "restore": {
         "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj",
         "projectName": "Robust.Shared.Maths",
@@ -389,7 +389,7 @@
       }
     },
     "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj": {
-      "version": "206.0.0",
+      "version": "208.0.0",
       "restore": {
         "projectUniqueName": "/Users/denisvinogradov/Documents/GitHub/SS1441/RobustToolbox/Robust.Shared/Robust.Shared.csproj",
         "projectName": "Robust.Shared",

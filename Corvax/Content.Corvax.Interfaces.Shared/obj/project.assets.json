@@ -590,7 +590,7 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Shared/206.0.0": {
+      "Robust.Shared/208.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -603,7 +603,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "206.0.0",
+          "Robust.Shared.Maths": "208.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -621,7 +621,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/206.0.0": {
+      "Robust.Shared.Maths/208.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -1155,7 +1155,7 @@
           "bin/placeholder/Robust.NetSerializer.dll": {}
         }
       },
-      "Robust.Shared/206.0.0": {
+      "Robust.Shared/208.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1168,7 +1168,7 @@
           "Pidgin": "3.2.2",
           "Robust.NetSerializer": "4.1.1",
           "Robust.Shared.AuthLib": "0.1.2",
-          "Robust.Shared.Maths": "206.0.0",
+          "Robust.Shared.Maths": "208.0.0",
           "Serilog": "3.1.1",
           "SharpZstd.Interop": "1.5.2-beta2",
           "SixLabors.ImageSharp": "3.1.2",
@@ -1186,7 +1186,7 @@
           "bin/placeholder/Robust.Shared.dll": {}
         }
       },
-      "Robust.Shared.Maths/206.0.0": {
+      "Robust.Shared.Maths/208.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
@@ -1930,12 +1930,12 @@
       "path": "../../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj",
       "msbuildProject": "../../RobustToolbox/NetSerializer/NetSerializer/NetSerializer.csproj"
     },
-    "Robust.Shared/206.0.0": {
+    "Robust.Shared/208.0.0": {
       "type": "project",
       "path": "../../RobustToolbox/Robust.Shared/Robust.Shared.csproj",
       "msbuildProject": "../../RobustToolbox/Robust.Shared/Robust.Shared.csproj"
     },
-    "Robust.Shared.Maths/206.0.0": {
+    "Robust.Shared.Maths/208.0.0": {
       "type": "project",
       "path": "../../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj",
       "msbuildProject": "../../RobustToolbox/Robust.Shared.Maths/Robust.Shared.Maths.csproj"
@@ -1948,7 +1948,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Robust.Shared >= 206.0.0"
+      "Robust.Shared >= 208.0.0"
     ]
   },
   "packageFolders": {
