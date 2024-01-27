@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4NVwV3kjH9r7M0Zq0gaZKxz9rLb7wtQ37HJwfkLL6Yyt6yCzJLzmlv4l3x7otHFXjsccItzWHNvi2z4h3B7AiQ==",
+  "dgSpecHash": "bzmQPBFjMvWO72Sz07LW/hh/q/nhXzHAIyUGKlI+zaQBF61Cxca8R191CZjj9EQ17cw6vi97j6+tmcZkJpc20Q==",
   "success": true,
-  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS1441/Content.Tools/Content.Tools.csproj",
+  "projectFilePath": "/Users/denisvinogradov/Documents/GitHub/SS14-Sirena/Content.Tools/Content.Tools.csproj",
   "expectedPackageFiles": [
     "/Users/denisvinogradov/.nuget/packages/libsodium/1.0.18.2/libsodium.1.0.18.2.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/linguini.bundle/0.1.3/linguini.bundle.0.1.3.nupkg.sha512",
@@ -39,8 +39,7 @@
     "/Users/denisvinogradov/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/terrafx.interop.windows/10.0.22621.5/terrafx.interop.windows.10.0.22621.5.nupkg.sha512",
     "/Users/denisvinogradov/.nuget/packages/vorbispizza/1.3.0/vorbispizza.1.3.0.nupkg.sha512",
-    "/Users/denisvinogradov/.nuget/packages/yamldotnet/13.7.1/yamldotnet.13.7.1.nupkg.sha512",
-    "/Users/denisvinogradov/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.0/microsoft.netcore.app.host.linux-x64.8.0.0.nupkg.sha512"
+    "/Users/denisvinogradov/.nuget/packages/yamldotnet/13.7.1/yamldotnet.13.7.1.nupkg.sha512"
   ],
   "logs": []
 }
