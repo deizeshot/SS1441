@@ -1,0 +1,42 @@
+- type: marking
+  id: MouseEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [ Ratkin ]
+  sponsorOnly: false
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:SkinColoring
+    layers:
+      ears_mouse_inner:
+        type:
+          !type:SimpleColoring
+            color: "#FFFFFF"
+  sprites:
+  - sprite: Mobs/Customization/mouse_parts.rsi
+    state: ears_mouse_outer
+  - sprite: Mobs/Customization/mouse_parts.rsi
+    state: ears_mouse_inner
+
+- type: marking
+  id: MouseTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [ Ratkin ]
+  sponsorOnly: false
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: Mobs/Customization/mouse_parts.rsi
+    state: tail_mouse

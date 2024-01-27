@@ -1,0 +1,49 @@
+- type: entity
+  save: false
+  name: Urist McMouse
+  parent: BaseMobOrganic
+  id: BaseMobRatkin
+  abstract: true
+  components:
+  - type: HumanoidAppearance
+    species: Ratkin
+  - type: Icon
+    sprite: Mobs/Species/Ratkin/parts.rsi
+    state: full
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Piercing: 5
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Mutant
+  - type: Hunger
+    baseDecayRate: 0.03
+  - type: Thirst
+    baseDecayRate: 0.08
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.0
+    damageRecovery:
+      types:
+        Asphyxiation: -1.0
+  - type: Body
+    prototype: Human
+    requiredLegs: 2
+
+- type: entity
+  save: false
+  name: Urist McMouse
+  parent: MobHumanDummy
+  id: MobRatkinDummy
+  noSpawn: true
+  description: A dummy human meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Ratkin

@@ -35,6 +35,7 @@ namespace Content.Shared.Humanoid
             switch (layer)
             {
                 case HumanoidVisualLayers.Head:
+                    yield return HumanoidVisualLayers.Fluff;
                     yield return HumanoidVisualLayers.Head;
                     yield return HumanoidVisualLayers.Eyes;
                     yield return HumanoidVisualLayers.HeadSide;
@@ -61,6 +62,7 @@ namespace Content.Shared.Humanoid
                     break;
                 case HumanoidVisualLayers.Chest:
                     yield return HumanoidVisualLayers.Chest;
+                    yield return HumanoidVisualLayers.Wings;
                     yield return HumanoidVisualLayers.Tail;
                     break;
                 default:
@@ -76,6 +78,10 @@ namespace Content.Shared.Humanoid
                     break;
                 case BodyPartType.Torso:
                     return HumanoidVisualLayers.Chest;
+                case BodyPartType.Wings:
+                    return HumanoidVisualLayers.Wings;
+                case BodyPartType.Fluff:
+                    return HumanoidVisualLayers.Fluff;
                 case BodyPartType.Tail:
                     return HumanoidVisualLayers.Tail;
                 case BodyPartType.Head:

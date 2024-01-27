@@ -1,0 +1,62 @@
+- type: marking
+  id: PlainAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Nian]
+  sprites:
+  - sprite: Mobs/Customization/nian_top.rsi
+    state: plain_s
+
+- type: marking
+  id: ReddishAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Nian]
+  sprites:
+  - sprite: Mobs/Customization/nian_top.rsi
+    state: reddish_s
+
+- type: marking
+  id: RoyalAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Nian]
+  sprites:
+  - sprite: Mobs/Customization/nian_top.rsi
+    state: royal_s
+
+- type: marking
+  id: GothicAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Nian]
+  sprites:
+  - sprite: Mobs/Customization/nian_top.rsi
+    state: gothic_s
+
+- type: marking
+  id: LoversAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Nian]
+  sprites:
+  - sprite: Mobs/Customization/nian_top.rsi
+    state: lovers_s
+
+- type: marking
+  id: WhiteFlyAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Nian]
+  sprites:
+  - sprite: Mobs/Customization/nian_top.rsi
+    state: whitefly_s
+
+- type: marking
+  id: BurntAnt
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Nian]
+  sprites:
+  - sprite: Mobs/Customization/nian_top.rsi
+    state: burnt_off_s

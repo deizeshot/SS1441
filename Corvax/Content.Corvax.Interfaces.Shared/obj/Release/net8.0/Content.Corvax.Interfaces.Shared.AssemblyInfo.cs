@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Content.Corvax.Interfaces.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+320a3916e0ae60aa9c2dc43c17fc558c7e6c948a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7be37cb7678570360dbefbd96005b981a8a3463f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Content.Corvax.Interfaces.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Content.Corvax.Interfaces.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

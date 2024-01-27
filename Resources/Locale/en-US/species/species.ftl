@@ -1,4 +1,4 @@
-﻿## Species Names
+## Species Names
 
 species-name-human = Human
 species-name-dwarf = Dwarf
@@ -8,3 +8,6 @@ species-name-diona = Diona
 species-name-arachnid = Arachnid
 species-name-moth = Moth Person
 species-name-skeleton = Skeleton
+species-name-felinid = Felinid
+species-name-ratkin = Ratkin
+species-name-nian = Nian

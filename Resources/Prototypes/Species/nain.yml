@@ -1,0 +1,161 @@
+- type: species
+  id: Nian
+  name: species-name-nian
+  roundStart: true
+  prototype: MobHuman
+  sprites: MobNianSprites
+  markingLimits: MobNianMarkingLimits
+  dollPrototype: MobNianDummy
+  defaultSkinTone: "#f2bf85"
+  skinColoration: Hues
+
+- type: speciesBaseSprites
+  id: MobNianSprites
+  sprites:
+    Head: MobNianHead
+    Chest: MobNianTorso
+    Wings: MobNianWings
+    Fluff: MobNianFluff
+    Eyes: MobNianEyes
+    LArm: MobNianLArm
+    RArm: MobNianRArm
+    LHand: MobNianLHand
+    RHand: MobNianRHand
+    LLeg: MobNianLLeg
+    RLeg: MobNianRLeg
+    LFoot: MobNianLFoot
+    RFoot: MobNianRFoot
+
+- type: markingPoints
+  id: MobNianMarkingLimits
+  points:
+    Hair:
+      points: 0
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    Chest:
+      points: 1
+      required: false
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [ PlainAnt ]
+    Wings:
+      points: 1
+      required: true
+      defaultMarkings: [ AtlasWng ]
+    Fluff:
+      points: 1
+      required: true
+      defaultMarkings: [ AtlasFlu ]
+    Legs:
+      points: 2
+      required: false
+    Arms:
+      points: 2
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobNianEyes
+  baseSprite:
+    sprite: Mobs/Customization/eyes.rsi
+    state: nian_eyes_s
+
+- type: humanoidBaseSprite
+  id: MobNianAnyMarking
+
+- type: humanoidBaseSprite
+  id: MobNianFluff
+
+- type: humanoidBaseSprite
+  id: MobNianWings
+
+- type: humanoidBaseSprite
+  id: MobNianMarkingMatchSkin
+  markingsMatchSkin: true
+
+- type: humanoidBaseSprite
+  id: MobNianHead
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobNianHeadMale
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobNianHeadFemale
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobNianTorso
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobNianTorsoMale
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobNianTorsoFemale
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobNianLLeg
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobNianLArm
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobNianLHand
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobNianLFoot
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobNianRLeg
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobNianRArm
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobNianRHand
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobNianRFoot
+  baseSprite:
+    sprite: Mobs/Species/Nian/parts.rsi
+    state: r_foot

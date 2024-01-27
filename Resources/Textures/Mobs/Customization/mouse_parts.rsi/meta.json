@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created Discord member @Loren#1557",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "tail_mouse",
+      "directions": 4,
+	  "delays":[
+			[
+				0.25,
+				0.25,
+				0.25
+			],
+			[
+				0.25,
+				0.25,
+				0.25
+			],
+			[
+				0.25,
+				0.25,
+				0.25
+			],
+			[
+				0.25,
+				0.25,
+				0.25
+			]
+	  
+		]
+    },
+    {
+      "name": "ears_mouse_outer",
+      "directions": 4
+    },
+    {
+      "name": "ears_mouse_inner",
+      "directions": 4
+    }
+  ]
+}
